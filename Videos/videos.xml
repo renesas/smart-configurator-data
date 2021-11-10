@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <videos>
-	<page family="RX">Smart Configurator Videos_filtered.htm</page>
+	<page family="RX" html="Smart Configurator Videos_filtered.htm"/>
+	<page family="RL78" html="Smart Configurator Videos_filtered.htm"/>
 </videos>
