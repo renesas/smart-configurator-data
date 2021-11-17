@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <videos>
-	<page family="RX" html="Smart Configurator Videos_filtered.htm"/>
-	<page family="RL78" html="Smart Configurator Videos_filtered.htm"/>
+	<page family="RX" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_filtered.htm"/>
+	<page family="RL78" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_filtered.htm"/>
+	<page family="RH850" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_filtered.htm"/>
+	<page family="RZ" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_filtered.htm"/>
 </videos>
