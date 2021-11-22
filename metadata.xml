@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contents>
   <content type="board" data="Boards/boards.xml"/>
+  <content type="video" data="Videos/videos.xml"/>
+  <content type="whats-new" data="Whats_New/whats-new.xml"/>
 </contents>
