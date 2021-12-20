@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="TargetBoardRX65N" version="1.00">
+	<supportedBoard>
+		<!-- Board id and version refer to bdf -->
+		<board id="TargetBoardRX65N" version="V1.10"/>
+	</supportedBoard>
+	<boardFeature>
+		<!-- Board features to be placed here -->
+		<feature name="MCU Header" type="Header"/>
+		<feature name="LEDs" jName="LEDs">
+			<components> 
+				<configuration name="Config_PORT"/>
+			</components> 
+		</feature>
+		<feature name="Pmod Connector (RSPI)" jName="Pmod Connector (RSPI)">
+			<components> 
+				<configuration name="r_rspi_rx"/>
+				<configuration name="Config_RSPI0"/>
+			</components> 
+		</feature>
+		<feature name="Pmod Connector (INTP)" jName="Pmod Connector (INTP)">
+			<components> 
+				<configuration name="Config_ICU"/>
+			</components> 
+		</feature>
+	</boardFeature>
+	<tool id="SWComponent" version="1.0.0.0">
+		<!-- Exported configurations to be placed here -->
+		<configuration id="c9ca9aaf-75c1-4d6d-b161-43a5e997db6a" inuse="true" name="Config_PORT">
+			<allocatable id="Port" name="Port">
+				<allocatable id="PORT0_Check" name="PORT0">
+					<option enabled="true" id="PortnEnable" name="Port0 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT1_Check" name="PORT1">
+					<option enabled="true" id="PortnEnable" name="Port1 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT2_Check" name="PORT2">
+					<option enabled="true" id="PortnEnable" name="Port2 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT3_Check" name="PORT3">
+					<option enabled="true" id="PortnEnable" name="Port3 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT4_Check" name="PORT4">
+					<option enabled="true" id="PortnEnable" name="Port4 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT5_Check" name="PORT5">
+					<option enabled="true" id="PortnEnable" name="Port5 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTA_Check" name="PORTA">
+					<option enabled="true" id="PortnEnable" name="PortA Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTB_Check" name="PORTB">
+					<option enabled="true" id="PortnEnable" name="PortB Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTC_Check" name="PORTC">
+					<option enabled="true" id="PortnEnable" name="PortC Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTD_Chan" name="PORTD">
+					<allocatable id="PORTx0_Item" name="PORTD0">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx1_Item" name="PORTD1">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx2_Item" name="PORTD2">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx3_Item" name="PORTD3">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx4_Item" name="PORTD4">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx5_Item" name="PORTD5">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx6_Item" name="PORTD6">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Out">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx7_Item" name="PORTD7">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Out">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<option enabled="true" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+						<item id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+						<item id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="UseStatusAll" name="Use status" selection="UnuseAlldisbale">
+						<item id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+						<item id="InAll" input="" name="In" type="static" vlaue="0"/>
+						<item id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+						<item id="UnuseAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="InAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="OutAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="PullupAll" name="Pull-up all" selection="PullupAlldisable">
+						<item id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="OpendrainAll" name="Open-drain all" selection="OpendrainAlldisable">
+						<item id="CMOSAll" input="" name="CMOS output" type="static" vlaue="0"/>
+						<item id="NChanelAll" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+						<item id="PChanelAll" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+						<item id="HiZAll" input="" name="Hi-Z" type="static" vlaue="0"/>
+						<item id="OpendrainAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="Output1All" name="Output 1 all" selection="Output1Alldisable">
+						<item id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="HighdriveSelectAll" name="High-drive output all" selection="HighdriveNormalAll">
+						<item id="HighdriveNormalAll" input="" name="Normal drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveOutAll" input="" name="High-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveHispeedAll" input="" name="High-speed interface high-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveDisableAll" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTD_Check" name="PORTD">
+					<option enabled="true" id="PortnEnable" name="PortD Enable" selection="Enable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTE_Check" name="PORTE">
+					<option enabled="true" id="PortnEnable" name="PortE Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTJ_Check" name="PORTJ">
+					<option enabled="true" id="PortnEnable" name="PortJ Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<osocket id="PORTINFO" value=";PD6_O;PD7_O;"/>
+			</allocatable>
+			<component description="This software component provides configurations for General Purpose Input/Output. Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.3.0"/>
+			<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.port.rx651.PORT" type="">
+				<context/>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration id="b755b77d-846b-4f63-ab55-fcf5ba16474c" inuse="true" name="Config_RSPI0">
+			<allocatable id="RSPI0" name="RSPI0">
+				<allocatable id="RSPI_CMD0" name="Command0">
+					<option enabled="true" id="DataLen" name="[Command0] Data length" selection="8bit">
+						<item id="8bit" input="" name="8 bits" type="static" vlaue="0"/>
+						<item id="9bit" input="" name="9 bits" type="static" vlaue="0"/>
+						<item id="10bit" input="" name="10 bits" type="static" vlaue="0"/>
+						<item id="11bit" input="" name="11 bits" type="static" vlaue="0"/>
+						<item id="12bit" input="" name="12 bits" type="static" vlaue="0"/>
+						<item id="13bit" input="" name="13 bits" type="static" vlaue="0"/>
+						<item id="14bit" input="" name="14 bits" type="static" vlaue="0"/>
+						<item id="15bit" input="" name="15 bits" type="static" vlaue="0"/>
+						<item id="16bit" input="" name="16 bits" type="static" vlaue="0"/>
+						<item id="20bit" input="" name="20 bits" type="static" vlaue="0"/>
+						<item id="24bit" input="" name="24 bits" type="static" vlaue="0"/>
+						<item id="32bit" input="" name="32 bits" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="Format" name="[Command0] Format" selection="MSB">
+						<item id="MSB" input="" name="MSB-first" type="static" vlaue="0"/>
+						<item id="LSB" input="" name="LSB-first" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="CPha" name="[Command0] RSPCK phase" selection="Even">
+						<item id="Odd" input="" name="Data sampling on odd edge, data variation on even edge" type="static" vlaue="0"/>
+						<item id="Even" input="" name="Data variation on odd edge, data sampling on even edge" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="CPol" name="[Command0] RSPCK polarity" selection="CPolLow">
+						<item id="CPolLow" input="" name="Low when idle" type="static" vlaue="0"/>
+						<item id="CPolHigh" input="" name="High when idle" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<isocket id="PCLKA" selection="Clock.tool_clock_pclka" value="8000000.0"/>
+				<option enabled="true" id="BufWid" name="Buffer access width" selection="Word">
+					<item id="Byte" input="" name="8 bits (Buffer accessed in bytes)" type="static" vlaue="0"/>
+					<item id="Word" input="" name="16 bits (Buffer accessed in words)" type="static" vlaue="0"/>
+					<item id="LWord" input="" name="32 bits (Buffer accessed in longwords)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Swap" name="Byte swap" selection="Disable">
+					<item id="Disable" input="" name="Disabled" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enabled" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Parity" name="Parity bit" selection="ParityDis">
+					<item id="ParityDis" input="" name="Does not add the parity bit to transmit data and does not check the parity bit of receive data" type="static" vlaue="0"/>
+					<item id="ParityEven" input="" name="Selects even parity for use in transmission and reception" type="static" vlaue="0"/>
+					<item id="ParityOdd" input="" name="Selects odd parity for use in transmission and reception" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="SSL0Pol" name="SSL0 polarity" selection="ActiveLow">
+					<item id="ActiveLow" input="" name="Active low" type="static" vlaue="0"/>
+					<item id="ActiveHigh" input="" name="Active high" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="OutMode" name="Output pin mode selection (RSPCK, SSL, MOSI/MISO)" selection="CMOS">
+					<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+					<item id="ODR" input="" name="Open-drain output" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Loop" name="Loopback mode selection" selection="LoopNM">
+					<item id="LoopNM" input="" name="Normal mode" type="static" vlaue="0"/>
+					<item id="Loop1" input="" name="Loopback (reversed transmit data = receive data)" type="static" vlaue="0"/>
+					<item id="Loop2" input="" name="Loopback 2 (transmit data = receive data)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="ModeFault" name="Enable mode fault error detection" selection="Disable">
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="DataFx" name="Transfer data handling" selection="DataIsr">
+					<item id="DataIsr" input="" name="Data handled in interrupt service routine" type="static" vlaue="0"/>
+					<item id="DataDma" input="" name="Data handled by DMAC" type="static" vlaue="0"/>
+					<item id="DataDtc" input="" name="Data handled by DTC" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="PriTx" name="SPTI0 priority" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="PriRx" name="SPRI0 priority" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="EriSpi" name="Enable error interrupt (SPEI0)" selection="Enable">
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="PriExSpi" name="SPEI0,SPII0 priority (Group interrupt)" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="CbTx" name="Transmission end" selection="Enable">
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="CbRx" name="Reception end" selection="Enable">
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="CbErSpi" name="Error detection" selection="Enable">
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="CmdNum" name="Number of commands, number of frames" selection="1CMD4FR">
+					<item id="1CMD1FR" input="" name="Number of commands: 1, number of transfer frames: 1" type="static" vlaue="0"/>
+					<item id="1CMD2FR" input="" name="Number of commands: 1, number of transfer frames: 2" type="static" vlaue="0"/>
+					<item id="1CMD3FR" input="" name="Number of commands: 1, number of transfer frames: 3" type="static" vlaue="0"/>
+					<item id="1CMD4FR" input="" name="Number of commands: 1, number of transfer frames: 4" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="TabCMD" name="Command" relocateHiden="true" selection="RSPI_CMD0">
+					<item id="RSPI_CMD0" input="" name="Command0" type="static" vlaue="0"/>
+					<item id="RSPI_CMD1" input="" name="Command1" type="static" vlaue="0"/>
+					<item id="RSPI_CMD2" input="" name="Command2" type="static" vlaue="0"/>
+					<item id="RSPI_CMD3" input="" name="Command3" type="static" vlaue="0"/>
+					<item id="RSPI_CMD4" input="" name="Command4" type="static" vlaue="0"/>
+					<item id="RSPI_CMD5" input="" name="Command5" type="static" vlaue="0"/>
+					<item id="RSPI_CMD6" input="" name="Command6" type="static" vlaue="0"/>
+					<item id="RSPI_CMD7" input="" name="Command7" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Mode" name="Mode" relocateHiden="true" selection="SlaveFull">
+					<item id="SlaveFull" input="" name="SlaveFull" type="static" vlaue="0"/>
+					<item id="SlaveTx" input="" name="SlaveTx" type="static" vlaue="0"/>
+					<item id="MasterFull" input="" name="MasterFull" type="static" vlaue="0"/>
+					<item id="MasterTx" input="" name="MasterTx" type="static" vlaue="0"/>
+					<item id="MultiMasterFull" input="" name="MultiMasterFull" type="static" vlaue="0"/>
+					<item id="MultiMasterTx" input="" name="MultiMasterTx" type="static" vlaue="0"/>
+				</option>
+			</allocatable>
+			<component description="This component provides SPI operation mode of RSPI. Generally, it includes the following transfer modes: Slave transmit/receive, Slave transmit, Slave receive, Master transmit/receive, Master transmit, Multi-Master transmit/receive... and Multi-Master transmit. But regarding to each device, supported transfer modes may differ." detailDescription="" display="SPI Operation Mode (4-wire method)" id="com.renesas.smc.tools.swcomponent.codegenerator.spimode" version="1.9.0"/>
+			<allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="RSPI0" display="RSPI0" id="com.renesas.smc.tools.swcomponent.codegenerator.spimode.rx651.rspi0" type="RSPI">
+				<context>
+					<option enabled="true" id="Mode" selection="SlaveFull">
+						<item enabled="true" id="SlaveFull"/>
+						<item enabled="true" id="SlaveTx"/>
+						<item enabled="true" id="MasterFull"/>
+						<item enabled="true" id="MasterTx"/>
+						<item enabled="true" id="MultiMasterFull"/>
+						<item enabled="true" id="MultiMasterTx"/>
+					</option>
+				</context>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration id="a9a3493f-c1ba-4416-af25-5a63a55bbce6" inuse="true" name="Config_ICU">
+			<allocatable id="ICU" name="ICU">
+				<allocatable id="IRQ0" name="IRQ0">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ0" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ0 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ0 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ0 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ1" name="IRQ1">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ1" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ1 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ1 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ1 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ2" name="IRQ2">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ2" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ2 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ2 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ2 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ3" name="IRQ3">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ3" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ3 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ3 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ3 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ4" name="IRQ4">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ4" selection="Enable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ4 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ4 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ4 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ5" name="IRQ5">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ5" selection="Enable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ5 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ5 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ5 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ6" name="IRQ6">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ6" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ6 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ6 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ6 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ7" name="IRQ7">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ7" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ7 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ7 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ7 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ8" name="IRQ8">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ8" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ8 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ8 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ8 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ9" name="IRQ9">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ9" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ9 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ9 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ9 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ10" name="IRQ10">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ10" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ10 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ10 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ10 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ11" name="IRQ11">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ11" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ11 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ11 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ11 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ12" name="IRQ12">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ12" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ12 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ12 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ12 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ13" name="IRQ13">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ13" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ13 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ13 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ13 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ14" name="IRQ14">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ14" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ14 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ14 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ14 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="IRQ15" name="IRQ15">
+					<isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+					<option enabled="true" id="EnableIrq" name="IRQ15" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqType" name="IRQ15 Detection type" selection="Low">
+						<item id="Low" input="" name="Low level" type="static" vlaue="0"/>
+						<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+						<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+						<item id="Both" input="" name="Both edges" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="IrqFlt" name="IRQ15 Digital filter" selection="NoFlt">
+						<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+						<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+						<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+						<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+						<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="IrqPriority" name="IRQ15 Priority" selection="Level15">
+						<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+						<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+						<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+						<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+						<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+						<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+						<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+						<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+						<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+						<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+						<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+						<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+						<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+						<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+						<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+						<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<isocket id="NmiFilterClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+				<option enabled="true" id="EnableSwInt" name="Software interrupt" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="SwIntPriority" name="Software interrupt Priority" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="EnableSwInt2" name="Software interrupt 2" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="SwInt2Priority" name="Software interrupt 2 Priority" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="EnableNmi" name="NMI pin interrupt" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NmiType" name="NMI pin interrupt Detection type" selection="Falling">
+					<item id="Falling" input="" name="Falling edge" type="static" vlaue="0"/>
+					<item id="Rising" input="" name="Rising edge" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NmiFlt" name="NMI pin interrupt Digital filter" selection="NoFlt">
+					<item id="NoFlt" input="" name="No filter" type="static" vlaue="0"/>
+					<item id="Div1" input="" name="PCLK" type="static" vlaue="0"/>
+					<item id="Div8" input="" name="PCLK/8" type="static" vlaue="0"/>
+					<item id="Div32" input="" name="PCLK/32" type="static" vlaue="0"/>
+					<item id="Div64" input="" name="PCLK/64" type="static" vlaue="0"/>
+				</option>
+			</allocatable>
+			<component description="Interrupt Controller configures the interrupt requests generated by ICU: Software interrupt, NMI pin interrupt and IRQ External pin interrupts." detailDescription="" display="Interrupt Controller" id="com.renesas.smc.tools.swcomponent.codegenerator.icu" version="2.2.0"/>
+			<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Interrupt Controller" display="ICU" id="com.renesas.smc.tools.swcomponent.codegenerator.icu.rx651.icu" type="ICU">
+				<context/>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_rspi_rx">
+			<component description="Dependency : r_bsp version(s) 5.52&#10;This software provides an applications programing interface (API) to prepare the RSPI peripheral for operation and for performing data transfers over the SPI bus." detailDescription="RSPI Driver" display="r_rspi_rx" id="r_rspi_rx3.00" version="3.00">
+				<gridItem id="RSPCKA" selectedIndex="1"/>
+				<gridItem id="MOSIA" selectedIndex="1"/>
+				<gridItem id="MISOA" selectedIndex="1"/>
+				<gridItem id="SSLA0" selectedIndex="1"/>
+				<gridItem id="SSLA1" selectedIndex="0"/>
+				<gridItem id="SSLA2" selectedIndex="0"/>
+				<gridItem id="SSLA3" selectedIndex="0"/>
+				<gridItem id="RSPI0" selectedIndex="1"/>
+				<gridItem id="RSPCKB" selectedIndex="0"/>
+				<gridItem id="MOSIB" selectedIndex="0"/>
+				<gridItem id="MISOB" selectedIndex="0"/>
+				<gridItem id="SSLB0" selectedIndex="0"/>
+				<gridItem id="SSLB1" selectedIndex="0"/>
+				<gridItem id="SSLB2" selectedIndex="0"/>
+				<gridItem id="SSLB3" selectedIndex="0"/>
+				<gridItem id="RSPI1" selectedIndex="0"/>
+				<gridItem id="RSPCKC" selectedIndex="0"/>
+				<gridItem id="MOSIC" selectedIndex="0"/>
+				<gridItem id="MISOC" selectedIndex="0"/>
+				<gridItem id="SSLC0" selectedIndex="0"/>
+				<gridItem id="SSLC1" selectedIndex="0"/>
+				<gridItem id="SSLC2" selectedIndex="0"/>
+				<gridItem id="SSLC3" selectedIndex="0"/>
+				<gridItem id="RSPI2" selectedIndex="0"/>
+				<gridItem id="RSPI_CFG_PARAM_CHECKING_ENABLE" selectedIndex="2"/>
+				<gridItem id="RSPI_CFG_HIGH_SPEED_READ" selectedIndex="1"/>
+				<gridItem id="RSPI_CFG_REQUIRE_LOCK" selectedIndex="1"/>
+				<gridItem id="RSPI_CFG_DUMMY_TXDATA" selectedIndex="0xffffffff"/>
+				<gridItem id="RSPI_CFG_USE_CHAN0" selectedIndex="1"/>
+				<gridItem id="RSPI_CFG_USE_CHAN1" selectedIndex="0"/>
+				<gridItem id="RSPI_CFG_USE_CHAN2" selectedIndex="0"/>
+				<gridItem id="RSPI_CFG_IR_PRIORITY_CHAN0" selectedIndex="15"/>
+				<gridItem id="RSPI_CFG_IR_PRIORITY_CHAN1" selectedIndex="3"/>
+				<gridItem id="RSPI_CFG_IR_PRIORITY_CHAN2" selectedIndex="3"/>
+				<gridItem id="RSPI_CFG_LONGQ_ENABLE" selectedIndex="0"/>
+				<gridItem id="RSPI_CFG_MASK_UNUSED_BITS" selectedIndex="0"/>
+				<gridItem id="RSPI_CFG_USE_RX63_ERROR_INTERRUPT" selectedIndex="0"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hcdc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hcdc package provides USB host communication device class driver" detailDescription="USB Host Communication Device Class" display="r_usb_hcdc" id="r_usb_hcdc1.30" version="1.30">
+				<gridItem id="USB_CFG_HCDC_MULTI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_IFCLS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT2" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN2" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_pcdc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_pcdc package provides USB peripheral communications device class driver" detailDescription="USB Peripheral Communications Device Class" display="r_usb_pcdc" id="r_usb_pcdc1.30" version="1.30">
+				<gridItem id="USB_CFG_PCDC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PCDC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PCDC_INT_IN" selectedIndex="0"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+				<configuration inuse="true" name="r_usb_phid">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_phid package provides USB peripheral Human I/F device class driver" detailDescription="USB Peripheral Human I/F Device Class" display="r_usb_phid" id="r_usb_phid1.30" version="1.30">
+				<gridItem id="USB_CFG_PHID_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PHID_INT_OUT" selectedIndex="2"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_pmsc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_pmsc package provides USB peripheral mass storage class driver" detailDescription="USB Peripheral Mass Storage Class" display="r_usb_pmsc" id="r_usb_pmsc1.30" version="1.30">
+				<gridItem id="USB_CFG_PMSC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PMSC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PMSC_VENDOR" selectedIndex="&quot;Renesas &quot;"/>
+				<gridItem id="USB_CFG_PMSC_PRODUCT" selectedIndex="&quot;Mass Storage    &quot;"/>
+				<gridItem id="USB_CFG_PMSC_REVISION" selectedIndex="&quot;1.00&quot;"/>
+				<gridItem id="USB_CFG_PMSC_TRANS_COUNT" selectedIndex="64"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hhid">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hhid package provides USB host human interface device class driver" detailDescription="USB Host Human Interface Device Class" display="r_usb_hhid" id="r_usb_hhid1.30" version="1.30">
+				<gridItem id="USB_CFG_HHID_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HHID_INT_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HHID_INT_IN3" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HHID_INT_OUT" selectedIndex="4"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hmsc">
+			<component description="" detailDescription="USB Host Mass Storage Class" display="r_usb_hmsc" id="r_usb_hmsc1.30" version="1.30">
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#1" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#2" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#3" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="2"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#4" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="4"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#5" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="5"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#6" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="6"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+	</tool>
+</boardDescription>

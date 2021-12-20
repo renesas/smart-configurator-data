@@ -1,0 +1,63 @@
+<boardInfo>
+	<info version="V1.00 [22 May 2018]"/>
+	<pin>
+		<function comments="Blue LED circle connector - SPI driver MISO" group="" id="CSIG0SI" pin="27"/>
+		<function comments="Blue LED circle connector - SPI driver MOSI" group="" id="CSIG0SO" pin="28"/>
+		<function comments="Blue LED circle connector - SPI driver MCLK" group="" id="CSIG0SC" pin="29"/>
+		<function comments="RS232 Transceiver connector - R232 TX" group="" id="RLIN30TX" pin="20"/>
+		<function comments="ETH3 switch - ETH0MDC" group="" id="ETNB0MDC" pin="17"/>
+		<function comments="Digital inputs for Low Power Sampler - DIN" group="" id="DPIN0" pin="81"/>
+		<function comments="ETH1 switch - ETH0TXEN" group="" id="ETNB0TXEN" pin="148"/>
+		<function comments="ETH1 switch - ETH0TXD3" group="" id="ETNB0TXD3" pin="147"/>
+		<function comments="RGB LED PWM connector - Blue PWM channel" group="" id="PWGA66O" pin="116"/>
+		<function comments="ETH1 switch - ETH0TXD1" group="" id="ETNB0TXD1" pin="145"/>
+		<function comments="ETH1 switch - ETH0TXD2" group="" id="ETNB0TXD2" pin="146"/>
+		<function comments="ETH1 switch - ETH0TXD0" group="" id="ETNB0TXD0" pin="144"/>
+		<function comments="RGB LED PWM connector - Green PWM channel" group="" id="PWGA65O" pin="117"/>
+		<function comments="ETH1 switch - ETH0TXCLK" group="" id="ETNB0TXCLK" pin="150"/>
+		<function comments="RGB LED PWM connector - Red PWM channel" group="" id="PWGA64O" pin="118"/>
+		<function comments="LIN Transceiver connector - LIN TX" group="" id="RLIN21TX" pin="69"/>
+		<function comments="ETH3 switch - ETH0RXDV" group="" id="ETNB0RXDV" pin="11"/>
+		<function comments="CAN0 and CAN1 transceiver NSIL connector - CANNSIL0" group="" id="P2_6" pin="36"/>
+		<function comments="Blue LED circle connector - SPI driver OE#" group="" id="P1_15" pin="79"/>
+		<function comments="Blue LED circle connector - SPI driver LE" group="" id="P1_14" pin="78"/>
+		<function comments="Digital Wake Up Supply - DPO" group="" id="DPO" pin="18"/>
+		<function comments="ETH2 switch - ETH0RXD2" group="" id="ETNB0RXD2" pin="2"/>
+		<function comments="ETH2 switch - ETH0RXD1" group="" id="ETNB0RXD1" pin="176"/>
+		<function comments="ETH2 switch - ETH0RXD3" group="" id="ETNB0RXD3" pin="3"/>
+		<function comments="ETH3 switch - ETH0INT" group="" id="INTP13" pin="166"/>
+		<function comments="LIN Transceiver connector - LIN RX" group="" id="RLIN21RX" pin="70"/>
+		<function comments="Encoder potentiometer connector - Encoder button" group="" id="P1_4" pin="75"/>
+		<function comments="ETH2 switch - ETH0RXD0" group="" id="ETNB0RXD0" pin="175"/>
+		<function comments="ETH3 switch - ETH0MDIO" group="" id="ETNB0MDIO" pin="16"/>
+		<function comments="RS232 Transceiver connector - R232 RX" group="" id="RLIN30RX" pin="21"/>
+		<function comments="Interrupt Button connector" group="" id="P0_9" pin="68"/>
+		<function comments="CAN1 transceiver TX/RX connector - CANRX1" group="" id="CAN4RX" pin="34"/>
+		<function comments="ETH2 switch - ETH0RXCLK" group="" id="ETNB0RXCLK" pin="174"/>
+		<function comments="Potentiometer connector - POT1 supply" group="" id="APO" pin="19"/>
+		<function comments="CAN1 transceiver TX/RX connector - CANTX1" group="" id="CAN4TX" pin="35"/>
+		<function comments="CAN0 transceiver TX/RX connector - CANRX0" group="" id="CAN3RX" pin="32"/>
+		<function comments="CAN0 transceiver TX/RX onnector - CANTX0" group="" id="CAN3TX" pin="33"/>
+		<function comments="ETH3 switch - ETH0RESETB" group="" id="P11_9" pin="9"/>
+		<function comments="Encoder potentiometer connector - Encoder input 0" group="" id="ENCA0E0" pin="155"/>
+		<function comments="Encoder potentiometer connector - Encoder input 1" group="" id="ENCA0E1" pin="156"/>
+		<function comments="FLEXRAY transceiver TX/RX connector - FR_TXEZ" group="" id="FLXA0TXENA" pin="157"/>
+		<function comments="ETH1 switch - ETH0LINK" group="" id="ETNB0LINK" pin="143"/>
+		<function comments="Green low power LED1 connector" group="" id="TAUB0O8" pin="26"/>
+		<function comments="FLEXRAY transceiver TX/RX connector - FR_RXD" group="" id="FLXA0RXDA" pin="160"/>
+		<function comments="FLEXRAY transceiver TX/RX connector - FR_TXD" group="" id="FLXA0TXDA" pin="161"/>
+		<function comments="Digital inputs for Low Power Sampler - SELDP0" group="" id="SELDP0" pin="23"/>
+		<function comments="Digital inputs for Low Power Sampler - SELDP1" group="" id="SELDP1" pin="24"/>
+		<function comments="Digital inputs for Low Power Sampler - SELDP2" group="" id="SELDP2" pin="25"/>
+		<function comments="RGB LED feedback connector - Blue LED feedback channel" group="" id="ADCA0I3" pin="103"/>
+		<function comments="RGB LED feedback connector - Green LED feedback channel" group="" id="ADCA0I2" pin="104"/>
+		<function comments="RGB LED feedback connector - Red LED feedback channel" group="" id="ADCA0I1" pin="105"/>
+		<function comments="Potentiometer connector" group="" id="ADCA0I0" pin="106"/>
+		<function comments="Green low power LED2 connector" group="" id="TAUJ0O3" pin="84"/>
+	</pin>
+	<clock>
+		<item id="mainclock" value="16"/>
+		<item id="subclock" value="32.768"/>
+	</clock>
+	<board display="Y-ASK-RH850F1KM-S4-V3" html="" id="Y-ASK-RH850F1KM-S4-V3" partNumber="R7F701649"/>
+</boardInfo>
