@@ -1,3 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <boards>
+  <board id="RSKRX671" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/RSKRX671_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0033"/>
+  </board>
+  <board id="RX65NCloudKit" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/RX65NCloudKit_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0021"/>
+  </board>
+  <board id="RX65NEnvisionKit" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/RX65NEnvisionKit_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0015"/>
+  </board>
+  <board id="RX72NEnvisionKit" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/RX72NEnvisionKit_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0030"/>
+  </board>
+  <board id="TargetBoardRX130" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/TargetBoardRX130_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0018"/>
+  </board>
+  <board id="TargetBoardRX140" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/TargetBoardRX140_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0036"/>
+  </board>
+  <board id="TargetBoardRX231" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/TargetBoardRX231_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0017"/>
+  </board>
+  <board id="TargetBoardRX65N" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/TargetBoardRX65N_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0016"/>
+  </board>
+  <board id="TargetBoardRX671" version="1.00" description="" keys="">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/TargetBoardRX671_V1.00.bcdf"/>
+    <tornado documentNo="RBDF0034"/>
+  </board>
 </boards>
