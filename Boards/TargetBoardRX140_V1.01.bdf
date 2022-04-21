@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <pin>
+        <function comments="RES1" group="" id="RES#" pin="6"/>
+        <function comments="LED1" group="" id="P32" pin="12"/>
+        <function comments="LED0" group="" id="P31" pin="13"/>
+        <function comments="SW1" group="" id="IRQ0" pin="14"/>
+        <function comments="PMOD-GPIO3" group="" id="PB6" pin="34"/>
+        <function comments="PMOD-GPIO2" group="" id="PB5" pin="35"/>
+        <function comments="PMOD-GPIO1" group="" id="PB3" pin="36"/>
+        <function comments="PMOD-GPIO0" group="" id="PB1" pin="37"/>
+        <function comments="PMOD-SDA" group="" id="SSDA5" pin="42"/>
+        <function comments="PMOD-SCL" group="" id="SSCL5" pin="43"/>
+        <function comments="PMOD-RESET" group="" id="PA0" pin="45"/>
+        <function comments="PMOD-INT" group="" id="IRQ5" pin="46"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocofrequency" value="frq48"/>
+        <item id="hocooscenable" value="check"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul6-1"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="TargetBoardRX140" html="" id="TargetBoardRX140" partNumber="R5F51403AxFM"/>
+    <info version="V1.01"/>
+</boardInfo>

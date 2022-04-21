@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <pin>
+        <function comments="PMOD-GPIO2" group="" id="PC3" pin="8"/>
+        <function comments="PMOD-SDA" group="" id="SSDA1" pin="41"/>
+        <function comments="SW1" group="" id="IRQ5" pin="42"/>
+        <function comments="SERIAL-RXD" group="" id="TXD8" pin="44"/>
+        <function comments="SERIAL-TXD" group="" id="RXD8" pin="45"/>
+        <function comments="SERIAL-RTS#-CTS#" group="" id="RTS8#" pin="46"/>
+        <function comments="LED0" group="" id="PC0" pin="47"/>
+        <function comments="PMOD-GPIO3" group="" id="PC2" pin="48"/>
+        <function comments="PMOD-GPIO0" group="" id="PB1" pin="52"/>
+        <function comments="LED1" group="" id="PB0" pin="53"/>
+        <function comments="PMOD-GPIO1" group="" id="PD3" pin="57"/>
+        <function comments="RES1" group="" id="RES#" pin="66"/>
+        <function comments="PMOD-INT" group="" id="IRQ1" pin="68"/>
+        <function comments="PMOD-SCL" group="" id="SSCL1" pin="69"/>
+        <function comments="PMOD-RESET" group="" id="P17" pin="72"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocooscenable" value="check"/>
+        <item id="hocofrequency" value="frq32"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="rfclkfrequency" value="frq32"/>
+        <item id="rflocofrequency" value="32.768"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul13_5-1"/>
+        <item id="usbplldivider" value="div1-2"/>
+        <item id="usbpllmul" value="mul12-1"/>
+        <item id="usbswitcher" value="usbsck"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="fclkdivider" value="comboBox1-2"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-2"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="TargetBoardRX23Wmodule" html="" id="TargetBoardRX23Wmodule" partNumber="R5F523W8CxLN"/>
+    <info version="V1.01"/>
+</boardInfo>

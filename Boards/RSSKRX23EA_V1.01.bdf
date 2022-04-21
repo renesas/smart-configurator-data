@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <pin>
+        <function comments="AIN10" group="" id="AIN10" pin="1"/>
+        <function comments="AIN11" group="" id="AIN11" pin="2"/>
+        <function comments="AVSS0" group="" id="UNASSIGNED_3" pin="3"/>
+        <function comments="AVCC0" group="" id="UNASSIGNED_4" pin="4"/>
+        <function comments="RESn" group="" id="RES#" pin="5"/>
+        <function comments="XTAL" group="" id="XTAL" pin="6"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="8"/>
+        <function comments="MD/FINED" group="" id="MD" pin="11"/>
+        <function comments="NMI" group="" id="NMI" pin="12"/>
+        <function comments="CTS1" group="" id="CTS1#" pin="13"/>
+        <function comments="RXD1" group="" id="RXD1" pin="14"/>
+        <function comments="P27" group="" id="P27" pin="15"/>
+        <function comments="TXD1" group="" id="TXD1" pin="16"/>
+        <function comments="P17" group="" id="P17" pin="17"/>
+        <function comments="P16" group="" id="P16" pin="18"/>
+        <function comments="CANRX" group="" id="CRXD0" pin="19"/>
+        <function comments="CANTX" group="" id="CTXD0" pin="20"/>
+        <function comments="PH3" group="" id="PH3" pin="21"/>
+        <function comments="LED1" group="" id="PH2" pin="22"/>
+        <function comments="TXD5" group="" id="TXD5" pin="23"/>
+        <function comments="RXD5" group="" id="RXD5" pin="24"/>
+        <function comments="PC7" group="" id="PC7" pin="25"/>
+        <function comments="PC6" group="" id="PC6" pin="26"/>
+        <function comments="PC5" group="" id="PC5" pin="27"/>
+        <function comments="PC4" group="" id="PC4" pin="28"/>
+        <function comments="PB1" group="" id="PB1" pin="29"/>
+        <function comments="PB0" group="" id="PB0" pin="31"/>
+        <function comments="AVCC0" group="" id="AVCC0" pin="33"/>
+        <function comments="AVSS0" group="" id="AVSS0" pin="34"/>
+        <function comments="REFOUT" group="" id="REFOUT" pin="35"/>
+        <function comments="LSW" group="" id="LSW" pin="36"/>
+        <function comments="REF0N" group="" id="REF0N" pin="37"/>
+        <function comments="REF0P" group="" id="REF0P" pin="38"/>
+        <function comments="AIN0" group="" id="AIN0" pin="39"/>
+        <function comments="AIN1" group="" id="AIN1" pin="40"/>
+        <function comments="AIN2" group="" id="AIN2" pin="41"/>
+        <function comments="AIN3" group="" id="AIN3" pin="42"/>
+        <function comments="AIN4_REF1N" group="" id="AIN4" pin="43"/>
+        <function comments="AIN5_REF1P" group="" id="AIN5" pin="44"/>
+        <function comments="AIN6" group="" id="AIN6" pin="45"/>
+        <function comments="AIN7" group="" id="AIN7" pin="46"/>
+        <function comments="AIN8_IEXC1" group="" id="AIN8" pin="47"/>
+        <function comments="AIN9_IEXC0" group="" id="AIN9" pin="48"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocofrequency" value="32"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckomain"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-1"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-1"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="lptenable" value="uncheck"/>
+    </clock>
+    <board display="RSSKRX23EA" html="" id="RSSKRX23EA" partNumber="R5F523E6AxFL"/>
+    <info version="V1.01"/>
+</boardInfo>
