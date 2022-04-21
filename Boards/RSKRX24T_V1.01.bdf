@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+<pin>
+<function comments="LED1" group="" id="PE5" pin="1"/>
+<function comments="SW2" group="" id="IRQ5" pin="2"/>
+<function comments="MD_FINED" group="" id="MD" pin="6"/>
+<function comments="RESn" group="" id="RES#" pin="10"/>
+<function comments="XTAL" group="" id="XTAL" pin="11"/>
+<function comments="EXTAL" group="" id="EXTAL" pin="13"/>
+<function comments="NMIn" group="" id="NMI" pin="15"/>
+<function comments="RL78G1CRTS" group="" id="PE0" pin="17"/>
+<function comments="RXD1" group="" id="RXD1" pin="20"/>
+<function comments="SCK1" group="" id="SCK1" pin="21"/>
+<function comments="TXD1" group="" id="TXD1" pin="22"/>
+<function comments="PD1" group="" id="PD1" pin="24"/>
+<function comments="PD0" group="" id="PD0" pin="25"/>
+<function comments="P-SCK5" group="" id="SCK5" pin="26"/>
+<function comments="P-RXD5" group="" id="RXD5" pin="27"/>
+<function comments="P-TXD5" group="" id="TXD5" pin="28"/>
+<function comments="CTS5RTS5" group="" id="CTS5#" pin="30"/>
+<function comments="LED0" group="" id="PB3" pin="32"/>
+<function comments="SDA0" group="" id="SDA0" pin="33"/>
+<function comments="SCL0" group="" id="SCL0" pin="34"/>
+<function comments="SW3" group="" id="ADTRG0#" pin="37"/>
+<function comments="RL78G1CCTS" group="" id="P61" pin="76"/>
+<function comments="IRQ4" group="" id="IRQ4" pin="77"/>
+<function comments="IRQ3" group="" id="IRQ3" pin="78"/>
+<function comments="IRQ2" group="" id="IRQ2" pin="79"/>
+<function comments="LED2" group="" id="P53" pin="80"/>
+<function comments="LED3" group="" id="P52" pin="81"/>
+<function comments="AN000" group="" id="AN000" pin="91"/>
+<function comments="SW1" group="" id="IRQ0" pin="100"/>
+</pin>
+<clock>
+<item id="mainclock" value="20"/>
+</clock>
+<board display="RSKRX24T" html="" id="RSKRX24T" partNumber="R5F524TAAxFP"/>
+<info version="1.01"/>
+</boardInfo>
