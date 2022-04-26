@@ -118,7 +118,7 @@
   <board id="RX66TCPUCardforMCUEvaluation" version="1.01" description="CPU Card for RX66T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/9c70c46d58a3948c4351c3639f0d17deac86f195/Boards/RX66TCPUCardforMCUEvaluation_V1.01.bdf"/>
   </board>
-  <board id="RX66TCPUCardforRSSKMotor" version="1.01" description="RX66T CPU Card+RSSK Motor Solution Board Description File" keys="RX"/>
+  <board id="RX66TCPUCardforRSSKMotor" version="1.01" description="RX66T CPU Card+RSSK Motor Solution Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/9c70c46d58a3948c4351c3639f0d17deac86f195/Boards/RX66TCPUCardforRSSKMotor_V1.01.bdf"/>
   </board>
   <board id="RX72NEnvisionKit" version="1.11" description="Envision Kit for RX72N Board Description File" keys="RX">
