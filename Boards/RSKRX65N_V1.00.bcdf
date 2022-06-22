@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="RSKRX65N" version="1.00">
+	<supportedBoard>
+		<!-- Board id and version refer to bdf -->
+		<board id="RSKRX65N" version="1.00"/>
+		<board id="RSKRX65N" version="1.01"/>
+	</supportedBoard>
+	<boardFeature>
+		<!-- Board features to be placed here -->
+		<feature name="Application Header" type="Header"/>
+	</boardFeature>
+	<tool id="SWComponent" version="1.0.0.0">
+		<!-- Exported configurations to be placed here -->
+	</tool>
+</boardDescription>
