@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="TS4" group="" id="TS4" pin="A1"/>
+        <function comments="SW2" group="" id="IRQ0" pin="A2"/>
+        <function comments="CLKOUT_RF" group="" id="P36" pin="A4"/>
+        <function comments="XCOUT" group="" id="XCOUT" pin="A7"/>
+        <function comments="XCIN" group="" id="XCIN" pin="A8"/>
+        <function comments="E2P-SDA" group="" id="SDA" pin="B1"/>
+        <function comments="USB0VBUSEN" group="" id="USB0_VBUSEN" pin="B2"/>
+        <function comments="SW1" group="" id="IRQ1" pin="B4"/>
+        <function comments="RESn" group="" id="RES#" pin="B6"/>
+        <function comments="MD/FINED" group="" id="FINED" pin="B7"/>
+        <function comments="PMOD2-IO2" group="" id="P03" pin="B8"/>
+        <function comments="CAN0TX" group="" id="CTXD0" pin="C1"/>
+        <function comments="CAN0RX" group="" id="CRXD0" pin="C2"/>
+        <function comments="E2P-SCL" group="" id="SCL" pin="C3"/>
+        <function comments="USB0-OVRCURB" group="" id="USB0_OVRCURB" pin="C4"/>
+        <function comments="PMOD2-IO3" group="" id="PJ3" pin="C6"/>
+        <function comments="LED0" group="" id="P41" pin="C8"/>
+        <function comments="RV1-ADC" group="" id="AN000" pin="C9"/>
+        <function comments="USB0-DM" group="" id="USB0_DM" pin="D1"/>
+        <function comments="LED1" group="" id="P42" pin="D8"/>
+        <function comments="LED2" group="" id="P43" pin="D9"/>
+        <function comments="USB0-DP" group="" id="USB0_DP" pin="E1"/>
+        <function comments="DIP-SW1" group="" id="P46" pin="E8"/>
+        <function comments="DIP-SW0" group="" id="P45" pin="E9"/>
+        <function comments="LED3" group="" id="P44" pin="E10"/>
+        <function comments="SERIAL-TXD" group="" id="TXD8" pin="F1"/>
+        <function comments="SERIAL-RXD" group="" id="RXD8" pin="F2"/>
+        <function comments="CLKOUT_RF" group="" id="CLKOUT_RF" pin="F10"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="G1"/>
+        <function comments="TS23" group="" id="TS23" pin="G2"/>
+        <function comments="PMOD2-SCK" group="" id="SCK12" pin="G9"/>
+        <function comments="TS27" group="" id="TS27" pin="H1"/>
+        <function comments="TS30" group="" id="TS30" pin="H2"/>
+        <function comments="PMOD2-IO1" group="" id="PB3" pin="H4"/>
+        <function comments="PMOD2-CS" group="" id="PE3" pin="H8"/>
+        <function comments="PMOD2-MISO" group="" id="SMISO12" pin="H9"/>
+        <function comments="TS35" group="" id="TS35" pin="J1"/>
+        <function comments="USB0-VBUS" group="" id="USB0_VBUS" pin="J4"/>
+        <function comments="PMOD2-IO0" group="" id="PB1" pin="J5"/>
+        <function comments="DIP-SW2" group="" id="PB0" pin="J6"/>
+        <function comments="DIP-SW3" group="" id="PE4" pin="J8"/>
+        <function comments="PMOD2-MOSI" group="" id="SMOSI12" pin="J9"/>
+        <function comments="ANT" group="" id="ANT" pin="K2"/>
+        <function comments="XTAL2_RF" group="" id="XTAL2_RF" pin="K6"/>
+        <function comments="XTAL1_RF" group="" id="XTAL1_RF" pin="K7"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="lowCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq54"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="rfclkfrequency" value="frq32"/>
+        <item id="rflocofrequency" value="32.768"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul13_5-1"/>
+        <item id="usbplldivider" value="div1-2"/>
+        <item id="usbpllmul" value="mul12-1"/>
+        <item id="usbswitcher" value="usbsck"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="fclkdivider" value="comboBox1-2"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-4"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="RSSKRX23W" html="" id="RSSKRX23W" partNumber="R5F523W8AxBL"/>
+    <info version="V1.01"/>
+</boardInfo>

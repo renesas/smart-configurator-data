@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="MD_FINED" group="" id="FINED" pin="12"/>
+        <function comments="RESn" group="" id="RES#" pin="16"/>
+        <function comments="XTAL" group="" id="XTAL" pin="17"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="19"/>
+        <function comments="JA2-NMIn" group="" id="NMI" pin="22"/>
+        <function comments="SERIAL-RTS" group="" id="PE0" pin="24"/>
+        <function comments="SERIAL-RXD" group="" id="RXD1" pin="27"/>
+        <function comments="SERIAL-TXD" group="" id="TXD1" pin="29"/>
+        <function comments="CAN1RX" group="" id="CRXD0" pin="33"/>
+        <function comments="CAN1TX" group="" id="CTXD0" pin="34"/>
+        <function comments="E2P-SDA" group="" id="SDA0" pin="48"/>
+        <function comments="E2P-SCL" group="" id="SCL0" pin="49"/>
+        <function comments="PMOD1-CS" group="" id="P34" pin="60"/>
+        <function comments="PMOD1-SCK" group="" id="SCK9" pin="80"/>
+        <function comments="PMOD1-MOSI" group="" id="SMOSI9" pin="81"/>
+        <function comments="PMOD1-MISO" group="" id="SMISO9" pin="82"/>
+        <function comments="SERIAL-CTS" group="" id="IRQ6" pin="87"/>
+        <function comments="PMOD1-IO2" group="" id="P27" pin="91"/>
+        <function comments="LED1" group="" id="P22" pin="96"/>
+        <function comments="LED3" group="" id="PC4" pin="97"/>
+        <function comments="LED2" group="" id="PC3" pin="98"/>
+        <function comments="LED0" group="" id="P21" pin="99"/>
+        <function comments="SW3" group="" id="ADTRG0#" pin="100"/>
+        <function comments="PMOD1-IO3" group="" id="P65" pin="101"/>
+        <function comments="SW2" group="" id="IRQ4" pin="110"/>
+        <function comments="PMOD1-IO1" group="" id="P55" pin="111"/>
+        <function comments="PMOD1-IO0" group="" id="P54" pin="112"/>
+        <function comments="RV1-ADC" group="" id="AN000" pin="125"/>
+        <function comments="SW1" group="" id="IRQ0" pin="141"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="20"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq32"/>
+        <item id="hocowaitcycle" value="sBox142"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-2"/>
+    </clock>
+    <board display="RSKRX24U" html="" id="RSKRX24U" partNumber="R5F524UEAxFB"/>
+    <info version="V1.02"/>
+</boardInfo>

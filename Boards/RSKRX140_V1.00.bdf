@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="45">
+            <function id="PB3"/>
+        </pin>
+        <pin id="46">
+            <function id="CTS6#"/>
+        </pin>
+        <pin id="47">
+            <function id="TXD6"/>
+            <function id="PB1"/>
+        </pin>
+        <pin id="49">
+            <function id="RXD6"/>
+            <function id="SSCL6"/>
+            <function id="PB0"/>
+        </pin>
+        <pin id="51">
+            <function id="CTS5#"/>
+        </pin>
+        <pin id="53">
+            <function id="TXD5"/>
+            <function id="PA4"/>
+        </pin>
+        <pin id="55">
+            <function id="RXD5"/>
+            <function id="SSCL5"/>
+            <function id="PA2"/>
+        </pin>
+        <pin id="56">
+            <function id="PA1"/>
+        </pin>
+        <pin id="15">
+            <function id="IRQ4"/>
+        </pin>
+        <pin id="35">
+            <function id="TXD8"/>
+        </pin>
+        <pin id="36">
+            <function id="RXD8"/>
+        </pin>
+        <pin id="41">
+            <function id="PC1"/>
+            <function id="TXD9"/>
+        </pin>
+        <pin id="42">
+            <function id="PC0"/>
+            <function id="RXD9"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="LED2" group="" id="P06" pin="1"/>
+        <function comments="LED1" group="" id="P04" pin="3"/>
+        <function comments="MD_FINED" group="" id="FINED" pin="6"/>
+        <function comments="XCIN" group="" id="XCIN" pin="7"/>
+        <function comments="XCOUT" group="" id="XCOUT" pin="8"/>
+        <function comments="RES" group="" id="RES#" pin="9"/>
+        <function comments="XTAL" group="" id="XTAL" pin="10"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="12"/>
+        <function comments="PMOD2-IO0" group="" id="P34" pin="15"/>
+        <function comments="SW2" group="" id="IRQ2" pin="16"/>
+        <function comments="SW1" group="" id="IRQ1" pin="17"/>
+        <function comments="SERIAL-RXD" group="" id="RXD1" pin="18"/>
+        <function comments="SERIAL-TXD" group="" id="TXD1" pin="20"/>
+        <function comments="LED0" group="" id="P21" pin="21"/>
+        <function comments="SW3" group="" id="ADTRG0#" pin="24"/>
+        <function comments="CAN-RX" group="" id="CRXD0" pin="25"/>
+        <function comments="CAN-TX" group="" id="CTXD0" pin="26"/>
+        <function comments="E2P-SDA" group="" id="SDA0" pin="27"/>
+        <function comments="E2P-SCL" group="" id="SCL0" pin="28"/>
+        <function comments="TS7(Slider)" group="" id="TS7" pin="29"/>
+        <function comments="TS8(Slider)" group="" id="TS8" pin="30"/>
+        <function comments="TS9(Slider)" group="" id="TS9" pin="31"/>
+        <function comments="TS10(Slider)" group="" id="TS10" pin="32"/>
+        <function comments="TS11(Button)" group="" id="TS11" pin="33"/>
+        <function comments="TS12(Button)" group="" id="TS12" pin="34"/>
+        <function comments="PMOD1-IO2" group="" id="PC7" pin="35"/>
+        <function comments="PMOD1-IO3" group="" id="PC6" pin="36"/>
+        <function comments="LIN-NSLP" group="" id="PC5" pin="37"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="38"/>
+        <function comments="PMOD2-IO1" group="" id="PC2" pin="40"/>
+        <function comments="PMOD2-IO2" group="" id="PB7" pin="41"/>
+        <function comments="PMOD2-IO3" group="" id="PB6" pin="42"/>
+        <function comments="PMOD1-SCK" group="" id="SCK6" pin="45"/>
+        <function comments="PMOD1-CS" group="" id="PB2" pin="46"/>
+        <function comments="PMOD1-MOSI" group="" id="SMOSI6" pin="47"/>
+        <function comments="PMOD1-MISO" group="" id="SMISO6" pin="49"/>
+        <function comments="PMOD2-CS" group="" id="PA6" pin="51"/>
+        <function comments="PMOD2-MOSI" group="" id="SMOSI5" pin="53"/>
+        <function comments="PMOD2-MISO" group="" id="SMISO5" pin="55"/>
+        <function comments="PMOD2-SCK" group="" id="SCK5" pin="56"/>
+        <function comments="PMOD1-IO1" group="" id="PE4" pin="59"/>
+        <function comments="SERIAL-RTS" group="" id="PE3" pin="60"/>
+        <function comments="LIN-RX" group="" id="RXD12" pin="61"/>
+        <function comments="LIN-TX" group="" id="TXD12" pin="62"/>
+        <function comments="RV1-ADC" group="" id="AN000" pin="75"/>
+        <function comments="LED3" group="" id="P07" pin="78"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="lowCL"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq48"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul6-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckopll"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="RSKRX140" html="" id="RSKRX140" partNumber="R5F51406BxFN"/>
+    <info version="V1.00"/>
+</boardInfo>
