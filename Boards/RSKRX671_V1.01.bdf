@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="jtag"/>
+    </system>
+    <pin>
+        <function comments="LED3" group="" id="P05" pin="2"/>
+        <function comments="LED2" group="" id="P03" pin="4"/>
+        <function comments="PMOD1-SCK" group="" id="SCK6" pin="6"/>
+        <function comments="PMOD1-MISO" group="" id="SMISO6" pin="7"/>
+        <function comments="PMOD1-MOSI" group="" id="SMOSI6" pin="8"/>
+        <function comments="LED1" group="" id="PF5" pin="9"/>
+        <function comments="" group="" id="EMLE" pin="10"/>
+        <function comments="PMOD1-CS" group="" id="PJ3" pin="13"/>
+        <function comments="MD_FINED" group="" id="MD" pin="16"/>
+        <function comments="" group="" id="XCIN" pin="17"/>
+        <function comments="" group="" id="XCOUT" pin="18"/>
+        <function comments="RES" group="" id="RES#" pin="19"/>
+        <function comments="" group="" id="XTAL" pin="20"/>
+        <function comments="" group="" id="EXTAL" pin="22"/>
+        <function comments="" group="" id="TRST#" pin="25"/>
+        <function comments="CAN-RX" group="" id="CRX0" pin="26"/>
+        <function comments="CAN-TX" group="" id="CTX0" pin="27"/>
+        <function comments="" group="" id="TMS" pin="28"/>
+        <function comments="" group="" id="TDI" pin="29"/>
+        <function comments="" group="" id="TCK" pin="30"/>
+        <function comments="" group="" id="TDO" pin="31"/>
+        <function comments="TS4" group="" id="TS4" pin="32"/>
+        <function comments="TS5" group="" id="TS5" pin="33"/>
+        <function comments="TS6" group="" id="TS6" pin="34"/>
+        <function comments="SSI-AUDIOCLK" group="" id="AUDIO_CLK" pin="35"/>
+        <function comments="TS8" group="" id="TS8" pin="36"/>
+        <function comments="TS9" group="" id="TS9" pin="37"/>
+        <function comments="LED0" group="" id="P17" pin="38"/>
+        <function comments="SERIAL-TXD" group="" id="TXD10" pin="39"/>
+        <function comments="USB0-VBUS" group="" id="USB0_VBUS" pin="40"/>
+        <function comments="SERIAL-RXD" group="" id="RXD10" pin="41"/>
+        <function comments="USB0-OVRCURA" group="" id="USB0_OVRCURA" pin="43"/>
+        <function comments="E2P-SDA" group="" id="SDA0" pin="44"/>
+        <function comments="E2P-SCL" group="" id="SCL0" pin="45"/>
+        <function comments="USB0-DM" group="" id="USB0_DM" pin="47"/>
+        <function comments="USB0-DP" group="" id="USB0_DP" pin="48"/>
+        <function comments="PMOD1-IO0" group="" id="P56" pin="50"/>
+        <function comments="SSI-TXD" group="" id="SSITXD0" pin="60"/>
+        <function comments="SSI-LRCK" group="" id="SSILRCK0" pin="61"/>
+        <function comments="SSI-SCK" group="" id="SSIBCK0" pin="62"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="66"/>
+        <function comments="AUDIO-SDA" group="" id="SSDA11" pin="68"/>
+        <function comments="AUDIO-SCL" group="" id="SSCL11" pin="69"/>
+        <function comments="PMOD1-IO1" group="" id="P74" pin="72"/>
+        <function comments="SDRAM-A14" group="" id="A14" pin="79"/>
+        <function comments="SDRAM-A13" group="" id="A13" pin="80"/>
+        <function comments="SDRAM-A12" group="" id="A12" pin="81"/>
+        <function comments="SDRAM-A11" group="" id="A11" pin="82"/>
+        <function comments="SDRAM-A10" group="" id="A10" pin="83"/>
+        <function comments="SDRAM-A9" group="" id="A9" pin="84"/>
+        <function comments="PMOD1-IO3" group="" id="P72" pin="85"/>
+        <function comments="PMOD1-IO2" group="" id="P71" pin="86"/>
+        <function comments="SDRAM-A8" group="" id="A8" pin="87"/>
+        <function comments="SDRAM-A7" group="" id="A7" pin="88"/>
+        <function comments="SDRAM-A6" group="" id="A6" pin="89"/>
+        <function comments="SDRAM-A5" group="" id="A5" pin="90"/>
+        <function comments="SDRAM-A4" group="" id="A4" pin="92"/>
+        <function comments="SDRAM-A3" group="" id="A3" pin="94"/>
+        <function comments="SDRAM-A2" group="" id="A2" pin="95"/>
+        <function comments="SDRAM-A1" group="" id="A1" pin="96"/>
+        <function comments="SDRAM-DQM1" group="" id="DQM1" pin="98"/>
+        <function comments="SDRAM-DQM0" group="" id="DQM0" pin="99"/>
+        <function comments="SDRAM-CKE" group="" id="CKE" pin="100"/>
+        <function comments="SDRAM-D15" group="" id="D15" pin="101"/>
+        <function comments="SDRAM-D14" group="" id="D14" pin="102"/>
+        <function comments="SDRAM-SDCLK" group="" id="SDCLK" pin="104"/>
+        <function comments="SDRAM-D13" group="" id="D13" pin="106"/>
+        <function comments="SDRAM-D12" group="" id="D12" pin="107"/>
+        <function comments="SDRAM-D11" group="" id="D11" pin="108"/>
+        <function comments="SDRAM-D10" group="" id="D10" pin="109"/>
+        <function comments="SDRAM-D9" group="" id="D9" pin="110"/>
+        <function comments="SDRAM-D8" group="" id="D8" pin="111"/>
+        <function comments="SDRAM-WE#" group="" id="WE#" pin="112"/>
+        <function comments="SDRAM-CAS#" group="" id="CAS#" pin="113"/>
+        <function comments="SDRAM-RAS#" group="" id="RAS#" pin="114"/>
+        <function comments="SDRAM-SDCS#" group="" id="SDCS#" pin="115"/>
+        <function comments="SDRAM-D7" group="" id="D7" pin="119"/>
+        <function comments="SDRAM-D6" group="" id="D6" pin="120"/>
+        <function comments="SDRAM-D5" group="" id="D5" pin="121"/>
+        <function comments="SDRAM-D4" group="" id="D4" pin="122"/>
+        <function comments="SDRAM-D3" group="" id="D3" pin="123"/>
+        <function comments="SDRAM-D2" group="" id="D2" pin="124"/>
+        <function comments="SDRAM-D1" group="" id="D1" pin="125"/>
+        <function comments="SDRAM-D0" group="" id="D0" pin="126"/>
+        <function comments="SW2" group="" id="IRQ10" pin="128"/>
+        <function comments="SW1" group="" id="IRQ9" pin="129"/>
+        <function comments="RV1-ADC" group="" id="AN000" pin="141"/>
+        <function comments="SW3" group="" id="ADTRG0#" pin="144"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="24"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="suboscswitcher" value="subxcin"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="hocofllenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul10-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckomain"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-4"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="uckenable" value="check"/>
+        <item id="uckdivider" value="comboBox1-5"/>
+        <item id="ckodivider" value="comboBox1-1"/>
+        <item id="sdclkenable" value="check"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="RSKRX671" html="" id="RSKRX671" partNumber="R5F5671EHxFB"/>
+    <info version="V1.01"/>
+</boardInfo>

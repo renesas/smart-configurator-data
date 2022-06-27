@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <pin>
+        <function comments="EMLE" group="" id="EMLE" pin="2"/>
+        <function comments="Reset SW" group="" id="RES#" pin="10"/>
+        <function comments="User SW" group="" id="P31" pin="19"/>
+        <function comments="Silex HSUART2_TXD" group="" id="RXD1" pin="20"/>
+        <function comments="Silex HSUART2_RXD" group="" id="TXD1" pin="22"/>
+        <function comments="Silex HSUART1_CTS" group="" id="CTS0#" pin="25"/>
+        <function comments="Silex HSUART1_RTS" group="" id="P22" pin="26"/>
+        <function comments="Silex HSUART1_RXD" group="" id="RXD0" pin="27"/>
+        <function comments="Silex HSUART1_TXD" group="" id="TXD0" pin="28"/>
+        <function comments="SDA0" group="" id="SDA0" pin="33"/>
+        <function comments="SCL0" group="" id="SCL0" pin="34"/>
+        <function comments="USB Micro DM" group="" id="USB0_DM" pin="36"/>
+        <function comments="USB Micro DP" group="" id="USB0_DP" pin="37"/>
+        <function comments="LED2" group="" id="PB2" pin="58"/>
+        <function comments="LED1" group="" id="PB0" pin="61"/>
+        <function comments="SERIAL RXD" group="" id="TXD5" pin="66"/>
+        <function comments="SERIAL TXD" group="" id="RXD5" pin="67"/>
+        <function comments="BMI160 INT2" group="" id="IRQ7" pin="71"/>
+        <function comments="BMI160 INT1" group="" id="IRQ6" pin="72"/>
+        <function comments="ISL29035 INT#" group="" id="IRQ5" pin="73"/>
+        <function comments="QSPI SIO1" group="B" id="QIO1" pin="79"/>
+        <function comments="QSPI SIO0" group="B" id="QIO0" pin="80"/>
+        <function comments="QSPI SCLK" group="B" id="QSPCLK" pin="81"/>
+        <function comments="QSPI CS#" group="B" id="QSSL" pin="82"/>
+        <function comments="QSPI SIO3" group="B" id="QIO3" pin="83"/>
+        <function comments="QSPI SIO2" group="B" id="QIO2" pin="84"/>
+        <function comments="Silex RST" group="" id="PD0" pin="86"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="24"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocooscenable" value="check"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul10-1"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-2"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="uckenable" value="uncheck"/>
+        <item id="uckdivider" value="comboBox1-5"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="CloudKitRX65N" html="" id="CloudKitRX65N" partNumber="R5F565NEDxFP"/>
+    <info version="V1.12"/>
+</boardInfo>
