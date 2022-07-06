@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <boardInfo>
+    <altPin>
+        <pin id="6">
+            <function id="P02"/>
+        </pin>
+        <pin id="7">
+            <function id="RXD6"/>
+        </pin>
+        <pin id="8">
+            <function id="TXD6"/>
+            <function id="P00"/>
+        </pin>
+        <pin id="13">
+            <function id="CTS6#"/>
+        </pin>
+        <pin id="25">
+            <function id="P34"/>
+        </pin>
+        <pin id="26">
+            <function id="RXD0"/>
+        </pin>
+        <pin id="27">
+            <function id="TXD0"/>
+        </pin>
+        <pin id="34">
+            <function id="CTS0#"/>
+        </pin>
+        <pin id="36">
+            <function id="SCL1"/>
+        </pin>
+        <pin id="37">
+            <function id="SDA1"/>
+        </pin>
+        <pin id="42">
+            <function id="IRQ5"/>
+        </pin>
+        <pin id="126">
+            <function id="IRQ0"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="debugIF" value="fine"/>
+    </system>
     <pin>
         <function comments="PMOD1-SCK" group="" id="SCK6" pin="6"/>
         <function comments="PMOD1-MISO" group="" id="SMISO6" pin="7"/>
@@ -98,5 +140,5 @@
         <item id="rtcsclkenable" value="uncheck"/>
     </clock>
     <board display="CK-RX65N" html="" id="CK-RX65N" partNumber="R5F565NEHxFB"/>
-    <info version="V1.00"/>
+    <info version="V1.01"/>
 </boardInfo>
