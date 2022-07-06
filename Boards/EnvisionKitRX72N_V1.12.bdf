@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <pin>
+        <function comments="D2-LRCK" group="" id="SSILRCK1" pin="2"/>
+        <function comments="D2-SDIN" group="" id="SSIDATA1" pin="4"/>
+        <function comments="D2-SCLK" group="" id="SSIBCK1" pin="6"/>
+        <function comments="MIC-BCLK" group="" id="SSIBCK0" pin="7"/>
+        <function comments="AUDIO_CLK" group="" id="AUDIO_CLK" pin="8"/>
+        <function comments="MIC-WS" group="" id="SSILRCK0" pin="9"/>
+        <function comments="EMLE" group="" id="EMLE" pin="10"/>
+        <function comments="MIC-DATA" group="" id="SSIRXD0" pin="11"/>
+        <function comments="MD/FINED" group="" id="MD" pin="16"/>
+        <function comments="RESET" group="" id="RES#" pin="19"/>
+        <function comments="XTAL" group="" id="XTAL" pin="20"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="22"/>
+        <function comments="LCD-TOUCH-INT" group="" id="P34" pin="25"/>
+        <function comments="LCD-TOUCH-SCL" group="" id="SSCL6" pin="26"/>
+        <function comments="LCD-TOUCH-SDA" group="" id="SSDA6" pin="27"/>
+        <function comments="WiFi-RTS" group="" id="CTS1#" pin="28"/>
+        <function comments="WiFi-TXD" group="" id="RXD1" pin="29"/>
+        <function comments="WiFi-CTS" group="" id="P27" pin="30"/>
+        <function comments="WiFi-RXD" group="" id="TXD1" pin="31"/>
+        <function comments="SDHI-SW_B" group="" id="SDHI_CD" pin="32"/>
+        <function comments="SDHI-DATA1" group="C" id="SDHI_D1" pin="34"/>
+        <function comments="SDHI-DATA0" group="C" id="SDHI_D0" pin="35"/>
+        <function comments="SDHI-CLK" group="C" id="SDHI_CLK" pin="36"/>
+        <function comments="SDHI-CMD" group="C" id="SDHI_CMD" pin="37"/>
+        <function comments="SDHI-CD/DATA3" group="C" id="SDHI_D3" pin="38"/>
+        <function comments="SDHI-DATA2" group="C" id="SDHI_D2" pin="39"/>
+        <function comments="USB0VBUSEN" group="" id="USB0_VBUSEN" pin="40"/>
+        <function comments="PMOD1-RST" group="" id="P86" pin="41"/>
+        <function comments="PMOD1-IO1" group="" id="P15" pin="42"/>
+        <function comments="USB0OVRCURA" group="" id="USB0_OVRCURA" pin="43"/>
+        <function comments="USB-TXD" group="" id="TXD2" pin="44"/>
+        <function comments="USB-RXD" group="" id="RXD2" pin="45"/>
+        <function comments="USB0DM" group="" id="USB0_DM" pin="47"/>
+        <function comments="USB0DP" group="" id="USB0_DP" pin="48"/>
+        <function comments="ET0REFCLK" group="" id="CLKOUT25M" pin="50"/>
+        <function comments="PMOD1-IRQ" group="" id="IRQ10" pin="51"/>
+        <function comments="PMOD1-SS" group="" id="SS2#" pin="52"/>
+        <function comments="PMOD1-IO0" group="" id="P53" pin="53"/>
+        <function comments="PMOD1-MISO" group="" id="SMISO2" pin="54"/>
+        <function comments="PMOD1-SCK" group="" id="SCK2" pin="55"/>
+        <function comments="PMOD1-MOSI" group="" id="SMOSI2" pin="56"/>
+        <function comments="ET0CRS" group="" id="ET0_CRS" pin="58"/>
+        <function comments="ET0COL" group="" id="ET0_COL" pin="60"/>
+        <function comments="ET0ETXD3" group="" id="ET0_ETXD3" pin="61"/>
+        <function comments="ET0ETXD2" group="" id="ET0_ETXD2" pin="62"/>
+        <function comments="ET0ETXD1" group="" id="ET0_ETXD1" pin="63"/>
+        <function comments="ET0ETXD0" group="" id="ET0_ETXD0" pin="64"/>
+        <function comments="ET0TXEN" group="" id="ET0_TX_EN" pin="65"/>
+        <function comments="ET0TXCLK" group="" id="ET0_TX_CLK" pin="66"/>
+        <function comments="ET0INTRP" group="" id="ET0_TX_ER" pin="67"/>
+        <function comments="ET0RXER" group="" id="ET0_RX_ER" pin="68"/>
+        <function comments="ET0RXCLK" group="" id="ET0_RX_CLK" pin="69"/>
+        <function comments="ET0RXDV" group="" id="ET0_RX_DV" pin="70"/>
+        <function comments="ET0ERXD0" group="" id="ET0_ERXD0" pin="71"/>
+        <function comments="ET0ERXD1" group="" id="ET0_ERXD1" pin="72"/>
+        <function comments="ET0ERXD2" group="" id="ET0_ERXD2" pin="73"/>
+        <function comments="ET0ERXD3" group="" id="ET0_ERXD3" pin="75"/>
+        <function comments="ET0RST(SW1-1ch)" group="" id="P73" pin="77"/>
+        <function comments="Light-SDA" group="" id="SSDA11" pin="78"/>
+        <function comments="Light-SCL" group="" id="SSCL11" pin="79"/>
+        <function comments="LCD-CLK" group="B" id="LCD_CLK" pin="80"/>
+        <function comments="LCD-VSYNC" group="B" id="LCD_TCON0" pin="81"/>
+        <function comments="LCD-DISP-EN" group="" id="PB3" pin="82"/>
+        <function comments="LCD-HSYNC" group="B" id="LCD_TCON2" pin="83"/>
+        <function comments="LCD-DATA-EN" group="B" id="LCD_TCON3" pin="84"/>
+        <function comments="ET0MDC" group="" id="ET0_MDC" pin="85"/>
+        <function comments="ET0MDIO" group="" id="ET0_MDIO" pin="86"/>
+        <function comments="LCD-B3" group="B" id="LCD_DATA0" pin="87"/>
+        <function comments="LCD-B4" group="B" id="LCD_DATA1" pin="88"/>
+        <function comments="LCD-B5" group="B" id="LCD_DATA2" pin="89"/>
+        <function comments="LCD-B6" group="B" id="LCD_DATA3" pin="90"/>
+        <function comments="LCD-B7" group="B" id="LCD_DATA4" pin="92"/>
+        <function comments="LCD-G2" group="B" id="LCD_DATA5" pin="94"/>
+        <function comments="LCD-G3" group="B" id="LCD_DATA6" pin="95"/>
+        <function comments="LCD-G4" group="B" id="LCD_DATA7" pin="96"/>
+        <function comments="LCD-G5" group="B" id="LCD_DATA8" pin="97"/>
+        <function comments="LCD-BACKLIGHT" group="" id="P67" pin="98"/>
+        <function comments="LCD-TOUCH-RST" group="" id="P66" pin="99"/>
+        <function comments="LCD-G6" group="B" id="LCD_DATA9" pin="101"/>
+        <function comments="LCD-G7" group="B" id="LCD_DATA10" pin="102"/>
+        <function comments="LCD-R3" group="B" id="LCD_DATA11" pin="106"/>
+        <function comments="LCD-R4" group="B" id="LCD_DATA12" pin="107"/>
+        <function comments="LCD-R5" group="B" id="LCD_DATA13" pin="108"/>
+        <function comments="LCD-R6" group="B" id="LCD_DATA14" pin="109"/>
+        <function comments="LCD-R7" group="B" id="LCD_DATA15" pin="110"/>
+        <function comments="QSPI-SO/SIO1" group="B" id="QIO1" pin="119"/>
+        <function comments="QSPI-SI/SIO0" group="B" id="QIO0" pin="120"/>
+        <function comments="QSPI-SCLK" group="B" id="QSPCLK" pin="121"/>
+        <function comments="QSPI-CS#" group="B" id="QSSL" pin="122"/>
+        <function comments="QSPI-HOLD#/SIO3" group="B" id="QIO3" pin="123"/>
+        <function comments="QSPI-WP#/SIO2" group="B" id="QIO2" pin="124"/>
+        <function comments="PMOD2-RST" group="" id="PD1" pin="125"/>
+        <function comments="PMOD2-IRQ" group="" id="IRQ0" pin="126"/>
+        <function comments="PMOD2-SS" group="" id="SS7#" pin="127"/>
+        <function comments="PMOD2-MISO" group="" id="SMISO7" pin="128"/>
+        <function comments="PMOD2-SCK" group="" id="SCK7" pin="129"/>
+        <function comments="PMOD2-MOSI" group="" id="SMOSI7" pin="131"/>
+        <function comments="PMOD2-IO1" group="" id="P47" pin="133"/>
+        <function comments="PMOD2-IO0" group="" id="P46" pin="134"/>
+        <function comments="WiFi-EN" group="" id="P43" pin="137"/>
+        <function comments="SD-ENABLE" group="" id="P42" pin="138"/>
+        <function comments="SD-FLT" group="" id="IRQ9" pin="139"/>
+        <function comments="LED2" group="" id="P40" pin="141"/>
+        <function comments="SW2" group="" id="IRQ15" pin="144"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="16"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul30-1"/>
+        <item id="pplldivider" value="div1-1"/>
+        <item id="ppllmul" value="mul12_5-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckomain"/>
+        <item id="usbswitcher" value="usbuclk"/>
+        <item id="physwitcher" value="phyppll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-3"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="uckenable" value="check"/>
+        <item id="uckdivider" value="comboBox1-5"/>
+        <item id="pplldiv" value="comboBox1-4"/>
+        <item id="outckdivider" value="comboBox1-8"/>
+        <item id="ckodivider" value="comboBox1-1"/>
+        <item id="sdclkenable" value="uncheck"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="EnvisionKitRX72N" html="" id="EnvisionKitRX72N" partNumber="R5F572NNHxFB"/>
+    <info version="V1.12"/>
+</boardInfo>
