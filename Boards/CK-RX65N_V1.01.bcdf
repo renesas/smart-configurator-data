@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="CK-RX65N" version="1.00">
+<boardDescription id="CK-RX65N" version="1.01">
 	<supportedBoard>
 		<!-- Board id and version refer to bdf -->
-		<board id="CK-RX65N" version="V1.00"/>
+		<board id="CK-RX65N" version="V1.01"/>
 	</supportedBoard>
 	<boardFeature>
 		<!-- Board features to be placed here -->
