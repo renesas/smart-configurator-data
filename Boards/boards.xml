@@ -44,16 +44,16 @@
   <board id="CloudKitRX65N" version="1.12" description="Cloud Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/2ec93debdc4c65dd7c4f7856a57448ce077bd320/Boards/CloudKitRX65N_V1.12.bdf"/>
   </board>
-  <board id="CPUCardforMCUEvaluationRX66T" version="1.02" description="CPU Card for RX66T Board Description File" keys="RX">
+  <board id="CPUCardforMCUEvaluationRX66T" version="1.02" description="CPU Card for MCU Evaluation RX66T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/2ec93debdc4c65dd7c4f7856a57448ce077bd320/Boards/CPUCardforMCUEvaluationRX66T_V1.02.bdf"/>
   </board>
-  <board id="CPUCardforRSSKMotorRX66T" version="1.02" description="RX66T CPU Card+RSSK Motor Solution Board Description File" keys="RX">
+  <board id="CPUCardforRSSKMotorRX66T" version="1.02" description="CPU Card for RSSK Motor RX66T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/2ec93debdc4c65dd7c4f7856a57448ce077bd320/Boards/CPUCardforRSSKMotorRX66T_V1.02.bdf"/>
   </board>
-  <board id="CPUCardRX13T" version="1.01" description="RX13T CPU Card Board Description File" keys="RX">
+  <board id="CPUCardRX13T" version="1.01" description="CPU Card for RX13T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/2ec93debdc4c65dd7c4f7856a57448ce077bd320/Boards/CPUCardRX13T_V1.01.bdf"/>
   </board>
-  <board id="CPUCardRX24T" version="1.01" description="RX24T CPU Card Board Description File" keys="RX">
+  <board id="CPUCardRX24T" version="1.01" description="CPU Card for RX24T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/2ec93debdc4c65dd7c4f7856a57448ce077bd320/Boards/CPUCardRX24T_V1.01.bdf"/>
   </board>
   <board id="EnvisionKitRX65N" version="1.12" description="Envision Kit for RX65N Board Description File" keys="RX">
