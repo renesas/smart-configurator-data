@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="E1-MD/FINED" group="" id="FINED" pin="6"/>
+        <function comments="E1-RESET(SW1)" group="" id="RES#" pin="10"/>
+        <function comments="XTAL" group="" id="XTAL" pin="11"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="13"/>
+        <function comments="INV-BRD-LED3#" group="" id="PD7" pin="18"/>
+        <function comments="E1-RXD" group="" id="RXD1" pin="20"/>
+        <function comments="E1-TXD" group="" id="TXD1" pin="22"/>
+        <function comments="SCI5-RXD5" group="" id="RXD5" pin="27"/>
+        <function comments="SCI5-TXD5" group="" id="TXD5" pin="28"/>
+        <function comments="SCI6-TXD6" group="" id="TXD6" pin="33"/>
+        <function comments="SCI6-RXD6" group="" id="RXD6" pin="34"/>
+        <function comments="ENC-Z" group="" id="PA5" pin="36"/>
+        <function comments="LED1" group="" id="PA2" pin="39"/>
+        <function comments="LED2" group="" id="PA1" pin="40"/>
+        <function comments="HALL-HW" group="" id="P96" pin="43"/>
+        <function comments="INV-BRD-WN" group="" id="MTIOC4D" pin="51"/>
+        <function comments="INV-BRD-VN" group="" id="MTIOC4C" pin="52"/>
+        <function comments="INV-BRD-UN" group="" id="MTIOC3D" pin="53"/>
+        <function comments="INV-BRD-WP" group="" id="MTIOC4B" pin="54"/>
+        <function comments="INV-BRD-VP" group="" id="MTIOC4A" pin="55"/>
+        <function comments="INV-BRD-UP" group="" id="MTIOC3B" pin="56"/>
+        <function comments="INV-BRD-FO#" group="" id="POE0#" pin="57"/>
+        <function comments="ENC-A" group="" id="MTCLKA" pin="58"/>
+        <function comments="ENC-B" group="" id="MTCLKB" pin="59"/>
+        <function comments="INV-BRD-TEMP" group="" id="AN205" pin="69"/>
+        <function comments="INV-BRD-VPN" group="" id="AN204" pin="70"/>
+        <function comments="AVCC2" group="" id="AVCC2" pin="71"/>
+        <function comments="VREF" group="" id="VREF" pin="72"/>
+        <function comments="AVSS2" group="" id="AVSS2" pin="73"/>
+        <function comments="INV-BRD-VW" group="" id="AN203" pin="74"/>
+        <function comments="INV-BRD-VV" group="" id="AN202" pin="75"/>
+        <function comments="INV-BRD-VU" group="" id="AN201" pin="76"/>
+        <function comments="INV-BRD-VR" group="" id="AN209" pin="80"/>
+        <function comments="INV-BRD-IW" group="" id="AN102" pin="85"/>
+        <function comments="INV-BRD-IV" group="" id="AN101" pin="86"/>
+        <function comments="INV-BRD-IU" group="" id="AN100" pin="87"/>
+        <function comments="AVCC1" group="" id="AVCC1" pin="92"/>
+        <function comments="AVCC0" group="" id="AVCC0" pin="93"/>
+        <function comments="AVSS0" group="" id="AVSS0" pin="94"/>
+        <function comments="AVSS1" group="" id="AVSS1" pin="95"/>
+        <function comments="INV-BRD-SW2#" group="" id="P81" pin="97"/>
+        <function comments="INV-BRD-SW1#" group="" id="P80" pin="98"/>
+        <function comments="HALL-HV" group="" id="P11" pin="99"/>
+        <function comments="HALL-HU" group="" id="P10" pin="100"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="10"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq32"/>
+        <item id="hocowaitcycle" value="sBox142"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-2"/>
+    </clock>
+    <board display="CPUCardRX24T" html="" id="CPUCardRX24T" partNumber="R5F524TAAxFP"/>
+    <info version="V1.02"/>
+</boardInfo>
