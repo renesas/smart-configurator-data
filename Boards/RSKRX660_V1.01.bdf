@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="13">
+            <function id="CTS6#"/>
+            <function id="IRQ11"/>
+        </pin>
+        <pin id="6">
+            <function id="P02"/>
+        </pin>
+        <pin id="7">
+            <function id="RXD6"/>
+            <function id="P01"/>
+        </pin>
+        <pin id="8">
+            <function id="TXD6"/>
+            <function id="P00"/>
+        </pin>
+        <pin id="32">
+            <function id="RXD3"/>
+            <function id="P25"/>
+        </pin>
+        <pin id="33">
+            <function id="P24"/>
+        </pin>
+        <pin id="34">
+            <function id="TXD3"/>
+            <function id="P23"/>
+        </pin>
+        <pin id="37">
+            <function id="IRQ8"/>
+        </pin>
+        <pin id="50">
+            <function id="IRQ6"/>
+        </pin>
+        <pin id="63">
+            <function id="IRQ2"/>
+        </pin>
+        <pin id="78">
+            <function id="TXD9"/>
+        </pin>
+        <pin id="79">
+            <function id="RXD9"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="LED3" group="" id="P06" pin="3"/>
+        <function comments="LED2" group="" id="P04" pin="5"/>
+        <function comments="PMOD1-SCK" group="" id="SCK6" pin="6"/>
+        <function comments="PMOD1-MISO" group="" id="SMISO6" pin="7"/>
+        <function comments="PMOD1-MOSI" group="" id="SMOSI6" pin="8"/>
+        <function comments="LED1" group="" id="PF5" pin="9"/>
+        <function comments="EMLE" group="" id="EMLE" pin="10"/>
+        <function comments="PMOD1-CS" group="" id="PJ3" pin="13"/>
+        <function comments="MD_FINED" group="" id="FINED" pin="16"/>
+        <function comments="XCIN" group="" id="XCIN" pin="17"/>
+        <function comments="XCOUT" group="" id="XCOUT" pin="18"/>
+        <function comments="RES" group="" id="RES#" pin="19"/>
+        <function comments="XTAL" group="" id="XTAL" pin="20"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="22"/>
+        <function comments="TRST" group="" id="TRST#" pin="25"/>
+        <function comments="CAN-RX" group="A" id="CRX0" pin="26"/>
+        <function comments="CAN-TX" group="A" id="CTX0" pin="27"/>
+        <function comments="TMS" group="" id="TMS" pin="28"/>
+        <function comments="TDI_RXD" group="" id="TDI" pin="29"/>
+        <function comments="TCK" group="" id="TCK" pin="30"/>
+        <function comments="TDO_TXD" group="" id="TDO" pin="31"/>
+        <function comments="PMOD2-MISO" group="" id="SMISO3" pin="32"/>
+        <function comments="PMOD2-SCK" group="" id="SCK3" pin="33"/>
+        <function comments="PMOD2-MOSI" group="" id="SMOSI3" pin="34"/>
+        <function comments="PMOD2-CS" group="" id="P20" pin="37"/>
+        <function comments="LED0" group="" id="P17" pin="38"/>
+        <function comments="SERIAL-TXD" group="" id="TXD10" pin="39"/>
+        <function comments="SERIAL-RTS" group="" id="P16" pin="40"/>
+        <function comments="SERIAL-RXD" group="" id="RXD10" pin="41"/>
+        <function comments="E2P-SDA" group="" id="SDA0" pin="44"/>
+        <function comments="E2P-SCL" group="" id="SCL0" pin="45"/>
+        <function comments="PMOD1-IO0" group="" id="P56" pin="50"/>
+        <function comments="UB" group="" id="UB" pin="60"/>
+        <function comments="REMC_PMC0" group="" id="PMC0" pin="62"/>
+        <function comments="PMOD2-IO0" group="" id="P82" pin="63"/>
+        <function comments="PMOD1-IO1" group="" id="PL0" pin="76"/>
+        <function comments="PMOD2-IO2" group="" id="PB7" pin="78"/>
+        <function comments="PMOD2-IO3" group="" id="PB6" pin="79"/>
+        <function comments="PMOD1-IO3" group="" id="P72" pin="85"/>
+        <function comments="PMOD1-IO2" group="" id="P71" pin="86"/>
+        <function comments="LIN-RX" group="" id="RXDX12" pin="109"/>
+        <function comments="LIN-TX" group="" id="TXDX12" pin="110"/>
+        <function comments="SW2" group="" id="IRQ10" pin="128"/>
+        <function comments="SW1" group="" id="IRQ9" pin="129"/>
+        <function comments="LIN-NSLP" group="" id="PF7" pin="130"/>
+        <function comments="PMOD2-IO1" group="" id="P90" pin="131"/>
+        <function comments="VREFL0" group="" id="VREFL0" pin="140"/>
+        <function comments="RV1-ADC" group="" id="AN000" pin="141"/>
+        <function comments="VREFH0" group="" id="VREFH0" pin="142"/>
+        <function comments="SW3" group="" id="ADTRG0#" pin="144"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="24"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="hocofllenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul10-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-4"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="cfdckdivider" value="comboBox1-4"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="RSKRX660" html="" id="RSKRX660" partNumber="R5F56609HxFB"/>
+    <info version="V1.01"/>
+</boardInfo>
