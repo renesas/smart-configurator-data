@@ -1,0 +1,161 @@
+* {
+  font-family: "Open Sans",Helvetica,Arial,"Lucida Grande","Nimbus Sans L","sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 5px 0px;
+}
+
+a:link {
+  color: #131184;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4BA3D3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 16px;
+  color: #4BA3D3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #131184;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body{
+  background: #f4f7fa;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: min(300px, 20%);
+  min-width: 250px;
+  height: 100%;
+  background-color: #131184;
+  color: #ffffff;
+}
+
+.wrapper .sidebar .logo-container {
+  display: flex;
+  background-color: #2a289d;
+  width: 100%;
+  justify-content: center;
+}
+
+.wrapper .sidebar .logo-container .logo {
+  padding: 25px 0px;
+}
+
+.wrapper .sidebar h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapper .sidebar ul {
+  padding-right: 15px;
+}
+
+.wrapper .sidebar a:link {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.wrapper .sidebar a:visited {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.wrapper .sidebar a:hover {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4BA3D3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.wrapper .sidebar a:active {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: clamp(250px, 20%, 300px);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.header h1 {
+  font-family: Oswald;
+  font-weight: bold;
+}
+
+.video-wrapper {
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 6%);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.video-contents {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  width: 30%;
+  min-width: 300px;
+}
+
+.video-wrapper .video-contents iframe {
+  width: 80%;
+  aspect-ratio: 98/55;
+  margin: 0px auto;
+}
+
+.video-wrapper .video-contents h3 {
+  font-weight: bold;
+  min-height: 50px;
+  margin: 15px 0px;
+}
+
+.video-wrapper .video-contents a {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+footer {
+  margin: 30px 0px;
+}
