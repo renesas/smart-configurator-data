@@ -108,6 +108,7 @@ body{
 
 .main-content {
   margin-left: clamp(250px, 20%, 300px);
+  width: 100%;
 }
 
 .header {
