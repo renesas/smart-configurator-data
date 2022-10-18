@@ -57,9 +57,6 @@
   <board id="CPUCardRX24T" version="1.02" description="CPU Card for RX24T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e04e7c6ff18d26fb18c4388901afbebe1fea3131/Boards/CPUCardRX24T_V1.02.bdf"/>
   </board>
-  <board id="EK-RX671" version="1.00" description="Evaluation Kit for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e04e7c6ff18d26fb18c4388901afbebe1fea3131/Boards/EK-RX671_V1.00.bdf"/>
-  </board>
   <board id="EnvisionKitRX65N" version="1.13" description="Envision Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e04e7c6ff18d26fb18c4388901afbebe1fea3131/Boards/EnvisionKitRX65N_V1.13.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e04e7c6ff18d26fb18c4388901afbebe1fea3131/Boards/EnvisionKitRX65N_V1.00.bcdf"/>
