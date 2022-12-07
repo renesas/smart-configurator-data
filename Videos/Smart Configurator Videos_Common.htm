@@ -16,43 +16,59 @@
                     <img class="logo" src="./header-w.svg" alt="Renesas Electronics Corporation">
                 </div>
                 <h2>Content</h2>
-                <ul>
-                    <!-- Add videos list here -->
-                    <li><a href="#_Toc87439352">Smart Configurator Introduction</a></li>
-                    <li><a href="#_Toc87439353">How to Create a Smart Configurator project in e² studio</a></li>
+                <ul id="content_list">
                 </ul>
             </div>
             <div class="main-content">
                 <div class="header">
-                    <h1>Smart Configurator Videos"</h1>
+                    <h1>Smart Configurator Videos</h1>
                 </div>
-                <div class="video-wrapper">
-                    <!-- repeat video-contents class -->
-                    <div class="video-contents">
-                        <a id="_Toc87439352"></a>
-                        <iframe src="https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=5819365850001" 
-                        allowfullscreen=allowfullscreen></iframe>
-                        <h3>Smart Configurator Introduction</h3>
-                        <div class="video-description">
-                            <p></p>
-                            <p>Date of Upload: 2018-08-08</p>
-                        </div>
-                        <a href="https://www.renesas.com/video/smart-configurator-introduction">View on Renesas website</a>
-                    </div>
-                    <div class="video-contents">
-                        <a id="_Toc87439353"></a>
-                        <iframe src="https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286881148001" 
-                        allowfullscreen=allowfullscreen></iframe>
-                        <h3>How to Create a Smart Configurator project in e² studio</h3>
-                        <div class="video-description">
-                            <p>This video demonstrates how to create a Smart Configurator project in e² studio.</p>
-                            <p>Date of upload: 2021-12-15</p>
-                        </div>
-                        <a href="https://www.renesas.com/video/how-create-smart-configurator-project-e-studio">View on Renesas website</a>
-                    </div>
+                <div class="video-wrapper" id="video-wrapper">
                 </div>
             </div>
         </div>
+
+        <script>
+            var xmlFile = 'https://raw.githubusercontent.com/renesas/smart-configurator-data/master/Videos/videos_info.xml';
+            var device = "COMMON";
+
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+
+                xhttp.open("GET", xmlFile, true);
+                xhttp.send();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState === 4 && this.status === 200) {
+                        xmlFunction(this.response);
+                    }
+                };
+            }
+
+            function xmlFunction(xml) {
+                var parser = new DOMParser();
+                var xmlDoc = parser.parseFromString(xml, "text/xml");
+                var x = xmlDoc.getElementsByTagName("info");
+                for (var elem of x) {
+                    var devices = elem.getAttribute("device");
+                    if (devices && !devices.includes(device)) {
+                        continue;
+                    }
+                    var id = elem.getElementsByTagName("id")[0].textContent;
+                    var title = elem.getElementsByTagName("title")[0].textContent;
+                    var video = elem.getElementsByTagName("iframe")[0].textContent;
+                    var description = elem.getElementsByTagName("description")[0].textContent;
+                    var date = elem.getElementsByTagName("date")[0].textContent;
+                    var link = elem.getElementsByTagName("renesaslink")[0].textContent;
+
+                    document.getElementById("content_list").innerHTML += "<li><a href=\"#" + id + "\">" + title + "</a></li>";
+                    document.getElementById("video-wrapper").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                      "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                      "<div class=\"video-description\"><p>" + description + "</p><p><br>" + date + "</p></div>" + 
+                      "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                }
+            }
+            loadDoc();
+        </script>
         
         <footer></footer>
 
