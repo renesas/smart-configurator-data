@@ -7,22 +7,27 @@
         <meta name="description" content="List of videos on how to use the Renesas Smart Configurator tool">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
         <div class="wrapper">
-            <div class="sidebar">
+            <div class="header-content">
                 <div class="logo-container">
                     <img class="logo" src="./header-w.svg" alt="Renesas Electronics Corporation">
                 </div>
-                <h2>Content</h2>
-                <ul id="content_list">
-                </ul>
-            </div>
-            <div class="main-content">
                 <div class="header">
                     <h1>Smart Configurator Videos for RX Family</h1>
+                    <div class="info notification">
+                        <span aria-hidden="true" class="material-icons">info</span>
+                        <strong>New Videos</strong>
+                        <ul id="new-video" style="margin-bottom: 0.2em;">
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="main-content">
                 <div class="video-wrapper" id="video-wrapper">
                 </div>
             </div>
@@ -60,10 +65,15 @@
                     var date = elem.getElementsByTagName("date")[0].textContent;
                     var link = elem.getElementsByTagName("renesaslink")[0].textContent;
 
-                    document.getElementById("content_list").innerHTML += "<li><a href=\"#" + id + "\">" + title + "</a></li>";
+                    var recent = elem.getAttribute("recent");
+                    if (recent == "true") {
+                        document.getElementById("new-video").innerHTML += "<li style=\"list-style-type: none;\">" + date + 
+                            ": <a href=\"" + link + "\">" + title + "</a></li>";
+                    }
+
                     document.getElementById("video-wrapper").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
                       "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
-                      "<div class=\"video-description\"><p>" + description + "</p><p><br>" + date + "</p></div>" + 
+                      "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
                       "<a href=\"" + link + "\">View on Renesas website</a></div>";
                 }
             }
