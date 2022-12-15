@@ -5,7 +5,7 @@
         <title>Smart Configurator Introduction</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=5819365850001</iframe>
         <description></description>
-        <date>Date of Upload: 2018-08-08</date>
+        <date>2018-08-08</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-introduction</renesaslink>
     </info>
     <info device="RX" recent="true">
@@ -13,7 +13,7 @@
         <title>Introduction of Smart Configurator for RX family</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6316364357112</iframe>
         <description>This video introduces the Smart Configurator for the RX family.</description>
-        <date>Date of Upload: 2022-12-01</date>
+        <date>2022-12-01</date>
         <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rx-family</renesaslink>
     </info>
     <info device="RX || RL78 || COMMON">
@@ -21,7 +21,7 @@
         <title>How to Create a Smart Configurator project in e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286881148001</iframe>
         <description>This video demonstrates how to create a Smart Configurator project in e² studio.</description>
-        <date>Date of upload: 2021-12-15</date>
+        <date>2021-12-15</date>
         <renesaslink>https://www.renesas.com/video/how-create-smart-configurator-project-e-studio</renesaslink>
     </info>
     <info device="RX">
@@ -29,7 +29,7 @@
         <title>Smart Configurator - A/D Convertor Potentiometer to Control LED Blinking</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=5819363745001</iframe>
         <description>The objective of this video is to create an A/D converter program (potentiometer to control LED blinking) by using Smart Configurator.</description>
-        <date>Date of upload: 2018-08-08</date>
+        <date>2018-08-08</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-ad-convertor-potentiometer-control-led-blinking</renesaslink>
     </info>
     <info device="RX">
@@ -37,7 +37,7 @@
         <title>Smart Configurator Application Example1 - CMT Driver (LED blinking)</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=5819365283001</iframe>
         <description>The objective of this video is to create a LED blinking program by using Smart Configurator.</description>
-        <date>Date of upload: 2018-08-08</date>
+        <date>2018-08-08</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-application-example1-cmt-driver-led-blinking</renesaslink>
     </info>
     <info device="RX">
@@ -45,7 +45,7 @@
         <title>How to Use the Smart Configurator and FIT Modules with IAR EW for RX</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6128480102001</iframe>
         <description></description>
-        <date>Date of upload: 2020-01-31</date>
+        <date>2020-01-31</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-and-fit-modules-iar-ew-rx</renesaslink>
     </info>
     <info device="RX">
@@ -54,7 +54,7 @@
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279284262001</iframe>
         <description>This video introduces a feature for easy download of missing FIT modules in your imported project.
             By using this feature, you can download all the missing FIT modules with just one click.</description>
-        <date>Date of upload: 2021-10-29</date>
+        <date>2021-10-29</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-feature-easy-download-missing-fit-modules-your-imported-project</renesaslink>
     </info>
     <info device="RX">
@@ -64,7 +64,7 @@
         <description>Most Renesas boards provide several features for developing applications on Renesas microcontroller. 
             To assist the development of these applications, Smart configurator now includes a new functionality for selecting suitable software for each of these board features. 
             This video will demonstrate this new functionality using the Renesas Starter Kit+ for RX671.</description>
-        <date>Date of upload: 2021-12-20</date>
+        <date>2021-12-20</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-feature-easy-selection-software-components-renesas-boards</renesaslink>
     </info>
     <info device="RX">
@@ -72,7 +72,7 @@
         <title>Smart Configurator Tips - How to display pre-downloaded FIT modules in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6288247025001</iframe>
         <description>This video shows how to display pre-downloaded FIT modules in Smart Configurator.</description>
-        <date>Date of upload: 2021-12-23</date>
+        <date>2021-12-23</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-tips-how-display-pre-downloaded-fit-modules-smart-configurator</renesaslink>
     </info>
     <info device="RL78">
@@ -80,7 +80,7 @@
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (1/3) - Create Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6246659188001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
-        <date>Date of upload: 2021-04-05</date>
+        <date>2021-04-05</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-13-create-project-rl78g23</renesaslink>
     </info>
     <info device="RL78">
@@ -88,7 +88,7 @@
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (2/3) - Configure Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279705475001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
-        <date>Date of upload: 2021-11-01</date>
+        <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-23-configure-project-rl78g23</renesaslink>
     </info>
     <info device="RL78">
@@ -96,7 +96,7 @@
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (3/3) - Add User Code and Run Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279704885001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
-        <date>Date of upload: 2021-11-01</date>
+        <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-33-add-user-code-and-run-project-rl78g23</renesaslink>
     </info>
     <info device="RL78">
@@ -104,7 +104,7 @@
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (1/2) - Installation</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286870464001</iframe>
         <description>This video demonstrates how to install IAR Embedded Workbench for RL78 and Smart Configurator.</description>
-        <date>Date of upload: 2021-12-15</date>
+        <date>2021-12-15</date>
         <renesaslink>https://www.renesas.com/video/using-smart-configurator-iar-embedded-workbench-rl78-12-installation</renesaslink>
     </info>
     <info device="RL78">
@@ -112,7 +112,7 @@
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (2/2) - Creating an EWB Project for Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286872286001</iframe>
         <description>This video demonstrates how to create an Embedded Workbench project collaborates with Smart Configurator.</description>
-        <date>Date of upload: 2021-12-15</date>
+        <date>2021-12-15</date>
         <renesaslink>https://www.renesas.com/video/using-smart-configurator-iar-embedded-workbench-rl78-22-creating-ewb-project-smart-configurator</renesaslink>
     </info>
     <info device="RX || RL78">
@@ -120,7 +120,7 @@
         <title>Smart Configurator Feature - Easy Transfer of Component Settings from One Project to Another</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6300829921001</iframe>
         <description>This video demonstrates how to transfer component settings from one project to another when using Smart Configurator.</description>
-        <date>Date of upload: 2022-3-16</date>
+        <date>2022-3-16</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-feature-easy-transfer-component-settings-one-project-another</renesaslink>
     </info>
     <info device="RX || RL78" recent="true">
@@ -129,7 +129,7 @@
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314306435112</iframe>
         <description>This video introduces the Smart Configurator Developer Assistance feature that helps you code with ease, 
             improving software development efficiency.</description>
-        <date>Date of upload: 2022-10-25</date>
+        <date>2022-10-25</date>
         <renesaslink>https://www.renesas.com/video/easy-coding-e-studio-smart-configurator-developer-assistance-feature</renesaslink>
         <new></new>
     </info>
@@ -138,7 +138,7 @@
         <title>How to use FIT samples using Smart Configurator in e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314933649112</iframe>
         <description>This video shows how to use the sample projects bundled with FIT modules using Smart Configurator in e² studio.</description>
-        <date>Date of upload: 2022-11-05</date>
+        <date>2022-11-05</date>
         <renesaslink>https://www.renesas.com/video/how-use-fit-samples-using-smart-configurator-e-studio</renesaslink>
         <new></new>
     </info>
