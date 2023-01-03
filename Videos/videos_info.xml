@@ -123,6 +123,14 @@
         <date>2022-3-16</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-feature-easy-transfer-component-settings-one-project-another</renesaslink>
     </info>
+    <info device="RX" recent="true">
+        <id>_Toc87439362</id>
+        <title>How to use FIT samples using Smart Configurator in e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314933649112</iframe>
+        <description>This video shows how to use the sample projects bundled with FIT modules using Smart Configurator in e² studio.</description>
+        <date>2022-11-05</date>
+        <renesaslink>https://www.renesas.com/video/how-use-fit-samples-using-smart-configurator-e-studio</renesaslink>
+    </info>
     <info device="RX || RL78" recent="true">
         <id>_Toc87439361</id>
         <title>Easy Coding in e² studio With the Smart Configurator Developer Assistance Feature</title>
@@ -131,15 +139,5 @@
             improving software development efficiency.</description>
         <date>2022-10-25</date>
         <renesaslink>https://www.renesas.com/video/easy-coding-e-studio-smart-configurator-developer-assistance-feature</renesaslink>
-        <new></new>
-    </info>
-    <info device="RX" recent="true">
-        <id>_Toc87439362</id>
-        <title>How to use FIT samples using Smart Configurator in e² studio</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314933649112</iframe>
-        <description>This video shows how to use the sample projects bundled with FIT modules using Smart Configurator in e² studio.</description>
-        <date>2022-11-05</date>
-        <renesaslink>https://www.renesas.com/video/how-use-fit-samples-using-smart-configurator-e-studio</renesaslink>
-        <new></new>
     </info>
 </videos>
