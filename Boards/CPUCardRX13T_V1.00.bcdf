@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="CPUCardRX13T" version="1.00">
+    <supportedBoard>
+        <!-- Board id and version refer to bdf -->
+        <board id="CPUCardRX13T" version="1.02"/>
+    </supportedBoard>
+    <boardFeature>
+        <!-- Board features to be placed here -->
+        <feature name="Application Header" type="Header"/>
+        <feature name="LEDs" jName="LEDs">
+            <components> 
+                <configuration name="Config_PORT"/>
+            </components> 
+        </feature>
+    </boardFeature>
+    <tool id="SWComponent" version="1.0.0.0">
+        <!-- Exported configurations to be placed here -->
+        <configuration apiMode="FULL_API" id="5496fa7e-a4aa-4925-be43-1b117d2e7604" inuse="true" name="Config_PORT">
+            <allocatable id="Port" name="Port">
+                <allocatable id="PORT1_Check" name="PORT1">
+                    <option enabled="true" id="PortnEnable" name="Port1 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORT2_Check" name="PORT2">
+                    <option enabled="true" id="PortnEnable" name="Port2 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORT3_Check" name="PORT3">
+                    <option enabled="true" id="PortnEnable" name="Port3 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORT4_Check" name="PORT4">
+                    <option enabled="true" id="PortnEnable" name="Port4 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORT7_Check" name="PORT7">
+                    <option enabled="true" id="PortnEnable" name="Port7 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORT9_Check" name="PORT9">
+                    <option enabled="true" id="PortnEnable" name="Port9 Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORTA_Check" name="PORTA">
+                    <option enabled="true" id="PortnEnable" name="PortA Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORTB_Check" name="PORTB">
+                    <option enabled="true" id="PortnEnable" name="PortB Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORTD_Chan" name="PORTD">
+                    <allocatable id="PORTx3_Item" name="PORTD3">
+                        <option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+                            <item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Highdrive" name="High-drive output" selection="HighdriveUnuse">
+                            <item id="HighdriveUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="HighdriveUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="FixHighdrive" input="" name="Fixed high-drive output" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="PORTx4_Item" name="PORTD4">
+                        <option enabled="true" id="UseStatus" name="Use status" selection="Out">
+                            <item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Highdrive" name="High-drive output" selection="HighdriveUnuse">
+                            <item id="HighdriveUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="HighdriveUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="FixHighdrive" input="" name="Fixed high-drive output" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="PORTx5_Item" name="PORTD5">
+                        <option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+                            <item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Highdrive" name="High-drive output" selection="HighdriveUnuse">
+                            <item id="HighdriveUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="HighdriveUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="FixHighdrive" input="" name="Fixed high-drive output" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable id="PORTx6_Item" name="PORTD6">
+                        <option enabled="true" id="UseStatus" name="Use status" selection="Out">
+                            <item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" id="Highdrive" name="High-drive output" selection="HighdriveUnuse">
+                            <item id="HighdriveUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item id="HighdriveUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item id="FixHighdrive" input="" name="Fixed high-drive output" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <option enabled="true" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+                        <item id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+                        <item id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" id="UseStatusAll" name="Use status" selection="UnuseAll">
+                        <item id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                        <item id="InAll" input="" name="In" type="static" vlaue="0"/>
+                        <item id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+                        <item id="UnuseAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item id="InAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item id="OutAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" id="PullupAll" name="Pull-up" selection="PullupUnuseAll">
+                        <item id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" id="OpendrainAll" name="Open-drain all" selection="CMOSAll">
+                        <item id="CMOSAll" input="" name="CMOS output" type="static" vlaue="0"/>
+                        <item id="NChanelAll" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        <item id="OpendrainAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" id="Output1All" name="Output 1" selection="Output1UnuseAll">
+                        <item id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" id="HighdriveAll" name="High-drive output" selection="HighdriveUnuseAll">
+                        <item id="HighdriveUseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item id="HighdriveUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item id="HighdriveAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORTD_Check" name="PORTD">
+                    <option enabled="true" id="PortnEnable" name="PortD Enable" selection="Enable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable id="PORTE_Check" name="PORTE">
+                    <option enabled="true" id="PortnEnable" name="PortE Enable" selection="Disable">
+                        <item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <osocket id="PORTINFO" value=";PD4_O;PD6_O;"/>
+            </allocatable>
+            <component description="This software component provides configurations for General Purpose Input/Output. Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.4.0"/>
+            <allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.swc.cg.rx.port.rx13t.PORT" type="">
+                <context/>
+            </allocator>
+            <source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+        </configuration>
+        <configuration inuse="true" name="r_bsp">
+            <component description="Dependencies : None&#10;The r_bsp package provides a foundation for code to be built on top of. It provides startup code, iodefines, and MCU information for different boards. There are 2 folders that make up the r_bsp package. The 'mcu' folder contains files that are common to a MCU group. These files provide functionality such as easy register access, CPU functions, and a file named 'mcu_info.h' for each MCU group. The 'mcu_info.h' file has information about the MCU on the board and is configured based on the information given in r_bsp_config.h. The information in 'mcu_info.h' is used to help configure Renesas middleware that uses the r_bsp package. The 'board' folder has a folder with startup code for each supported board.  Which MCU and board is chosen is decided by the settings in 'platform.h'. The user can choose which board they are using by uncommenting the include path that applies to their board. For example, if you are using the RSK+RX64M then you would uncomment the #include &quot;./board/generic_rx64m/r_bsp.h&quot; include path. Users are encouraged to add their own boards to the 'board' directory. BSPs are configured by using the r_bsp_config.h file. Each board will have a reference configuration file named r_bsp_config_reference.h. The user should copy this file to their project, rename it to r_bsp_config.h, and use the options inside the file to configure the BSP for their project." detailDescription="Board Support Packages." display="r_bsp" id="r_bsp7.20" version="7.20">
+                <gridItem id="BSP_CFG_USER_STACK_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_USTACK_BYTES" selectedIndex="0x400"/>
+                <gridItem id="BSP_CFG_ISTACK_BYTES" selectedIndex="0x100"/>
+                <gridItem id="BSP_CFG_HEAP_BYTES" selectedIndex="0x400"/>
+                <gridItem id="BSP_CFG_IO_LIB_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_USER_CHARGET_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_CHARGET_FUNCTION" selectedIndex="my_sw_charget_function"/>
+                <gridItem id="BSP_CFG_USER_CHARPUT_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_CHARPUT_FUNCTION" selectedIndex="my_sw_charput_function"/>
+                <gridItem id="BSP_CFG_RUN_IN_USER_MODE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_1" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_2" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_3" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_4" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_TYPE" selectedIndex="bsp_lock_t"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_HW_LOCK_FUNCTION" selectedIndex="my_hw_locking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_HW_UNLOCK_FUNCTION" selectedIndex="my_hw_unlocking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_SW_LOCK_FUNCTION" selectedIndex="my_sw_locking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_SW_UNLOCK_FUNCTION" selectedIndex="my_sw_unlocking_function"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_PRE_INITC_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_PRE_C_FUNCTION" selectedIndex="my_sw_warmstart_prec_function"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_POST_INITC_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_POST_C_FUNCTION" selectedIndex="my_sw_warmstart_postc_function"/>
+                <gridItem id="BSP_CFG_PARAM_CHECKING_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_FIT_IPL_MAX" selectedIndex="15"/>
+                <gridItem id="BSP_CFG_SWINT_UNIT1_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_SWINT_TASK_BUFFER_NUMBER" selectedIndex="8"/>
+                <gridItem id="BSP_CFG_SWINT_IPR_INITIAL_VALUE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_CHANNEL" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_BITRATE" selectedIndex="115200"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_INTERRUPT_PRIORITY" selectedIndex="15"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+    </tool>
+</boardDescription>
