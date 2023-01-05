@@ -87,6 +87,9 @@ body{
 
 .notification.info .material-icons {
     color: #2a289d;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
 }
 
 .main-content {
