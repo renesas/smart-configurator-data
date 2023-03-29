@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="LED3" group="" id="P06" pin="1"/>
+        <function comments="LED1" group="" id="P03" pin="2"/>
+        <function comments="LED2" group="" id="P04" pin="3"/>
+        <function comments="VCL" group="" id="UNASSIGNED_4" pin="4"/>
+        <function comments="MD_FINED" group="" id="FINED" pin="6"/>
+        <function comments="SW2(Reset)" group="" id="RES#" pin="9"/>
+        <function comments="VSS" group="" id="UNASSIGNED_11" pin="11"/>
+        <function comments="VCC" group="" id="UNASSIGNED_13" pin="13"/>
+        <function comments="SW3" group="" id="NMI" pin="14"/>
+        <function comments="TS0(Slider)" group="" id="TS0" pin="16"/>
+        <function comments="TS1(Slider)" group="" id="TS1" pin="17"/>
+        <function comments="TS2(Slider)" group="" id="TS2" pin="18"/>
+        <function comments="TS3(Slider)" group="" id="TS3" pin="19"/>
+        <function comments="TS4(Slider)" group="" id="TS4" pin="20"/>
+        <function comments="TS5(Slider_Shield)" group="" id="TS5" pin="25"/>
+        <function comments="TS6(Button_Shield)" group="" id="TS6" pin="26"/>
+        <function comments="SW5" group="" id="IRQ3" pin="27"/>
+        <function comments="SW4" group="" id="IRQ2" pin="28"/>
+        <function comments="TS7(Button)" group="" id="TS7" pin="29"/>
+        <function comments="TS8(Button)" group="" id="TS8" pin="30"/>
+        <function comments="TS9(Button)" group="" id="TS9" pin="31"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="38"/>
+        <function comments="TS21(Wheel_Shield)" group="" id="TS21" pin="44"/>
+        <function comments="VCC" group="" id="UNASSIGNED_48" pin="48"/>
+        <function comments="VSS" group="" id="UNASSIGNED_50" pin="50"/>
+        <function comments="TS27(Wheel)" group="" id="TS27" pin="52"/>
+        <function comments="TS30(Wheel)" group="" id="TS30" pin="55"/>
+        <function comments="LED_ROW1" group="" id="PE5" pin="58"/>
+        <function comments="TS33(Wheel)" group="" id="PE4" pin="59"/>
+        <function comments="TS35(Wheel)" group="" id="TS35" pin="61"/>
+        <function comments="SERIAL-RXD" group="" id="RXD6" pin="65"/>
+        <function comments="SERIAL-TXD" group="" id="TXD6" pin="66"/>
+        <function comments="LED_COL0" group="" id="P47" pin="67"/>
+        <function comments="LED_COL1" group="" id="P46" pin="68"/>
+        <function comments="LED_COL2" group="" id="P45" pin="69"/>
+        <function comments="LED_COL3" group="" id="P44" pin="70"/>
+        <function comments="LED_ROW2" group="" id="P40" pin="75"/>
+        <function comments="LED_ROW3" group="" id="PJ6" pin="76"/>
+        <function comments="AVCC0" group="" id="UNASSIGNED_77" pin="77"/>
+        <function comments="AVSS0" group="" id="UNASSIGNED_79" pin="79"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocofrequency" value="32"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-1"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="ckodivider" value="comboBox1-2"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="RSSKRX130" html="" id="RSSKRX130" partNumber="R5F51305AxFN"/>
+    <info version="V1.00"/>
+</boardInfo>
