@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="CK-RX65N" version="1.01">
+<boardDescription id="CK-RX65N" version="1.02">
 	<supportedBoard>
 		<!-- Board id and version refer to bdf -->
 		<board id="CK-RX65N" version="V1.00"/>
@@ -14,7 +14,7 @@
 				<configuration name="Config_PORT"/>
 			</components> 
 		</feature>
-		<feature name="Type 3A (Expanded UART)" jName="Type 3A (Expanded UART)">
+		<feature name="PMOD 1/2 Type 3A (Expanded UART)" jName="PMOD 1/2 Type 3A (Expanded UART)">
 			<components> 
 				<configuration name="r_cellular">
 					<dependency name="r_sci_rx"/>
@@ -30,6 +30,7 @@
 					<dependency name="r_comms_i2c_rx"/>
 					<dependency name="r_riic_rx"/>
 					<dependency name="r_sci_iic_rx"/>
+					<dependency name="r_irq_rx"/>
 					<dependency name="r_gpio_rx"/>
 				</configuration>
 			</components>
@@ -1783,23 +1784,34 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
 		<configuration inuse="true" name="r_cellular" serializeCondFulfilled="true">
-            <component description="Dependency : r_bsp version(s) 6.20&#10;Dependency : r_sci_rx version(s) 3.20&#10;Dependency : r_irq_rx version(s) 3.50&#10;Use UART to control RYZ014A and connect to the Internet." detailDescription="Cellular Module control functions for Renesas MCUs." display="r_cellular" id="r_cellular1.06" version="1.06">
+            <component description="Dependency : r_bsp version(s) 7.10&#10;Dependency : r_sci_rx version(s) 4.30&#10;Dependency : r_irq_rx version(s) 4.00&#10;Use UART to control RYZ014A and connect to the Internet." detailDescription="Cellular Module control functions for Renesas MCUs." display="r_cellular" id="r_cellular1.09" version="1.09">
                 <gridItem id="CELLULAR_CFG_AP_NAME" selectedIndex="ibasis.iot"/>
                 <gridItem id="CELLULAR_CFG_AP_USERID" selectedIndex=""/>
                 <gridItem id="CELLULAR_CFG_AP_PASSWORD" selectedIndex=""/>
                 <gridItem id="CELLULAR_CFG_PIN_CODE" selectedIndex=""/>
                 <gridItem id="CELLULAR_CFG_AUTH_TYPE" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_NETWORK_NOTIFY_LEVEL" selectedIndex="2"/>
                 <gridItem id="CELLULAR_CFG_ATC_RETRY_GATT" selectedIndex="100"/>
-                <gridItem id="CELLULAR_CFG_EX_TIMEOUT" selectedIndex="120"/>
-                <gridItem id="CELLULAR_CFG_INT_PRIORITY" selectedIndex="4"/>
+                <gridItem id="CELLULAR_CFG_EX_TIMEOUT" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_SCI_PRIORITY" selectedIndex="4"/>
                 <gridItem id="CELLULAR_CFG_SEMAPHORE_BLOCK_TIME" selectedIndex="15000"/>
+                <gridItem id="CELLULAR_CFG_PSM_PREPARATION_TIME" selectedIndex="100"/>
+                <gridItem id="CELLULAR_CFG_PSM_WAKEUP_LATENCY" selectedIndex="5000"/>
+                <gridItem id="CELLULAR_CFG_RING_LINE_ACTIVE_TIME" selectedIndex="1000"/>
+                <gridItem id="CELLULAR_CFG_URC_CHARGET_ENABLED" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_URC_CHARGET_FUNCTION" selectedIndex="my_sw_urc_charget_function"/>
                 <gridItem id="CELLULAR_CFG_DEBUGLOG" selectedIndex="0"/>
                 <gridItem id="CELLULAR_CFG_RESET_SIGNAL_LOGIC" selectedIndex="1"/>
                 <gridItem id="CELLULAR_CFG_UART_SCI_CH" selectedIndex="6"/>
-                <gridItem id="CELLULAR_CFG_RTS_PORT" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_CTS_SW_CTRL" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_CTS_PORT" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_CTS_PIN" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_PFS_SET_VALUE" selectedIndex="0x0BU"/>
+                <gridItem id="CELLULAR_CFG_RTS_PORT" selectedIndex="0"/>
                 <gridItem id="CELLULAR_CFG_RTS_PIN" selectedIndex="2"/>
-                <gridItem id="CELLULAR_CFG_RESET_PORT" selectedIndex="13"/>
-                <gridItem id="CELLULAR_CFG_RESET_PIN" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_RESET_PORT" selectedIndex="5"/>
+                <gridItem id="CELLULAR_CFG_RESET_PIN" selectedIndex="5"/>
+                <gridItem id="CELLULAR_CFG_IRQ_NUM" selectedIndex="4"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
@@ -1836,7 +1848,7 @@
                 <gridItem id="TXD5/SMOSI5/SSDA5" selectedIndex="1"/>
                 <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="1"/>
                 <gridItem id="SCI5" selectedIndex="1"/>
-                <gridItem id="SCK6" selectedIndex="1"/>
+                <gridItem id="SCK6" selectedIndex="0"/>
                 <gridItem id="RXD6/SMISO6/SSCL6" selectedIndex="1"/>
                 <gridItem id="TXD6/SMOSI6/SSDA6" selectedIndex="1"/>
                 <gridItem id="CTS6#/RTS6#/SS6#" selectedIndex="0"/>
@@ -1876,8 +1888,8 @@
                 <gridItem id="CTS12#/RTS12#/SS12#" selectedIndex="0"/>
                 <gridItem id="SCI12" selectedIndex="0"/>
                 <gridItem id="SCI_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
-                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
-                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="0"/>
                 <gridItem id="SCI_CFG_SSPI_INCLUDED" selectedIndex="0"/>
                 <gridItem id="SCI_CFG_IRDA_INCLUDED" selectedIndex="0"/>
                 <gridItem id="SCI_CFG_USE_CIRCULAR_BUFFER" selectedIndex="0"/>
