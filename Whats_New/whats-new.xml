@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <whatsnew>
-	<page family="RISCV" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v140-release-note"/>
+	<page family="ASSP_RISCV" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v140-release-note"/>
 	<page family="RH850" html="https://www.renesas.com/document/rln/smart-configurator-rh850-v170-release-note"/>
 	<page family="RL78" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v140-release-note"/>
 	<page family="RX" html="https://www.renesas.com/document/rln/smart-configurator-rx-v2150-release-note"/>
