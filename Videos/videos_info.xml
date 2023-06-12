@@ -156,12 +156,4 @@
         <date>2022-04-28</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-smart-configurator-e2-studio</renesaslink>
     </info>
-    <info device="RX || RL78 || COMMON" recent="true">
-        <id>_Toc87439365</id>
-        <title>How to Use the User Code Protection Feature in Smart Configurator</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6326334834112</iframe>
-        <description>This video shows how to use the “User code protection feature” in Smart Configurator.</description>
-        <date>2023-04-28</date>
-        <renesaslink>https://www.renesas.com/video/how-use-user-code-protection-feature-smart-configurator</renesaslink>
-    </info>
 </videos>
