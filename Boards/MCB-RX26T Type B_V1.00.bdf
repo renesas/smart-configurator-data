@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="ENC_Z (INV2)" functioncomments="ENC_Z (INV2)" group="" id="MTIOC9D" pin="1"/>
+        <function comments="EMLE" functioncomments="EMLE" group="" id="EMLE" pin="2"/>
+        <function comments="VSS" group="" id="UNASSIGNED_3" pin="3"/>
+        <function comments="FINED" functioncomments="FINED" group="" id="FINED" pin="6"/>
+        <function comments="OC# (INV2)" functioncomments="OC# (INV2)" group="" id="GTETRGA" pin="7"/>
+        <function comments="HALL_U (INV2)" functioncomments="HALL_U (INV2)" group="" id="IRQ1" pin="8"/>
+        <function comments="HALL_V (INV2)" functioncomments="HALL_V (INV2)" group="" id="IRQ2" pin="9"/>
+        <function comments="RES#" functioncomments="RES#" group="" id="RES#" pin="10"/>
+        <function comments="XTAL" functioncomments="XTAL" group="" id="XTAL" pin="11"/>
+        <function comments="EXTAL" functioncomments="EXTAL " group="" id="EXTAL" pin="13"/>
+        <function comments="HALL_W (INV2)" functioncomments="HALL_W (INV2)" group="" id="IRQ0" pin="15"/>
+        <function comments="SW1 (INV2)" functioncomments="SW1 (INV2)" group="" id="PE1" pin="16"/>
+        <function comments="Pmod_GPIO" functioncomments="Pmod_GPIO" group="" id="PE0" pin="17"/>
+        <function comments="TRST#" functioncomments="TRST#" group="" id="TRST#" pin="18"/>
+        <function comments="TMS" functioncomments="TMS" group="" id="TMS" pin="19"/>
+        <function comments="TDI" functioncomments="TDI" group="" id="TDI" pin="20"/>
+        <function comments="TCK" functioncomments="TCK" group="" id="TCK" pin="21"/>
+        <function comments="TDO" functioncomments="TDO" group="" id="TDO" pin="22"/>
+        <function comments="Pmod_GPIO" functioncomments="Pmod_GPIO" group="" id="PD2" pin="23"/>
+        <function comments="Pmod_GPIO" functioncomments="Pmod_GPIO" group="" id="PD1" pin="24"/>
+        <function comments="Pmod_GPIO" functioncomments="Pmod_GPIO" group="" id="PD0" pin="25"/>
+        <function comments="Pmod_GPIO" functioncomments="Pmod_GPIO" group="" id="PB7" pin="26"/>
+        <function comments="Pmod_RXD" functioncomments="Pmod_RXD" group="" id="RXD011" pin="27"/>
+        <function comments="Pmod_TXD" functioncomments="Pmod_TXD" group="" id="TXD011" pin="28"/>
+        <function comments="Pmod_CTS" functioncomments="Pmod_CTS" group="" id="CTS011#" pin="30"/>
+        <function comments="Pmod_IRQ" functioncomments="Pmod_IRQ" group="" id="IRQ9" pin="32"/>
+        <function comments="Pmod_SDA" functioncomments="Pmod_SDA" group="" id="SDA0" pin="33"/>
+        <function comments="Pmod_SCL" functioncomments="Pmod_SCL" group="" id="SCL0" pin="34"/>
+        <function comments="Pmod_RTS" functioncomments="Pmod_RTS" group="" id="RTS011#" pin="35"/>
+        <function comments="PA5" functioncomments="PA5" group="" id="PA5" pin="36"/>
+        <function comments="PA4" functioncomments="PA4" group="" id="PA4" pin="37"/>
+        <function comments="PA3" functioncomments="PA3" group="" id="PA3" pin="38"/>
+        <function comments="SSLA1" functioncomments="SSLA1" group="" id="SSLA1" pin="39"/>
+        <function comments="CAN_CRX" functioncomments="CAN_CRX" group="" id="CRX0" pin="40"/>
+        <function comments="CAN_CTX" functioncomments="CAN_CTX" group="" id="CTX0" pin="41"/>
+        <function comments="P96" functioncomments="P96" group="" id="P96" pin="43"/>
+        <function comments="UP (INV2)" functioncomments="UP (INV2)" group="" id="GTIOC4A" pin="45"/>
+        <function comments="VP (INV2)" functioncomments="VP (INV2)" group="" id="GTIOC5A" pin="46"/>
+        <function comments="WP (INV2)" functioncomments="WP (INV2)" group="" id="GTIOC6A" pin="47"/>
+        <function comments="UN (INV2)" functioncomments="UN (INV2)" group="" id="GTIOC4B" pin="48"/>
+        <function comments="VN (INV2)" functioncomments="VN (INV2)" group="" id="GTIOC5B" pin="49"/>
+        <function comments="WN (INV2)" functioncomments="WN (INV2)" group="" id="GTIOC6B" pin="50"/>
+        <function comments="UN (INV1)" functioncomments="UN (INV1)" group="" id="GTIOC2B" pin="51"/>
+        <function comments="VN (INV1)" functioncomments="VN (INV1)" group="" id="GTIOC1B" pin="52"/>
+        <function comments="WN (INV1)" functioncomments="WN (INV1)" group="" id="GTIOC0B" pin="53"/>
+        <function comments="UP (INV1)" functioncomments="UP (INV1)" group="" id="GTIOC2A" pin="54"/>
+        <function comments="VP (INV1)" functioncomments="VP (INV1)" group="" id="GTIOC1A" pin="55"/>
+        <function comments="WP (INV1)" functioncomments="WP (INV1)" group="" id="GTIOC0A" pin="56"/>
+        <function comments="OC# (INV1)" functioncomments="OC# (INV1)" group="" id="GTETRGB" pin="57"/>
+        <function comments="ENC_A (INV1)" functioncomments="ENC_A (INV1)" group="" id="MTCLKA" pin="58"/>
+        <function comments="ENC_B (INV1)" functioncomments="ENC_B (INV1)" group="" id="MTCLKB" pin="59"/>
+        <function comments="ENC_Z (INV1)" functioncomments="ENC_Z (INV1)" group="" id="MTIOC0A" pin="61"/>
+        <function comments="HALL_U (INV1)" functioncomments="HALL_U (INV1)" group="" id="IRQ7" pin="63"/>
+        <function comments="HALL_V (INV1)" functioncomments="HALL_V (INV1)" group="" id="IRQ15" pin="64"/>
+        <function comments="HALL_W (INV1)" functioncomments="HALL_W (INV1)" group="" id="IRQ4" pin="65"/>
+        <function comments="SW1 (INV1)" functioncomments="SW1 (INV1)" group="" id="P23" pin="66"/>
+        <function comments="SW2 (INV1)" functioncomments="SW2 (INV1)" group="" id="P22" pin="67"/>
+        <function comments="LED1# (INV1)" functioncomments="LED1# (INV1)" group="" id="P21" pin="68"/>
+        <function comments="LED2# (INV1)" functioncomments="LED2# (INV1)" group="" id="P20" pin="69"/>
+        <function comments="LED1# (INV2)" functioncomments="LED1# (INV2)" group="" id="P65" pin="70"/>
+        <function comments="LED2# (INV2)" functioncomments="LED2# (INV2)" group="" id="P64" pin="71"/>
+        <function comments="" group="" id="AVCC2" pin="72"/>
+        <function comments="" group="" id="AVSS2" pin="73"/>
+        <function comments="AN209" functioncomments="AN209" group="" id="AN209" pin="74"/>
+        <function comments="VW (INV2)" functioncomments="VW (INV2)" group="" id="AN208" pin="75"/>
+        <function comments="VV (INV2)" functioncomments="VV (INV2)" group="" id="AN207" pin="76"/>
+        <function comments="VU (INV2)" functioncomments="VU (INV2)" group="" id="AN206" pin="77"/>
+        <function comments="VR (INV2)" functioncomments="VR (INV2)" group="" id="AN203" pin="78"/>
+        <function comments="AN202" functioncomments="AN202" group="" id="AN202" pin="79"/>
+        <function comments="VW (INV1)" functioncomments="VW (INV1)" group="" id="AN201" pin="80"/>
+        <function comments="VV (INV1)" functioncomments="VV (INV1)" group="" id="AN200" pin="81"/>
+        <function comments="VU (INV1)" functioncomments="VU (INV1)" group="" id="AN205" pin="82"/>
+        <function comments="VR (INV1)" functioncomments="VR (INV1)" group="" id="AN204" pin="83"/>
+        <function comments="VPN (INV2)" functioncomments="VPN (INV2)" group="" id="AN103" pin="84"/>
+        <function comments="IW (INV2)" functioncomments="IW (INV2)" group="" id="AN102" pin="85"/>
+        <function comments="IV (INV2)" functioncomments="IV (INV2)" group="" id="AN101" pin="86"/>
+        <function comments="IU (INV2)" functioncomments="IU (INV2)" group="" id="AN100" pin="87"/>
+        <function comments="VPN (INV1)" functioncomments="VPN (INV1)" group="" id="AN003" pin="88"/>
+        <function comments="IW (INV1)" functioncomments="IW (INV1)" group="" id="AN002" pin="89"/>
+        <function comments="IV (INV1)" functioncomments="IV (INV1)" group="" id="AN001" pin="90"/>
+        <function comments="IU (INV1)" functioncomments="IU (INV1)" group="" id="AN000" pin="91"/>
+        <function comments="" group="" id="AVCC1" pin="92"/>
+        <function comments="" group="" id="AVCC0" pin="93"/>
+        <function comments="" group="" id="AVSS0" pin="94"/>
+        <function comments="" group="" id="AVSS1" pin="95"/>
+        <function comments="SW2 (INV2)" functioncomments="SW2 (INV2)" group="" id="P82" pin="96"/>
+        <function comments="RMW_TXD" functioncomments="RMW_TXD" group="" id="TXD6" pin="97"/>
+        <function comments="RMW_RXD" functioncomments="RMW_RXD" group="" id="RXD6" pin="98"/>
+        <function comments="ENC_A (INV2)" functioncomments="ENC_A (INV2)" group="" id="MTCLKC" pin="99"/>
+        <function comments="ENC_B (INV2)" functioncomments="ENC_B (INV2)" group="" id="MTCLKD" pin="100"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="5"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="10"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="check"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul24-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="cfdckdivider" value="comboBox1-4"/>
+    </clock>
+    <board display="MCB-RX26T Type B" html="" id="MCB-RX26T Type B" partNumber="R5F526TFDxFP"/>
+    <info version=""/>
+</boardInfo>
