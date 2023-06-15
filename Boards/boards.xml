@@ -71,12 +71,12 @@
   <board id="GR-ROSE-RX65N" version="1.03" description="GR-ROSE Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/eac090bd0b74491f78343599cc6f41eb0278a3e7/Boards/GR-ROSE-RX65N_V1.03.bdf"/>
   </board>
-  <board id="MCB-RX26T Type A" version="1.00" description="MCB-RX26T Type A Board Description File" keys="RX">
+  <!--board id="MCB-RX26T Type A" version="1.00" description="MCB-RX26T Type A Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/eac090bd0b74491f78343599cc6f41eb0278a3e7/Boards/MCB-RX26T Type A_V1.00.bdf"/>
   </board>
   <board id="MCB-RX26T Type B" version="1.00" description="MCB-RX26T Type B Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/eac090bd0b74491f78343599cc6f41eb0278a3e7/Boards/MCB-RX26T Type B_V1.00.bdf"/>
-  </board>
+  </board-->
   <board id="RSKRX111" version="1.02" description="Renesas Starter Kit for RX111 Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/eac090bd0b74491f78343599cc6f41eb0278a3e7/Boards/RSKRX111_V1.02.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/eac090bd0b74491f78343599cc6f41eb0278a3e7/Boards/RSKRX111_V1.00.bcdf"/>
