@@ -172,4 +172,12 @@
         <date>2023-05-29</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-rx-smart-configurator-iar-embedded-workbench</renesaslink>
     </info>
+    <info device="RX || RL78 || COMMON" recent="true">
+        <id>_Toc87439367</id>
+        <title>Smart Configurator Feature - How to generate HEX values for Code Generator drivers</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6329777921112</iframe>
+        <description>This video demonstrates how to use the Smart Configurator feature to generate HEX values for Code Generator drivers.</description>
+        <date>2023-06-20</date>
+        <renesaslink>https://www.renesas.com/video/smart-configurator-feature-how-generate-hex-values-code-generator-drivers</renesaslink>
+    </info>
 </videos>
