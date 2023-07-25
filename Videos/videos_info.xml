@@ -25,6 +25,22 @@
         <renesaslink>https://www.renesas.com/video/how-create-smart-configurator-project-e-studio</renesaslink>
     </info>
     <info device="RX">
+        <id>_Toc87439372</id>
+        <title>Smart Configurator Tutorial - How to use potentiometer to control LED with RX family</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6310186746112</iframe>
+        <description>This video demonstrates how to create a program that uses the potentiometer to control the LED.</description>
+        <date>2022-07-30</date>
+        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-how-use-potentiometer-control-led-rx-family</renesaslink>
+    </info>
+    <info device="RX">
+        <id>_Toc87439371</id>
+        <title>Smart Configurator Tutorial - Create a LED blinking program using RX Family MCU</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6310185623112</iframe>
+        <description>This video shows how to create a LED blinking program by using the Compare Match Timer (CMT) in Smart Configurator.</description>
+        <date>2022-08-08</date>
+        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-create-led-blinking-program-using-rx-family-mcu</renesaslink>
+    </info>
+    <info device="RX">
         <id>_Toc87439356</id>
         <title>How to Use the Smart Configurator and FIT Modules with IAR EW for RX</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6128480102001</iframe>
@@ -187,22 +203,6 @@
         <description>This demonstration guides the user to create a RX motor control project using Smart Configurator in the e² studio environment.</description>
         <date>2022-01-25</date>
         <renesaslink>https://www.renesas.com/video/rx-smart-configurator-motor-33-run-motor-project</renesaslink>
-    </info>
-    <info device="RX">
-        <id>_Toc87439371</id>
-        <title>Smart Configurator Tutorial - Create a LED blinking program using RX Family MCU</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6310185623112</iframe>
-        <description>This video shows how to create a LED blinking program by using the Compare Match Timer (CMT) in Smart Configurator.</description>
-        <date>2022-08-08</date>
-        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-create-led-blinking-program-using-rx-family-mcu</renesaslink>
-    </info>
-    <info device="RX">
-        <id>_Toc87439372</id>
-        <title>Smart Configurator Tutorial - How to use potentiometer to control LED with RX family</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6310186746112</iframe>
-        <description>This video demonstrates how to create a program that uses the potentiometer to control the LED.</description>
-        <date>2022-07-30</date>
-        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-how-use-potentiometer-control-led-rx-family</renesaslink>
     </info>
     <info device="RL78">
         <id>_Toc87439373</id>
