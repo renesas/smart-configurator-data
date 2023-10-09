@@ -143,6 +143,8 @@
                                 latestFiveArr.pop();
                             }
                             break;
+                        } else if ((i == (latestFiveArr.length - 1)) && latestFiveArr.length < 5) {
+                            latestFiveArr.push({strId,date});
                         }
                     }
                 }
