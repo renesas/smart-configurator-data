@@ -56,7 +56,7 @@
         <date>2020-01-31</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-and-fit-modules-iar-ew-rx</renesaslink>
     </info>
-    <info id="_Toc87439357" name="videoInfo" device="RX" category="tutorials">
+    <info id="_Toc87439357" name="videoInfo" device="RX" category="features">
         <title>Easy Download of Missing FIT Modules in Your Imported Project</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279284262001</iframe>
         <description>This video introduces a feature for easy download of missing FIT modules in your imported project.
@@ -73,7 +73,7 @@
         <date>2021-12-20</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-feature-easy-selection-software-components-renesas-boards</renesaslink>
     </info>
-    <info id="_Toc87439359" name="videoInfo" device="RX" category="tutorials">
+    <info id="_Toc87439359" name="videoInfo" device="RX" category="features">
         <title>Smart Configurator Tips - How to display pre-downloaded FIT modules in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6288247025001</iframe>
         <description>This video shows how to display pre-downloaded FIT modules in Smart Configurator.</description>
