@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="./styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -17,12 +18,41 @@
                 <div class="logo-container">
                     <img class="logo" src="./header-w.svg" alt="Renesas Electronics Corporation">
                 </div>
-                <div class="header" id="banner">
+                <div class="header">
                     <h1>Smart Configurator Videos for RL78 Family</h1>
+                    <div class="quick-links">
+                        <ul style="margin-bottom: 0.2em;">
+                            <li style="list-style-type: none;">
+                                <a href="#introduction-wrapper" class="introduction">Introduction</a>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <a href="#tutorials-wrapper" class="tutorials">Tutorials</a>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <a href="#features-wrapper" class="features">Basic Features</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-header">
+                    <div class="notification info">
+                        <span aria-hidden="true" class="material-icons">info</span><strong>New Videos</strong>
+                        <ul id="new-video" style="margin-bottom: 0.2em;"></ul>
+                    </div>
                 </div>
             </div>
             <div class="main-content">
-                <div class="video-wrapper" id="video-wrapper">
+                <div class="category-wrapper" id="introduction-wrapper">
+                    <strong style="font-size:1.4em;  color:#4471A7;">Introduction</strong>
+                    <div class="video-wrapper" id="introduction"></div>
+                </div>
+                <div class="category-wrapper" id="tutorials-wrapper">
+                    <strong style="font-size:1.4em;  color:#4471A7;">Tutorials</strong>
+                    <div class="video-wrapper" id="tutorials"></div>
+                </div>
+                <div class="category-wrapper" id="features-wrapper">
+                    <strong style="font-size:1.4em;  color:#4471A7;">Basic Features</strong>
+                    <div class="video-wrapper" id="features"></div>
                 </div>
             </div>
         </div>
@@ -30,57 +60,195 @@
         <script>
             var xmlFile = 'https://raw.githubusercontent.com/renesas/smart-configurator-data/master/Videos/videos_info.xml';
             var device = "RL78";
+            var filteredXmlList;
+            var filteredNewVideoList;
+            let newVideoArr = new Array();
+            let latestFiveArr = new Array();
 
             function loadDoc() {
                 var xhttp = new XMLHttpRequest();
 
-                xhttp.open("GET", xmlFile, true);
+                xhttp.open("GET", xmlPath, true);
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState === 4 && this.status === 200) {
-                        xmlFunction(this.response);
+                        filterSortInfoData(this.response);
+                        createContent();
                     }
                 };
             }
 
-            function xmlFunction(xml) {
+            function filterSortInfoData(xmlFile) {
+                var filteredXmlDoc = document.createElement("videos");
+                var filteredNewVideoDoc = document.createElement("videos");
                 var parser = new DOMParser();
-                var xmlDoc = parser.parseFromString(xml, "text/xml");
-                var x = xmlDoc.getElementsByTagName("info");
-                var new_video = 0;
+                var xmlDoc = parser.parseFromString(xmlFile, "text/xml");
+                var infoDataColRawList = xmlDoc.getElementsByTagName("info");
 
-                for (var elem of x) {
-                    var devices = elem.getAttribute("device");
+                for (var infoData of infoDataColRawList) {
+                    var devices = infoData.getAttribute("device");
+                    // skip if infoData not for device
                     if (devices && !devices.includes(device)) {
                         continue;
                     }
-                    var id = elem.getElementsByTagName("id")[0].textContent;
-                    var title = elem.getElementsByTagName("title")[0].textContent;
-                    var video = elem.getElementsByTagName("iframe")[0].textContent;
-                    var description = elem.getElementsByTagName("description")[0].textContent;
-                    var date = elem.getElementsByTagName("date")[0].textContent;
-                    var link = elem.getElementsByTagName("renesaslink")[0].textContent;
 
-                    var recent = elem.getAttribute("recent");
-                    if (new_video == 0 && recent == "true") {
-                        document.getElementById("banner").innerHTML += "<div class=\"info notification\">" +
-                            "<span aria-hidden=\"true\" class=\"material-icons\">info</span><strong>New Videos</strong>" +
-                            "<ul id=\"new-video\" style=\"margin-bottom: 0.2em;\">" +
-                                "<li style=\"list-style-type: none;\">" + date + 
-                                    ": <a href=\"" + link + "\">" + title + "</a></li></ul></div>";
-                        new_video++;
-                    } else if (recent == "true") {
-                        document.getElementById("new-video").innerHTML += "<li style=\"list-style-type: none;\">" + date + 
-                            ": <a href=\"" + link + "\">" + title + "</a></li>";
+                    var cloneData = infoData.cloneNode(true); // duplicate infoData to prevent data corruption
+                    filteredXmlDoc.appendChild(cloneData);
+                    // append new videos(within monthRange) or latest 5 videos (whichever is bigger)
+                    if (isNewVideo(infoData)) {
+                        insertToNewVidList(cloneData);
                     }
+                }
+                if (newVideoArr.length < 5) {
+                    for (var i = 0; i < latestFiveArr.length; i++) {
+                        var cloneFrId = xmlDoc.getElementById(latestFiveArr[i].strId);
+                        filteredNewVideoDoc.appendChild(cloneFrId);
+                    }
+                } else {
+                    for (var i = 0; i < newVideoArr.length; i++) {
+                        var cloneFrId = xmlDoc.getElementById(newVideoArr[i].strDataId).cloneNode(true);
+                        filteredNewVideoDoc.appendChild(cloneFrId);
+                    }
+                }
 
-                    document.getElementById("video-wrapper").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
-                      "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
-                      "<div class=\"video-description\"><p>" + description + "</p><p><br>" + date + "</p></div>" + 
-                      "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                // convert to HTMLCollection
+                filteredXmlList = filteredXmlDoc.getElementsByTagName("info");
+                filteredNewVideoList = filteredNewVideoDoc.getElementsByTagName("info");
+            }
+
+            function isNewVideo(infoElement) {
+                var months = 0;
+                var monthRange = 9;
+                var strId = infoElement.id;
+                var date = infoElement.getElementsByTagName("date")[0].textContent;
+                const vidDate = new Date(date);
+                const curDate = new Date(Date.now());
+
+                // update latest 5 videos
+                if (latestFiveArr.length == 0) {
+                    latestFiveArr.push({strId,date});
+                } else {
+                    for (var i = 0; i < latestFiveArr.length; i++) {
+                        const arrLatestFiveDate = new Date(latestFiveArr[i].date);
+                        if (vidDate > arrLatestFiveDate) {
+                            latestFiveArr.splice(i, 0, {strId,date});
+                            if (latestFiveArr.length > 5) {
+                                latestFiveArr.pop();
+                            }
+                            break;
+                        } else if ((i == (latestFiveArr.length - 1)) && latestFiveArr.length < 5) {
+                            latestFiveArr.push({strId,date});
+                        }
+                    }
+                }
+
+                // return true if difference less than monthRange
+                months = curDate.getMonth() - vidDate.getMonth() + (12 * (curDate.getFullYear() - vidDate.getFullYear()))
+                return (months < monthRange);
+            }
+
+            function insertToNewVidList(data) {
+                var strDataId = data.id;
+                var date = data.getElementsByTagName("date")[0].textContent;
+                const dataDate = new Date(data.getElementsByTagName("date")[0].textContent);
+                if (newVideoArr.length == 0) {
+                    newVideoArr.push({strDataId,date});
+                } else {
+                    for (var i = 0; i < newVideoArr.length; i++) {
+                        const arrNewVideoDate = new Date(newVideoArr[i].date);
+                        if (dataDate > arrNewVideoDate) {
+                            newVideoArr.splice(i, 0, {strDataId,date});
+                            break;
+                        }
+                        if ((i + 1) == newVideoArr.length) {
+                            newVideoArr.push({strDataId,date});
+                            break;
+                        }
+                    }
                 }
             }
+
+            function createContent() {
+                // generate new video links
+                for (var filteredNewVidData of filteredNewVideoList) {
+                    var id = filteredNewVidData.id;
+                    var title = filteredNewVidData.getElementsByTagName("title")[0].textContent;
+                    var date = filteredNewVidData.getElementsByTagName("date")[0].textContent;
+                    var link = filteredNewVidData.getElementsByTagName("renesaslink")[0].textContent;
+
+                    document.getElementById("new-video").innerHTML += "<li style=\"list-style-type: none;\">" + date + 
+                            ": <a href=\"" + link + "\">" + title + "</a></li>";
+                }
+
+                // generate video cards according to category
+                for (var filteredinfoData of filteredXmlList) {
+                    var id = filteredinfoData.id;
+                    const category = filteredinfoData.getAttribute("category");
+                    var title = filteredinfoData.getElementsByTagName("title")[0].textContent;
+                    var video = filteredinfoData.getElementsByTagName("iframe")[0].textContent;
+                    var description = filteredinfoData.getElementsByTagName("description")[0].textContent;
+                    var date = filteredinfoData.getElementsByTagName("date")[0].textContent;
+                    var link = filteredinfoData.getElementsByTagName("renesaslink")[0].textContent;
+
+                    switch (category) {
+                        case "introduction":
+                            document.getElementById("introduction").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                              "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                              "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
+                              "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                            continue;
+                        case "tutorials":
+                            document.getElementById("tutorials").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                              "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                              "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
+                              "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                            continue;
+                        case "features":
+                            document.getElementById("features").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                              "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                              "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
+                              "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                            continue;
+                        default:
+                            // do nothing
+                    }
+                }
+            }
+
             loadDoc();
+        </script>
+        <script>
+            const RAF = requestAnimationFrame
+            const $nav = document.querySelector('.header')
+            const $intro = document.querySelector('#introduction-wrapper')
+            const $tut = document.querySelector('#tutorials-wrapper')
+            const $feat = document.querySelector('#features-wrapper')
+            const threshold = $nav.getBoundingClientRect()
+            let updating = false
+
+            const handleScroll = () => {
+              if (window.scrollY >= threshold.top || window.pageYOffset >= threshold.top) {
+                $nav.classList.add('nav--fixed')
+                $intro.classList.add('nav--fixed')
+                $tut.classList.add('nav--fixed')
+                $feat.classList.add('nav--fixed')
+              }
+              else {
+                $nav.classList.remove('nav--fixed')
+                $intro.classList.remove('nav--fixed')
+                $tut.classList.remove('nav--fixed')
+                $feat.classList.remove('nav--fixed')
+              }
+              updating = false
+            }
+
+            window.onscroll = () => {
+              if (updating) return
+              else {
+                updating = true
+                RAF(handleScroll)
+              }
+            }
         </script>
         
         <footer></footer>
