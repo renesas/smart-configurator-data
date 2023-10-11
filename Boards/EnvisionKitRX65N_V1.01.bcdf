@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="EnvisionKitRX65N" version="1.01">
+	<supportedBoard>
+		<!-- Board id and version refer to bdf -->
+		<board id="EnvisionKitRX65N" version="V1.12"/>
+		<board id="EnvisionKitRX65N" version="V1.14"/>
+	</supportedBoard>
+	<boardFeature>
+		<!-- Board features to be placed here -->
+		<feature name="Switch and Joystick" jName="Switch and Joystick">
+			<components> 
+				<configuration name="r_irq_rx"/>
+			</components> 
+		</feature>
+		<feature name="LEDs" jName="LED">
+			<components> 
+				<configuration name="Config_PORT"/>
+			</components> 
+		</feature>
+		<feature name="PMOD (Cellular/SPI)" jName="PMOD (Cellular/SPI)">
+			<components> 
+				<configuration name="r_cellular">
+					<dependency name="r_sci_rx#1"/>
+					<dependency name="r_byteq"/>
+					<dependency name="r_irq_rx#PMOD"/>
+					<dependency name="r_gpio_rx"/>
+				</configuration>
+				<configuration name="r_sci_rx#2">
+					<dependency name="r_byteq"/>
+					<dependency name="r_irq_rx#PMOD"/>
+					<dependency name="r_gpio_rx"/>
+				</configuration>
+			</components> 
+		</feature>
+		<feature name="Ethernet" jName="Ethernet">
+			<components> 
+				<configuration name="r_ether_rx"/>
+			</components> 
+		</feature>
+		<feature name="USB Host" jName="USB Host">
+			<components> 
+				<configuration name="r_usb_hcdc">
+					<dependency name="r_usb_basic#1"/>
+				</configuration>
+				<configuration name="r_usb_hhid">
+					<dependency name="r_usb_basic#2"/>
+				</configuration>
+				<configuration name="r_usb_hmsc">
+					<dependency name="r_usb_basic#3"/>
+				</configuration>
+			</components> 
+		</feature>
+		<feature name="WQVGA LCD Display" jName="WQVGA LCD Display">
+			<components> 
+				<configuration name="r_emwin_rx">
+					<dependency name="r_cmt_rx"/>
+					<dependency name="r_dmaca_rx"/>
+					<dependency name="r_drw2d_rx"/>
+					<dependency name="r_glcdc_rx"/>
+					<dependency name="r_gpio_rx"/>
+					<dependency name="r_sci_iic_rx"/>
+				</configuration>
+			</components> 
+		</feature>
+		<feature name="QSPI Flash" jName="QSPI Flash">
+			<components> 
+				<configuration name="r_qspi_smstr_rx"/>
+			</components> 
+		</feature>
+		<feature name="SD Host Interface (SDHI)" jName="SD Host Interface (SDHI)">
+			<components> 
+				<configuration name="r_sdhi_rx"/>
+			</components> 
+		</feature>
+	</boardFeature>
+	<tool id="SWComponent" version="1.0.0.0">
+		<!-- Exported configurations to be placed here -->
+		<configuration inuse="true" name="r_gpio_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This code implements a General Purpose Input/Output driver. Common features such as reading, writing, and setting the direction of ports and pins is supported. Enabling features such as open-drain outputs and internal pull-ups are also supported." detailDescription="GPIO Driver" display="r_gpio_rx" id="r_gpio_rx4.90" version="4.90">
+                <gridItem id="GPIO_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_irq_rx#PMOD" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.30" version="4.30">
+                <gridItem id="IRQ13" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.30" version="4.30">
+                <gridItem id="IRQ2" selectedIndex="1"/>
+                <gridItem id="IRQ3" selectedIndex="1"/>
+                <gridItem id="IRQ4" selectedIndex="1"/>
+                <gridItem id="IRQ11" selectedIndex="1"/>
+                <gridItem id="IRQ15" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.20&#10;This module allocates a queue control block in an Open() call to handle indexing for buffers provided by the user application. Additional functions are provided to put and get data from the buffer queue, inspect the number of bytes available or in use, and to flush the queue. There is no limit to the number of queues supported, and queue control blocks can be allocated statically at build time or dynamically at run time." detailDescription="Byte-based circular buffer library." display="r_byteq" id="r_byteq2.10" version="2.10">
+                <gridItem id="BYTEQ_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_USE_HEAP_FOR_CTRL_BLKS" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_MAX_CTRL_BLKS" selectedIndex="32"/>
+                <gridItem id="BYTEQ_CFG_PROTECT_QUEUE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_CRITICAL_SECTION" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration inuse="true" name="r_sdhi_rx">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;This driver is a block type device driver to control the SD Host Interface (SDHI)." detailDescription="SD Mode SDHI Driver" display="r_sdhi_rx" id="r_sdhi_rx2.06" version="2.06">
+				<gridItem id="SDHI_CLK" selectedIndex="1"/>
+				<gridItem id="SDHI_CMD" selectedIndex="1"/>
+				<gridItem id="SDHI_CD" selectedIndex="1"/>
+				<gridItem id="SDHI_WP" selectedIndex="1"/>
+				<gridItem id="SDHI_D0" selectedIndex="1"/>
+				<gridItem id="SDHI_D1" selectedIndex="1"/>
+				<gridItem id="SDHI_D2" selectedIndex="1"/>
+				<gridItem id="SDHI_D3" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH0_INCLUDED" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH1_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SDHI_CFG_CH0_CD_ACTIVE" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH0_WP_ACTIVE" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH0_INT_LEVEL" selectedIndex="10"/>
+				<gridItem id="SDHI_CFG_CH0_INT_LEVEL_DMADTC" selectedIndex="10"/>
+				<gridItem id="SDHI_CFG_CH1_CD_ACTIVE" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH1_WP_ACTIVE" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_CH1_INT_LEVEL" selectedIndex="10"/>
+				<gridItem id="SDHI_CFG_CH1_INT_LEVEL_DMADTC" selectedIndex="10"/>
+				<gridItem id="SDHI_CFG_DIV_HIGH_SPEED" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_DIV_DEFAULT_SPEED" selectedIndex="2"/>
+				<gridItem id="SDHI_CFG_DIV_INIT_SPEED" selectedIndex="8"/>
+				<gridItem id="SDHI_CFG_SDOPT_CTOP" selectedIndex="14"/>
+				<gridItem id="SDHI_CFG_SDOPT_TOP" selectedIndex="14"/>
+				<gridItem id="SDHI_CFG_PARAM_CHECKING_ENABLE" selectedIndex="1"/>
+				<gridItem id="SDHI_CFG_LONGQ_ENABLE" selectedIndex="0"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_dmaca_rx">
+			<component description="Dependency : r_bsp version(s) 5.52&#10;This driver gives the user an easy API to control the MCU's DMAC. DMAC module transfers the data&#10;                 corresponding to an interrupt when it signals to DMAC. Each module can register its transfer settings with DMAC driver such as: interrupt number, destination and source address, data counter, transfer mode (3 modes: normal, repeat, block), enable or disable chain transfer." detailDescription="DMAC driver" display="r_dmaca_rx" id="r_dmaca_rx2.50" version="2.50">
+				<gridItem id="DMACA_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+				<gridItem id="DMACA_CFG_USE_DTC_FIT_MODULE" selectedIndex="0"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_cmt_rx">
+			<component description="Dependency : r_bsp version(s) 5.52&#10;This module creates a timer tick using a CMT channel based on a frequency input by the user." detailDescription="Simple CMT driver for creating timer tick." display="r_cmt_rx" id="r_cmt_rx4.70" version="4.70">
+				<gridItem id="CMT_RX_CFG_IPR" selectedIndex="5"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_ether_rx">
+			<component description="Dependency : r_bsp version(s) 5.52&#10;The Ethernet fit module provides a method to send and receive Ethernet / IEEE802.3 frame using Ethernet controller (ETHERC), Ethernet DMA controller (EDMAC)." detailDescription="Ethernet Driver." display="r_ether_rx" id="r_ether_rx1.21" version="1.21">
+				<gridItem id="CLKOUT25M" selectedIndex="0"/>
+				<gridItem id="ET0_TX_CLK" selectedIndex="0"/>
+				<gridItem id="ET0_RX_CLK" selectedIndex="0"/>
+				<gridItem id="ET0_TX_EN" selectedIndex="0"/>
+				<gridItem id="ET0_ETXD3" selectedIndex="0"/>
+				<gridItem id="ET0_ETXD2" selectedIndex="0"/>
+				<gridItem id="ET0_ETXD1" selectedIndex="0"/>
+				<gridItem id="ET0_ETXD0" selectedIndex="0"/>
+				<gridItem id="ET0_TX_ER" selectedIndex="0"/>
+				<gridItem id="ET0_RX_DV" selectedIndex="0"/>
+				<gridItem id="ET0_ERXD3" selectedIndex="0"/>
+				<gridItem id="ET0_ERXD2" selectedIndex="0"/>
+				<gridItem id="ET0_ERXD1" selectedIndex="0"/>
+				<gridItem id="ET0_ERXD0" selectedIndex="0"/>
+				<gridItem id="ET0_RX_ER" selectedIndex="0"/>
+				<gridItem id="ET0_CRS" selectedIndex="0"/>
+				<gridItem id="ET0_COL" selectedIndex="0"/>
+				<gridItem id="ET0_MDC" selectedIndex="1"/>
+				<gridItem id="ET0_MDIO" selectedIndex="1"/>
+				<gridItem id="PMGI0_MDC" selectedIndex="0"/>
+				<gridItem id="PMGI0_MDIO" selectedIndex="0"/>
+				<gridItem id="ET0_LINKSTA" selectedIndex="0"/>
+				<gridItem id="ET0_EXOUT" selectedIndex="0"/>
+				<gridItem id="ET0_WOL" selectedIndex="0"/>
+				<gridItem id="ETHERC0_MII" selectedIndex="1"/>
+				<gridItem id="CLKOUT25M" selectedIndex="0"/>
+				<gridItem id="REF50CK0" selectedIndex="1"/>
+				<gridItem id="RMII0_TXD_EN" selectedIndex="1"/>
+				<gridItem id="RMII0_TXD1" selectedIndex="1"/>
+				<gridItem id="RMII0_TXD0" selectedIndex="1"/>
+				<gridItem id="RMII0_RXD1" selectedIndex="1"/>
+				<gridItem id="RMII0_RXD0" selectedIndex="1"/>
+				<gridItem id="RMII0_RX_ER" selectedIndex="1"/>
+				<gridItem id="RMII0_CRS_DV" selectedIndex="1"/>
+				<gridItem id="ET0_MDC" selectedIndex="1"/>
+				<gridItem id="ET0_MDIO" selectedIndex="1"/>
+				<gridItem id="PMGI0_MDC" selectedIndex="0"/>
+				<gridItem id="PMGI0_MDIO" selectedIndex="0"/>
+				<gridItem id="ET0_LINKSTA" selectedIndex="0"/>
+				<gridItem id="ET0_EXOUT" selectedIndex="0"/>
+				<gridItem id="ET0_WOL" selectedIndex="0"/>
+				<gridItem id="ETHERC0_RMII" selectedIndex="1"/>
+				<gridItem id="CLKOUT25M" selectedIndex="0"/>
+				<gridItem id="ET1_TX_CLK" selectedIndex="0"/>
+				<gridItem id="ET1_RX_CLK" selectedIndex="0"/>
+				<gridItem id="ET1_TX_EN" selectedIndex="0"/>
+				<gridItem id="ET1_ETXD3" selectedIndex="0"/>
+				<gridItem id="ET1_ETXD2" selectedIndex="0"/>
+				<gridItem id="ET1_ETXD1" selectedIndex="0"/>
+				<gridItem id="ET1_ETXD0" selectedIndex="0"/>
+				<gridItem id="ET1_TX_ER" selectedIndex="0"/>
+				<gridItem id="ET1_RX_DV" selectedIndex="0"/>
+				<gridItem id="ET1_ERXD3" selectedIndex="0"/>
+				<gridItem id="ET1_ERXD2" selectedIndex="0"/>
+				<gridItem id="ET1_ERXD1" selectedIndex="0"/>
+				<gridItem id="ET1_ERXD0" selectedIndex="0"/>
+				<gridItem id="ET1_RX_ER" selectedIndex="0"/>
+				<gridItem id="ET1_CRS" selectedIndex="0"/>
+				<gridItem id="ET1_COL" selectedIndex="0"/>
+				<gridItem id="ET1_MDC" selectedIndex="0"/>
+				<gridItem id="ET1_MDIO" selectedIndex="0"/>
+				<gridItem id="PMGI1_MDC" selectedIndex="0"/>
+				<gridItem id="PMGI1_MDIO" selectedIndex="0"/>
+				<gridItem id="ET1_LINKSTA" selectedIndex="0"/>
+				<gridItem id="ET1_EXOUT" selectedIndex="0"/>
+				<gridItem id="ET1_WOL" selectedIndex="0"/>
+				<gridItem id="ETHERC1_MII" selectedIndex="0"/>
+				<gridItem id="CLKOUT25M" selectedIndex="0"/>
+				<gridItem id="REF50CK1" selectedIndex="0"/>
+				<gridItem id="RMII1_TXD_EN" selectedIndex="0"/>
+				<gridItem id="RMII1_TXD1" selectedIndex="0"/>
+				<gridItem id="RMII1_TXD0" selectedIndex="0"/>
+				<gridItem id="RMII1_RXD1" selectedIndex="0"/>
+				<gridItem id="RMII1_RXD0" selectedIndex="0"/>
+				<gridItem id="RMII1_RX_ER" selectedIndex="0"/>
+				<gridItem id="RMII1_CRS_DV" selectedIndex="0"/>
+				<gridItem id="ET1_MDC" selectedIndex="0"/>
+				<gridItem id="ET1_MDIO" selectedIndex="0"/>
+				<gridItem id="PMGI1_MDC" selectedIndex="0"/>
+				<gridItem id="PMGI1_MDIO" selectedIndex="0"/>
+				<gridItem id="ET1_LINKSTA" selectedIndex="0"/>
+				<gridItem id="ET1_EXOUT" selectedIndex="0"/>
+				<gridItem id="ET1_WOL" selectedIndex="0"/>
+				<gridItem id="ETHERC1_RMII" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_MODE_SEL" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_CH0_PHY_ADDRESS" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_CH1_PHY_ADDRESS" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_EMAC_RX_DESCRIPTORS" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_EMAC_TX_DESCRIPTORS" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_BUFSIZE" selectedIndex="1536"/>
+				<gridItem id="ETHER_CFG_AL1_INT_PRIORTY" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_CH0_PHY_ACCESS" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_CH1_PHY_ACCESS" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_PHY_MII_WAIT" selectedIndex="8"/>
+				<gridItem id="ETHER_CFG_PHY_DELAY_RESET" selectedIndex="0x00020000L"/>
+				<gridItem id="ETHER_CFG_LINK_PRESENT" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_USE_LINKSTA" selectedIndex="1"/>
+				<gridItem id="ETHER_CFG_USE_PHY_KSZ8041NL" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_NON_BLOCKING" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_PMGI_CLOCK" selectedIndex="2500000"/>
+				<gridItem id="ETHER_CFG_PMGI_ENABLE_PREAMBLE" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_PMGI_HOLD_TIME" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_PMGI_CAPTURE_TIME" selectedIndex="0"/>
+				<gridItem id="ETHER_CFG_PMGI_INT_PRIORTY" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_qspi_smstr_rx">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The QSPI built into the RX Family microcontroller is used to implement clock synchronous control. QSPI mode single master control can be enabled by adding slave device selection control by means of port control." detailDescription="QSPI Clock Synchronous Single Master Control Module Using Firmware Integration Technology" display="r_qspi_smstr_rx" id="r_qspi_smstr_rx1.14" version="1.14">
+				<gridItem id="QSPCLK" selectedIndex="1"/>
+				<gridItem id="QIO0" selectedIndex="1"/>
+				<gridItem id="QIO1" selectedIndex="1"/>
+				<gridItem id="QIO2" selectedIndex="1"/>
+				<gridItem id="QIO3" selectedIndex="1"/>
+				<gridItem id="QSPI0" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_USE_FIT" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INCLUDED" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_LONGQ_ENABLE" selectedIndex="0"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INT_SPTI_LEVEL" selectedIndex="10"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INT_SPRI_LEVEL" selectedIndex="10"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_glcdc_rx">
+			<component description="Dependency : r_bsp version(s) 5.20, 5.50, 5.52, 5.61&#10;The GLCDC FIT module provides the method to output image data read from memory to the LCD panel. " detailDescription="Graphics LCD Controller Module." display="r_glcdc_rx" id="r_glcdc_rx1.50" version="1.50">
+				<gridItem id="LCD_CLK" selectedIndex="1"/>
+				<gridItem id="LCD_TCON0" selectedIndex="1"/>
+				<gridItem id="LCD_TCON1" selectedIndex="0"/>
+				<gridItem id="LCD_TCON2" selectedIndex="1"/>
+				<gridItem id="LCD_TCON3" selectedIndex="1"/>
+				<gridItem id="LCD_DATA0" selectedIndex="1"/>
+				<gridItem id="LCD_DATA1" selectedIndex="1"/>
+				<gridItem id="LCD_DATA2" selectedIndex="1"/>
+				<gridItem id="LCD_DATA3" selectedIndex="1"/>
+				<gridItem id="LCD_DATA4" selectedIndex="1"/>
+				<gridItem id="LCD_DATA5" selectedIndex="1"/>
+				<gridItem id="LCD_DATA6" selectedIndex="1"/>
+				<gridItem id="LCD_DATA7" selectedIndex="1"/>
+				<gridItem id="LCD_DATA8" selectedIndex="1"/>
+				<gridItem id="LCD_DATA9" selectedIndex="1"/>
+				<gridItem id="LCD_DATA10" selectedIndex="1"/>
+				<gridItem id="LCD_DATA11" selectedIndex="1"/>
+				<gridItem id="LCD_DATA12" selectedIndex="1"/>
+				<gridItem id="LCD_DATA13" selectedIndex="1"/>
+				<gridItem id="LCD_DATA14" selectedIndex="1"/>
+				<gridItem id="LCD_DATA15" selectedIndex="1"/>
+				<gridItem id="LCD_DATA16" selectedIndex="0"/>
+				<gridItem id="LCD_DATA17" selectedIndex="0"/>
+				<gridItem id="LCD_DATA18" selectedIndex="0"/>
+				<gridItem id="LCD_DATA19" selectedIndex="0"/>
+				<gridItem id="LCD_DATA20" selectedIndex="0"/>
+				<gridItem id="LCD_DATA21" selectedIndex="0"/>
+				<gridItem id="LCD_DATA22" selectedIndex="0"/>
+				<gridItem id="LCD_DATA23" selectedIndex="0"/>
+				<gridItem id="LCD_EXTCLK" selectedIndex="0"/>
+				<gridItem id="GLCDC_CFG_PARAM_CHECKING_ENABLE" selectedIndex="1"/>
+				<gridItem id="GLCDC_CFG_INTERRUPT_PRIORITY_LEVEL" selectedIndex="5"/>
+				<gridItem id="GLCDC_CFG_CONFIGURATION_MODE" selectedIndex="0"/>
+				<gridItem id="USE_QE_DISPLAY_CONFIGURATION" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_W_HFP" selectedIndex="17"/>
+				<gridItem id="LCD_CH0_W_HBP" selectedIndex="62"/>
+				<gridItem id="LCD_CH0_DISP_HW" selectedIndex="480"/>
+				<gridItem id="LCD_CH0_W_HSYNC" selectedIndex="25"/>
+				<gridItem id="LCD_CH0_W_VFP" selectedIndex="8"/>
+				<gridItem id="LCD_CH0_W_VBP" selectedIndex="7"/>
+				<gridItem id="LCD_CH0_DISP_VW" selectedIndex="272"/>
+				<gridItem id="LCD_CH0_W_VSYNC" selectedIndex="1"/>
+				<gridItem id="LCD_CH0_OUT_FORMAT" selectedIndex="2"/>
+				<gridItem id="LCD_CH0_OUT_ENDIAN" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_OUT_COLOR_ORDER" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_OUT_EDGE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_OUT_BG_COLOR" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_TCON_PIN_HSYNC" selectedIndex="2"/>
+				<gridItem id="LCD_CH0_TCON_PIN_VSYNC" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_TCON_PIN_DE" selectedIndex="3"/>
+				<gridItem id="LCD_CH0_TCON_POL_HSYNC" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_TCON_POL_VSYNC" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_TCON_POL_DE" selectedIndex="1"/>
+				<gridItem id="LCD_CH0_OUT_CLK_DIV_RATIO" selectedIndex="11"/>
+				<gridItem id="LCD_CH0_IN_GR2_PBASE" selectedIndex="0x00800000"/>
+				<gridItem id="LCD_CH0_IN_GR2_HSIZE" selectedIndex="480"/>
+				<gridItem id="LCD_CH0_IN_GR2_VSIZE" selectedIndex="272"/>
+				<gridItem id="LCD_CH0_IN_GR2_LINEOFFSET" selectedIndex="960"/>
+				<gridItem id="LCD_CH0_IN_GR2_FORMAT" selectedIndex="2"/>
+				<gridItem id="LCD_CH0_IN_GR2_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR2_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR2_FRAME_EDGE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR2_BG_COLOR" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_VISIBLE" selectedIndex="1"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_BLEND_CONTROL" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_FRAME_EDGE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_FIXED_BLEND_VALUE" selectedIndex="255"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_FADE_SPEED" selectedIndex="255"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_START_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_START_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_END_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR2_END_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR2_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR2_BEFORE_ARGB" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR2_AFTER_ARGB" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_CLUT_GR2_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CLUT_GR2_PBASE" selectedIndex="FIT_NO_PTR"/>
+				<gridItem id="LCD_CH0_CLUT_GR2_START" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CLUT_GR2_SIZE" selectedIndex="256"/>
+				<gridItem id="LCD_CH0_IN_GR1_PBASE" selectedIndex="NULL"/>
+				<gridItem id="LCD_CH0_IN_GR1_HSIZE" selectedIndex="480"/>
+				<gridItem id="LCD_CH0_IN_GR1_VSIZE" selectedIndex="272"/>
+				<gridItem id="LCD_CH0_IN_GR1_LINEOFFSET" selectedIndex="960"/>
+				<gridItem id="LCD_CH0_IN_GR1_FORMAT" selectedIndex="2"/>
+				<gridItem id="LCD_CH0_IN_GR1_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR1_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR1_FRAME_EDGE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_IN_GR1_BG_COLOR" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_VISIBLE" selectedIndex="1"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_BLEND_CONTROL" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_FRAME_EDGE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_FIXED_BLEND_VALUE" selectedIndex="255"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_FADE_SPEED" selectedIndex="255"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_START_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_START_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_END_COORD_X" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_BLEND_GR1_END_COORD_Y" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR1_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR1_BEFORE_ARGB" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_CHROMAKEY_GR1_AFTER_ARGB" selectedIndex="0x00000000"/>
+				<gridItem id="LCD_CH0_CLUT_GR1_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CLUT_GR1_PBASE" selectedIndex="FIT_NO_PTR"/>
+				<gridItem id="LCD_CH0_CLUT_GR1_START" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CLUT_GR1_SIZE" selectedIndex="256"/>
+				<gridItem id="LCD_CH0_DETECT_VPOS" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_DETECT_GR1UF" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_DETECT_GR2UF" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_INTERRUPT_VPOS_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_INTERRUPT_GR1UF_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_INTERRUPT_GR2UF_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_CALLBACK_ENABLE" selectedIndex="0"/>
+				<gridItem id="LCD_CH0_PCALLBACK" selectedIndex="glcdc_callback"/>
+				<gridItem id="IMGC_OUTCTL_CALIB_ROUTE" selectedIndex="0"/>
+				<gridItem id="IMGC_BRIGHT_OUTCTL_ACTIVE" selectedIndex="1"/>
+				<gridItem id="IMGC_BRIGHT_OUTCTL_OFFSET_G" selectedIndex="512"/>
+				<gridItem id="IMGC_BRIGHT_OUTCTL_OFFSET_B" selectedIndex="512"/>
+				<gridItem id="IMGC_BRIGHT_OUTCTL_OFFSET_R" selectedIndex="512"/>
+				<gridItem id="IMGC_CONTRAST_OUTCTL_ACTIVE" selectedIndex="1"/>
+				<gridItem id="IMGC_CONTRAST_OUTCTL_GAIN_G" selectedIndex="128"/>
+				<gridItem id="IMGC_CONTRAST_OUTCTL_GAIN_B" selectedIndex="128"/>
+				<gridItem id="IMGC_CONTRAST_OUTCTL_GAIN_R" selectedIndex="128"/>
+				<gridItem id="IMGC_GAMMA_ACTIVE" selectedIndex="1"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_00" selectedIndex="1317"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_01" selectedIndex="1157"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_02" selectedIndex="1103"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_03" selectedIndex="1069"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_04" selectedIndex="1045"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_05" selectedIndex="1026"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_06" selectedIndex="1010"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_07" selectedIndex="997"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_08" selectedIndex="986"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_09" selectedIndex="976"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_10" selectedIndex="967"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_11" selectedIndex="959"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_12" selectedIndex="952"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_13" selectedIndex="945"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_14" selectedIndex="939"/>
+				<gridItem id="IMGC_GAMMA_G_GAIN_15" selectedIndex="919"/>
+				<gridItem id="IMGC_GAMMA_G_TH_01" selectedIndex="64"/>
+				<gridItem id="IMGC_GAMMA_G_TH_02" selectedIndex="128"/>
+				<gridItem id="IMGC_GAMMA_G_TH_03" selectedIndex="192"/>
+				<gridItem id="IMGC_GAMMA_G_TH_04" selectedIndex="256"/>
+				<gridItem id="IMGC_GAMMA_G_TH_05" selectedIndex="320"/>
+				<gridItem id="IMGC_GAMMA_G_TH_06" selectedIndex="384"/>
+				<gridItem id="IMGC_GAMMA_G_TH_07" selectedIndex="448"/>
+				<gridItem id="IMGC_GAMMA_G_TH_08" selectedIndex="512"/>
+				<gridItem id="IMGC_GAMMA_G_TH_09" selectedIndex="576"/>
+				<gridItem id="IMGC_GAMMA_G_TH_10" selectedIndex="640"/>
+				<gridItem id="IMGC_GAMMA_G_TH_11" selectedIndex="704"/>
+				<gridItem id="IMGC_GAMMA_G_TH_12" selectedIndex="768"/>
+				<gridItem id="IMGC_GAMMA_G_TH_13" selectedIndex="832"/>
+				<gridItem id="IMGC_GAMMA_G_TH_14" selectedIndex="896"/>
+				<gridItem id="IMGC_GAMMA_G_TH_15" selectedIndex="960"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_00" selectedIndex="1317"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_01" selectedIndex="1157"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_02" selectedIndex="1103"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_03" selectedIndex="1069"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_04" selectedIndex="1045"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_05" selectedIndex="1026"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_06" selectedIndex="1010"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_07" selectedIndex="997"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_08" selectedIndex="986"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_09" selectedIndex="976"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_10" selectedIndex="967"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_11" selectedIndex="959"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_12" selectedIndex="952"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_13" selectedIndex="945"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_14" selectedIndex="939"/>
+				<gridItem id="IMGC_GAMMA_B_GAIN_15" selectedIndex="919"/>
+				<gridItem id="IMGC_GAMMA_B_TH_01" selectedIndex="64"/>
+				<gridItem id="IMGC_GAMMA_B_TH_02" selectedIndex="128"/>
+				<gridItem id="IMGC_GAMMA_B_TH_03" selectedIndex="192"/>
+				<gridItem id="IMGC_GAMMA_B_TH_04" selectedIndex="256"/>
+				<gridItem id="IMGC_GAMMA_B_TH_05" selectedIndex="320"/>
+				<gridItem id="IMGC_GAMMA_B_TH_06" selectedIndex="384"/>
+				<gridItem id="IMGC_GAMMA_B_TH_07" selectedIndex="448"/>
+				<gridItem id="IMGC_GAMMA_B_TH_08" selectedIndex="512"/>
+				<gridItem id="IMGC_GAMMA_B_TH_09" selectedIndex="576"/>
+				<gridItem id="IMGC_GAMMA_B_TH_10" selectedIndex="640"/>
+				<gridItem id="IMGC_GAMMA_B_TH_11" selectedIndex="704"/>
+				<gridItem id="IMGC_GAMMA_B_TH_12" selectedIndex="768"/>
+				<gridItem id="IMGC_GAMMA_B_TH_13" selectedIndex="832"/>
+				<gridItem id="IMGC_GAMMA_B_TH_14" selectedIndex="896"/>
+				<gridItem id="IMGC_GAMMA_B_TH_15" selectedIndex="960"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_00" selectedIndex="1317"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_01" selectedIndex="1157"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_02" selectedIndex="1103"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_03" selectedIndex="1069"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_04" selectedIndex="1045"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_05" selectedIndex="1026"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_06" selectedIndex="1010"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_07" selectedIndex="997"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_08" selectedIndex="986"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_09" selectedIndex="976"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_10" selectedIndex="967"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_11" selectedIndex="959"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_12" selectedIndex="952"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_13" selectedIndex="945"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_14" selectedIndex="939"/>
+				<gridItem id="IMGC_GAMMA_R_GAIN_15" selectedIndex="919"/>
+				<gridItem id="IMGC_GAMMA_R_TH_01" selectedIndex="64"/>
+				<gridItem id="IMGC_GAMMA_R_TH_02" selectedIndex="128"/>
+				<gridItem id="IMGC_GAMMA_R_TH_03" selectedIndex="192"/>
+				<gridItem id="IMGC_GAMMA_R_TH_04" selectedIndex="256"/>
+				<gridItem id="IMGC_GAMMA_R_TH_05" selectedIndex="320"/>
+				<gridItem id="IMGC_GAMMA_R_TH_06" selectedIndex="384"/>
+				<gridItem id="IMGC_GAMMA_R_TH_07" selectedIndex="448"/>
+				<gridItem id="IMGC_GAMMA_R_TH_08" selectedIndex="512"/>
+				<gridItem id="IMGC_GAMMA_R_TH_09" selectedIndex="576"/>
+				<gridItem id="IMGC_GAMMA_R_TH_10" selectedIndex="640"/>
+				<gridItem id="IMGC_GAMMA_R_TH_11" selectedIndex="704"/>
+				<gridItem id="IMGC_GAMMA_R_TH_12" selectedIndex="768"/>
+				<gridItem id="IMGC_GAMMA_R_TH_13" selectedIndex="832"/>
+				<gridItem id="IMGC_GAMMA_R_TH_14" selectedIndex="896"/>
+				<gridItem id="IMGC_GAMMA_R_TH_15" selectedIndex="960"/>
+				<gridItem id="IMGC_DITHER_ACTIVE" selectedIndex="0"/>
+				<gridItem id="IMGC_DITHER_MODE" selectedIndex="0"/>
+				<gridItem id="IMGC_DITHER_2X2_PA" selectedIndex="3"/>
+				<gridItem id="IMGC_DITHER_2X2_PB" selectedIndex="0"/>
+				<gridItem id="IMGC_DITHER_2X2_PC" selectedIndex="2"/>
+				<gridItem id="IMGC_DITHER_2X2_PD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration id="393a7d81-7e68-4f4a-9261-397096edf54d" inuse="true" name="Config_PORT">
+			<allocatable id="Port" name="Port">
+				<allocatable id="PORT0_Check" name="PORT0">
+					<option enabled="true" id="PortnEnable" name="Port0 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT1_Check" name="PORT1">
+					<option enabled="true" id="PortnEnable" name="Port1 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT2_Check" name="PORT2">
+					<option enabled="true" id="PortnEnable" name="Port2 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT3_Check" name="PORT3">
+					<option enabled="true" id="PortnEnable" name="Port3 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT4_Check" name="PORT4">
+					<option enabled="true" id="PortnEnable" name="Port4 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT5_Check" name="PORT5">
+					<option enabled="true" id="PortnEnable" name="Port5 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT6_Check" name="PORT6">
+					<option enabled="true" id="PortnEnable" name="Port6 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT7_Chan" name="PORT7">
+					<allocatable id="PORTx0_Item" name="PORT70">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Out">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveOut">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx1_Item" name="PORT71">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveDisable">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx2_Item" name="PORT72">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx3_Item" name="PORT73">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveOut">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx4_Item" name="PORT74">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx5_Item" name="PORT75">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx6_Item" name="PORT76">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx7_Item" name="PORT77">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<option enabled="true" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+						<item id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+						<item id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="UseStatusAll" name="Use status" selection="UnuseAlldisbale">
+						<item id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+						<item id="InAll" input="" name="In" type="static" vlaue="0"/>
+						<item id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+						<item id="UnuseAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="InAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="OutAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="PullupAll" name="Pull-up all" selection="PullupAlldisable">
+						<item id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="OpendrainAll" name="Open-drain all" selection="OpendrainAlldisable">
+						<item id="CMOSAll" input="" name="CMOS output" type="static" vlaue="0"/>
+						<item id="NChanelAll" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+						<item id="PChanelAll" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+						<item id="HiZAll" input="" name="Hi-Z" type="static" vlaue="0"/>
+						<item id="OpendrainAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="Output1All" name="Output 1 all" selection="Output1Alldisable">
+						<item id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="HighdriveSelectAll" name="High-drive output all" selection="HighdriveNormalAll">
+						<item id="HighdriveNormalAll" input="" name="Normal drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveOutAll" input="" name="High-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveHispeedAll" input="" name="High-speed interface high-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveDisableAll" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT7_Check" name="PORT7">
+					<option enabled="true" id="PortnEnable" name="Port7 Enable" selection="Enable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT8_Check" name="PORT8">
+					<option enabled="true" id="PortnEnable" name="Port8 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT9_Check" name="PORT9">
+					<option enabled="true" id="PortnEnable" name="Port9 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTA_Check" name="PORTA">
+					<option enabled="true" id="PortnEnable" name="PortA Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTB_Check" name="PORTB">
+					<option enabled="true" id="PortnEnable" name="PortB Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTC_Check" name="PORTC">
+					<option enabled="true" id="PortnEnable" name="PortC Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTD_Check" name="PORTD">
+					<option enabled="true" id="PortnEnable" name="PortD Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTE_Check" name="PORTE">
+					<option enabled="true" id="PortnEnable" name="PortE Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTF_Check" name="PORTF">
+					<option enabled="true" id="PortnEnable" name="PortF Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTJ_Check" name="PORTJ">
+					<option enabled="true" id="PortnEnable" name="PortJ Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<osocket id="PORTINFO" value=";P70_O;"/>
+			</allocatable>
+			<component description="This software component provides configurations for General Purpose Input/Output. Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.3.0"/>
+			<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.port.rx651.PORT" type="">
+				<context/>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_sci_iic_rx">
+			<component description="Dependency : r_bsp version(s) 5.61&#10; The SCI simple I2C mode fit module provides a method to transmit and receive data between the master and slave devices using the serial communications interface (SCI). The SCI simple I2C mode is in compliance with single master mode of the NXP I2C-bus (Inter-IC-Bus) interface.  " detailDescription="Simple IIC Driver." display="r_sci_iic_rx" id="r_sci_iic_rx2.47" version="2.47">
+				<gridItem id="SSCL0" selectedIndex="0"/>
+				<gridItem id="SSDA0" selectedIndex="0"/>
+				<gridItem id="SCI0" selectedIndex="0"/>
+				<gridItem id="SSCL1" selectedIndex="0"/>
+				<gridItem id="SSDA1" selectedIndex="0"/>
+				<gridItem id="SCI1" selectedIndex="0"/>
+				<gridItem id="SSCL2" selectedIndex="0"/>
+				<gridItem id="SSDA2" selectedIndex="0"/>
+				<gridItem id="SCI2" selectedIndex="0"/>
+				<gridItem id="SSCL3" selectedIndex="0"/>
+				<gridItem id="SSDA3" selectedIndex="0"/>
+				<gridItem id="SCI3" selectedIndex="0"/>
+				<gridItem id="SSCL4" selectedIndex="0"/>
+				<gridItem id="SSDA4" selectedIndex="0"/>
+				<gridItem id="SCI4" selectedIndex="0"/>
+				<gridItem id="SSCL5" selectedIndex="0"/>
+				<gridItem id="SSDA5" selectedIndex="0"/>
+				<gridItem id="SCI5" selectedIndex="0"/>
+				<gridItem id="SSCL6" selectedIndex="1"/>
+				<gridItem id="SSDA6" selectedIndex="1"/>
+				<gridItem id="SCI6" selectedIndex="1"/>
+				<gridItem id="SSCL7" selectedIndex="0"/>
+				<gridItem id="SSDA7" selectedIndex="0"/>
+				<gridItem id="SCI7" selectedIndex="0"/>
+				<gridItem id="SSCL8" selectedIndex="0"/>
+				<gridItem id="SSDA8" selectedIndex="0"/>
+				<gridItem id="SCI8" selectedIndex="0"/>
+				<gridItem id="SSCL9" selectedIndex="0"/>
+				<gridItem id="SSDA9" selectedIndex="0"/>
+				<gridItem id="SCI9" selectedIndex="0"/>
+				<gridItem id="SSCL10" selectedIndex="0"/>
+				<gridItem id="SSDA10" selectedIndex="0"/>
+				<gridItem id="SCI10" selectedIndex="0"/>
+				<gridItem id="SSCL11" selectedIndex="0"/>
+				<gridItem id="SSDA11" selectedIndex="0"/>
+				<gridItem id="SCI11" selectedIndex="0"/>
+				<gridItem id="SSCL12" selectedIndex="0"/>
+				<gridItem id="SSDA12" selectedIndex="0"/>
+				<gridItem id="SCI12" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_PARAM_CHECKING_ENABLE" selectedIndex="2"/>
+				<gridItem id="SCI_IIC_CFG_CH0_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH1_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH2_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH3_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH4_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH5_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH6_INCLUDED" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH7_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH8_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH9_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH10_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH11_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH12_INCLUDED" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH0_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH1_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH2_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH3_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH4_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH5_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH6_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH7_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH8_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH9_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH10_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH11_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH12_BITRATE_BPS" selectedIndex="384000"/>
+				<gridItem id="SCI_IIC_CFG_CH0_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH1_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH2_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH3_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH4_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH5_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH6_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH7_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH8_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH9_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH10_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH11_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH12_INT_PRIORITY" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH0_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH1_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH2_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH3_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH4_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH5_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH6_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH7_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH8_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH9_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH10_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH11_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH12_DIGITAL_FILTER" selectedIndex="1"/>
+				<gridItem id="SCI_IIC_CFG_CH0_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH1_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH2_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH3_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH4_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH5_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH6_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH7_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH8_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH9_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH10_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH11_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH12_FILTER_CLOCK" selectedIndex="0"/>
+				<gridItem id="SCI_IIC_CFG_CH0_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH1_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH2_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH3_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH4_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH5_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH6_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH7_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH8_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH9_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH10_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH11_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_CH12_SSDA_DELAY_SELECT" selectedIndex="18"/>
+				<gridItem id="SCI_IIC_CFG_BUS_CHECK_COUNTER" selectedIndex="1000"/>
+				<gridItem id="SCI_IIC_CFG_PORT_SETTING_PROCESSING" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hcdc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hcdc package provides USB host communication device class driver" detailDescription="USB Host Communication Device Class" display="r_usb_hcdc" id="r_usb_hcdc1.30" version="1.30">
+				<gridItem id="USB_CFG_HCDC_MULTI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_IFCLS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT2" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN2" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hhid">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hhid package provides USB host human interface device class driver" detailDescription="USB Host Human Interface Device Class" display="r_usb_hhid" id="r_usb_hhid1.30" version="1.30">
+				<gridItem id="USB_CFG_HHID_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HHID_INT_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HHID_INT_IN3" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HHID_INT_OUT" selectedIndex="4"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hmsc">
+			<component description="" detailDescription="USB Host Mass Storage Class" display="r_usb_hmsc" id="r_usb_hmsc1.30" version="1.30">
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#1" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#2" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#3" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="2"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_emwin_rx">
+			<component description="Dependency : r_cmt_rx version(s) 4.40&#10;Dependency : r_dmaca_rx version(s) 2.40&#10;Dependency : r_drw2d_rx version(s) 1.10&#10;Dependency : r_glcdc_rx version(s) 1.40&#10;Dependency : r_gpio_rx version(s) 3.50&#10;Dependency : r_sci_iic_rx version(s) 2.46&#10;emWin is designed to provide an efficient, processor- and display controller-independent graphical user interface for any application that operates with a graphical display. It is compatible with single-task and multitask environments, with a proprietary operating system or with any commercial RTOS. emWin is shipped as C source code. It may be adapted to any size physical and virtual display with any display controller and CPU.&#10;The version number 6.14g means the version of emWin library, and 1.30 means that of FIT module.&#10;This FIT module includes an installer of AppWizard v1.10." detailDescription="Graphic Library with Graphical User Interface" display="r_emwin_rx" id="r_emwin_rx6.14.g.1.30" version="6.14.g.1.30"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_drw2d_rx">
+			<component description="Dependencies : None&#10;Drawing 2D engine(DRW2D) driver for RX MCUs" detailDescription="Drawing 2D engine driver for RX MCUs" display="r_drw2d_rx" id="r_drw2d_rx1.10" version="1.10"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_cellular" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.10&#10;Dependency : r_sci_rx version(s) 4.30&#10;Dependency : r_irq_rx version(s) 4.00&#10;Use UART to control RYZ014A and connect to the Internet." detailDescription="Cellular Module control functions for Renesas MCUs." display="r_cellular" id="r_cellular1.10" version="1.10">
+                <gridItem id="CELLULAR_CFG_AUTH_TYPE" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_UART_SCI_CH" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_CTS_SW_CTRL" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_RTS_PORT" selectedIndex="5"/>
+                <gridItem id="CELLULAR_CFG_RTS_PIN" selectedIndex="1"/>
+                <gridItem id="CELLULAR_CFG_RESET_PORT" selectedIndex="5"/>
+                <gridItem id="CELLULAR_CFG_RESET_PIN" selectedIndex="5"/>
+                <gridItem id="CELLULAR_CFG_IRQ_NUM" selectedIndex="13"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_sci_rx#1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx4.80" version="4.80">
+                <gridItem id="SCK2" selectedIndex="1"/>
+                <gridItem id="RXD2/SMISO2/SSCL2" selectedIndex="1"/>
+                <gridItem id="TXD2/SMOSI2/SSDA2" selectedIndex="1"/>
+                <gridItem id="CTS2#/RTS2#/SS2#" selectedIndex="0"/>
+                <gridItem id="SCI2" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH2_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH2_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH2_RX_BUFSIZ" selectedIndex="8192"/>
+                <gridItem id="SCI_CFG_TEI_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_sci_rx#2" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx4.80" version="4.80">
+                <gridItem id="SCK2" selectedIndex="1"/>
+                <gridItem id="RXD2/SMISO2/SSCL2" selectedIndex="1"/>
+                <gridItem id="TXD2/SMOSI2/SSDA2" selectedIndex="1"/>
+                <gridItem id="CTS2#/RTS2#/SS2#" selectedIndex="0"/>
+                <gridItem id="SCI2" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH2_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH2_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH2_RX_BUFSIZ" selectedIndex="8192"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+	</tool>
+</boardDescription>
