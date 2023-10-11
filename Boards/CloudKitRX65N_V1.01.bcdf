@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="CloudKitRX65N" version="1.01">
+	<supportedBoard>
+		<!-- Board id and version refer to bdf -->
+		<board id="CloudKitRX65N" version="V1.12"/>
+		<board id="CloudKitRX65N" version="V1.13"/>
+	</supportedBoard>
+	<boardFeature>
+		<!-- Board features to be placed here -->
+		<feature name="LEDs" jName="LED">
+			<components> 
+				<configuration name="Config_PORT"/>
+			</components> 
+		</feature>
+		<feature name="PMOD(Cellular/SPI)" jName="PMOD(Cellular/SPI)">
+			<components>
+				<configuration name="r_cellular">
+					<dependency name="r_sci_rx#1"/>
+					<dependency name="r_byteq"/>
+					<dependency name="r_irq_rx#1"/>
+					<dependency name="r_gpio_rx"/>
+				</configuration>
+				<configuration name="r_sci_rx#2">
+					<dependency name="r_byteq"/>
+					<dependency name="r_irq_rx#1"/>
+					<dependency name="r_gpio_rx"/>
+				</configuration>
+			</components> 
+		</feature>
+		<feature name="On-Board Sensor (I2C for Ambient Light, Environment, Inertial Sensors)" jName="On-Board Sensor (I2C for Ambient Light, Environment, Inertial Sensors)">
+			<components> 
+				<configuration name="Config_RIIC0_MasterMode"/>
+			</components> 
+		</feature>
+		<feature name="On-Board Sensor (INTP for Ambient Light and Inertial Sensors)" jName="On-Board Sensor (INTP for Ambient Light and Inertial Sensors)">
+			<components> 
+				<configuration name="r_irq_rx#2"/>
+			</components> 
+		</feature>
+		<feature name="QSPI Flash" jName="QSPI Flash">
+			<components> 
+				<configuration name="r_qspi_smstr_rx">
+				</configuration>
+			</components> 
+		</feature>
+		<feature name="USB Function" jName="USB Function">
+			<components> 
+				<configuration name="r_usb_hcdc">
+					<dependency name="r_usb_basic#1"/>
+				</configuration>
+				<configuration name="r_usb_hhid">
+					<dependency name="r_usb_basic#2"/>
+				</configuration>
+				<configuration name="r_usb_hmsc">
+					<dependency name="r_usb_basic#3"/>
+				</configuration>
+				<configuration name="r_usb_pcdc">
+					<dependency name="r_usb_basic#4"/>
+				</configuration>
+				<configuration name="r_usb_phid">
+					<dependency name="r_usb_basic#5"/>
+				</configuration>
+				<configuration name="r_usb_pmsc">
+					<dependency name="r_usb_basic#6"/>
+				</configuration>
+			</components> 
+		</feature>
+	</boardFeature>
+	<tool id="SWComponent" version="1.0.0.0">
+		<!-- Exported configurations to be placed here -->
+		<configuration inuse="true" name="r_qspi_smstr_rx">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The QSPI built into the RX Family microcontroller is used to implement clock synchronous control. QSPI mode single master control can be enabled by adding slave device selection control by means of port control." detailDescription="QSPI Clock Synchronous Single Master Control Module Using Firmware Integration Technology" display="r_qspi_smstr_rx" id="r_qspi_smstr_rx1.14" version="1.14">
+				<gridItem id="QSPCLK" selectedIndex="1"/>
+				<gridItem id="QIO0" selectedIndex="1"/>
+				<gridItem id="QIO1" selectedIndex="1"/>
+				<gridItem id="QIO2" selectedIndex="1"/>
+				<gridItem id="QIO3" selectedIndex="1"/>
+				<gridItem id="QSPI0" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_USE_FIT" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INCLUDED" selectedIndex="1"/>
+				<gridItem id="QSPI_SMSTR_CFG_LONGQ_ENABLE" selectedIndex="0"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INT_SPTI_LEVEL" selectedIndex="10"/>
+				<gridItem id="QSPI_SMSTR_CFG_CH0_INT_SPRI_LEVEL" selectedIndex="10"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration id="6df76ceb-045c-412d-b6d1-b097b4644f30" inuse="true" name="Config_RIIC0_MasterMode">
+			<allocatable id="RIIC0" name="RIIC0">
+				<isocket id="CountingClock" selection="Clock.tool_clock_pclkb" value="4000000.0"/>
+				<option enabled="true" id="Bitrate" name="Baudrate" selection="FreeValue">
+					<item id="FreeValue" input="10" name="Free Value" type="dynamic" vlaue="10"/>
+					<item id="10" input="10" name="10kbps" type="static" vlaue="0"/>
+					<item id="50" input="50" name="50kbps" type="static" vlaue="0"/>
+					<item id="100" input="100" name="100kbps" type="static" vlaue="0"/>
+					<item id="400" input="400" name="400kbps" type="static" vlaue="0"/>
+					<item id="1000" input="1000" name="1000kbps" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NFEnable" name="Enable noise filter" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NFStage" name="Noise filter stage" selection="1Stage">
+					<item id="1Stage" input="" name="Single-stage filter" type="static" vlaue="0"/>
+					<item id="2Stage" input="" name="2-stage filter" type="static" vlaue="0"/>
+					<item id="3Stage" input="" name="3-stage filter" type="static" vlaue="0"/>
+					<item id="4Stage" input="" name="4-stage filter" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="SDAEnable" name="Enable SDA output delay" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="SDACNTClock" name="SDA output delay counter clock" selection="Internal">
+					<item id="Internal" input="" name="Internal reference clock" type="static" vlaue="0"/>
+					<item id="HalfInternal" input="" name="Internal reference clock/2" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="SDAOutDelay" name="SDA output delay counter value" selection="Delay1">
+					<item id="Delay1" input="" name="1 IIC cycle" type="static" vlaue="0"/>
+					<item id="Delay2" input="" name="2 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay3" input="" name="3 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay4" input="" name="4 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay5" input="" name="5 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay6" input="" name="6 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay7" input="" name="7 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay8" input="" name="1 or 2 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay9" input="" name="3 or 4 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay10" input="" name="5 or 6 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay11" input="" name="7 or 8 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay12" input="" name="9 or 10 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay13" input="" name="11 or 12 IIC cycles" type="static" vlaue="0"/>
+					<item id="Delay14" input="" name="13 or 14 IIC cycles" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Timeout" name="Enable timeout function" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="DetCondition" name="Detection condition" selection="SCLBoth">
+					<item id="SCLLow" input="" name="SCL at low level" type="static" vlaue="0"/>
+					<item id="SCLHigh" input="" name="SCL at high level" type="static" vlaue="0"/>
+					<item id="SCLBoth" input="" name="SCL at low and high (both) levels" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="DetTime" name="Detection time" selection="LongMode">
+					<item id="LongMode" input="" name="Long mode (16 bit counter)" type="static" vlaue="0"/>
+					<item id="ShortMode" input="" name="Short mode (14 bit counter)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="MasterALDEnable" name="Enable master arbitration-lost detection" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NACKALDEnable" name="Enable NACK transmission arbitration-lost detection" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="TSusEnable" name="Enable transfer suspension during NACK reception" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="IntTXIPriority" name="Transmit data empty interrupt (TXI0) priority" selection="Level14">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="IntTEIPriority" name="Transmit end interrupt (TEI0) priority (Group BL1)" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="IntRXIPriority" name="Receive data full interrupt (RXI0) priority" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="false" id="TMOIEnable" name="Enable timeout interrupt (TMOI)" selection="Disable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="ALIEnable" name="Enable arbitration-lost interrupt (ALI)" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="STIEnable" name="Enable start condition detection interrupt (STI)" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="SPIEnable" name="Enable stop condition detection interrupt (SPI)" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="NAKIEnable" name="Enable NACK reception interrupt (NAKI)" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="IntEEIPriority" name="EEI0 priority (Group BL1)" selection="Level15">
+					<item id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
+					<item id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
+					<item id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
+					<item id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
+					<item id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
+					<item id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
+					<item id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
+					<item id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
+					<item id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
+					<item id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
+					<item id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
+					<item id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
+					<item id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
+					<item id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
+					<item id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
+					<item id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="TransEnd" name="Transfer end" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="RecvEnd" name="Receive end" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="RecvErr" name="Receive error" selection="Enable">
+					<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+					<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+				</option>
+				<option enabled="true" id="Mode" name="I2CMode" relocateHiden="true" selection="I2C">
+					<item id="I2C" input="" name="I2C Mode" type="static" vlaue="0"/>
+					<item id="SMBS" input="" name="SMBus Mode" type="static" vlaue="0"/>
+				</option>
+			</allocatable>
+			<component description="This software component provides configurations of I2C master mode for RIIC and SCI." detailDescription="" display="I2C Master Mode" id="com.renesas.smc.tools.swcomponent.codegenerator.i2cmastermode" version="1.10.0"/>
+			<allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="RIIC channel 0" display="RIIC0" id="com.renesas.smc.tools.swcomponent.codegenerator.i2cmastermode.rx64m.riic0" type="RIIC">
+				<context>
+					<option enabled="true" id="Mode" selection="I2C">
+						<item enabled="true" id="I2C"/>
+						<item enabled="true" id="SMBS"/>
+					</option>
+				</context>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration id="cdb3e1b9-ae73-487f-9ce6-580d02c52b1c" inuse="true" name="Config_PORT">
+			<allocatable id="Port" name="Port">
+				<allocatable id="PORT0_Check" name="PORT0">
+					<option enabled="true" id="PortnEnable" name="Port0 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT1_Check" name="PORT1">
+					<option enabled="true" id="PortnEnable" name="Port1 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT2_Check" name="PORT2">
+					<option enabled="true" id="PortnEnable" name="Port2 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT3_Check" name="PORT3">
+					<option enabled="true" id="PortnEnable" name="Port3 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT4_Check" name="PORT4">
+					<option enabled="true" id="PortnEnable" name="Port4 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORT5_Check" name="PORT5">
+					<option enabled="true" id="PortnEnable" name="Port5 Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTA_Check" name="PORTA">
+					<option enabled="true" id="PortnEnable" name="PortA Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTB_Chan" name="PORTB">
+					<allocatable id="PORTx0_Item" name="PORTB0">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Out">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx1_Item" name="PORTB1">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx2_Item" name="PORTB2">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Out">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx3_Item" name="PORTB3">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx4_Item" name="PORTB4">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx5_Item" name="PORTB5">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx6_Item" name="PORTB6">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<allocatable id="PORTx7_Item" name="PORTB7">
+						<option enabled="true" id="UseStatus" name="Use status" selection="Unuse">
+							<item id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+							<item id="In" input="" name="In" type="static" vlaue="0"/>
+							<item id="Out" input="" name="Out" type="static" vlaue="0"/>
+						</option>
+						<option enabled="false" id="Output1" name="Output 1" selection="Output1Unuse">
+							<item id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+							<item id="Output1disable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Pullup" name="Pull-up" selection="PullupUnuse">
+							<item id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+							<item id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+							<item id="Pullupdisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="Opendrain" name="Open-drain" selection="CMOS">
+							<item id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+							<item id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+							<item id="PChanel" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+							<item id="HiZ" input="" name="Hi-Z" type="static" vlaue="0"/>
+							<item id="Opendraindisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+						<option enabled="true" id="HighdriveSelect" name="High-drive output" selection="HighdriveNormal">
+							<item id="HighdriveNormal" input="" name="Normal drive output" type="static" vlaue="0"/>
+							<item id="HighdriveOut" input="" name="High-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveHispeed" input="" name="High-speed interface high-drive output" type="static" vlaue="0"/>
+							<item id="HighdriveDisable" input="" name="Disable" type="static" vlaue="0"/>
+						</option>
+					</allocatable>
+					<option enabled="true" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+						<item id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+						<item id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="UseStatusAll" name="Use status" selection="UnuseAlldisbale">
+						<item id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+						<item id="InAll" input="" name="In" type="static" vlaue="0"/>
+						<item id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+						<item id="UnuseAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="InAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+						<item id="OutAlldisbale" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="PullupAll" name="Pull-up all" selection="PullupAlldisable">
+						<item id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="OpendrainAll" name="Open-drain all" selection="OpendrainAlldisable">
+						<item id="CMOSAll" input="" name="CMOS output" type="static" vlaue="0"/>
+						<item id="NChanelAll" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+						<item id="PChanelAll" input="" name="P-channel open-drain" type="static" vlaue="0"/>
+						<item id="HiZAll" input="" name="Hi-Z" type="static" vlaue="0"/>
+						<item id="OpendrainAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="false" id="Output1All" name="Output 1 all" selection="Output1Alldisable">
+						<item id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+						<item id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+						<item id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+					<option enabled="true" id="HighdriveSelectAll" name="High-drive output all" selection="HighdriveNormalAll">
+						<item id="HighdriveNormalAll" input="" name="Normal drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveOutAll" input="" name="High-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveHispeedAll" input="" name="High-speed interface high-drive output all" type="static" vlaue="0"/>
+						<item id="HighdriveDisableAll" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTB_Check" name="PORTB">
+					<option enabled="true" id="PortnEnable" name="PortB Enable" selection="Enable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTC_Check" name="PORTC">
+					<option enabled="true" id="PortnEnable" name="PortC Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTD_Check" name="PORTD">
+					<option enabled="true" id="PortnEnable" name="PortD Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTE_Check" name="PORTE">
+					<option enabled="true" id="PortnEnable" name="PortE Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<allocatable id="PORTJ_Check" name="PORTJ">
+					<option enabled="true" id="PortnEnable" name="PortJ Enable" selection="Disable">
+						<item id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+						<item id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+					</option>
+				</allocatable>
+				<osocket id="PORTINFO" value=";PB0_O;PB2_O;"/>
+			</allocatable>
+			<component description="This software component provides configurations for General Purpose Input/Output. Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.2.0"/>
+			<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.port.rx651.PORT" type="">
+				<context/>
+			</allocator>
+			<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hcdc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hcdc package provides USB host communication device class driver" detailDescription="USB Host Communication Device Class" display="r_usb_hcdc" id="r_usb_hcdc1.30" version="1.30">
+				<gridItem id="USB_CFG_HCDC_MULTI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_IFCLS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HCDC_BULK_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HCDC_BULK_OUT2" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HCDC_INT_IN2" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hhid">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_hhid package provides USB host human interface device class driver" detailDescription="USB Host Human Interface Device Class" display="r_usb_hhid" id="r_usb_hhid1.30" version="1.30">
+				<gridItem id="USB_CFG_HHID_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_HHID_INT_IN2" selectedIndex="2"/>
+				<gridItem id="USB_CFG_HHID_INT_IN3" selectedIndex="3"/>
+				<gridItem id="USB_CFG_HHID_INT_OUT" selectedIndex="4"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_hmsc">
+			<component description="" detailDescription="USB Host Mass Storage Class" display="r_usb_hmsc" id="r_usb_hmsc1.30" version="1.30">
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_pcdc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_pcdc package provides USB peripheral communications device class driver" detailDescription="USB Peripheral Communications Device Class" display="r_usb_pcdc" id="r_usb_pcdc1.30" version="1.30">
+				<gridItem id="USB_CFG_PCDC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PCDC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PCDC_INT_IN" selectedIndex="0"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_phid">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_phid package provides USB peripheral Human I/F device class driver" detailDescription="USB Peripheral Human I/F Device Class" display="r_usb_phid" id="r_usb_phid1.30" version="1.30">
+				<gridItem id="USB_CFG_PHID_INT_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PHID_INT_OUT" selectedIndex="2"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_usb_pmsc">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;Dependency : r_usb_basic version(s) 1.30&#10;The r_usb_pmsc package provides USB peripheral mass storage class driver" detailDescription="USB Peripheral Mass Storage Class" display="r_usb_pmsc" id="r_usb_pmsc1.30" version="1.30">
+				<gridItem id="USB_CFG_PMSC_BULK_IN" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PMSC_BULK_OUT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PMSC_VENDOR" selectedIndex="&quot;Renesas &quot;"/>
+				<gridItem id="USB_CFG_PMSC_PRODUCT" selectedIndex="&quot;Mass Storage    &quot;"/>
+				<gridItem id="USB_CFG_PMSC_REVISION" selectedIndex="&quot;1.00&quot;"/>
+				<gridItem id="USB_CFG_PMSC_TRANS_COUNT" selectedIndex="64"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#1" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#2" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#3" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="0"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="2"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#4" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="4"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#5" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="5"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration mapId="r_usb_basic#6" inuse="true" name="r_usb_basic">
+			<component description="Dependency : r_bsp version(s) 5.50&#10;The r_usb_basic package provides USB basic host and peripheral firmware" detailDescription="USB basic(low-level) driver" display="r_usb_basic" id="r_usb_basic1.30" version="1.30">
+				<gridItem id="USB0_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USB0_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USB0_HOST" selectedIndex="0"/>
+				<gridItem id="USB0_VBUS" selectedIndex="0"/>
+				<gridItem id="USB0_PERI" selectedIndex="0"/>
+				<gridItem id="USBA_VBUSEN" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURA" selectedIndex="0"/>
+				<gridItem id="USBA_OVRCURB" selectedIndex="0"/>
+				<gridItem id="USBA_HOST" selectedIndex="0"/>
+				<gridItem id="USBA_VBUS" selectedIndex="0"/>
+				<gridItem id="USBA_PERI" selectedIndex="0"/>
+				<gridItem id="USB_CFG_MODE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_PARAM_CHECKING" selectedIndex="0"/>
+				<gridItem id="USB_CFG_DEVICE_CLASS" selectedIndex="6"/>
+				<gridItem id="USB_CFG_DTC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DMA" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_TX" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USB0_DMA_RX" selectedIndex="2"/>
+				<gridItem id="USB_CFG_USB1_DMA_TX" selectedIndex="3"/>
+				<gridItem id="USB_CFG_USB1_DMA_RX" selectedIndex="4"/>
+				<gridItem id="USB_CFG_CLKSEL" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BUSWAIT" selectedIndex="7"/>
+				<gridItem id="USB_CFG_INTERRUPT_PRIORITY" selectedIndex="2"/>
+				<gridItem id="USB_CFG_VBUS" selectedIndex="0"/>
+				<gridItem id="USB_CFG_BC" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DCP" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TYPEC" selectedIndex="0"/>
+				<gridItem id="USB_CFG_COMPLIANCE" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_HUB_TPLCNT" selectedIndex="1"/>
+				<gridItem id="USB_CFG_HUB_TPL" selectedIndex="USB_NOVENDOR, USB_NOPRODUCT"/>
+				<gridItem id="USB_CFG_ELECTRICAL" selectedIndex="1"/>
+				<gridItem id="USB_CFG_USE_USBIP" selectedIndex="0"/>
+				<gridItem id="USB_CFG_REQUEST" selectedIndex="1"/>
+				<gridItem id="USB_CFG_DBLB" selectedIndex="0"/>
+				<gridItem id="USB_CFG_CNTMD" selectedIndex="1"/>
+			</component>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+			<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+		</configuration>
+		<configuration inuse="true" name="r_cellular" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.10&#10;Dependency : r_sci_rx version(s) 4.30&#10;Dependency : r_irq_rx version(s) 4.00&#10;Use UART to control RYZ014A and connect to the Internet." detailDescription="Cellular Module control functions for Renesas MCUs." display="r_cellular" id="r_cellular1.10" version="1.10">
+                <gridItem id="CELLULAR_CFG_AUTH_TYPE" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_UART_SCI_CH" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_RTS_PORT" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_RTS_PIN" selectedIndex="2"/>
+                <gridItem id="CELLULAR_CFG_RESET_PORT" selectedIndex="13"/>
+                <gridItem id="CELLULAR_CFG_RESET_PIN" selectedIndex="0"/>
+                <gridItem id="CELLULAR_CFG_IRQ_NUM" selectedIndex="4"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_sci_rx#1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx4.80" version="4.80">
+                <gridItem id="SCK0" selectedIndex="0"/>
+                <gridItem id="RXD0/SMISO0/SSCL0" selectedIndex="1"/>
+                <gridItem id="TXD0/SMOSI0/SSDA0" selectedIndex="1"/>
+                <gridItem id="CTS0#/RTS0#/SS0#" selectedIndex="1"/>
+                <gridItem id="SCI0" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH0_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH0_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH0_RX_BUFSIZ" selectedIndex="8192"/>
+                <gridItem id="SCI_CFG_TEI_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_sci_rx#2" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx4.80" version="4.80">
+                <gridItem id="SCK0" selectedIndex="0"/>
+                <gridItem id="RXD0/SMISO0/SSCL0" selectedIndex="1"/>
+                <gridItem id="TXD0/SMOSI0/SSDA0" selectedIndex="1"/>
+                <gridItem id="CTS0#/RTS0#/SS0#" selectedIndex="1"/>
+                <gridItem id="SCI0" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH0_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH0_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH0_RX_BUFSIZ" selectedIndex="8192"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_irq_rx#1" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.30" version="4.30">
+				<gridItem id="IRQ4" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration mapId="r_irq_rx#2" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.30" version="4.30">
+                <gridItem id="IRQ5" selectedIndex="1"/>
+                <gridItem id="IRQ6" selectedIndex="1"/>
+                <gridItem id="IRQ7" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.20&#10;This module allocates a queue control block in an Open() call to handle indexing for buffers provided by the user application. Additional functions are provided to put and get data from the buffer queue, inspect the number of bytes available or in use, and to flush the queue. There is no limit to the number of queues supported, and queue control blocks can be allocated statically at build time or dynamically at run time." detailDescription="Byte-based circular buffer library." display="r_byteq" id="r_byteq2.10" version="2.10">
+                <gridItem id="BYTEQ_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_USE_HEAP_FOR_CTRL_BLKS" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_MAX_CTRL_BLKS" selectedIndex="32"/>
+                <gridItem id="BYTEQ_CFG_PROTECT_QUEUE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_CRITICAL_SECTION" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration inuse="true" name="r_gpio_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.30&#10;This code implements a General Purpose Input/Output driver. Common features such as reading, writing, and setting the direction of ports and pins is supported. Enabling features such as open-drain outputs and internal pull-ups are also supported." detailDescription="GPIO Driver" display="r_gpio_rx" id="r_gpio_rx4.90" version="4.90">
+                <gridItem id="GPIO_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+	</tool>
+</boardDescription>
