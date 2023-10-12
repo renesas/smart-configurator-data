@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+  <pin>
+    <function comments="J1-1[LED2][Arduino-4]" group="" id="P21" pin="1" symbolicname="LED2" />
+    <function comments="J1-2[LED1]" group="" id="P20" pin="2" symbolicname="LED1" />
+    <function comments="J1-3[PMOD-GPIO7][Arduino-~3]" group="" id="UNASSIGNED_3" pin="3" symbolicname="" />
+    <function comments="J1-4[TOOL0]" group="" id="TOOL0" pin="4" symbolicname="" />
+    <function comments="J1-5[RST][Arduino-RES]" group="" id="_RESET" pin="5" symbolicname="" />
+    <function comments="J1-6[SW][PMOD-GPIO10][Arduino-2]" group="" id="INTP0" pin="6" symbolicname="" />
+    <function comments="J1-7" group="" id="UNASSIGNED_7" pin="7" symbolicname="" />
+    <function comments="J1-8" group="" id="UNASSIGNED_8" pin="8" symbolicname="" />
+    <function comments="J1-9" group="" id="UNASSIGNED_9" pin="9" symbolicname="" />
+    <function comments="J1-10" group="" id="UNASSIGNED_10" pin="10" symbolicname="" />
+    <function comments="J2-11[TOOLTxD]" group="" id="TOOLTxD" pin="11" symbolicname="" />
+    <function comments="J2-12[TOOLRxD]" group="" id="TOOLRxD" pin="12" symbolicname="" />
+    <function comments="J2-13[PMOD-INT][Arduino-A2]" group="" id="UNASSIGNED_13" pin="13" symbolicname="" />
+    <function comments="J2-14[PMOD-RESET][Arduino-TX/1]" group="" id="UNASSIGNED_14" pin="14" symbolicname="" />
+    <function comments="J2-15[Arduino-RX/0]" group="" id="UNASSIGNED_15" pin="15" symbolicname="" />
+    <function comments="J2-16[Arduino-13]" group="" id="UNASSIGNED_16" pin="16" symbolicname="" />
+    <function comments="J2-17[PMOD-SCL][Arduino-SCL]" group="" id="UNASSIGNED_17" pin="17" symbolicname="" />
+    <function comments="J2-18[PMOD-SDA][Arduino-SDA]" group="" id="UNASSIGNED_18" pin="18" symbolicname="" />
+    <function comments="J2-19[PMOD-GPIO9][Arduino-A0]" group="" id="UNASSIGNED_19" pin="19" symbolicname="" />
+    <function comments="J2-20[PMOD-GPIO8][Arduino-A1]" group="" id="UNASSIGNED_20" pin="20" symbolicname="" />
+  </pin>
+  <clock>
+    <item id="operationModeComb" value="vdd40" />
+    <item id="highSpeedOCOenable" value="hococlock_fihp" />
+    <item id="hsocofrequency" value="frq16" />
+    <item id="hssclockenable" value="uncheck" />
+    <item id="cmbhssoperation" value="x1oscillation" />
+    <item id="cmbhsstabletime" value="18" />
+    <item id="hssfrequency" value="5" />
+    <item id="fmainswitcher" value="grphococlock_fmainswitcher" />
+    <item id="enable12bit" value="uncheck" />
+  </clock>
+  <system>
+    <item id="emulator" value="renesas.serial" />
+  </system>
+  <board display="RL78G15_FastPrototypingBoard" html="" id="RL78G15_FastPrototypingBoard" partNumber="R5F12068xSP" />
+  <info version="V1.00" />
+</boardInfo>

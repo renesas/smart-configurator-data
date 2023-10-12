@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+  <pin>
+    <function comments="J1-1[PMOD2-GPIO8][Arduino-8]" group="" id="UNASSIGNED_1" pin="1" symbolicname="" />
+    <function comments="J1-2[TOOL0]" group="" id="TOOL0" pin="2" symbolicname="" />
+    <function comments="J1-3[RST][Arduino-RES]" group="" id="_RESET" pin="3" symbolicname="" />
+    <function comments="J1-4[SW][PMOD2-GPIO9]" group="" id="INTP0" pin="4" symbolicname="" />
+    <function comments="[XT2]" group="" id="XT2" pin="5" symbolicname="" />
+    <function comments="[XT1]" group="" id="XT1" pin="6" symbolicname="" />
+    <function comments="J1-7" group="" id="UNASSIGNED_7" pin="7" symbolicname="" />
+    <function comments="J1-8" group="" id="UNASSIGNED_8" pin="8" symbolicname="" />
+    <function comments="J1-9[PMOD2-SCL][Arduino-SCL][GROVE-SCLA0]" group="" id="UNASSIGNED_9" pin="9" symbolicname="" />
+    <function comments="J1-10[PMOD2-SDA][Arduino-SDA][GROVE-SDAA0]" group="" id="UNASSIGNED_10" pin="10" symbolicname="" />
+    <function comments="J1-11[PMOD2-INT][Arduino-~3]" group="" id="UNASSIGNED_11" pin="11" symbolicname="" />
+    <function comments="J1-12[PMOD2-GPIO7][Arduino-2]" group="" id="UNASSIGNED_12" pin="12" symbolicname="" />
+    <function comments="J1-13[LED1][PMOD2-GPIO10]" group="" id="P12" pin="13" symbolicname="LED1" />
+    <function comments="J1-14[PMOD1-CS/CTS]" group="" id="UNASSIGNED_14" pin="14" symbolicname="" />
+    <function comments="J1-15[PMOD1-INT][Arduino-4]" group="" id="UNASSIGNED_15" pin="15" symbolicname="" />
+    <function comments="J1-16[LED2][PMOD1-GPIO10]" group="" id="P15" pin="16" symbolicname="LED2" />
+    <function comments="J2-17[TOOLTxD]" group="" id="TOOLTxD" pin="17" symbolicname="" />
+    <function comments="J2-18[TOOLRxD]" group="" id="TOOLRxD" pin="18" symbolicname="" />
+    <function comments="[TSCAP]" group="" id="TSCAP" pin="19" symbolicname="" />
+    <function comments="J2-20[PMOD1-GPIO9][Arduino-~5]" group="" id="UNASSIGNED_20" pin="20" symbolicname="" />
+    <function comments="J2-21[PMOD1-RESET][Arduino-~6]" group="" id="UNASSIGNED_21" pin="21" symbolicname="" />
+    <function comments="J2-22[PMOD1-MOSI/TXD][Arduino-TX/1]" group="" id="UNASSIGNED_22" pin="22" symbolicname="" />
+    <function comments="J2-23[PMOD1-MISO/RXD][Arduino-RX/0]" group="" id="UNASSIGNED_23" pin="23" symbolicname="" />
+    <function comments="J2-24[PMOD1-SCK/RTS][Arduino-A0]" group="" id="UNASSIGNED_24" pin="24" symbolicname="" />
+    <function comments="[Touch Button1(CAP1)]" group="" id="TS06" pin="25" symbolicname="" />
+    <function comments="[Touch Button2(CAP2)]" group="" id="TS07" pin="26" symbolicname="" />
+    <function comments="[Slider(CAP5)]" group="" id="TS08" pin="27" symbolicname="" />
+    <function comments="[Slider(CAP4)]" group="" id="TS09" pin="28" symbolicname="" />
+    <function comments="J2-29[PMOD2-RESET][Arduino-MOSI/~11]" group="" id="UNASSIGNED_29" pin="29" symbolicname="" />
+    <function comments="J2-30[Arduino-MISO/12]" group="" id="UNASSIGNED_30" pin="30" symbolicname="" />
+    <function comments="[Slider(CAP3)]" group="" id="TS12" pin="31" symbolicname="" />
+    <function comments="J2-32[Arduino-SCK/13]" group="" id="UNASSIGNED_32" pin="32" symbolicname="" />
+  </pin>
+  <clock>
+    <item id="operationModeComb" value="vdd40" />
+    <item id="highSpeedOCOenable" value="hococlock_fihp" />
+    <item id="hsocofrequency" value="frq16" />
+    <item id="hssclockenable" value="uncheck" />
+    <item id="cmbhssoperation" value="x1oscillation" />
+    <item id="cmbhsstabletime" value="18" />
+    <item id="hssfrequency" value="5" />
+    <item id="enablesubClock" value="check" />
+    <item id="cmbsuboperation" value="xt1oscillation" />
+    <item id="lblsubmode" value="low" />
+    <item id="subclockmode" value="enable" />
+    <item id="fmainswitcher" value="grphococlock_fmainswitcher" />
+    <item id="fclkswitcher" value="fmainswitcher_fclkswitcher" />
+    <item id="fsxlswitcher" value="subclock_fsxlswitcher" />
+  </clock>
+  <system>
+     <item id="emulator" value="renesas.serial" />
+  </system>
+  <board display="RL78G16_FastPrototypingBoard" html="" id="RL78G16_FastPrototypingBoard" partNumber="R5F121BCxFP" />
+  <info version="V1.00" />
+</boardInfo>

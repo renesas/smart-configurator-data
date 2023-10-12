@@ -2,7 +2,7 @@
 <videos>
 	<page family="RX" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_RX.htm"/>
 	<page family="RL78" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_RL78.htm"/>
-	<page family="RH850" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_Common.htm"/>
+	<page family="RH850" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_RH850.htm"/>
 	<page family="RZ" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_Common.htm"/>
 	<page family="ASSP_RISCV" html="https://renesas.github.io/smart-configurator-data/Videos/Smart%20Configurator%20Videos_Common.htm"/>
 </videos>
