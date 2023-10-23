@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="ARDUINO-D2/INT" group="" id="P05" pin="2"/>
+        <function comments="mikroBUS-RST" group="" id="P03" pin="4"/>
+        <function comments="USBtoSERIAL-RXD_GROVE2-SCL/AN" group="" id="RXD6" pin="7"/>
+        <function comments="USBtoSERIAL-TXD_GROVE2-SDA/AN" group="" id="TXD6" pin="8"/>
+        <function comments="USBtoSERIAL-CTS" group="" id="IRQ4" pin="9"/>
+        <function comments="EMLE" group="" id="EMLE" pin="10"/>
+        <function comments="ARDUINO-D8" group="" id="PJ5" pin="11"/>
+        <function comments="USBtoSERIAL-RTS" group="" id="RTS6#" pin="13"/>
+        <function comments="MD_FINED" group="" id="FINED" pin="16"/>
+        <function comments="XCIN" group="" id="XCIN" pin="17"/>
+        <function comments="XCOUT" group="" id="XCOUT" pin="18"/>
+        <function comments="ResetSW-S3_ARDUINO-RESET" group="" id="RES#" pin="19"/>
+        <function comments="XTAL" group="" id="XTAL" pin="20"/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="22"/>
+        <function comments="UPSEL" group="" id="UPSEL" pin="24"/>
+        <function comments="JTAG-TRST" group="" id="UNASSIGNED_25" pin="25"/>
+        <function comments="TS1" group="" id="TS1" pin="26"/>
+        <function comments="ARDUINO-D6/PWM_PMOD1-IO0/INT" group="" id="P32" pin="27"/>
+        <function comments="JTAG-TMS" group="" id="UNASSIGNED_28" pin="28"/>
+        <function comments="JTAG-TDI" group="" id="UNASSIGNED_29" pin="29"/>
+        <function comments="JTAG-TCK" group="" id="UNASSIGNED_30" pin="30"/>
+        <function comments="JTAG-TDO" group="" id="UNASSIGNED_31" pin="31"/>
+        <function comments="LED3_ARDUINO-D5/PWM" group="" id="P25" pin="32"/>
+        <function comments="TS5" group="" id="TS5" pin="33"/>
+        <function comments="AUDIO-BCK" group="" id="SSIBCK0" pin="34"/>
+        <function comments="AUDIO-CLK" group="" id="AUDIO_CLK" pin="35"/>
+        <function comments="AUDIO-LRCK" group="" id="SSILRCK0" pin="36"/>
+        <function comments="AUDIO-RXD" group="" id="SSIRXD0" pin="37"/>
+        <function comments="AUDIO-TXD" group="" id="SSITXD0" pin="38"/>
+        <function comments="ARDUINO-D3/INT/PWM" group="" id="P87" pin="39"/>
+        <function comments="USBFS-VBUS" group="" id="USB0_VBUS" pin="40"/>
+        <function comments="ARDUINO-MISO/D12_mikroBUS-MISO_PMOD1-MISO/RXD" group="" id="SMISO010" pin="41"/>
+        <function comments="PMOD1-IO2" group="" id="P15" pin="42"/>
+        <function comments="USBFS-OVRCURA" group="" id="USB0_OVRCURA" pin="43"/>
+        <function comments="ARDUINO-SDA_GROVE1-SDA_mikroBUS-SDA_QWIIC-SDA" group="" id="SDAHS0" pin="44"/>
+        <function comments="ARDUINO-SCL_GROVE1-SCL_mikroBUS-SCL_QWIIC-SCL" group="" id="SCLHS0" pin="45"/>
+        <function comments="USBFS-DM" group="" id="USB0_DM" pin="47"/>
+        <function comments="USBFS-DP" group="" id="USB0_DP" pin="48"/>
+        <function comments="LED1_ARDUINO-D9/PWM_mikroBUS-PWM" group="" id="P56" pin="50"/>
+        <function comments="ARDUINO-D7" group="" id="P55" pin="51"/>
+        <function comments="SDHI-POWEN" group="" id="P51" pin="55"/>
+        <function comments="ARDUINO-D10/SS/PWM_mikroBUS-CS_PMOD1-CS/CTS/INT" group="" id="P83" pin="58"/>
+        <function comments="UB_ARDUINO-TX/D1_mikroBUS-TX" group="" id="TXD10" pin="60"/>
+        <function comments="ARDUINO-RX/D0_mikroBUS-RX" group="" id="RXD10" pin="61"/>
+        <function comments="UserSW-S2" group="" id="IRQ5" pin="62"/>
+        <function comments="LED2_ARDUINO-D11/MOSI/PWM_mikroBUS-MOSI_PMOD1-TXD/MOSI" group="" id="P82" pin="63"/>
+        <function comments="SDHI-CD" group="" id="SDHI_CD" pin="64"/>
+        <function comments="ARDUINO-SCK/D13_mikroBUS-SCK_PMOD1-SCK/RTS" group="" id="SCK010" pin="65"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="66"/>
+        <function comments="UserSW-S1" group="" id="IRQ11" pin="67"/>
+        <function comments="PMOD2-MOSI/TXD" group="" id="SMOSI011" pin="68"/>
+        <function comments="PMOD2-MISO/RXD/SCL" group="" id="SMISO011" pin="69"/>
+        <function comments="PMOD2-IO3" group="" id="PC2" pin="70"/>
+        <function comments="PMOD2-SCK/RTS" group="" id="SCK011" pin="71"/>
+        <function comments="PMOD2-CS/CTS/INT" group="" id="P74" pin="72"/>
+        <function comments="PMOD2-IO2" group="" id="PC1" pin="73"/>
+        <function comments="PMOD2-IO1/RESET" group="" id="PC0" pin="75"/>
+        <function comments="SDHI-POWFLT" group="" id="IRQ8" pin="77"/>
+        <function comments="SDRAM-A14" functioncomments="SDRAM-BA1" group="" id="A14" pin="79"/>
+        <function comments="SDRAM-A13" functioncomments="SDRAM-BA0" group="" id="A13" pin="80"/>
+        <function comments="SDRAM-A12" functioncomments="SDRAM-A11" group="" id="A12" pin="81"/>
+        <function comments="SDRAM-A11" functioncomments="SDRAM-A10/AP" group="" id="A11" pin="82"/>
+        <function comments="SDRAM-A10" functioncomments="SDRAM-A9" group="" id="A10" pin="83"/>
+        <function comments="SDRAM-A9" functioncomments="SDRAM-A8" group="" id="A9" pin="84"/>
+        <function comments="PMOD1-IO3" group="" id="P72" pin="85"/>
+        <function comments="SDRAM-A8" functioncomments="SDRAM-A7" group="" id="A8" pin="87"/>
+        <function comments="SDRAM-A7" functioncomments="SDRAM-A6" group="" id="A7" pin="88"/>
+        <function comments="SDRAM-A6" functioncomments="SDRAM-A5" group="" id="A6" pin="89"/>
+        <function comments="SDRAM-A5" functioncomments="SDRAM-A4" group="" id="A5" pin="90"/>
+        <function comments="SDRAM-A4" functioncomments="SDRAM-A3" group="" id="A4" pin="92"/>
+        <function comments="SDRAM-A3" functioncomments="SDRAM-A2" group="" id="A3" pin="94"/>
+        <function comments="SDRAM-A2" functioncomments="SDRAM-A1" group="" id="A2" pin="95"/>
+        <function comments="SDRAM-A1" functioncomments="SDRAM-A0" group="" id="A1" pin="96"/>
+        <function comments="SDRAM-DQM1" group="" id="DQM1" pin="98"/>
+        <function comments="SDRAM-DQM0" group="" id="DQM0" pin="99"/>
+        <function comments="SDRAM-CKE" group="" id="CKE" pin="100"/>
+        <function comments="SDRAM-D15" group="" id="D15" pin="101"/>
+        <function comments="SDRAM-D14" group="" id="D14" pin="102"/>
+        <function comments="SDRAM-SDCLK" group="" id="SDCLK" pin="104"/>
+        <function comments="SDRAM-D13" group="" id="D13" pin="106"/>
+        <function comments="SDRAM-D12" group="" id="D12" pin="107"/>
+        <function comments="SDRAM-D11" group="" id="D11" pin="108"/>
+        <function comments="SDRAM-D10" group="" id="D10" pin="109"/>
+        <function comments="SDRAM-D9" group="" id="D9" pin="110"/>
+        <function comments="SDRAM-D8" group="" id="D8" pin="111"/>
+        <function comments="SDRAM-WE" group="" id="WE#" pin="112"/>
+        <function comments="SDRAM-CAS" group="" id="CAS#" pin="113"/>
+        <function comments="SDRAM-RAS" group="" id="RAS#" pin="114"/>
+        <function comments="SDRAM-SDCS" group="" id="SDCS#" pin="115"/>
+        <function comments="QSPI-QIO1_SDRAM-D7_SDHI-D1" group="B" id="QIO1" pin="119"/>
+        <function comments="QSPI-QIO0_SDRAM-D6_SDHI-D0" group="B" id="QIO0" pin="120"/>
+        <function comments="QSPI-QSPCLK_SDRAM-D5_SDHI-CLK" group="B" id="QSPCLK" pin="121"/>
+        <function comments="QSPI-QSSL_SDRAM-D4_SDHI-CMD" group="B" id="QSSL" pin="122"/>
+        <function comments="QSPI-QIO3_SDRAM-D3_SDHI-D3" group="B" id="QIO3" pin="123"/>
+        <function comments="QSPI-QIO2_SDRAM-D2_SDHI-D2" group="B" id="QIO2" pin="124"/>
+        <function comments="SDRAM-D1" group="" id="D1" pin="125"/>
+        <function comments="SDRAM-D0" group="" id="D0" pin="126"/>
+        <function comments="ARDUINO-D4" group="" id="P93" pin="127"/>
+        <function comments="AUDIO-SCL" group="" id="SSCL7" pin="128"/>
+        <function comments="mikroBUS-INT" group="" id="IRQ9" pin="129"/>
+        <function comments="AUDIO-SDA" group="" id="SSDA7" pin="131"/>
+        <function comments="PMOD1-IO1/RESET" group="" id="P47" pin="133"/>
+        <function comments="PMOD2-IO0/INT" group="" id="P46" pin="134"/>
+        <function comments="ARDUINO-A5" group="" id="AN005" pin="135"/>
+        <function comments="ARDUINO-A4" group="" id="AN004" pin="136"/>
+        <function comments="ARDUINO-A3" group="" id="AN003" pin="137"/>
+        <function comments="ARDUINO-A2" group="" id="AN002" pin="138"/>
+        <function comments="ARDUINO-A1" group="" id="AN001" pin="139"/>
+        <function comments="ARDUINO-A0_mikroBUS-AN" group="" id="AN000" pin="141"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="24"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="suboscswitcher" value="subxcin"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="hocofllenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul10-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckopll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-4"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="uckenable" value="check"/>
+        <item id="uckdivider" value="comboBox1-5"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="sdclkenable" value="uncheck"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="EK-RX671" html="" id="EK-RX671" partNumber="R5F5671EHxFB"/>
+    <info version="V1.00"/>
+</boardInfo>
