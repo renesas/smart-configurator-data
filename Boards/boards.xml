@@ -258,4 +258,7 @@
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/09ef7b0c278ee5d7775773053d432c155bac32a0/Boards/TargetBoardRX671_V1.02.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/09ef7b0c278ee5d7775773053d432c155bac32a0/Boards/TargetBoardRX671_V1.00.bcdf"/>
   </board>
+  <board id="FPB-R9A02G021" version="1.01" description="Fast Prototyping Board for RISC-V MCU G021 Board Description File" keys="ASSP_RISCV">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/ec5590aec50274a93f57d00300fb5e4d261e75cc/Boards/FPB-R9A02G021_V1.01.bdf"/>
+  </board>
 </boards>
