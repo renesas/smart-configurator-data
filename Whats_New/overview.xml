@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<apimanual>
-	<page family="RH850" html="https://www.renesas.com/document/man/smart-configurator-users-manual-rl78-api-reference"/>
-	<page family="RL78" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rh850-api-reference"/>
-	<page family="RX" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rx-api-reference"/>
-</apimanual>
+<overview>
+	<page family="RH850" html="https://www.renesas.com/rh850-smart-configurator"/>
+	<page family="RL78" html="https://www.renesas.com/rl78-smart-configurator "/>
+	<page family="RX" html="https://www.renesas.com/rx-smart-configurator "/>
+</overview>
