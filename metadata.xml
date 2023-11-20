@@ -3,4 +3,5 @@
   <content type="board" data="Boards/boards.xml"/>
   <content type="video" data="Videos/videos.xml"/>
   <content type="whats-new" data="Whats_New/whats-new.xml"/>
+  <content type="api-manual" data="Whats_New/api-manual.xml"/>
 </contents>
