@@ -4,4 +4,6 @@
   <content type="video" data="Videos/videos.xml"/>
   <content type="whats-new" data="Whats_New/whats-new.xml"/>
   <content type="api-manual" data="Whats_New/api-manual.xml"/>
+  <content type="overview" data="Whats_New/overview.xml"/>
+  <content type="release-notes" data="Whats_New/release-notes.xml"/>
 </contents>
