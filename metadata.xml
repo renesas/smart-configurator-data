@@ -5,5 +5,5 @@
   <content type="whats-new" data="Overview_Page/whats-new.xml"/>
   <content type="api-manual" data="Overview_Page/api-manual.xml"/>
   <content type="overview" data="Overview_Page/overview.xml"/>
-  <content type="release-notes" data="Overview_Page/release-notes.xml"/>
+  <content type="release-notes" data="Overview_Page/whats-new.xml"/>
 </contents>
