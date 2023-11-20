@@ -5,3 +5,8 @@
 	<page family="RL78" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v180-release-note"/>
 	<page family="RX" html="https://www.renesas.com/document/rln/smart-configurator-rx-v2190-release-note"/>
 </whatsnew>
+<release-notes>
+	<page family="RH850" html="https://www.renesas.com/rh850-smart-configurator-release-note"/>
+	<page family="RL78" html="https://www.renesas.com/rl78-smart-configurator-release-note"/>
+	<page family="RX" html="https://www.renesas.com/rx-smart-configurator-release-note"/>
+</release-notes>
