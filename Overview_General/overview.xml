@@ -2,8 +2,8 @@
 <root>
     <overview>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator"/>
-	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator "/>
-	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator "/>
+	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator"/>
+	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator"/>
     </overview>
     <releasenotes>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator-release-note"/>
