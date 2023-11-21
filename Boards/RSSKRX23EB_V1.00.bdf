@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="" group="" id="DA0" pin="1"/>
+        <function comments="LED3" group="" id="P73" pin="5"/>
+        <function comments="LED2" group="" id="P72" pin="6"/>
+        <function comments="LED1" group="" id="P71" pin="7"/>
+        <function comments="LED0" group="" id="P70" pin="8"/>
+        <function comments="" group="" id="FINED" pin="9"/>
+        <function comments="" group="" id="XCIN" pin="10"/>
+        <function comments="" group="" id="XCOUT" pin="11"/>
+        <function comments="" group="" id="XTAL" pin="13"/>
+        <function comments="" group="" id="EXTAL" pin="15"/>
+        <function comments="USB-UART" group="" id="RXD1" pin="28"/>
+        <function comments="USB-UART" group="" id="TXD1" pin="30"/>
+        <function comments="PMOD1" group="" id="TXD9" pin="31"/>
+        <function comments="PMOD1" group="" id="RXD9" pin="32"/>
+        <function comments="PMOD1" group="" id="RTS9#" pin="33"/>
+        <function comments="PMOD1" group="" id="P22" pin="34"/>
+        <function comments="PMOD1" group="" id="P21" pin="35"/>
+        <function comments="PMOD1" group="" id="P20" pin="36"/>
+        <function comments="PMOD2" group="" id="SDA" pin="37"/>
+        <function comments="PMOD2" group="" id="SCL" pin="38"/>
+        <function comments="USB-UART" group="" id="CTS1#" pin="39"/>
+        <function comments="PMOD1" group="" id="P14" pin="40"/>
+        <function comments="PMOD2" group="" id="P13" pin="41"/>
+        <function comments="PMOD2" group="" id="P12" pin="42"/>
+        <function comments="PMOD2" group="" id="P55" pin="43"/>
+        <function comments="PMOD2" group="" id="P54" pin="44"/>
+        <function comments="RS-485" group="" id="PC7" pin="45"/>
+        <function comments="RS-485" group="" id="PC6" pin="46"/>
+        <function comments="RS-485" group="" id="TXD8" pin="47"/>
+        <function comments="RS-485" group="" id="RXD8" pin="48"/>
+        <function comments="CAN" group="" id="PC2" pin="50"/>
+        <function comments="CAN" group="" id="CRXD0" pin="51"/>
+        <function comments="CAN" group="" id="CTXD0" pin="52"/>
+        <function comments="SW3-2" group="" id="PE4" pin="62"/>
+        <function comments="SW3-1" group="" id="PE3" pin="63"/>
+        <function comments="SW2" group="" id="PE2" pin="64"/>
+        <function comments="SW1" group="" id="PE1" pin="65"/>
+        <function comments="" group="" id="REFOUT" pin="74"/>
+        <function comments="" group="" id="LSW" pin="75"/>
+        <function comments="" group="" id="AIN0" pin="76"/>
+        <function comments="" group="" id="AIN1" pin="77"/>
+        <function comments="" group="" id="AIN2" pin="78"/>
+        <function comments="" group="" id="AIN3" pin="79"/>
+        <function comments="" group="" id="REF0N" pin="80"/>
+        <function comments="" group="" id="REF0P" pin="81"/>
+        <function comments="" group="" id="AIN4" pin="82"/>
+        <function comments="" group="" id="AIN5" pin="83"/>
+        <function comments="" group="" id="AIN6" pin="84"/>
+        <function comments="" group="" id="AIN7" pin="85"/>
+        <function comments="" group="" id="AIN8" pin="86"/>
+        <function comments="" group="" id="AIN9" pin="87"/>
+        <function comments="" group="" id="AIN10" pin="88"/>
+        <function comments="" group="" id="AIN11" pin="89"/>
+        <function comments="" group="" id="HVCOM" pin="90"/>
+        <function comments="" group="" id="HVAIN0" pin="91"/>
+        <function comments="" group="" id="HVAIN1" pin="92"/>
+        <function comments="" group="" id="HVAIN2" pin="93"/>
+        <function comments="" group="" id="HVAIN3" pin="94"/>
+        <function comments="" group="" id="AIN12" pin="95"/>
+        <function comments="" group="" id="AIN13" pin="96"/>
+        <function comments="" group="" id="AIN14" pin="97"/>
+        <function comments="" group="" id="AIN15" pin="98"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="5"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="lowCL"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocofrequency" value="32"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="lcdswitcher" value="lcdloco"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-1"/>
+        <item id="pclkcdivider" value="comboBox1-1"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckoswitcher" value="ckomain"/>
+        <item id="ckodivider" value="comboBox1-1"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="lcdclkenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="RSSKRX23EB" html="" id="RSSKRX23EB" partNumber="R5F523E6LxFP"/>
+    <info version="V1.00"/>
+</boardInfo>
