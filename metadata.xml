@@ -3,5 +3,5 @@
   <content type="board" data="Boards/boards.xml"/>
   <content type="video" data="Videos/videos.xml"/>
   <content type="whats-new" data="General/whats-new.xml"/>
-  <content type="Overview-General" data="General/overview.xml"/>
+  <content type="overview" data="General/overview.xml"/>
 </contents>
