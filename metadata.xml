@@ -5,7 +5,7 @@
   <content type="whats-new" data="Overview_Page/whats-new.xml"/>
   <content type="api-manual" data="Overview_Page/api-manual.xml"/>
   <content type="overview" data="Overview_Page/overview.xml"/>
-  <content type="release-notes" data="Overview_Page/whats-new.xml"/>
+  <content type="release-notes" data="Overview_Page/release-notes.xml"/>
   <content type="user-guide-e2s" data="Overview_Page/user-guide-e2s.xml"/>
   <content type="user-guide-cs" data="Overview_Page/user-guide-cs.xml"/>
   <content type="user-guide-iar" data="Overview_Page/user-guide-iar.xml"/>
