@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <overview>
+	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator"/>
+	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator"/>
+	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator"/>
+    </overview>
+    <releasenotes>
+	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator-release-note"/>
+	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator-release-note"/>
+	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator-release-note"/>
+    </releasenotes>
+    <userguidee2s>
+	    <page family="RH850" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-e-studio"/>
+	    <page family="RL78" html="https://www.renesas.com/document/man/rl78-smart-configurator-users-guide-e-studio"/>
+	    <page family="RX" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-e-studio"/>
+    </userguidee2s>
+    <userguidecs>
+	    <page family="RH850" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-cs"/>
+	    <page family="RL78" html="https://www.renesas.com/document/mat/rl78-smart-configurator-users-guide-cs"/>
+	    <page family="RX" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-cs"/>
+    </userguidecs>
+    <userguideiar>
+	    <page family="RH850" html="https://www.renesas.com/us/document/mat/rh850-smart-configurator-users-guide-iarew-multi"/>
+	    <page family="RL78" html="https://www.renesas.com/document/mat/rl78-smart-configurator-users-guide-iarew"/>
+	    <page family="RX" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-iarew"/>
+    </userguideiar>
+    <apimanual>
+            <page family="RH850" html="https://www.renesas.com/document/man/smart-configurator-users-manual-rl78-api-reference"/>
+            <page family="RL78" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rh850-api-reference"/>
+            <page family="RX" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rx-api-reference"/>
+    </apimanual>
+</root>
