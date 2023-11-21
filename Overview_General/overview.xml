@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overview>
-    <overview>
+    <smcweb>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator"/>
 	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator "/>
 	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator "/>
-    </overview>
-	<release-notes>
+    </smcweb>
+    <releasenotes>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator-release-note"/>
 	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator-release-note"/>
 	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator-release-note"/>
-    </release-notes>
-	<userguidee2s>
+    </releasenotes>
+    <userguidee2s>
 	    <page family="RH850" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-e-studio"/>
 	    <page family="RL78" html="https://www.renesas.com/document/man/rl78-smart-configurator-users-guide-e-studio"/>
 	    <page family="RX" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-e-studio"/>
     </userguidee2s>
-	<userguidee2s>
+    <userguidee2s>
 	    <page family="RH850" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-cs"/>
 	    <page family="RL78" html="https://www.renesas.com/document/mat/rl78-smart-configurator-users-guide-cs"/>
 	    <page family="RX" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-cs"/>
     </userguidee2s>
-	<userguidee2s>
+    <userguidee2s>
 	    <page family="RH850" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-cs"/>
 	    <page family="RL78" html="https://www.renesas.com/document/mat/rl78-smart-configurator-users-guide-cs"/>
 	    <page family="RX" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-cs"/>
