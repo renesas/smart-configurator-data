@@ -2,11 +2,6 @@
 <contents>
   <content type="board" data="Boards/boards.xml"/>
   <content type="video" data="Videos/videos.xml"/>
-  <content type="whats-new" data="Overview_Page/whats-new.xml"/>
-  <content type="api-manual" data="Overview_Page/api-manual.xml"/>
-  <content type="overview" data="Overview_Page/overview.xml"/>
-  <content type="release-notes" data="Overview_Page/release-notes.xml"/>
-  <content type="user-guide-e2s" data="Overview_Page/user-guide-e2s.xml"/>
-  <content type="user-guide-cs" data="Overview_Page/user-guide-cs.xml"/>
-  <content type="user-guide-iar" data="Overview_Page/user-guide-iar.xml"/>
+  <content type="whats-new" data="Overview_General/whats-new.xml"/>
+  <content type="Overview-update" data="Overview_General/overview-update.xml"/>
 </contents>
