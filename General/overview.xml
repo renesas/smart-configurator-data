@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <overview>
+    <scpage>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator"/>
 	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator"/>
 	    <page family="RX" html="https://www.renesas.com/rx-smart-configurator"/>
-    </overview>
+    </scpage>
     <releasenotes>
 	    <page family="RH850" html="https://www.renesas.com/rh850-smart-configurator-release-note"/>
 	    <page family="RL78" html="https://www.renesas.com/rl78-smart-configurator-release-note"/>
