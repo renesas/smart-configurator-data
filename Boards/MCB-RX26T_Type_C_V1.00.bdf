@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="EMLE" group="" id="EMLE" pin="1" symbolicname=""/>
+        <function comments="HALL_V (INV1)" group="" id="IRQ2" pin="2" symbolicname=""/>
+        <function comments="FINED" group="" id="FINED" pin="4" symbolicname=""/>
+        <function comments="ENC_Z (INV1)" group="" id="GTETRGC" pin="5" symbolicname=""/>
+        <function comments="RES#" group="" id="RES#" pin="6" symbolicname=""/>
+        <function comments="XTAL" group="" id="XTAL" pin="7" symbolicname=""/>
+        <function comments="EXTAL" group="" id="EXTAL" pin="9" symbolicname=""/>
+        <function comments="HALL_W (INV1)" group="" id="IRQ0" pin="11" symbolicname=""/>
+        <function comments="Pmod_GPIO" group="" id="PD7" pin="12" symbolicname=""/>
+        <function comments="Pmod_GPIO" group="" id="PD6" pin="13" symbolicname=""/>
+        <function comments="RMW_RXD" group="" id="RXD1" pin="14" symbolicname=""/>
+        <function comments="Pmod_TXD" group="" id="TXD12" pin="15" symbolicname=""/>
+        <function comments="RMW_TXD" group="" id="TXD1" pin="16" symbolicname=""/>
+        <function comments="Pmod_RXD" group="" id="RXD12" pin="17" symbolicname=""/>
+        <function comments="LED2# (INV1)" group="" id="PB5" pin="18" symbolicname=""/>
+        <function comments="Pmod_GPIO" group="" id="PB4" pin="19" symbolicname=""/>
+        <function comments="SmartDriver_SPI" group="" id="RSPCKA" pin="20" symbolicname=""/>
+        <function comments="Pmod_SDA" group="" id="SDA0" pin="21" symbolicname=""/>
+        <function comments="Pmod_SCL" group="" id="SCL0" pin="22" symbolicname=""/>
+        <function comments="SmartDriver_SPI" group="" id="MOSIA" pin="23" symbolicname=""/>
+        <function comments="OC# (INV1)" group="" id="GTETRGB" pin="25" symbolicname=""/>
+        <function comments="Pmod_GPIO" group="" id="P95" pin="27" symbolicname=""/>
+        <function comments="ENC_A (INV1)" group="" id="GTIOC5A" pin="28" symbolicname=""/>
+        <function comments="Pmod_GPIO" group="" id="P93" pin="29" symbolicname=""/>
+        <function comments="CAN_CTX" group="" id="CTX0" pin="30" symbolicname=""/>
+        <function comments="ENC_B (INV1)" group="" id="GTIOC5B" pin="31" symbolicname=""/>
+        <function comments="SmartDriver_CON_MOT_SEL" group="" id="P90" pin="32" symbolicname=""/>
+        <function comments="WN (INV1)" group="" id="GTIOC2B" pin="33" symbolicname=""/>
+        <function comments="VN (INV1)" group="" id="GTIOC1B" pin="34" symbolicname=""/>
+        <function comments="UN (INV1)" group="" id="GTIOC0B" pin="35" symbolicname=""/>
+        <function comments="WP (INV1)" group="" id="GTIOC2A" pin="36" symbolicname=""/>
+        <function comments="VP (INV1)" group="" id="GTIOC1A" pin="37" symbolicname=""/>
+        <function comments="UP (INV1)" group="" id="GTIOC0A" pin="38" symbolicname=""/>
+        <function comments="SmartDriver_nFault" group="" id="IRQ5" pin="39" symbolicname=""/>
+        <function comments="SmartDriver_DRV_EN" group="" id="P22" pin="42" symbolicname=""/>
+        <function comments="SW1 (INV1)" group="" id="P21" pin="43" symbolicname=""/>
+        <function comments="SW2 (INV1)" group="" id="P20" pin="44" symbolicname=""/>
+        <function comments="LED1# (INV1)" group="" id="P65" pin="45" symbolicname=""/>
+        <function comments="IPS_B#" group="" id="AN210" pin="46" symbolicname=""/>
+        <function comments="IPS_B" group="" id="AN202" pin="49" symbolicname=""/>
+        <function comments="IPS_A#" group="" id="AN201" pin="50" symbolicname=""/>
+        <function comments="IPS_A" group="" id="AN200" pin="51" symbolicname=""/>
+        <function comments="VR (INV1)" group="" id="AN206" pin="52" symbolicname=""/>
+        <function comments="VW (INV1)" group="" id="AN006" pin="53" symbolicname=""/>
+        <function comments="VV (INV1)" group="" id="AN005" pin="54" symbolicname=""/>
+        <function comments="VU (INV1)" group="" id="AN004" pin="55" symbolicname=""/>
+        <function comments="VDC (INV1)" group="" id="AN003" pin="56" symbolicname=""/>
+        <function comments="IW (INV1)" group="" id="AN002" pin="57" symbolicname=""/>
+        <function comments="IV (INV1)" group="" id="AN001" pin="58" symbolicname=""/>
+        <function comments="IU (INV1)" group="" id="AN000" pin="59" symbolicname=""/>
+        <function comments="HALL_U (INV1)" group="" id="IRQ1" pin="64" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="5"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="10"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul24-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="cfdckdivider" value="comboBox1-4"/>
+    </clock>
+    <board display="MCB-RX26T Type C" html="" id="MCB-RX26T Type C" partNumber="R5F526TACxFM"/>
+    <info version=""/>
+</boardInfo>
