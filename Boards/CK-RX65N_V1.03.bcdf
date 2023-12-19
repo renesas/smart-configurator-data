@@ -16,8 +16,8 @@
 		</feature>
 		<feature name="PMOD 1 (Cellular/UART/IIC/SPI)" jName="PMOD 1 (Cellular/UART/IIC/SPI)">
 			<components>
-				<configuration name="r_cellular#1" pins="RXD6/TXD6>
-					<dependency name="r_sci_rx#1""/>
+				<configuration name="r_cellular#1" pins="RXD6/TXD6">
+					<dependency name="r_sci_rx#1"/>
 					<dependency name="r_byteq"/>
 					<dependency name="r_irq_rx"/>
 					<dependency name="r_gpio_rx"/>
@@ -40,8 +40,8 @@
 		</feature>
 		<feature name="PMOD 2 (Cellular/UART/IIC/SPI)" jName="PMOD 2 (Cellular/UART/IIC/SPI)">
 			<components> 
-				<configuration name="r_cellular#2" pins="RXD0/TXD0>
-					<dependency name="r_sci_rx#4""/>
+				<configuration name="r_cellular#2" pins="RXD0/TXD0">
+					<dependency name="r_sci_rx#4"/>
 					<dependency name="r_byteq"/>
 					<dependency name="r_irq_rx"/>
 					<dependency name="r_gpio_rx"/>
