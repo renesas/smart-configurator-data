@@ -42,7 +42,7 @@
   </board>
   <board id="CK-RX65N" version="1.02" description="New Cloud Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.02.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.03.bcdf"/>
   </board>
   <board id="CloudKitRX65N" version="1.13" description="Cloud Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CloudKitRX65N_V1.13.bdf"/>
