@@ -2631,7 +2631,7 @@
                 <gridItem id="CTS6#/RTS6#/SS6#" selectedIndex="0"/>
                 <gridItem id="SCI6" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
-                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_SSPI_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH6_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH6_TX_BUFSIZ" selectedIndex="2180"/>
                 <gridItem id="SCI_CFG_CH6_RX_BUFSIZ" selectedIndex="8192"/>

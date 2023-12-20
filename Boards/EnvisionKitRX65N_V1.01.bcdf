@@ -1222,8 +1222,7 @@
                 <gridItem id="TXD2/SMOSI2/SSDA2" selectedIndex="1"/>
                 <gridItem id="CTS2#/RTS2#/SS2#" selectedIndex="0"/>
                 <gridItem id="SCI2" selectedIndex="1"/>
-                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
-                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH2_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH2_TX_BUFSIZ" selectedIndex="2180"/>
                 <gridItem id="SCI_CFG_CH2_RX_BUFSIZ" selectedIndex="8192"/>
@@ -1240,7 +1239,7 @@
                 <gridItem id="CTS2#/RTS2#/SS2#" selectedIndex="0"/>
                 <gridItem id="SCI2" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
-                <gridItem id="SCI_CFG_SYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_SSPI_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH2_INCLUDED" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH2_TX_BUFSIZ" selectedIndex="2180"/>
                 <gridItem id="SCI_CFG_CH2_RX_BUFSIZ" selectedIndex="8192"/>

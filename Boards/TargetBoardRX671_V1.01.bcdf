@@ -16,8 +16,8 @@
 		</feature>
 		<feature name="PMOD (Cellular/I2C)" jName="PMOD (Cellular/I2C)">
 			<components>
-				<configuration name="r_cellular">
-					<dependency name="r_sci_rx" pins="TXD5/RXD5"/>
+				<configuration name="r_cellular" pins="TXD5/RXD5">
+					<dependency name="r_sci_rx"/>
 					<dependency name="r_byteq"/>
 					<dependency name="r_irq_rx#PMOD"/>
 					<dependency name="r_gpio_rx"/>
