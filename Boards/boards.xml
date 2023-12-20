@@ -42,11 +42,11 @@
   </board>
   <board id="CK-RX65N" version="1.02" description="New Cloud Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.02.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CK-RX65N_V1.04.bcdf"/>
   </board>
   <board id="CloudKitRX65N" version="1.13" description="Cloud Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CloudKitRX65N_V1.13.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CloudKitRX65N_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CloudKitRX65N_V1.02.bcdf"/>
   </board>
   <board id="CPUCardforMCUEvaluationRX66T" version="1.03" description="CPU Card for MCU Evaluation RX66T Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/CPUCardforMCUEvaluationRX66T_V1.03.bdf"/>
@@ -68,7 +68,7 @@
   </board>
   <board id="EnvisionKitRX65N" version="1.14" description="Envision Kit for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/EnvisionKitRX65N_V1.14.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/EnvisionKitRX65N_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/EnvisionKitRX65N_V1.02.bcdf"/>
   </board>
   <board id="EnvisionKitRX72N" version="1.13" description="Envision Kit for RX72N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/EnvisionKitRX72N_V1.13.bdf"/>
@@ -153,11 +153,11 @@
   </board>
   <board id="RSKRX65N-2MB(TSIP)" version="1.02" description="Renesas Starter Kit+ for RX65N-2MB(TSIP) Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB(TSIP)_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB(TSIP)_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB(TSIP)_V1.02.bcdf"/>
   </board>
   <board id="RSKRX65N-2MB" version="1.05" description="Renesas Starter Kit+ for RX65N-2MB Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB_V1.05.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N-2MB_V1.02.bcdf"/>
   </board>
   <board id="RSKRX65N" version="1.02" description="Renesas Starter Kit+ for RX65N-1MB Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/02e7b45e9c91da3167043d27f4e4dc8f71eb6930/Boards/RSKRX65N_V1.02.bdf"/>
