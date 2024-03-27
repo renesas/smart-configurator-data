@@ -16,7 +16,7 @@
 	    <page family="RX" html="https://www.renesas.com/document/mat/rx-smart-configurator-users-guide-e-studio"/>
 	    <page family="RL78" html="https://www.renesas.com/document/man/rl78-smart-configurator-users-guide-e-studio"/>
 	    <page family="RH850" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-e-studio"/>
-	    <page family="ASSP_RISCV" html="https://www.renesas.com/us/en/document/mat/risc-v-mcu-smart-configurator-users-guide-e-studio"/>
+	    <page family="ASSP_RISCV" html="https://www.renesas.com/document/mat/risc-v-mcu-smart-configurator-users-guide-e-studio"/>
     </userguidee2s>
     <userguidecs>
 	    <page family="RH850" html="https://www.renesas.com/document/mat/rh850-smart-configurator-users-guide-cs"/>
@@ -33,6 +33,6 @@
             <page family="RL78" html="https://www.renesas.com/document/man/smart-configurator-users-manual-rl78-api-reference"/>
             <page family="RH850" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rh850-api-reference"/>
             <page family="RX" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-rx-api-reference"/>
-	    <page family="ASSP_RISCV" html="https://www.renesas.com/us/en/document/mat/smart-configurator-users-manual-risc-v-mcu-api-reference"/>
+	    <page family="ASSP_RISCV" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-risc-v-mcu-api-reference"/>
     </apimanual>
 </root>
