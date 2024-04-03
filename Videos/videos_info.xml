@@ -242,4 +242,18 @@
         <date>2023-06-14</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-walkthrough-settings-clocks-and-components</renesaslink>
     </info>
+    <info id="_Toc87439381" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+        <title>How to Create a Blinky Project with Smart Configurator on e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6339494061112</iframe>
+        <description>This video shows how to create a blinky project with Smart Configurator on e2 studio.</description>
+        <date>2023-10-20</date>
+        <renesaslink>https://www.renesas.com/video/how-create-blinky-project-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439382" name="videoInfo" device="RX || RL78" category="tutorials">
+        <title>How to Change FIT Module Version in Smart Configurator</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
+        <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
+        <date>2024-04-03</date>
+        <renesaslink>https://www.renesas.com/video/how-change-fit-module-version-smart-configurator</renesaslink>
+    </info>
 </videos>
