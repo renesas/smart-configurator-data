@@ -9,7 +9,7 @@
     <function comments="J1-6[RST][Arduino-RES]" group="" id="_RESET" pin="6" symbolicname="" />
     <function comments="[XT2]" group="" id="XT2" pin="7" symbolicname="" />
     <function comments="[XT1]" group="" id="XT1" pin="8" symbolicname="" />
-    <function comments="J1-9[SW]" group="" id="INTP0" pin="9" symbolicname="" />
+    <function comments="J1-9[SW]" group="" id="INTP0" pin="9" symbolicname="SW" />
     <function comments="J1-10[Arduino-4]" group="" id="UNASSIGNED_10" pin="10" symbolicname="" />
     <function comments="J1-11[Arduino-7]" group="" id="UNASSIGNED_11" pin="11" symbolicname="" />
     <function comments="J1-13" group="" id="UNASSIGNED_13" pin="13" symbolicname="" />
@@ -98,5 +98,5 @@
     <item id="emulator" value="renesas.serial" />
   </system>
   <board display="RL78G24_FastPrototypingBoard" html="" id="RL78G24_FastPrototypingBoard" partNumber="R7F101GLGxFB" />
-  <info version="V1.00" />
+  <info version="V1.01" />
 </boardInfo>
