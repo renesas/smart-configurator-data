@@ -9,7 +9,7 @@
     <function comments="[RESET][Arduino-RES]" group="" id="RESET" pin="6" symbolicname="" />
     <function comments="[XT2]" group="" id="XT2" pin="7" symbolicname="" />
     <function comments="[XT1]" group="" id="XT1" pin="8" symbolicname="" />
-    <function comments="J6-29[SW1]" group="" id="INTP0" pin="9" symbolicname="" />
+    <function comments="J6-29[SW1]" group="" id="INTP0" pin="9" symbolicname="SW1" />
     <function comments="J6-28" group="" id="UNASSIGNED_10" pin="10" symbolicname="" />
     <function comments="J6-27" group="" id="UNASSIGNED_11" pin="11" symbolicname="" />
     <function comments="J6-15" group="" id="UNASSIGNED_13" pin="13" symbolicname="" />
@@ -43,8 +43,8 @@
     <function comments="J7-36" group="" id="UNASSIGNED_41" pin="41" symbolicname="" />
     <function comments="J7-37" group="" id="UNASSIGNED_42" pin="42" symbolicname="" />
     <function comments="J7-38" group="" id="UNASSIGNED_43" pin="43" symbolicname="" />
-    <function comments="J7-39[TOOLTxD]" group="" id="TOOLTxD" pin="44" symbolicname="" />
-    <function comments="J7-40[TOOLRxD]" group="" id="TOOLRxD" pin="45" symbolicname="" />
+    <function comments="J7-39[TOOLTxD]" group="" id="TOOLTxD" pin="44" symbolicname="COM_TxD0" />
+    <function comments="J7-40[TOOLRxD]" group="" id="TOOLRxD" pin="45" symbolicname="COM_RxD0" />
     <function comments="J7-41" group="" id="UNASSIGNED_46" pin="46" symbolicname="" />
     <function comments="J7-42" group="" id="UNASSIGNED_47" pin="47" symbolicname="" />
     <function comments="J7-43" group="" id="UNASSIGNED_48" pin="48" symbolicname="" />
@@ -92,5 +92,5 @@
     <item id="emulator" value="renesas.serial" />
   </system>
   <board display="RL78G23-64p_FastPrototypingBoard" html="" id="RL78G23-64p_FastPrototypingBoard" partNumber="R7F100GLGxFB" />
-  <info version="V1.00" />
+  <info version="V1.01" />
 </boardInfo>

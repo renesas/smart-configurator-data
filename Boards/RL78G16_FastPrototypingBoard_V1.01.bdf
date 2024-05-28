@@ -4,7 +4,7 @@
     <function comments="J1-1[PMOD2-GPIO8][Arduino-8]" group="" id="UNASSIGNED_1" pin="1" symbolicname="" />
     <function comments="J1-2[TOOL0]" group="" id="TOOL0" pin="2" symbolicname="" />
     <function comments="J1-3[RST][Arduino-RES]" group="" id="_RESET" pin="3" symbolicname="" />
-    <function comments="J1-4[SW][PMOD2-GPIO9]" group="" id="INTP0" pin="4" symbolicname="" />
+    <function comments="J1-4[SW][PMOD2-GPIO9]" group="" id="INTP0" pin="4" symbolicname="SW" />
     <function comments="[XT2]" group="" id="XT2" pin="5" symbolicname="" />
     <function comments="[XT1]" group="" id="XT1" pin="6" symbolicname="" />
     <function comments="J1-7" group="" id="UNASSIGNED_7" pin="7" symbolicname="" />
@@ -54,5 +54,5 @@
      <item id="emulator" value="renesas.serial" />
   </system>
   <board display="RL78G16_FastPrototypingBoard" html="" id="RL78G16_FastPrototypingBoard" partNumber="R5F121BCxFP" />
-  <info version="V1.00" />
+  <info version="V1.01" />
 </boardInfo>
