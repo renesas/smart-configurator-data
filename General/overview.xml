@@ -36,11 +36,9 @@
 	    <page family="ASSP_RISCV" html="https://www.renesas.com/document/mat/smart-configurator-users-manual-risc-v-mcu-api-reference"/>
     </apimanual>
     <faq>
-	    <page language="en_US" html="https://en-support.renesas.com/knowledgeBase#"/>
-	    <page language="ja" html="https://ja-support.renesas.com/knowledgeBase"/>
+	    <page topic="main" language="en_US" html="https://en-support.renesas.com/knowledgeBase#"/>
+	    <page topic="main" language="ja" html="https://ja-support.renesas.com/knowledgeBase"/>
+	    <page topic="sc" language="en_US" html="https://en-support.renesas.com/knowledgeBase/category/30528/subcategory/30532"/>
+	    <page topic="sc" language="ja" html="https://ja-support.renesas.com/knowledgeBase/category/30714/subcategory/30724"/>
     </faq>
-    <sc_faq>
-	    <page language="en_US" html="https://en-support.renesas.com/knowledgeBase/category/30528/subcategory/30532"/>
-	    <page language="ja" html="https://ja-support.renesas.com/knowledgeBase/category/30714/subcategory/30724"/>
-    </sc_faq>
 </root>
