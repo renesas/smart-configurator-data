@@ -37,8 +37,8 @@
     </apimanual>
     <faq>
 	    <page topic="main" language="en_US" html="https://en-support.renesas.com/knowledgeBase#"/>
-	    <page topic="main" language="ja" html="https://ja-support.renesas.com/knowledgeBase"/>
+	    <page topic="main" language="ja_JP" html="https://ja-support.renesas.com/knowledgeBase"/>
 	    <page topic="sc" language="en_US" html="https://en-support.renesas.com/knowledgeBase/category/30528/subcategory/30532"/>
-	    <page topic="sc" language="ja" html="https://ja-support.renesas.com/knowledgeBase/category/30714/subcategory/30724"/>
+	    <page topic="sc" language="ja_JP" html="https://ja-support.renesas.com/knowledgeBase/category/30714/subcategory/30724"/>
     </faq>
 </root>
