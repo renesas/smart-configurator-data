@@ -80,35 +80,35 @@
         <date>2021-12-23</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-tips-how-display-pre-downloaded-fit-modules-smart-configurator</renesaslink>
     </info>
-    <info id="_Toc87439654" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439654" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (1/3) - Create Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6246659188001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-04-05</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-13-create-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439655" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439655" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (2/3) - Configure Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279705475001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-23-configure-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439656" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439656" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (3/3) - Add User Code and Run Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279704885001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-33-add-user-code-and-run-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439657" name="videoInfo" device="RL78" category="features">
+    <info id="_Toc87439657" name="videoInfo" device="RL78" category="tutorials">
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (1/2) - Installation</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286870464001</iframe>
         <description>This video demonstrates how to install IAR Embedded Workbench for RL78 and Smart Configurator.</description>
         <date>2021-12-15</date>
         <renesaslink>https://www.renesas.com/video/using-smart-configurator-iar-embedded-workbench-rl78-12-installation</renesaslink>
     </info>
-    <info id="_Toc87439658" name="videoInfo" device="RL78" category="features">
+    <info id="_Toc87439658" name="videoInfo" device="RL78" category="tutorials">
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (2/2) - Creating an EWB Project for Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286872286001</iframe>
         <description>This video demonstrates how to create an Embedded Workbench project collaborates with Smart Configurator.</description>
@@ -193,28 +193,28 @@
         <date>2022-01-25</date>
         <renesaslink>https://www.renesas.com/video/rx-smart-configurator-motor-33-run-motor-project</renesaslink>
     </info>
-    <info id="_Toc87439373" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439373" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (1/3) - Create project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308456474112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-24</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-13-create-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439374" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439374" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (2/3) - Configuration Project RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308640693112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-28</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-23-configuration-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439375" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439375" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (3/3) - Add user code and run project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308637939112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-28</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-33-add-user-code-and-run-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439376" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439376" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial - Import SMS LED Blinking Dimming Control Project</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314308458112</iframe>
         <description>This video demonstrates how to control LEDs using the SNOOZE mode sequencer and the 32-bit interval timer for RL78/G23 device.</description>

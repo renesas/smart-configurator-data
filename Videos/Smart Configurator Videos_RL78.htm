@@ -31,6 +31,9 @@
                             <li style="list-style-type: none;">
                                 <a href="#features-wrapper" class="features">Basic Features</a>
                             </li>
+                            <li style="list-style-type: none;">
+                                <a href="#solutions-wrapper" class="solutions">Solutions</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -53,6 +56,10 @@
                 <div class="category-wrapper" id="features-wrapper">
                     <strong style="font-size:1.4em;  color:#4471A7;">Basic Features</strong>
                     <div class="video-wrapper" id="features"></div>
+                </div>
+                <div class="category-wrapper" id="solutions-wrapper">
+                    <strong style="font-size:1.4em;  color:#4471A7;">Solutions</strong>
+                    <div class="video-wrapper" id="solutions"></div>
                 </div>
             </div>
         </div>
@@ -209,6 +216,12 @@
                               "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
                               "<a href=\"" + link + "\">View on Renesas website</a></div>";
                             continue;
+                        case "solutions":
+                            document.getElementById("solutions").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                              "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                              "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
+                              "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                            continue;
                         default:
                             // do nothing
                     }
@@ -223,6 +236,7 @@
             const $intro = document.querySelector('#introduction-wrapper')
             const $tut = document.querySelector('#tutorials-wrapper')
             const $feat = document.querySelector('#features-wrapper')
+            const $sol = document.querySelector('#solutions-wrapper')
             const threshold = $nav.getBoundingClientRect()
             let updating = false
 
@@ -232,12 +246,14 @@
                 $intro.classList.add('nav--fixed')
                 $tut.classList.add('nav--fixed')
                 $feat.classList.add('nav--fixed')
+                $sol.classList.add('nav--fixed')
               }
               else {
                 $nav.classList.remove('nav--fixed')
                 $intro.classList.remove('nav--fixed')
                 $tut.classList.remove('nav--fixed')
                 $feat.classList.remove('nav--fixed')
+                $sol.classList.remove('nav--fixed')
               }
               updating = false
             }
