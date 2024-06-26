@@ -86,12 +86,12 @@
                     }
                 }
                 if (newVideoArr.length < 5) {
-                    for (var i = 0; i < latestFiveArr.length; i++) {
+                    for (var i = 0; i < newVideoArr.length; i++) {
                         var cloneFrId = xmlDoc.getElementById(latestFiveArr[i].strId);
                         filteredNewVideoDoc.appendChild(cloneFrId);
                     }
                 } else {
-                    for (var i = 0; i < newVideoArr.length; i++) {
+                    for (var i = 0; i < latestFiveArr.length; i++) {
                         var cloneFrId = xmlDoc.getElementById(newVideoArr[i].strDataId).cloneNode(true);
                         filteredNewVideoDoc.appendChild(cloneFrId);
                     }
@@ -215,15 +215,15 @@
             const handleScroll = () => {
               if (window.scrollY >= threshold.top || window.pageYOffset >= threshold.top) {
                 $nav.classList.add('nav--fixed')
-                $intro.classList.add('nav--fixed')
+                // $intro.classList.add('nav--fixed')
                 $tut.classList.add('nav--fixed')
-                $feat.classList.add('nav--fixed')
+                // $feat.classList.add('nav--fixed')
               }
               else {
                 $nav.classList.remove('nav--fixed')
-                $intro.classList.remove('nav--fixed')
+                // $intro.classList.remove('nav--fixed')
                 $tut.classList.remove('nav--fixed')
-                $feat.classList.remove('nav--fixed')
+                // $feat.classList.remove('nav--fixed')
               }
               updating = false
             }
