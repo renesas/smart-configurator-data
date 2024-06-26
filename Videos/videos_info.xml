@@ -242,18 +242,53 @@
         <date>2023-06-14</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-walkthrough-settings-clocks-and-components</renesaslink>
     </info>
-    <info id="_Toc87439381" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439381" name="videoInfo" device="RX || RL78" category="features">
         <title>How to Create a Blinky Project with Smart Configurator on e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6339494061112</iframe>
         <description>This video shows how to create a blinky project with Smart Configurator on e2 studio.</description>
         <date>2023-10-20</date>
         <renesaslink>https://www.renesas.com/video/how-create-blinky-project-smart-configurator-e-studio</renesaslink>
     </info>
-    <info id="_Toc87439382" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439382" name="videoInfo" device="RX" category="tutorials">
         <title>How to Change FIT Module Version in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
         <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
         <date>2024-04-03</date>
         <renesaslink>https://www.renesas.com/video/how-change-fit-module-version-smart-configurator</renesaslink>
+    </info>c
+    <info id="_Toc87439383" name="videoInfo" device="RX || RL78" category="features">
+        <title>How to Use Symbolic Name with Smart Configurator</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6354458076112</iframe>
+        <description>This video demonstrates how to use symbolic names with Smart Configurator on e2 studio for RX and RL78.</description>
+        <date>2024-06-07</date>
+        <renesaslink>https://www.renesas.com/video/how-use-symbolic-name-smart-configurator</renesaslink>
+    </info>
+    <info id="_Toc87439384" name="videoInfo" device="RL78" category="tutorials">
+        <title>How to Use CAN/LIN with Smart Configurator on e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6341818424112</iframe>
+        <description>This video introduces how to use CAN/LIN components of Smart Configurator on e2 studio.</description>
+        <date>2023-11-27</date>
+        <renesaslink>https://www.renesas.com/video/how-use-canlin-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439385" name="videoInfo" device="RL78" category="tutorials">
+        <title>How to Create a LIN Project with Smart Configurator on e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6347707179112</iframe>
+        <description>This video introduces how to create a LIN project with Smart Configurator on e² studio.</description>
+        <date>2024-02-27</date>
+        <renesaslink>https://www.renesas.com/video/how-create-lin-project-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439386" name="videoInfo" device="ASSP_RISCV" category="tutorials">
+        <title>How to Create a RISC-V Smart Configurator Project in e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6354759010112</iframe>
+        <description>This video demonstrates how to create a project using the RISC-V Smart Configurator in e² studio.</description>
+        <date>2024-06-11</date>
+        <renesaslink>https://www.renesas.com/video/how-create-risc-v-smart-configurator-project-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439387" name="videoInfo" device="ASSP_RISCV" category="tutorials">
+        <title>Usage of RISC-V MCU Smart Configurator in IAR Embedded Workbench - Quick Start Guide</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350577278112</iframe>
+        <description>This video shows how to use Smart Configurator in IAR Embedded Workbench for RISC-V MCU.</description>
+        <date>2024-04-10</date>
+        <renesaslink>https://www.renesas.com/video/usage-risc-v-mcu-smart-configurator-iar-embedded-workbench-quick-start-guide</renesaslink>
     </info>
 </videos>
