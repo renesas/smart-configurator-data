@@ -28,7 +28,7 @@
         <date>2018-08-08</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-introduction</renesaslink>
     </info>
-    <info id="_Toc87439353" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439353" name="videoInfo" device="RX || RL78 || RH850 || RZ || COMMON" category="tutorials">
         <title>How to Create a Smart Configurator project in e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286881148001</iframe>
         <description>This video demonstrates how to create a Smart Configurator project in e² studio.</description>
@@ -151,7 +151,7 @@
         <date>2022-04-28</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-smart-configurator-e2-studio</renesaslink>
     </info>
-    <info id="_Toc87439365" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="features">
+    <info id="_Toc87439365" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV || COMMON" category="features">
         <title>How to Use the User Code Protection Feature in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6326334834112</iframe>
         <description>This video shows how to use the “User code protection feature” in Smart Configurator.</description>
@@ -165,7 +165,7 @@
         <date>2023-05-29</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-rx-smart-configurator-iar-embedded-workbench</renesaslink>
     </info>
-    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="features">
+    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV" category="features">
         <title>Smart Configurator Feature - How to generate HEX values for Code Generator drivers</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6329777921112</iframe>
         <description>This video demonstrates how to use the Smart Configurator feature to generate HEX values for Code Generator drivers.</description>
@@ -242,14 +242,14 @@
         <date>2023-06-14</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-walkthrough-settings-clocks-and-components</renesaslink>
     </info>
-    <info id="_Toc87439381" name="videoInfo" device="RX || RL78" category="features">
+    <info id="_Toc87439381" name="videoInfo" device="RX || RL78 || ASSP_RISCV" category="tutorials">
         <title>How to Create a Blinky Project with Smart Configurator on e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6339494061112</iframe>
         <description>This video shows how to create a blinky project with Smart Configurator on e2 studio.</description>
         <date>2023-10-20</date>
         <renesaslink>https://www.renesas.com/video/how-create-blinky-project-smart-configurator-e-studio</renesaslink>
     </info>
-    <info id="_Toc87439382" name="videoInfo" device="RX" category="tutorials">
+    <info id="_Toc87439382" name="videoInfo" device="RX" category="features">
         <title>How to Change FIT Module Version in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
         <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
@@ -263,14 +263,14 @@
         <date>2024-06-07</date>
         <renesaslink>https://www.renesas.com/video/how-use-symbolic-name-smart-configurator</renesaslink>
     </info>
-    <info id="_Toc87439384" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439384" name="videoInfo" device="RL78" category="solutions">
         <title>How to Use CAN/LIN with Smart Configurator on e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6341818424112</iframe>
         <description>This video introduces how to use CAN/LIN components of Smart Configurator on e2 studio.</description>
         <date>2023-11-27</date>
         <renesaslink>https://www.renesas.com/video/how-use-canlin-smart-configurator-e-studio</renesaslink>
     </info>
-    <info id="_Toc87439385" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439385" name="videoInfo" device="RL78" category="solutions">
         <title>How to Create a LIN Project with Smart Configurator on e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6347707179112</iframe>
         <description>This video introduces how to create a LIN project with Smart Configurator on e² studio.</description>
@@ -290,5 +290,12 @@
         <description>This video shows how to use Smart Configurator in IAR Embedded Workbench for RISC-V MCU.</description>
         <date>2024-04-10</date>
         <renesaslink>https://www.renesas.com/video/usage-risc-v-mcu-smart-configurator-iar-embedded-workbench-quick-start-guide</renesaslink>
+    </info>
+    <info id="_Toc87439388" name="videoInfo" device="RZ" category="introduction">
+        <title>Introduction of Smart Configurator for RZ Family</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6355725310112</iframe>
+        <description>This video introduces Smart Configurator for the RZ Family. Smart Configurator (SC) is a GUI-based tool that can easily configure pins.</description>
+        <date>2024-06-27</date>
+        <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rz-family</renesaslink>
     </info>
 </videos>
