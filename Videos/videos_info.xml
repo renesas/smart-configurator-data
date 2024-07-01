@@ -7,7 +7,7 @@
         <date>2022-12-01</date>
         <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rx-family</renesaslink>
     </info>
-    <info id="_Toc87439381" name="videoInfo" device="RL78" category="introduction">
+    <info id="_Toc87439382" name="videoInfo" device="RL78" category="introduction">
         <title>Introduction of Smart Configurator for RL78 Family</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6337455840112</iframe>
         <description>Smart Configurator is a GUI-based tool that can generate code for drivers and middleware and configure pins easily. This video introduces the Smart Configurator for the RL78 Family.</description>
@@ -137,13 +137,6 @@
         <date>2022-10-25</date>
         <renesaslink>https://www.renesas.com/video/easy-coding-e-studio-smart-configurator-developer-assistance-feature</renesaslink>
     </info>
-    <info id="_Toc87439363" name="videoInfo" device="RX" category="solutions">
-        <title>Getting started for FreeRTOS IoT using Smart Configurator in e2 studio</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6312258715112</iframe>
-        <description>This video shows how to use Smart Configurator in e² studio for FreeRTOS IoT.</description>
-        <date>2022-09-13</date>
-        <renesaslink>https://www.renesas.com/video/getting-started-freertos-iot-using-smart-configurator-e2-studio</renesaslink>
-    </info>
     <info id="_Toc87439364" name="videoInfo" device="RX" category="solutions">
         <title>Getting started for Azure RTOS using Smart Configurator in e2 studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6305295464112</iframe>
@@ -249,13 +242,6 @@
         <date>2023-10-20</date>
         <renesaslink>https://www.renesas.com/video/how-create-blinky-project-smart-configurator-e-studio</renesaslink>
     </info>
-    <info id="_Toc87439382" name="videoInfo" device="RX" category="features">
-        <title>How to Change FIT Module Version in Smart Configurator</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
-        <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
-        <date>2024-04-03</date>
-        <renesaslink>https://www.renesas.com/video/how-change-fit-module-version-smart-configurator</renesaslink>
-    </info>c
     <info id="_Toc87439383" name="videoInfo" device="RX || RL78" category="features">
         <title>How to Use Symbolic Name with Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6354458076112</iframe>
@@ -297,5 +283,19 @@
         <description>This video introduces Smart Configurator for the RZ Family. Smart Configurator (SC) is a GUI-based tool that can easily configure pins.</description>
         <date>2024-06-27</date>
         <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rz-family</renesaslink>
+    </info>
+    <info id="_Toc87439389" name="videoInfo" device="RX" category="features">
+        <title>How to Change FIT Module Version in Smart Configurator</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
+        <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
+        <date>2024-04-03</date>
+        <renesaslink>https://www.renesas.com/video/how-change-fit-module-version-smart-configurator</renesaslink>
+    </info>
+    <info id="_Toc87439390" name="videoInfo" device="RX" category="solutions">
+        <title>Getting started for FreeRTOS IoT using Smart Configurator in e2 studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6312258715112</iframe>
+        <description>This video shows how to use Smart Configurator in e² studio for FreeRTOS IoT.</description>
+        <date>2022-09-13</date>
+        <renesaslink>https://www.renesas.com/video/getting-started-freertos-iot-using-smart-configurator-e2-studio</renesaslink>
     </info>
 </videos>
