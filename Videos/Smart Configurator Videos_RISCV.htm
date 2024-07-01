@@ -19,12 +19,12 @@
                     <img class="logo" src="./header-w.svg" alt="Renesas Electronics Corporation">
                 </div>
                 <div class="header">
-                    <h1>Smart Configurator Videos</h1>
+                    <h1>Smart Configurator Videos for RISC-V Family</h1>
                     <div class="quick-links">
                         <ul style="margin-bottom: 0.2em;">
-                            <li style="list-style-type: none;">
+                            <!-- <li style="list-style-type: none;">
                                 <a href="#introduction-wrapper" class="introduction">Introduction</a>
-                            </li>
+                            </li> -->
                             <li style="list-style-type: none;">
                                 <a href="#tutorials-wrapper" class="tutorials">Tutorials</a>
                             </li>
@@ -45,10 +45,10 @@
                 </div>
             </div>
             <div class="main-content">
-                <div class="category-wrapper" id="introduction-wrapper">
+                <!-- <div class="category-wrapper" id="introduction-wrapper">
                     <strong style="font-size:1.4em;  color:#4471A7;">Introduction</strong>
                     <div class="video-wrapper" id="introduction"></div>
-                </div>
+                </div> -->
                 <div class="category-wrapper" id="tutorials-wrapper">
                     <strong style="font-size:1.4em;  color:#4471A7;">Tutorials</strong>
                     <div class="video-wrapper" id="tutorials"></div>
@@ -66,7 +66,7 @@
 
         <script>
             var xmlPath = 'https://raw.githubusercontent.com/renesas/smart-configurator-data/master/Videos/videos_info.xml';
-            var device = "COMMON";
+            var device = "ASSP_RISCV";
             var filteredXmlList;
             var filteredNewVideoList;
             let newVideoArr = new Array();
@@ -112,7 +112,7 @@
                         filteredNewVideoDoc.appendChild(cloneFrId);
                     }
                 } else {
-                    for (var i = 0; i < newVideoArr.length; i++) {
+                    for (var i = 0; i < latestFiveArr.length; i++) {
                         var cloneFrId = xmlDoc.getElementById(newVideoArr[i].strDataId).cloneNode(true);
                         filteredNewVideoDoc.appendChild(cloneFrId);
                     }
@@ -198,12 +198,12 @@
                     var link = filteredinfoData.getElementsByTagName("renesaslink")[0].textContent;
 
                     switch (category) {
-                        case "introduction":
-                            document.getElementById("introduction").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
-                              "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
-                              "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
-                              "<a href=\"" + link + "\">View on Renesas website</a></div>";
-                            continue;
+                        // case "introduction":
+                        //     document.getElementById("introduction").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
+                        //       "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
+                        //       "<div class=\"video-description\"><p>" + description + "</p><p><br>Date of upload: " + date + "</p></div>" + 
+                        //       "<a href=\"" + link + "\">View on Renesas website</a></div>";
+                        //     continue;
                         case "tutorials":
                             document.getElementById("tutorials").innerHTML += "<div id=\"" + id + "\" class=\"video-contents\">" + 
                               "<iframe src=\"" + video + "\" allowfullscreen=allowfullscreen></iframe><h3>" + title + "</h3>" + 
@@ -233,7 +233,7 @@
         <script>
             const RAF = requestAnimationFrame
             const $nav = document.querySelector('.header')
-            const $intro = document.querySelector('#introduction-wrapper')
+            // const $intro = document.querySelector('#introduction-wrapper')
             const $tut = document.querySelector('#tutorials-wrapper')
             const $feat = document.querySelector('#features-wrapper')
             // const $sol = document.querySelector('#solutions-wrapper')
@@ -243,14 +243,14 @@
             const handleScroll = () => {
               if (window.scrollY >= threshold.top || window.pageYOffset >= threshold.top) {
                 $nav.classList.add('nav--fixed')
-                $intro.classList.add('nav--fixed')
+                // $intro.classList.add('nav--fixed')
                 $tut.classList.add('nav--fixed')
                 $feat.classList.add('nav--fixed')
                 // $sol.classList.add('nav--fixed')
               }
               else {
                 $nav.classList.remove('nav--fixed')
-                $intro.classList.remove('nav--fixed')
+                // $intro.classList.remove('nav--fixed')
                 $tut.classList.remove('nav--fixed')
                 $feat.classList.remove('nav--fixed')
                 // $sol.classList.remove('nav--fixed')

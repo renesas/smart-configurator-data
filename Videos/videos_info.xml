@@ -7,7 +7,7 @@
         <date>2022-12-01</date>
         <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rx-family</renesaslink>
     </info>
-    <info id="_Toc87439381" name="videoInfo" device="RL78" category="introduction">
+    <info id="_Toc87439382" name="videoInfo" device="RL78" category="introduction">
         <title>Introduction of Smart Configurator for RL78 Family</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6337455840112</iframe>
         <description>Smart Configurator is a GUI-based tool that can generate code for drivers and middleware and configure pins easily. This video introduces the Smart Configurator for the RL78 Family.</description>
@@ -28,7 +28,7 @@
         <date>2018-08-08</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-introduction</renesaslink>
     </info>
-    <info id="_Toc87439353" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439353" name="videoInfo" device="RX || RL78 || RH850 || RZ || COMMON" category="tutorials">
         <title>How to Create a Smart Configurator project in e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286881148001</iframe>
         <description>This video demonstrates how to create a Smart Configurator project in e² studio.</description>
@@ -80,35 +80,35 @@
         <date>2021-12-23</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-tips-how-display-pre-downloaded-fit-modules-smart-configurator</renesaslink>
     </info>
-    <info id="_Toc87439654" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439654" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (1/3) - Create Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6246659188001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-04-05</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-13-create-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439655" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439655" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (2/3) - Configure Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279705475001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-23-configure-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439656" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439656" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial (3/3) - Add User Code and Run Project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6279704885001</iframe>
         <description>This video demonstrates how to use the SNOOZE mode sequencer (SMS) of RL78/G23 to build a power supply monitoring system in e² studio.</description>
         <date>2021-11-01</date>
         <renesaslink>https://www.renesas.com/video/snooze-mode-sequencer-sms-tutorial-33-add-user-code-and-run-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439657" name="videoInfo" device="RL78" category="features">
+    <info id="_Toc87439657" name="videoInfo" device="RL78" category="tutorials">
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (1/2) - Installation</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286870464001</iframe>
         <description>This video demonstrates how to install IAR Embedded Workbench for RL78 and Smart Configurator.</description>
         <date>2021-12-15</date>
         <renesaslink>https://www.renesas.com/video/using-smart-configurator-iar-embedded-workbench-rl78-12-installation</renesaslink>
     </info>
-    <info id="_Toc87439658" name="videoInfo" device="RL78" category="features">
+    <info id="_Toc87439658" name="videoInfo" device="RL78" category="tutorials">
         <title>Using Smart Configurator with IAR Embedded Workbench for RL78 (2/2) - Creating an EWB Project for Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6286872286001</iframe>
         <description>This video demonstrates how to create an Embedded Workbench project collaborates with Smart Configurator.</description>
@@ -137,13 +137,6 @@
         <date>2022-10-25</date>
         <renesaslink>https://www.renesas.com/video/easy-coding-e-studio-smart-configurator-developer-assistance-feature</renesaslink>
     </info>
-    <info id="_Toc87439363" name="videoInfo" device="RX" category="solutions">
-        <title>Getting started for FreeRTOS IoT using Smart Configurator in e2 studio</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6312258715112</iframe>
-        <description>This video shows how to use Smart Configurator in e² studio for FreeRTOS IoT.</description>
-        <date>2022-09-13</date>
-        <renesaslink>https://www.renesas.com/video/getting-started-freertos-iot-using-smart-configurator-e2-studio</renesaslink>
-    </info>
     <info id="_Toc87439364" name="videoInfo" device="RX" category="solutions">
         <title>Getting started for Azure RTOS using Smart Configurator in e2 studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6305295464112</iframe>
@@ -151,7 +144,7 @@
         <date>2022-04-28</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-smart-configurator-e2-studio</renesaslink>
     </info>
-    <info id="_Toc87439365" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="features">
+    <info id="_Toc87439365" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV || COMMON" category="features">
         <title>How to Use the User Code Protection Feature in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6326334834112</iframe>
         <description>This video shows how to use the “User code protection feature” in Smart Configurator.</description>
@@ -165,7 +158,7 @@
         <date>2023-05-29</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-rx-smart-configurator-iar-embedded-workbench</renesaslink>
     </info>
-    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="features">
+    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV" category="features">
         <title>Smart Configurator Feature - How to generate HEX values for Code Generator drivers</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6329777921112</iframe>
         <description>This video demonstrates how to use the Smart Configurator feature to generate HEX values for Code Generator drivers.</description>
@@ -193,28 +186,28 @@
         <date>2022-01-25</date>
         <renesaslink>https://www.renesas.com/video/rx-smart-configurator-motor-33-run-motor-project</renesaslink>
     </info>
-    <info id="_Toc87439373" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439373" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (1/3) - Create project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308456474112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-24</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-13-create-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439374" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439374" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (2/3) - Configuration Project RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308640693112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-28</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-23-configuration-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439375" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439375" name="videoInfo" device="RL78" category="solutions">
         <title>ELCL Slave Select Pin Function (4-wire SPI) Tutorial (3/3) - Add user code and run project for RL78/G23</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6308637939112</iframe>
         <description>This video demonstrates how to use e² studio to enable RL78 Logic and Event Link Controller (ELCL) function to add Slave Selection (SS) to the slave receive mode of a Serial Array Unit's (SAU) 3-wire serial I/O (CSI) and achieve 4-wire SPI (Serial Peripheral Interface) communication.</description>
         <date>2022-06-28</date>
         <renesaslink>https://www.renesas.com/video/elcl-slave-select-pin-function-4-wire-spi-tutorial-33-add-user-code-and-run-project-rl78g23</renesaslink>
     </info>
-    <info id="_Toc87439376" name="videoInfo" device="RL78" category="tutorials">
+    <info id="_Toc87439376" name="videoInfo" device="RL78" category="solutions">
         <title>SNOOZE Mode Sequencer (SMS) Tutorial - Import SMS LED Blinking Dimming Control Project</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6314308458112</iframe>
         <description>This video demonstrates how to control LEDs using the SNOOZE mode sequencer and the 32-bit interval timer for RL78/G23 device.</description>
@@ -242,18 +235,67 @@
         <date>2023-06-14</date>
         <renesaslink>https://www.renesas.com/video/how-use-smart-configurator-walkthrough-settings-clocks-and-components</renesaslink>
     </info>
-    <info id="_Toc87439381" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439381" name="videoInfo" device="RX || RL78 || ASSP_RISCV" category="tutorials">
         <title>How to Create a Blinky Project with Smart Configurator on e² studio</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6339494061112</iframe>
         <description>This video shows how to create a blinky project with Smart Configurator on e2 studio.</description>
         <date>2023-10-20</date>
         <renesaslink>https://www.renesas.com/video/how-create-blinky-project-smart-configurator-e-studio</renesaslink>
     </info>
-    <info id="_Toc87439382" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
+    <info id="_Toc87439383" name="videoInfo" device="RX || RL78" category="features">
+        <title>How to Use Symbolic Name with Smart Configurator</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6354458076112</iframe>
+        <description>This video demonstrates how to use symbolic names with Smart Configurator on e2 studio for RX and RL78.</description>
+        <date>2024-06-07</date>
+        <renesaslink>https://www.renesas.com/video/how-use-symbolic-name-smart-configurator</renesaslink>
+    </info>
+    <info id="_Toc87439384" name="videoInfo" device="RL78" category="solutions">
+        <title>How to Use CAN/LIN with Smart Configurator on e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6341818424112</iframe>
+        <description>This video introduces how to use CAN/LIN components of Smart Configurator on e2 studio.</description>
+        <date>2023-11-27</date>
+        <renesaslink>https://www.renesas.com/video/how-use-canlin-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439385" name="videoInfo" device="RL78" category="solutions">
+        <title>How to Create a LIN Project with Smart Configurator on e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6347707179112</iframe>
+        <description>This video introduces how to create a LIN project with Smart Configurator on e² studio.</description>
+        <date>2024-02-27</date>
+        <renesaslink>https://www.renesas.com/video/how-create-lin-project-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439386" name="videoInfo" device="ASSP_RISCV" category="tutorials">
+        <title>How to Create a RISC-V Smart Configurator Project in e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6354759010112</iframe>
+        <description>This video demonstrates how to create a project using the RISC-V Smart Configurator in e² studio.</description>
+        <date>2024-06-11</date>
+        <renesaslink>https://www.renesas.com/video/how-create-risc-v-smart-configurator-project-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439387" name="videoInfo" device="ASSP_RISCV" category="tutorials">
+        <title>Usage of RISC-V MCU Smart Configurator in IAR Embedded Workbench - Quick Start Guide</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350577278112</iframe>
+        <description>This video shows how to use Smart Configurator in IAR Embedded Workbench for RISC-V MCU.</description>
+        <date>2024-04-10</date>
+        <renesaslink>https://www.renesas.com/video/usage-risc-v-mcu-smart-configurator-iar-embedded-workbench-quick-start-guide</renesaslink>
+    </info>
+    <info id="_Toc87439388" name="videoInfo" device="RZ" category="introduction">
+        <title>Introduction of Smart Configurator for RZ Family</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6355725310112</iframe>
+        <description>This video introduces Smart Configurator for the RZ Family. Smart Configurator (SC) is a GUI-based tool that can easily configure pins.</description>
+        <date>2024-06-27</date>
+        <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rz-family</renesaslink>
+    </info>
+    <info id="_Toc87439389" name="videoInfo" device="RX" category="features">
         <title>How to Change FIT Module Version in Smart Configurator</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6350159184112</iframe>
         <description>This video demonstrates how to change the FIT module version in Smart Configurator.</description>
         <date>2024-04-03</date>
         <renesaslink>https://www.renesas.com/video/how-change-fit-module-version-smart-configurator</renesaslink>
+    </info>
+    <info id="_Toc87439390" name="videoInfo" device="RX" category="solutions">
+        <title>Getting started for FreeRTOS IoT using Smart Configurator in e2 studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6312258715112</iframe>
+        <description>This video shows how to use Smart Configurator in e² studio for FreeRTOS IoT.</description>
+        <date>2022-09-13</date>
+        <renesaslink>https://www.renesas.com/video/getting-started-freertos-iot-using-smart-configurator-e2-studio</renesaslink>
     </info>
 </videos>
