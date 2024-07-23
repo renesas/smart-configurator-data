@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="18">
+            <function id="P30"/>
+        </pin>
+        <pin id="20">
+            <function id="TXD1"/>
+            <function id="SSDA1"/>
+        </pin>
+        <pin id="25">
+            <function id="RXD1"/>
+            <function id="SSCL1"/>
+        </pin>
+        <pin id="27">
+            <function id="IRQ3"/>
+        </pin>
+		<pin id="28">
+            <function id="IRQ2"/>
+        </pin>
+		<pin id="30">
+            <function id="IRQ1"/>
+        </pin>
+        <pin id="47">
+            <function id="IRQ4"/>
+        </pin>
+        <pin id="53">
+            <function id="TXD5"/>
+            <function id="SSDA5"/>
+        </pin>
+        <pin id="54">
+            <function id="RXD5"/>
+            <function id="SSCL5"/>
+        </pin>
+        <pin id="58">
+            <function id="IRQ5"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="ARDUINO-D6/PWM" group="" id="PJ1" pin="5" symbolicname=""/>
+        <function comments="FINED" group="" id="FINED" pin="6" symbolicname=""/>
+        <function comments="XCIN" group="" id="XCIN" pin="7" symbolicname=""/>
+        <function comments="XCOUT" group="" id="XCOUT" pin="8" symbolicname=""/>
+        <function comments="RES#/SW-Reset" group="" id="RES#" pin="9" symbolicname=""/>
+        <function comments="LED2" group="" id="P32" pin="16" symbolicname="LED2"/>
+        <function comments="PMOD2-RTS" group="" id="RTS1#" pin="17" symbolicname=""/>
+        <function comments="UserSW-S1_ARDUINO-D2/INT" group="" id="IRQ0" pin="18" symbolicname="SW1"/>
+        <function comments="PMOD2-SCK" group="" id="SCK1" pin="19" symbolicname=""/>
+        <function comments="PMOD2-TXD/MOSI/SDA" group="" id="SMOSI1" pin="20" symbolicname=""/>
+        <function comments="ARDUINO-D4" group="" id="P21" pin="21" symbolicname=""/>
+        <function comments="LED1_ARDUINO-D5/PWM" group="" id="P20" pin="22" symbolicname="LED1"/>
+        <function comments="ARDUINO-SDA" group="" id="SDA0" pin="23" symbolicname=""/>
+        <function comments="ARDUINO-SCL" group="" id="SCL0" pin="24" symbolicname=""/>
+        <function comments="PMOD2-RXD/MISO/SCL" group="" id="SMISO1" pin="25" symbolicname=""/>
+        <function comments="PMOD2-CS/CTS" group="" id="CTS1#" pin="26" symbolicname=""/>
+        <function comments="PMOD2-GPIO/INT" group="" id="P13" pin="27" symbolicname=""/>
+        <function comments="PMOD2-INT" group="" id="P12" pin="28" symbolicname=""/>
+        <function comments="ARDUINO-D3/INT/PWM" group="" id="PH2" pin="30" symbolicname=""/>
+        <function comments="ARDUINO-D12/MISO" group="" id="MISOA" pin="35" symbolicname=""/>
+        <function comments="ARDUINO-D11/MOSI/PWM" group="" id="MOSIA" pin="36" symbolicname=""/>
+        <function comments="ARDUINO-D13/SCK" group="" id="RSPCKA" pin="37" symbolicname=""/>
+        <function comments="ARDUINO-D10/SS/PWM" group="" id="SSLA0" pin="38" symbolicname=""/>
+        <function comments="ARDUINO-D7" group="" id="PC3" pin="39" symbolicname=""/>
+        <function comments="ARDDUINO-D8" group="" id="PC2" pin="40" symbolicname=""/>
+        <function comments="PMOD1-GPIO/CS3" group="" id="PB6" pin="42" symbolicname=""/>
+        <function comments="PMOD1-GPIO/CS2" group="" id="PB5" pin="43" symbolicname=""/>
+        <function comments="PMOD1-GPIO/RESET" group="" id="PB3" pin="45" symbolicname=""/>
+        <function comments="PMOD2-GPIO/RESET" group="" id="PB2" pin="46" symbolicname=""/>
+        <function comments="PMOD1-GPIO/INT" group="" id="PB1" pin="47" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="PB0" pin="49" symbolicname=""/>
+        <function comments="PMOD1-CTS" group="" id="CTS5#" pin="51" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="PA5" pin="52" symbolicname=""/>
+        <function comments="PMOD1-TXD/MOSI/SDA" group="" id="SMOSI5" pin="53" symbolicname=""/>
+        <function comments="PMOD1-RXD/MISO/SCL" group="" id="SMISO5" pin="54" symbolicname=""/>
+        <function comments="PMOD1-SCK" group="" id="SCK5" pin="56" symbolicname=""/>
+        <function comments="PMOD1-CS/INT" group="" id="PE5" pin="58" symbolicname=""/>
+        <function comments="ARDUINO-D9/PWM" group="" id="PE4" pin="59" symbolicname=""/>
+        <function comments="ARDUINO-D0/RX" group="" id="RXD6" pin="65" symbolicname=""/>
+        <function comments="ARDUINO-D1/TX" group="" id="TXD6" pin="66" symbolicname=""/>
+        <function comments="ARDUINO-A5" group="" id="AN005" pin="69" symbolicname=""/>
+        <function comments="ARDUINO-A4" group="" id="AN004" pin="70" symbolicname=""/>
+        <function comments="ARDUINO-A3" group="" id="AN003" pin="71" symbolicname=""/>
+        <function comments="ARDUINO-A2" group="" id="AN002" pin="72" symbolicname=""/>
+        <function comments="ARDUINO-A1" group="" id="AN001" pin="73" symbolicname=""/>
+        <function comments="ARDUINO-A0" group="" id="AN000" pin="75" symbolicname=""/>
+        <function comments="ARDUINO-AREF" group="" id="VREFH0" pin="76" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocofrequency" value="frq48"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-2"/>
+        <item id="pllmul" value="mul6-1"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="FPB-RX140" html="" id="FPB-RX140" partNumber="R5F51406BxFN"/>
+    <info version="V1.00"/>
+</boardInfo>
