@@ -291,4 +291,11 @@
         <date>2022-09-13</date>
         <renesaslink>https://www.renesas.com/video/getting-started-freertos-iot-using-smart-configurator-e2-studio</renesaslink>
     </info>
+    <info id="_Toc87439391" name="videoInfo" device="RX" category="tutorials">
+        <title>Smart Configurator - How to Configure Pmod Connections for a Board</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6361205461112</iframe>
+        <description>This video demonstrates how to configure Pmod connections for a board using Smart Configurator.</description>
+        <date>2024-08-30</date>
+        <renesaslink>https://www.renesas.com/us/en/video/smart-configurator-how-configure-pmod-connections-board</renesaslink>
+    </info>
 </videos>
