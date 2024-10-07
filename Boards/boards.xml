@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <boards>
   <board id="RSKRX671" version="1.00" description="" keys="">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/52858637de0a7c54b3a7aa25b42483a09ea67ac9/Boards/RSKRX671_V1.00.bcdf"/>
@@ -37,7 +37,7 @@
     <tornado documentNo="RBDF0034"/>
   </board>
   <!-- Information for BDF download -->
- <board id="CK-RX65N-V2" version="1.00" description="New Cloud Kit V2 for RX65N Board Description File" keys="RX">
+  <board id="CK-RX65N-V2" version="1.00" description="New Cloud Kit V2 for RX65N Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e6e4c24f943bb37708b7fe68cb0c66bc4ddcef1f/Boards/CK-RX65N-V2_V1.00.bdf"/>
   </board>
   <board id="CK-RX65N" version="1.02" description="New Cloud Kit for RX65N Board Description File" keys="RX">
@@ -276,3 +276,4 @@
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e6e4c24f943bb37708b7fe68cb0c66bc4ddcef1f/Boards/TargetBoardRX671_V1.02.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/e6e4c24f943bb37708b7fe68cb0c66bc4ddcef1f/Boards/TargetBoardRX671_V1.01.bcdf"/>
   </board>
+</boards>
