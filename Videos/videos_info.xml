@@ -298,4 +298,18 @@
         <date>2024-08-30</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-how-configure-pmod-connections-board</renesaslink>
     </info>
+    <info id="_Toc87439392" name="videoInfo" device="RL78" category="tutorials">
+        <title>How to Create a UART Communication Project Using Smart Configurator in e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6362731267112</iframe>
+        <description>This video shows how to use Smart Configurator to create a UART communication project.</description>
+        <date>2024-10-02</date>
+        <renesaslink>https://www.renesas.com/video/how-create-uart-communication-project-using-smart-configurator-e-studio</renesaslink>
+    </info>
+    <info id="_Toc87439393" name="videoInfo" device="ASSP_RISCV" category="tutorials">
+        <title>Quick Start Guide - Usage of RISC-V MCU Smart Configurator in SEGGER Embedded Studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6359579265112</iframe>
+        <description>This video demonstrates how to use Smart Configurator in SEGGER Embedded Studio for RISC-V MCU.</description>
+        <date>2024-07-30</date>
+        <renesaslink>https://www.renesas.com/video/quick-start-guide-usage-risc-v-mcu-smart-configurator-segger-embedded-studio</renesaslink>
+    </info>
 </videos>
