@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="4">
+			<function id="SS6#"/>
+			<function id="RTS6#"/>
+        </pin>
+		<pin id="16">
+			<function id="SCK6"/>
+        </pin>
+		<pin id="17">
+			<function id="SMISO6"/>
+			<function id="RXD6"/>
+        </pin>
+		<pin id="25">
+			<function id="SS000#"/>
+        </pin>
+		<pin id="26">
+			<function id="SCK000"/>
+        </pin>
+		<pin id="41">
+			<function id="P53"/>
+        </pin>
+        <pin id="71">
+			<function id="PE7"/>
+            <function id="IRQ7"/>
+        </pin>
+		<pin id="83">
+			<function id="PD3"/>
+        </pin>
+		<pin id="84">
+			<function id="PD2"/>
+        </pin>
+		<pin id="85">
+			<function id="PD1"/>
+        </pin>
+		<pin id="86">
+			<function id="SMOSI6"/>
+			<function id="TXD6"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+		<function comments="PMOD1-CS/RTS" group="" id="UNASSIGNED_4" pin="4" symbolicname=""/>
+        <function comments="MD_FINED" group="" id="FINED" pin="7" symbolicname=""/>
+        <function comments="XCIN" group="" id="UNASSIGNED_8" pin="8" symbolicname=""/>
+        <function comments="XCOUT" group="" id="UNASSIGNED_9" pin="9" symbolicname=""/>
+        <function comments="SW3(Reset)" group="" id="RES#" pin="10" symbolicname=""/>
+        <function comments="XTAL" group="" id="UNASSIGNED_11" pin="11" symbolicname=""/>
+        <function comments="VSS" group="" id="UNASSIGNED_12" pin="12" symbolicname=""/>
+        <function comments="EXTAL" group="" id="UNASSIGNED_13" pin="13" symbolicname=""/>
+        <function comments="VCC" group="" id="UNASSIGNED_14" pin="14" symbolicname=""/>
+        <function comments="PMOD1-SCK" group="" id="" pin="16" symbolicname=""/>
+        <function comments="PMOD1-MISO/RXD/SCL" group="" id="SSCL6" pin="17" symbolicname=""/>
+        <function comments="TS-S5" group="" id="TS0" pin="18" symbolicname=""/>
+        <function comments="TS-S2" group="" id="TS1" pin="19" symbolicname=""/>
+        <function comments="TS-S4" group="" id="TS2" pin="20" symbolicname=""/>
+        <function comments="TS-S1" group="" id="TS3" pin="21" symbolicname=""/>
+        <function comments="TS-S3" group="" id="TS4" pin="22" symbolicname=""/>
+        <function comments="LED1" group="" id="P25" pin="23" symbolicname=""/>
+        <function comments="LED2" group="" id="P24" pin="24" symbolicname=""/>
+        <function comments="PMOD2-CS" group="" id="UNASSIGNED_25" pin="25" symbolicname=""/>
+        <function comments="PMOD2-SCK" group="" id="UNASSIGNED_26" pin="26" symbolicname=""/>
+        <function comments="MCU-RXD/PMOD2-MISO" group="" id="RXD000" pin="27" symbolicname=""/>
+        <function comments="MCU-TXD/PMOD2-MOSI" group="" id="TXD000" pin="28" symbolicname=""/>
+        <function comments="SHIELD-S1" group="" id="TS5" pin="31" symbolicname=""/>
+        <function comments="SHIELD-B1" group="" id="TS6" pin="32" symbolicname=""/>
+        <function comments="LED_ROW1" group="" id="P13" pin="33" symbolicname=""/>
+        <function comments="LED_ROW0" group="" id="P12" pin="34" symbolicname=""/>
+        <function comments="TS-B3" group="" id="TS11" pin="39" symbolicname=""/>
+        <function comments="TS-B1" group="" id="TS12" pin="40" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="UNASSIGNED_41" pin="41" symbolicname=""/>
+        <function comments="LED_ROW3" group="" id="P52" pin="42" symbolicname=""/>
+        <function comments="LED_ROW2" group="" id="P51" pin="43" symbolicname=""/>
+        <function comments="LED_COL3" group="" id="P50" pin="44" symbolicname=""/>
+        <function comments="TS-B2/UB" group="" id="TS13" pin="45" symbolicname=""/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="48" symbolicname=""/>
+        <function comments="SHIELD-W1" group="" id="TS21" pin="56" symbolicname=""/>
+        <function comments="LED_COL2" group="" id="PA7" pin="63" symbolicname=""/>
+        <function comments="TS-W4" group="" id="TS27" pin="65" symbolicname=""/>
+        <function comments="TS-W3" group="" id="TS30" pin="68" symbolicname=""/>
+		<function comments="PMOD1-CTS" group="" id="UNASSIGNED_71" pin="71" symbolicname=""/>
+        <function comments="SW1" group="" id="PE6" pin="72" symbolicname=""/>
+        <function comments="SW2" group="" id="PE5" pin="73" symbolicname=""/>
+        <function comments="TS-W2" group="" id="TS33" pin="74" symbolicname=""/>
+        <function comments="TS-W1" group="" id="TS35" pin="76" symbolicname=""/>
+        <function comments="LED_COL1" group="" id="PE1" pin="77" symbolicname=""/>
+        <function comments="LED_COL0" group="" id="PE0" pin="78" symbolicname=""/>
+        <function comments="PMOD1-GPIO" group="" id="PD7" pin="79" symbolicname=""/>
+        <function comments="PMOD1-GPIO" group="" id="PD6" pin="80" symbolicname=""/>
+        <function comments="PMOD1-GPIO" group="" id="PD5" pin="81" symbolicname=""/>
+        <function comments="PMOD1-GPIO" group="" id="PD4" pin="82" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="UNASSIGNED_83" pin="83" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="UNASSIGNED_84" pin="84" symbolicname=""/>
+        <function comments="PMOD2-GPIO" group="" id="UNASSIGNED_85" pin="85" symbolicname=""/>
+        <function comments="PMOD1-MOSI/TXD/SDA" group="" id="SSDA6" pin="86" symbolicname=""/>
+        <function comments="AVCC0" group="" id="UNASSIGNED_97" pin="97" symbolicname=""/>
+        <function comments="AVSS0" group="" id="UNASSIGNED_99" pin="99" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="5"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subsourcebox" value="srcR"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocofrequency" value="frq64"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="check"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="pll2divider" value="div1-1"/>
+        <item id="pll2mul" value="mul6-1"/>
+        <item id="sckswitcher" value="hoco"/>
+        <item id="canswitcher" value="canloco"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="usbswitcher" value="usbhoco"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="cfdckdivider" value="comboBox1-2"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="canfdclkenable" value="uncheck"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="uclkenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="RSSKRX261" html="" id="RSSKRX261" partNumber="R5F52618BxFP"/>
+    <info version="V1.00"/>
+</boardInfo>
