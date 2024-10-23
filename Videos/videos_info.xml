@@ -22,11 +22,11 @@
         <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-rh850-family</renesaslink>
     </info>
     <info id="_Toc87439352" name="videoInfo" device="ASSP_RISCV" category="introduction">
-        <title>Smart Configurator Introduction</title>
-        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=5819365850001</iframe>
+        <title>Introduction of Smart Configurator for RISC-V Family</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6363608960112</iframe>
         <description></description>
-        <date>2018-08-08</date>
-        <renesaslink>https://www.renesas.com/video/smart-configurator-introduction</renesaslink>
+        <date>2024-10-23</date>
+        <renesaslink>https://www.renesas.com/video/introduction-smart-configurator-risc-v-family</renesaslink>
     </info>
     <info id="_Toc87439353" name="videoInfo" device="RX || RL78 || RH850 || COMMON" category="tutorials">
         <title>How to Create a Smart Configurator project in e² studio</title>
@@ -158,7 +158,7 @@
         <date>2023-05-29</date>
         <renesaslink>https://www.renesas.com/video/getting-started-azure-rtos-using-rx-smart-configurator-iar-embedded-workbench</renesaslink>
     </info>
-    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV || COMMON" category="features">
+    <info id="_Toc87439367" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV" category="features">
         <title>Smart Configurator Feature - How to generate HEX values for Code Generator drivers</title>
         <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6329777921112</iframe>
         <description>This video demonstrates how to use the Smart Configurator feature to generate HEX values for Code Generator drivers.</description>
