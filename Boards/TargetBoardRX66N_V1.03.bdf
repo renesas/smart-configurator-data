@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="52">
+            <function id="CTS5#"/>
+            <function id="IRQ14"/>
+        </pin>
+        <pin id="50">
+            <function id="PC2"/>
+            <function id="SMISO5"/>
+            <function id="RXD5"/>
+        </pin>
+        <pin id="49">
+            <function id="PC3"/>
+            <function id="SMOSI5"/>
+            <function id="TXD5"/>
+        </pin>
+        <pin id="61">
+            <function id="IRQ12"/>
+        </pin>
+        <pin id="53">
+            <function id="TXD9"/>
+        </pin>
+        <pin id="54">
+            <function id="RXD9"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="" group="" id="EMLE" pin="2"/>
+        <function comments="" group="" id="FINED" pin="7"/>
+        <function comments="RES1" group="" id="RES#" pin="10"/>
+        <function comments="SW1" group="" id="IRQ4" pin="16"/>
+        <function comments="LED1" group="" id="P33" pin="17"/>
+        <function comments="LED0" group="" id="P32" pin="18"/>
+        <function comments="PMOD-RESET" group="" id="PC5" pin="47"/>
+        <function comments="PMOD-SDA" group="" id="SSDA5" pin="49"/>
+        <function comments="PMOD-SCL" group="" id="SSCL5" pin="50"/>
+        <function comments="PMOD-SCK" group="" id="SCK5" pin="51"/>
+        <function comments="PMOD-CS" group="" id="PC0" pin="52"/>
+        <function comments="PMOD-GPIO2" group="" id="PB7" pin="53"/>
+        <function comments="PMOD-GPIO3" group="" id="PB6" pin="54"/>
+        <function comments="PMOD-GPIO1" group="" id="PB1" pin="59"/>
+        <function comments="PMOD-GPIO0" group="" id="PB0" pin="61"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="uncheck"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="24"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="subclockenable" value="uncheck"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="subwaittime" value="2000"/>
+        <item id="hococlockenable" value="check"/>
+        <item id="hocooscenable" value="check"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllhoco"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul15-1"/>
+        <item id="pplldivider" value="div1-2"/>
+        <item id="ppllmul" value="mul25-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="ckoswitcher" value="ckohoco"/>
+        <item id="usbswitcher" value="usbuclk"/>
+        <item id="physwitcher" value="phyppll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-2"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-4"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="bckdivider" value="comboBox1-4"/>
+        <item id="bckselectorenable" value="uncheck"/>
+        <item id="bckselector" value="comboBox1-2"/>
+        <item id="uckenable" value="uncheck"/>
+        <item id="uckdivider" value="comboBox1-5"/>
+        <item id="pplldiv" value="comboBox1-4"/>
+        <item id="outckdivider" value="comboBox1-8"/>
+        <item id="ckodivider" value="comboBox1-1"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="rtcsclkenable" value="uncheck"/>
+    </clock>
+    <board display="TargetBoardRX66N" html="" id="TargetBoardRX66N" partNumber="R5F566NNHxFP"/>
+    <info version="V1.03"/>
+</boardInfo>
