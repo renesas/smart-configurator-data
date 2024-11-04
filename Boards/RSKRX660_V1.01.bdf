@@ -44,7 +44,7 @@
         </pin>
     </altPin>
     <system>
-        <item id="powerTarget" value="no"/>
+        <item id="powerTarget" value="yes"/>
         <item id="emulator" value="renesas.e2lite"/>
         <item id="debugIF" value="fine"/>
     </system>
