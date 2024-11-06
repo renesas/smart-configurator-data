@@ -312,4 +312,18 @@
         <date>2024-07-30</date>
         <renesaslink>https://www.renesas.com/video/quick-start-guide-usage-risc-v-mcu-smart-configurator-segger-embedded-studio</renesaslink>
     </info>
+    <info id="_Toc87439394" name="videoInfo" device="RL78" category="tutorials">
+        <title>Smart Configurator Tutorial - Control LED Blinking Configuring RL78 A/D Converter</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6363994832112</iframe>
+        <description>This video demonstrates how to create a LED blinking program by using the A/D Converter (ADC) in Smart Configurator.</description>
+        <date>2024-10-31</date>
+        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-control-led-blinking-configuring-rl78-ad-converter</renesaslink>
+    </info>
+    <info id="_Toc87439395" name="videoInfo" device="RL78" category="tutorials">
+        <title>Smart Configurator Tutorial - Create a LED Blinking Program Configuring RL78 Timer</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6363992356112</iframe>
+        <description>This video demonstrates how to create a LED blinking program by configuring the Timer using Smart Configurator.</description>
+        <date>2024-10-31</date>
+        <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-create-led-blinking-program-configuring-rl78-timer</renesaslink>
+    </info>
 </videos>
