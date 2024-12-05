@@ -326,4 +326,18 @@
         <date>2024-10-31</date>
         <renesaslink>https://www.renesas.com/video/smart-configurator-tutorial-create-led-blinking-program-configuring-rl78-timer</renesaslink>
     </info>
+    <info id="_Toc87439396" name="videoInfo" device="RX" category="tutorials">
+        <title>Visual Studio Code - How to Create, Build, and Debug a Smart Configurator Project for RX</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6365535077112</iframe>
+        <description>This video demonstrates creating, building, and debugging an RX Smart Configurator project using Visual Studio Code.</description>
+        <date>2024-12-05</date>
+        <renesaslink>https://www.renesas.com/video/visual-studio-code-how-create-build-and-debug-smart-configurator-project-rx</renesaslink>
+    </info>
+    <info id="_Toc87439397" name="videoInfo" device="RL78" category="solutions">
+        <title>How to Use Flexible Application Accelerator (FAA) in e² studio</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6365446577112</iframe>
+        <description>This video demonstrates the process for creating a new FAA program project, including the necessary build option settings and debugger operations.</description>
+        <date>2024-12-03</date>
+        <renesaslink>https://www.renesas.com/video/how-use-flexible-application-accelerator-faa-e-studio</renesaslink>
+    </info>
 </videos>
