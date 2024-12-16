@@ -83,6 +83,9 @@
   <board id="FPB-R9A02G021" version="1.02" description="Fast Prototyping Board for RISC-V MCU G021 Board Description File" keys="ASSP_RISCV">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/93141a1467f34e9413a1a3a5b83f6dc4d6df6433/Boards/FPB-R9A02G021_V1.02.bdf"/>
   </board>
+  <board id="FPB-RL78L23" version="1.00" description="" keys="RL78">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/93141a1467f34e9413a1a3a5b83f6dc4d6df6433/Boards/FPB-RL78L23_V1.00.bdf"/>
+  </board>
   <board id="FPB-RX140" version="1.00" description="Fast Prototyping Board for RX140 Board Description File" keys="RX">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/93141a1467f34e9413a1a3a5b83f6dc4d6df6433/Boards/FPB-RX140_V1.00.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/93141a1467f34e9413a1a3a5b83f6dc4d6df6433/Boards/FPB-RX140_V1.00.bcdf"/>
