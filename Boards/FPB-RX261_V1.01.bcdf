@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardDescription id="FPB-RX261" version="1.01">
+	<supportedBoard>
+		<!-- Board id and version refer to bdf -->
+		<board id="FPB-RX261" version="V1.00"/>
+	</supportedBoard>
+	<boardFeature>
+		<!-- Board features to be placed here -->
+		<feature name="Application Header" type="Header"/>
+		<feature name="LEDs" jName="LEDs">
+			<components> 
+				<configuration name="Config_PORT"/>
+			</components> 
+		</feature>
+        <feature name="User Switches" jName="User Switches">
+			<components> 
+				<configuration name="r_irq_rx#switches"/>
+			</components> 
+		</feature>
+		<feature name="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)">
+			<components>
+				<configuration name="r_sci_rx#spi1">
+					<dependency name="r_byteq"/>
+				</configuration>
+				<configuration name="r_sci_rx#uart1" pins="RXD5/TXD5">
+					<dependency name="r_byteq"/>
+				</configuration>
+				<configuration name="r_riic_rx#pmod1"/>
+			</components>
+		</feature>
+		<feature name="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)">
+			<components>
+				<configuration name="r_rsci_rx#spi2">
+					<dependency name="r_byteq"/>
+				</configuration>
+				<configuration name="r_rsci_rx#uart2" pins="RXD009/TXD009">
+					<dependency name="r_byteq"/>
+				</configuration>
+				<configuration name="r_rsci_rx#iic2">
+					<dependency name="r_byteq"/>
+				</configuration>
+			</components>
+		</feature>
+	</boardFeature>
+	<tool id="SWComponent" version="1.0.0.0">
+		<!-- Exported configurations to be placed here -->
+		<configuration inuse="true" name="r_bsp" serializeCondFulfilled="true">
+            <component description="Dependencies : None&#10;This fit module is alpha version for RX261. The r_bsp package provides a foundation for code to be built on top of. It provides startup code, iodefines, and MCU information for different boards. There are 2 folders that make up the r_bsp package. The 'mcu' folder contains files that are common to a MCU group. These files provide functionality such as easy register access, CPU functions, and a file named 'mcu_info.h' for each MCU group. The 'mcu_info.h' file has information about the MCU on the board and is configured based on the information given in r_bsp_config.h. The information in 'mcu_info.h' is used to help configure Renesas middleware that uses the r_bsp package. The 'board' folder has a folder with startup code for each supported board.  Which MCU and board is chosen is decided by the settings in 'platform.h'. The user can choose which board they are using by uncommenting the include path that applies to their board. For example, if you are using the RSK+RX64M then you would uncomment the #include &quot;./board/generic_rx64m/r_bsp.h&quot; include path. Users are encouraged to add their own boards to the 'board' directory. BSPs are configured by using the r_bsp_config.h file. Each board will have a reference configuration file named r_bsp_config_reference.h. The user should copy this file to their project, rename it to r_bsp_config.h, and use the options inside the file to configure the BSP for their project." detailDescription="Board Support Packages." display="r_bsp" id="r_bsp7.50" version="7.50">
+                <gridItem id="BSP_CFG_USER_STACK_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_USTACK_BYTES" selectedIndex="0x1000"/>
+                <gridItem id="BSP_CFG_ISTACK_BYTES" selectedIndex="0x400"/>
+                <gridItem id="BSP_CFG_HEAP_BYTES" selectedIndex="0x400"/>
+                <gridItem id="BSP_CFG_IO_LIB_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_USER_CHARGET_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_CHARGET_FUNCTION" selectedIndex="my_sw_charget_function"/>
+                <gridItem id="BSP_CFG_USER_CHARPUT_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_CHARPUT_FUNCTION" selectedIndex="my_sw_charput_function"/>
+                <gridItem id="BSP_CFG_RUN_IN_USER_MODE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_1" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_2" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_3" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_ID_CODE_LONG_4" selectedIndex="0xFFFFFFFF"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_TYPE" selectedIndex="bsp_lock_t"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_HW_LOCK_FUNCTION" selectedIndex="my_hw_locking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_HW_UNLOCK_FUNCTION" selectedIndex="my_hw_unlocking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_SW_LOCK_FUNCTION" selectedIndex="my_sw_locking_function"/>
+                <gridItem id="BSP_CFG_USER_LOCKING_SW_UNLOCK_FUNCTION" selectedIndex="my_sw_unlocking_function"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_PRE_INITC_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_PRE_C_FUNCTION" selectedIndex="my_sw_warmstart_prec_function"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_POST_INITC_ENABLED" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_USER_WARM_START_POST_C_FUNCTION" selectedIndex="my_sw_warmstart_postc_function"/>
+                <gridItem id="BSP_CFG_PARAM_CHECKING_ENABLE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_FIT_IPL_MAX" selectedIndex="15"/>
+                <gridItem id="BSP_CFG_SWINT_UNIT1_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_SWINT_TASK_BUFFER_NUMBER" selectedIndex="8"/>
+                <gridItem id="BSP_CFG_SWINT_IPR_INITIAL_VALUE" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_CHANNEL" selectedIndex="1"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_BITRATE" selectedIndex="115200"/>
+                <gridItem id="BSP_CFG_SCI_UART_TERMINAL_INTERRUPT_PRIORITY" selectedIndex="15"/>
+                <gridItem id="BSP_CFG_HOCO_TRIMMING_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_HOCO_TRIMMING_REG_VALUE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_BUS_PRIORITY_INITIALIZE_ENABLE" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_MEMORY_BUS1_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_MEMORY_BUS2_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_INTERNAL_PERIPHERAL_BUS1_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_INTERNAL_PERIPHERAL_BUS2_3_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_INTERNAL_PERIPHERAL_BUS4_5_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_INTERNAL_PERIPHERAL_BUS6_PRIORITY" selectedIndex="0"/>
+                <gridItem id="BSP_CFG_BOOTLOADER_PROJECT" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+		<configuration apiMode="FULL_API" fullSerialize="true" id="8ad0f067-f0fb-44d2-b449-d9865ec7131b" inuse="true" name="Config_PORT">
+            <allocatable functionId="Port" id="Port" name="Port">
+                <allocatable functionId="PORT0_Check" id="PORT0_Check" name="PORT0">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port0 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORT1_Check" id="PORT1_Check" name="PORT1">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port1 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORT2_Check" id="PORT2_Check" name="PORT2">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port2 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORT3_Check" id="PORT3_Check" name="PORT3">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port3 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORT4_Check" id="PORT4_Check" name="PORT4">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port4 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORT5_Check" id="PORT5_Check" name="PORT5">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port5 Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTA_Check" id="PORTA_Check" name="PORTA">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortA Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTB_Check" id="PORTB_Check" name="PORTB">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortB Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTC_Chan" id="PORTC_Chan" name="PORTC">
+                    <allocatable functionId="PORTx0_Item" id="PORTx0_Item" name="PORTC0">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx1_Item" id="PORTx1_Item" name="PORTC1">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx2_Item" id="PORTx2_Item" name="PORTC2">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx3_Item" id="PORTx3_Item" name="PORTC3">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx4_Item" id="PORTx4_Item" name="PORTC4">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx5_Item" id="PORTx5_Item" name="PORTC5">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Out">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx6_Item" id="PORTx6_Item" name="PORTC6">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx7_Item" id="PORTx7_Item" name="PORTC7">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Opendrain" id="Opendrain" name="Open-drain" selection="CMOS">
+                            <item functionId="CMOS" id="CMOS" input="" name="CMOS output" type="static" vlaue="0"/>
+                            <item functionId="NChanel" id="NChanel" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <option enabled="true" functionId="ApplyAll" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+                        <item functionId="ApplyallUse" id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="ApplyallUnuse" id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="UseStatusAll" id="UseStatusAll" name="Use status" selection="UnuseAll">
+                        <item functionId="UnuseAll" id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                        <item functionId="InAll" id="InAll" input="" name="In" type="static" vlaue="0"/>
+                        <item functionId="OutAll" id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+                        <item functionId="UnuseAlldisable" id="UnuseAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item functionId="InAlldisable" id="InAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item functionId="OutAlldisable" id="OutAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="PullupAll" id="PullupAll" name="Pull-up" selection="PullupUnuseAll">
+                        <item functionId="PullupUseAll" id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="PullupUnuseAll" id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item functionId="PullupAlldisable" id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="OpendrainAll" id="OpendrainAll" name="Open-drain all" selection="CMOSAll">
+                        <item functionId="CMOSAll" id="CMOSAll" input="" name="CMOS output" type="static" vlaue="0"/>
+                        <item functionId="NChanelAll" id="NChanelAll" input="" name="N-channel open-drain" type="static" vlaue="0"/>
+                        <item functionId="OpendrainAlldisable" id="OpendrainAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="Output1All" id="Output1All" name="Output 1" selection="Output1UnuseAll">
+                        <item functionId="Output1UnuseAll" id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item functionId="Output1UseAll" id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="Output1Alldisable" id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTC_Check" id="PORTC_Check" name="PORTC">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortC Enable" selection="Enable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTD_Check" id="PORTD_Check" name="PORTD">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortD Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTE_Check" id="PORTE_Check" name="PORTE">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortE Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTG_Check" id="PORTG_Check" name="PORTG">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortG Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTH_Check" id="PORTH_Check" name="PORTH">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortH Enable" selection="Disable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTJ_Chan" id="PORTJ_Chan" name="PORTJ">
+                    <allocatable functionId="PORTx1_Item" id="PORTx1_Item" name="PORTJ1">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Out">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx3_Item" id="PORTx3_Item" name="PORTJ3">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx6_Item" id="PORTx6_Item" name="PORTJ6">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <allocatable functionId="PORTx7_Item" id="PORTx7_Item" name="PORTJ7">
+                        <option enabled="true" functionId="UseStatus" id="UseStatus" name="Use status" selection="Unuse">
+                            <item functionId="Unuse" id="Unuse" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                            <item functionId="In" id="In" input="" name="In" type="static" vlaue="0"/>
+                            <item functionId="Out" id="Out" input="" name="Out" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="false" functionId="Output1" id="Output1" name="Output 1" selection="Output1Unuse">
+                            <item functionId="Output1Unuse" id="Output1Unuse" input="" name="Unused" type="static" vlaue="0"/>
+                            <item functionId="Output1Use" id="Output1Use" input="" name="Used" type="static" vlaue="0"/>
+                        </option>
+                        <option enabled="true" functionId="Pullup" id="Pullup" name="Pull-up" selection="PullupUnuse">
+                            <item functionId="PullupUse" id="PullupUse" input="" name="Used" type="static" vlaue="0"/>
+                            <item functionId="PullupUnuse" id="PullupUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                        </option>
+                    </allocatable>
+                    <option enabled="true" functionId="ApplyAll" id="ApplyAll" name="Apply to all" selection="ApplyallUnuse">
+                        <item functionId="ApplyallUse" id="ApplyallUse" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="ApplyallUnuse" id="ApplyallUnuse" input="" name="Unused" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="UseStatusAll" id="UseStatusAll" name="Use status" selection="UnuseAll">
+                        <item functionId="UnuseAll" id="UnuseAll" input="" name="Unused GPIO" type="static" vlaue="0"/>
+                        <item functionId="InAll" id="InAll" input="" name="In" type="static" vlaue="0"/>
+                        <item functionId="OutAll" id="OutAll" input="" name="Out" type="static" vlaue="0"/>
+                        <item functionId="UnuseAlldisable" id="UnuseAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item functionId="InAlldisable" id="InAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                        <item functionId="OutAlldisable" id="OutAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="PullupAll" id="PullupAll" name="Pull-up" selection="PullupUnuseAll">
+                        <item functionId="PullupUseAll" id="PullupUseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="PullupUnuseAll" id="PullupUnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item functionId="PullupAlldisable" id="PullupAlldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                    <option enabled="false" functionId="Output1All" id="Output1All" name="Output 1" selection="Output1UnuseAll">
+                        <item functionId="Output1UnuseAll" id="Output1UnuseAll" input="" name="Unused" type="static" vlaue="0"/>
+                        <item functionId="Output1UseAll" id="Output1UseAll" input="" name="Used" type="static" vlaue="0"/>
+                        <item functionId="Output1Alldisable" id="Output1Alldisable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <allocatable functionId="PORTJ_Check" id="PORTJ_Check" name="PORTJ">
+                    <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="PortJ Enable" selection="Enable">
+                        <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
+                        <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
+                    </option>
+                </allocatable>
+                <osocket functionKey="PORTINFO" id="PORTINFO" value=";PC5_O;PJ1_O;"/>
+                <option enabled="true" functionId="UnuseOutput" id="UnuseOutput" name="Handling of all unused pins" selection="NoChange">
+                    <item functionId="NoChange" id="NoChange" input="" name="Keep as current" type="static" vlaue="0"/>
+                    <item functionId="Out0" id="Out0" input="" name="Set pins to output 0 (Additional GPIO codes)" type="static" vlaue="0"/>
+                    <item functionId="Out1" id="Out1" input="" name="Set pins to output 1 (Additional GPIO codes)" type="static" vlaue="0"/>
+                </option>
+            </allocatable>
+            <component description="This software component provides configurations for General Purpose Input/Output Ports.&#10;&#10;Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported." detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.4.1"/>
+            <allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.port.rx261.PORT" type="">
+                <context/>
+            </allocator>
+            <source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+        </configuration>
+        <configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.20&#10;This module allocates a queue control block in an Open() call to handle indexing for buffers provided by the user application. Additional functions are provided to put and get data from the buffer queue, inspect the number of bytes available or in use, and to flush the queue. There is no limit to the number of queues supported, and queue control blocks can be allocated statically at build time or dynamically at run time." detailDescription="Byte-based circular buffer library." display="r_byteq" id="r_byteq2.10" version="2.10">
+                <gridItem id="BYTEQ_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_USE_HEAP_FOR_CTRL_BLKS" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_MAX_CTRL_BLKS" selectedIndex="32"/>
+                <gridItem id="BYTEQ_CFG_PROTECT_QUEUE" selectedIndex="0"/>
+                <gridItem id="BYTEQ_CFG_CRITICAL_SECTION" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_irq_rx#switches" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.51&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.50" version="4.50">
+                <gridItem id="IRQ2" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_rx#uart1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver (UART)" display="r_sci_rx" id="r_sci_rx5.30" version="5.30">
+                <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCK5" selectedIndex="0"/>
+                <gridItem id="RXD5/SMISO5/SSCL5" selectedIndex="1"/>
+                <gridItem id="TXD5/SMOSI5/SSDA5" selectedIndex="1"/>
+                <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="1"/>
+                <gridItem id="SCI5" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_rx#spi1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver (SPI)" display="r_sci_rx" id="r_sci_rx5.30" version="5.30">
+                <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCK5" selectedIndex="1"/>
+                <gridItem id="RXD5/SMISO5/SSCL5" selectedIndex="1"/>
+                <gridItem id="TXD5/SMOSI5/SSDA5" selectedIndex="1"/>
+                <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="0"/>
+                <gridItem id="SCI5" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_riic_rx#pmod1" inuse="true" name="r_riic_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;The RIIC fit module provides a method to transmit and receive data between the master and slave devices using the I2C-bus interface (RIIC). The RIIC is in compliance with single master mode of the XP I2C-bus (Inter-IC-Bus) interface." detailDescription="RIIC Multi Master I2C Driver" display="r_riic_rx" id="r_riic_rx3.00" version="3.00">
+                <gridItem id="SCL0" selectedIndex="1"/>
+                <gridItem id="SDA0" selectedIndex="1"/>
+                <gridItem id="RIIC0" selectedIndex="1"/>
+                <gridItem id="RIIC_CFG_CH0_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_rsci_rx#uart2" inuse="true" name="r_rsci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of RSCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, master Synchronous mode, or Manchester mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous or Manchester mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="RSCI Driver (UART)" display="r_rsci_rx" id="r_rsci_rx2.60" version="2.60">
+                <gridItem id="SCK009" selectedIndex="0"/>
+                <gridItem id="RXD009/SMISO009/SSCL009" selectedIndex="1"/>
+                <gridItem id="TXD009/SMOSI009/SSDA009" selectedIndex="1"/>
+                <gridItem id="SS009#" selectedIndex="0"/>
+                <gridItem id="CTS009#" selectedIndex="1"/>
+                <gridItem id="RTS009#" selectedIndex="0"/>
+                <gridItem id="RSCI9" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH9_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_rsci_rx#spi2" inuse="true" name="r_rsci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of RSCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, master Synchronous mode, or Manchester mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous or Manchester mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="RSCI Driver (SPI)" display="r_rsci_rx" id="r_rsci_rx2.60" version="2.60">
+                <gridItem id="SCK009" selectedIndex="1"/>
+                <gridItem id="RXD009/SMISO009/SSCL009" selectedIndex="1"/>
+                <gridItem id="TXD009/SMOSI009/SSDA009" selectedIndex="1"/>
+                <gridItem id="SS009#" selectedIndex="0"/>
+                <gridItem id="CTS009#" selectedIndex="0"/>
+                <gridItem id="RTS009#" selectedIndex="0"/>
+                <gridItem id="RSCI9" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH9_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_rsci_rx#iic2" inuse="true" name="r_rsci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of RSCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, master Synchronous mode, or Manchester mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous or Manchester mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="RSCI Driver (IIC)" display="r_rsci_rx" id="r_rsci_rx2.60" version="2.60">
+                <gridItem id="SCK009" selectedIndex="0"/>
+                <gridItem id="RXD009/SMISO009/SSCL009" selectedIndex="1"/>
+                <gridItem id="TXD009/SMOSI009/SSDA009" selectedIndex="1"/>
+                <gridItem id="SS009#" selectedIndex="0"/>
+                <gridItem id="CTS009#" selectedIndex="0"/>
+                <gridItem id="RTS009#" selectedIndex="0"/>
+                <gridItem id="RSCI9" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH9_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+	</tool>
+</boardDescription>
