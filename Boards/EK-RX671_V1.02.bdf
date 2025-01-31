@@ -75,7 +75,7 @@
         <function comments="JTAG-TDI" group="" id="UNASSIGNED_29" pin="29"/>
         <function comments="JTAG-TCK" group="" id="UNASSIGNED_30" pin="30"/>
         <function comments="JTAG-TDO" group="" id="UNASSIGNED_31" pin="31"/>
-        <function comments="LED3_ARDUINO-D5/PWM" group="" id="P25" pin="32" symbolicname="LED3_R"/>
+        <function comments="LED3_ARDUINO-D5/PWM" group="" id="P25" pin="32" symbolicname="LED3"/>
         <function comments="TS5" group="" id="TS5" pin="33"/>
         <function comments="AUDIO-BCK" group="" id="SSIBCK0" pin="34"/>
         <function comments="AUDIO-CLK" group="" id="AUDIO_CLK" pin="35"/>
@@ -91,14 +91,14 @@
         <function comments="ARDUINO-SCL_GROVE1-SCL_mikroBUS-SCL_QWIIC-SCL_PMOD1-IO5" group="" id="P12" pin="45"/>
         <function comments="USBFS-DM" group="" id="USB0_DM" pin="47"/>
         <function comments="USBFS-DP" group="" id="USB0_DP" pin="48"/>
-        <function comments="LED1_ARDUINO-D9/PWM_mikroBUS-PWM" group="" id="P56" pin="50" symbolicname="LED1_B"/>
+        <function comments="LED1_ARDUINO-D9/PWM_mikroBUS-PWM" group="" id="P56" pin="50" symbolicname="LED1"/>
         <function comments="ARDUINO-D7" group="" id="P55" pin="51"/>
         <function comments="SDHI-POWEN" group="" id="P51" pin="55"/>
         <function comments="ARDUINO-D10/SS/PWM_mikroBUS-CS_PMOD1-CS/CTS/INT" group="" id="P83" pin="58"/>
         <function comments="UB_ARDUINO-TX/D1_mikroBUS-TX" group="" id="PC7" pin="60"/>
         <function comments="ARDUINO-RX/D0_mikroBUS-RX" group="" id="PC6" pin="61"/>
         <function comments="UserSW-S2" group="" id="IRQ5" pin="62" symbolicname="S2"/>
-        <function comments="LED2_ARDUINO-D11/MOSI/PWM_mikroBUS-MOSI_PMOD1-TXD/MOSI" group="" id="P82" pin="63" symbolicname="LED2_G"/>
+        <function comments="LED2_ARDUINO-D11/MOSI/PWM_mikroBUS-MOSI_PMOD1-TXD/MOSI" group="" id="P82" pin="63" symbolicname="LED2"/>
         <function comments="SDHI-CD" group="" id="SDHI_CD" pin="64"/>
         <function comments="ARDUINO-SCK/D13_mikroBUS-SCK_PMOD1-SCK/RTS" group="" id="SCK010" pin="65"/>
         <function comments="TSCAP" group="" id="TSCAP" pin="66"/>
