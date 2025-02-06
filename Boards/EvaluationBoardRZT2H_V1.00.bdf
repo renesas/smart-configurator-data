@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="A3">
+            <function id="GTIOC05_0A"/>
+        </pin>
+        <pin id="A5">
+            <function id="MDAT72"/>
+            <function id="DISP_DATAR1"/>
+        </pin>
+        <pin id="A6">
+            <function id="MCLK21"/>
+            <function id="DISP_DATAR6"/>
+        </pin>
+        <pin id="A7">
+            <function id="GTIOC06_4B"/>
+            <function id="ETHSW_PTPOUT2"/>
+            <function id="DE3"/>
+        </pin>
+        <pin id="A8">
+            <function id="GTIOC06_3B"/>
+            <function id="ENCIFDO13"/>
+        </pin>
+        <pin id="A9">
+            <function id="DISP_DATAG4"/>
+            <function id="ENCIFDO00"/>
+        </pin>
+        <pin id="A17">
+            <function id="ETH0_TXD0"/>
+        </pin>
+        <pin id="A23">
+            <function id="ETH1_TXD0"/>
+        </pin>
+        <pin id="A24">
+            <function id="ETH1_TXEN"/>
+        </pin>
+        <pin id="A25">
+            <function id="ESC_PHYLINK1"/>
+        </pin>
+        <pin id="A26">
+            <function id="ETH1_TXD3"/>
+        </pin>
+        <pin id="B1">
+            <function id="GTIOC04_3B"/>
+            <function id="DISP_DATAR3"/>
+        </pin>
+        <pin id="B2">
+            <function id="GTIOC04_3A"/>
+            <function id="DISP_DATAR2"/>
+        </pin>
+        <pin id="B3">
+            <function id="GTIOC04_4B"/>
+            <function id="DISP_DATAR5"/>
+        </pin>
+        <pin id="B5">
+            <function id="GTIOC04_4A"/>
+            <function id="DISP_DATAR4"/>
+        </pin>
+        <pin id="B7">
+            <function id="GTIOC06_3A"/>
+            <function id="TXD3"/>
+            <function id="ENCIFOE13"/>
+        </pin>
+        <pin id="B9">
+            <function id="DISP_DATAG6"/>
+        </pin>
+        <pin id="B15">
+            <function id="DISP_DATAB3"/>
+        </pin>
+        <pin id="B16">
+            <function id="GTIOC07_4A"/>
+            <function id="DISP_DATAB7"/>
+            <function id="ENCIFDO14"/>
+        </pin>
+        <pin id="B23">
+            <function id="ETHSW_MDC"/>
+            <function id="ESC_MDC"/>
+        </pin>
+        <pin id="B24">
+            <function id="ETHSW_MDIO"/>
+            <function id="ESC_MDIO"/>
+        </pin>
+        <pin id="B25">
+            <function id="ETH1_TXD2"/>
+        </pin>
+        <pin id="C1">
+            <function id="MDAT22"/>
+        </pin>
+        <pin id="C2">
+            <function id="GTIOC04_0B"/>
+            <function id="DISP_HSYNC"/>
+        </pin>
+        <pin id="C3">
+            <function id="MCLK30"/>
+        </pin>
+        <pin id="C4">
+            <function id="A4"/>
+            <function id="MDAT21"/>
+            <function id="DISP_DATAR7"/>
+        </pin>
+        <pin id="C8">
+            <function id="GTIOC06_4A"/>
+            <function id="ENCIFDI13"/>
+        </pin>
+        <pin id="C9">
+            <function id="DISP_DATAG1"/>
+        </pin>
+        <pin id="C10">
+            <function id="DISP_DATAG2"/>
+            <function id="ENCIFCK00"/>
+        </pin>
+        <pin id="C11">
+            <function id="DISP_DATAG5"/>
+            <function id="ENCIFDI00"/>
+        </pin>
+        <pin id="C16">
+            <function id="GTIOC07_4B"/>
+            <function id="ETHSW_PTPOUT3"/>
+            <function id="ENCIFDI14"/>
+        </pin>
+        <pin id="C19">
+            <function id="ETHSW_MDC"/>
+            <function id="ESC_MDC"/>
+        </pin>
+        <pin id="C23">
+            <function id="ETH1_TXD1"/>
+        </pin>
+        <pin id="D1">
+            <function id="MDAT30"/>
+        </pin>
+        <pin id="D2">
+            <function id="GTIOC04_0A"/>
+            <function id="DISP_CLK"/>
+        </pin>
+        <pin id="D3">
+            <function id="MCLK71"/>
+            <function id="DISP_VSYNC"/>
+        </pin>
+        <pin id="D4">
+            <function id="MCLK72"/>
+            <function id="DISP_DATAR0"/>
+        </pin>
+        <pin id="D5">
+            <function id="MDAT71"/>
+            <function id="DISP_DE"/>
+        </pin>
+        <pin id="D9">
+            <function id="DISP_DATAG3"/>
+            <function id="ENCIFOE00"/>
+            <function id="TXD4"/>
+        </pin>
+        <pin id="D10">
+            <function id="MDAT42"/>
+        </pin>
+        <pin id="D19">
+            <function id="ESC_PHYLINK0"/>
+        </pin>
+        <pin id="E15">
+            <function id="DISP_DATAB0"/>
+        </pin>
+        <pin id="E21">
+            <function id="IRQ7"/>
+        </pin>
+        <pin id="E26">
+            <function id="ETHSW_TDMAOUT2"/>
+        </pin>
+        <pin id="F6">
+            <function id="ENCIFDI12"/>
+        </pin>
+        <pin id="F13">
+            <function id="ETHSW_PTPOUT0"/>
+            <function id="DISP_DATAG7"/>
+        </pin>
+        <pin id="F15">
+            <function id="GTIOC07_3A"/>
+            <function id="DISP_DATAB5"/>
+            <function id="ENCIFCK14"/>
+        </pin>
+        <pin id="F24">
+            <function id="GTIOC08_0B"/>
+        </pin>
+        <pin id="G15">
+            <function id="GTIOC07_3B"/>
+            <function id="DISP_DATAB6"/>
+            <function id="ENCIFOE14"/>
+        </pin>
+        <pin id="G16">
+            <function id="ETHSW_MDIO"/>
+            <function id="ESC_MDIO"/>
+        </pin>
+        <pin id="G25">
+            <function id="ETHSW_TDMAOUT3"/>
+        </pin>
+        <pin id="G26">
+            <function id="GMAC1_PTPTRG0"/>
+            <function id="HSPI_IO0"/>
+        </pin>
+        <pin id="J22">
+            <function id="ETHSW_MDC"/>
+            <function id="ESC_MDC"/>
+        </pin>
+        <pin id="J24">
+            <function id="ESC_PHYLINK2"/>
+        </pin>
+        <pin id="K21">
+            <function id="ETHSW_MDIO"/>
+            <function id="ESC_MDIO"/>
+        </pin>
+        <pin id="M26">
+            <function id="SPI_SSL00"/>
+            <function id="ENCIFOE15"/>
+        </pin>
+        <pin id="N22">
+            <function id="SPI_MOSI1"/>
+        </pin>
+        <pin id="N23">
+            <function id="SPI_RSPCK1"/>
+        </pin>
+        <pin id="P25">
+            <function id="ENCIFCK15"/>
+            <function id="SPI_MISO0"/>
+        </pin>
+        <pin id="AG2">
+            <function id="MDAT12"/>
+        </pin>
+        <pin id="AG8">
+            <function id="XSPI0_RESET0#"/>
+        </pin>
+        <pin id="AG9">
+            <function id="ENCIFDI02"/>
+        </pin>
+        <pin id="AG10">
+            <function id="GTIOC03_2A"/>
+        </pin>
+        <pin id="AG11">
+            <function id="GTIOC03_2B"/>
+        </pin>
+        <pin id="AG14">
+            <function id="ENCIFCK04"/>
+        </pin>
+        <pin id="AG15">
+            <function id="GTIOC00_1B"/>
+        </pin>
+        <pin id="AA9">
+            <function id="XSPI0_CKN"/>
+        </pin>
+        <pin id="AA10">
+            <function id="IIC_SDA1"/>
+            <function id="ENCIFDI03"/>
+        </pin>
+        <pin id="AA12">
+            <function id="GTIOC03_1B"/>
+        </pin>
+        <pin id="AB10">
+            <function id="ENCIFOE02"/>
+        </pin>
+        <pin id="AB11">
+            <function id="ENCIFCK02"/>
+        </pin>
+        <pin id="AC9">
+            <function id="GTIOC02_2B"/>
+        </pin>
+        <pin id="AC10">
+            <function id="GTIOC02_2A"/>
+        </pin>
+        <pin id="AC11">
+            <function id="IIC_SCL1"/>
+            <function id="ENCIFDO03"/>
+        </pin>
+        <pin id="AC12">
+            <function id="ENCIFDO02"/>
+        </pin>
+        <pin id="AD10">
+            <function id="GTIOC03_3B"/>
+        </pin>
+        <pin id="AE1">
+            <function id="MCLK12"/>
+        </pin>
+        <pin id="AE9">
+            <function id="GTIOC02_1A"/>
+        </pin>
+        <pin id="AE10">
+            <function id="GTIOC02_1B"/>
+        </pin>
+        <pin id="AE11">
+            <function id="GTIOC03_0B"/>
+        </pin>
+        <pin id="AE14">
+            <function id="GTIOC00_3B"/>
+            <function id="ENCIFOE04"/>
+        </pin>
+        <pin id="AF2">
+            <function id="IRQ0"/>
+            <function id="MDAT11"/>
+        </pin>
+        <pin id="AF9">
+            <function id="ENCIFCK03"/>
+        </pin>
+        <pin id="AF11">
+            <function id="GTIOC03_1A"/>
+        </pin>
+        <pin id="AF15">
+            <function id="GTIOC00_2A"/>
+        </pin>
+    </altPin>
+    <pin>
+        <function comments="Clock of DSMIF" group="B" id="MCLK31" pin="A2" symbolicname=""/>
+        <function comments="GPIO/SSL for use with PMOD1" group="" id="P11_6" pin="A3" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC05_0B" pin="A4" symbolicname=""/>
+        <function comments="Wait signal of external bus" group="" id="WAIT#" pin="A5" symbolicname=""/>
+        <function comments="Address A3 of external bus" group="" id="A3" pin="A6" symbolicname=""/>
+        <function comments="Address A0 of external bus" group="A" id="A0" pin="A7" symbolicname=""/>
+        <function comments="Data D30 of external bus" group="" id="D30" pin="A8" symbolicname=""/>
+        <function comments="DMA acknowledge" group="A" id="DACK" pin="A9" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK32" pin="A10" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT51" pin="A11" symbolicname=""/>
+        <function comments="TX for use with mikroBUS?" group="A" id="TXD_SDA_MOSI5" pin="A12" symbolicname=""/>
+        <function comments="Data DAT1 of SD1" group="" id="SD1_DATA1" pin="A13" symbolicname=""/>
+        <function comments="GMAC reset of Ethernet port 2" group="" id="P17_5" pin="A14" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_2A" pin="A15" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_2B" pin="A16" symbolicname=""/>
+        <function comments="MDV setting input" group="" id="MDV" pin="A17" symbolicname=""/>
+        <function comments="TXCLK of Ethernet port 0" group="" id="ETH0_TXCLK" pin="A18" symbolicname=""/>
+        <function comments="RXDV of Ethernet port 0" group="" id="ETH0_RXDV" pin="A19" symbolicname=""/>
+        <function comments="Control of user LED0" group="" id="P23_1" pin="A20" symbolicname=""/>
+        <function comments="SCL of EEPROM" group="A" id="ESC_I2CCLK" pin="A21" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC06_1B" pin="A22" symbolicname=""/>
+        <function comments="MD0 setting input" group="" id="MD0" pin="A23" symbolicname=""/>
+        <function comments="MDW1 setting input" group="" id="MDW1" pin="A24" symbolicname=""/>
+        <function comments="PHYLINK of Ethernet port 1" group="" id="ETHSW_PHYLINK1" pin="A25" symbolicname=""/>
+        <function comments="MDW1 setting input" group="" id="MDW0" pin="A26" symbolicname=""/>
+        <function comments="RD# of external bus" group="" id="RD#" pin="B1" symbolicname=""/>
+        <function comments="CS0# of external bus" group="" id="CS0#" pin="B2" symbolicname=""/>
+        <function comments="Address A2 of external bus" group="" id="A2" pin="B3" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT31" pin="B4" symbolicname=""/>
+        <function comments="Address A1 of external bus" group="" id="A1" pin="B5" symbolicname=""/>
+        <function comments="Data DAT2 of SD0" group="" id="SD0_DATA2" pin="B6" symbolicname=""/>
+        <function comments="Data D29 of external bus" group="" id="D29" pin="B7" symbolicname=""/>
+        <function comments="RXD3 of RS485" group="A" id="RXD_SCL_MISO3" pin="B8" symbolicname=""/>
+        <function comments="DE4 of RS485" group="A" id="DE4" pin="B9" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK51" pin="B11" symbolicname=""/>
+        <function comments="RXD5 of USB-to-serial conversion" group="A" id="RXD_SCL_MISO5" pin="B12" symbolicname=""/>
+        <function comments="Data DAT2 of SD1" group="" id="SD1_DATA2" pin="B13" symbolicname=""/>
+        <function comments="Address A10 of external bus" group="" id="A10" pin="B15" symbolicname=""/>
+        <function comments="Address A14 of external bus" group="" id="A14" pin="B16" symbolicname=""/>
+        <function comments="TXEN of Ethernet port 0" group="" id="ETH0_TXEN" pin="B17" symbolicname=""/>
+        <function comments="RXD3 of Ethernet port 0" group="" id="ETH0_RXD3" pin="B19" symbolicname=""/>
+        <function comments="RX of CAN interface" group="C" id="CANRX0" pin="B20" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT60" pin="B21" symbolicname=""/>
+        <function comments="MDC of Ethernet port 3" group="A" id="GMAC1_MDC" pin="B23" symbolicname=""/>
+        <function comments="MDIO of Ethernet port 3" group="A" id="GMAC1_MDIO" pin="B24" symbolicname=""/>
+        <function comments="MD2 setting input" group="" id="MD2" pin="B25" symbolicname=""/>
+        <function comments="RXCLK of Ethernet port 1" group="" id="ETH1_RXCLK" pin="B26" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_2A" pin="B27" symbolicname=""/>
+        <function comments="TXD for use with PMOD2" group="A" id="TXD_SDA_MOSI1" pin="C1" symbolicname=""/>
+        <function comments="Data D14 of external bus" group="" id="D14" pin="C2" symbolicname=""/>
+        <function comments="RTS for use with PMOD2" group="A" id="CTS_RTS_SS1#" pin="C3" symbolicname=""/>
+        <function comments="IRQ of SPI expansion connector" group="B" id="IRQ9" pin="C4" symbolicname=""/>
+        <function comments="ESC_RESETOUT# of Ethernet port 0 or port 1" group="C" id="ESC_RESETOUT#" pin="C5" symbolicname=""/>
+        <function comments="Data DAT6 of eMMC" group="" id="SD0_DATA6" pin="C7" symbolicname=""/>
+        <function comments="Data D31 of external bus" group="" id="D31" pin="C8" symbolicname=""/>
+        <function comments="RD/WR# of external bus" group="" id="RD_WR#" pin="C9" symbolicname=""/>
+        <function comments="RXD4 of RS485" group="A" id="RXD_SCL_MISO4" pin="C10" symbolicname=""/>
+        <function comments="End of DMA transfer" group="A" id="TEND" pin="C11" symbolicname=""/>
+        <function comments="CMD of SD1" group="" id="SD1_CMD" pin="C12" symbolicname=""/>
+        <function comments="PRSNT2 input to PCIe x4 connector" group="D" id="IRQ15" pin="C13" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_1A" pin="C14" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_1B" pin="C15" symbolicname=""/>
+        <function comments="Address A15 of external bus" group="" id="A15" pin="C16" symbolicname=""/>
+        <function comments="TXD2 of Ethernet port 0" group="" id="ETH0_TXD2" pin="C17" symbolicname=""/>
+        <function comments="RXCLK of Ethernet port 0" group="" id="ETH0_RXCLK" pin="C18" symbolicname=""/>
+        <function comments="MDC of Ethernet port 0 or port 1" group="" id="GMAC0_MDC" pin="C19" symbolicname=""/>
+        <function comments="SDA of EEPROM" group="A" id="ESC_I2CDATA" pin="C20" symbolicname=""/>
+        <function comments="LINKACT2 control of LED8" group="A" id="ESC_LINKACT2" pin="C21" symbolicname=""/>
+        <function comments="IRQ of display output unit" group="E" id="IRQ8" pin="C22" symbolicname=""/>
+        <function comments="MD1 setting input" group="" id="MD1" pin="C23" symbolicname=""/>
+        <function comments="TXCLK of Ethernet port 1" group="" id="ETH1_TXCLK" pin="C24" symbolicname=""/>
+        <function comments="REFCLK of Ethernet port 1" group="" id="ETH1_REFCLK" pin="C25" symbolicname=""/>
+        <function comments="Interrupt of Ethernet port 1" group="G" id="IRQ12" pin="C26" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_0A" pin="C27" symbolicname=""/>
+        <function comments="CTS for use with PMOD2" group="A" id="CTS1#" pin="D1" symbolicname=""/>
+        <function comments="Data D13 of external bus" group="" id="D13" pin="D2" symbolicname=""/>
+        <function comments="Data D15 of external bus" group="" id="D15" pin="D3" symbolicname=""/>
+        <function comments="WE1# of external bus" group="" id="WE1#" pin="D4" symbolicname=""/>
+        <function comments="WE0# of external bus" group="" id="WE0#" pin="D5" symbolicname=""/>
+        <function comments="Data DAT4 of eMMC" group="" id="SD0_DATA4" pin="D6" symbolicname=""/>
+        <function comments="CLK of eMMC" group="" id="SD0_CLK" pin="D7" symbolicname=""/>
+        <function comments="DMA request" group="A" id="DREQ" pin="D9" symbolicname=""/>
+        <function comments="INT for use with mikroBUS?" group="G" id="IRQ1" pin="D10" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT50" pin="D11" symbolicname=""/>
+        <function comments="Display data B4" group="" id="DISP_DATAB4" pin="D13" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_0A" pin="D14" symbolicname=""/>
+        <function comments="LEDRUN control of LED4" group="A" id="ESC_LEDRUN" pin="D15" symbolicname=""/>
+        <function comments="REFCLK of Ethernet port 0" group="" id="ETH0_REFCLK" pin="D17" symbolicname=""/>
+        <function comments="RXD0 of Ethernet port 0" group="" id="ETH0_RXD0" pin="D18" symbolicname=""/>
+        <function comments="PHYLINK of Ethernet port 0" group="" id="ETHSW_PHYLINK0" pin="D19" symbolicname=""/>
+        <function comments="TXER of Ethernet port 0" group="" id="ETH0_TXER" pin="D21" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK62" pin="D22" symbolicname=""/>
+        <function comments="RXD2 of Ethernet port 1" group="" id="ETH1_RXD2" pin="D23" symbolicname=""/>
+        <function comments="RXDV of Ethernet port 1" group="" id="ETH1_RXDV" pin="D25" symbolicname=""/>
+        <function comments="TXER of Ethernet port 1" group="" id="ETH1_TXER" pin="D26" symbolicname=""/>
+        <function comments="Clock of ENCIF" group="" id="ENCIFCK08" pin="D27" symbolicname=""/>
+        <function comments="Data DQ_A[3] of LPDDR4" group="" id="DDR_DQA12" pin="E1" symbolicname=""/>
+        <function comments="Data DQ_A[1] of LPDDR4" group="" id="DDR_DQA9" pin="E2" symbolicname=""/>
+        <function comments="Data DQ_A[0] of LPDDR4" group="" id="DDR_DQA13" pin="E4" symbolicname=""/>
+        <function comments="Data DAT5 of eMMC" group="" id="SD0_DATA5" pin="E6" symbolicname=""/>
+        <function comments="Data DAT1 of eMMC" group="" id="SD0_DATA1" pin="E7" symbolicname=""/>
+        <function comments="Data DAT0 of eMMC" group="" id="SD0_DATA0" pin="E8" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK50" pin="E9" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK40" pin="E10" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK42" pin="E11" symbolicname=""/>
+        <function comments="Data DAT3 of SD1" group="" id="SD1_DATA3" pin="E12" symbolicname=""/>
+        <function comments="LEDERR control of LED5" group="A" id="ESC_LEDERR" pin="E13" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC07_0B" pin="E14" symbolicname=""/>
+        <function comments="Timer pulse output from ETHSW" group="" id="ETHSW_PTPOUT1" pin="E15" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK52" pin="E16" symbolicname=""/>
+        <function comments="TXD1 of Ethernet port 0" group="" id="ETH0_TXD1" pin="E17" symbolicname=""/>
+        <function comments="RXD1 of Ethernet port 0" group="" id="ETH0_RXD1" pin="E18" symbolicname=""/>
+        <function comments="MDINT of Ethernet port 0" group="G" id="IRQ11" pin="E19" symbolicname=""/>
+        <function comments="COL of Ethernet port 0" group="" id="ETH0_COL" pin="E20" symbolicname=""/>
+        <function comments="WAKE# of PCIe x4 connector" group="" id="P22_5" pin="E21" symbolicname=""/>
+        <function comments="RXER of Ethernet port 0" group="" id="ETH0_RXER" pin="E22" symbolicname=""/>
+        <function comments="RXD0 of Ethernet port 1" group="" id="ETH1_RXD0" pin="E23" symbolicname=""/>
+        <function comments="RXD3 of Ethernet port 1" group="" id="ETH1_RXD3" pin="E24" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_2B" pin="E25" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_1A" pin="E26" symbolicname=""/>
+        <function comments="ENCIF output enable" group="" id="ENCIFOE08" pin="E27" symbolicname=""/>
+        <function comments="Data DQ_A[7] of LPDDR4" group="" id="DDR_DQA8" pin="F2" symbolicname=""/>
+        <function comments="Data DQ_A[2] of LPDDR4" group="" id="DDR_DQA11" pin="F3" symbolicname=""/>
+        <function comments="Data DQ_A[4] of LPDDR4" group="" id="DDR_DQA14" pin="F4" symbolicname=""/>
+        <function comments="DQS0_A_C of LPDDR4" group="" id="DDR_DQSA_C1" pin="F5" symbolicname=""/>
+        <function comments="Data D27 of external bus" group="" id="D27" pin="F6" symbolicname=""/>
+        <function comments="Data DAT7 of eMMC" group="" id="SD0_DATA7" pin="F7" symbolicname=""/>
+        <function comments="Reset of eMMC" group="" id="SD0_RST#" pin="F8" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT41" pin="F9" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT40" pin="F11" symbolicname=""/>
+        <function comments="Data DAT0 of SD1" group="" id="SD1_DATA0" pin="F12" symbolicname=""/>
+        <function comments="WE2# of external bus" group="" id="WE2#" pin="F13" symbolicname=""/>
+        <function comments="Address A12 of external bus" group="" id="A12" pin="F15" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT52" pin="F16" symbolicname=""/>
+        <function comments="TXD3 of Ethernet port 0" group="" id="ETH0_TXD3" pin="F17" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT61" pin="F19" symbolicname=""/>
+        <function comments="CRS of Ethernet port 0" group="" id="ETH0_CRS" pin="F20" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT62" pin="F21" symbolicname=""/>
+        <function comments="RXD1 of Ethernet port 1" group="" id="ETH1_RXD1" pin="F23" symbolicname=""/>
+        <function comments="TDMA timer output from ETHSW" group="A" id="ETHSW_TDMAOUT1" pin="F24" symbolicname=""/>
+        <function comments="TXD0 of USB-to-serial conversion" group="C" id="TXD_SDA_MOSI0" pin="F25" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_3A" pin="F27" symbolicname=""/>
+        <function comments="Data DQ_A[5] of LPDDR4" group="" id="DDR_DQA15" pin="G1" symbolicname=""/>
+        <function comments="Data DQ_A[6] of LPDDR4" group="" id="DDR_DQA10" pin="G3" symbolicname=""/>
+        <function comments="DMI_A[0] of LPDDR4" group="" id="DDR_DMIA1" pin="G4" symbolicname=""/>
+        <function comments="DQS0_A_T of LPDDR4" group="" id="DDR_DQSA_T1" pin="G5" symbolicname=""/>
+        <function comments="Data DAT3 of eMMC" group="" id="SD0_DATA3" pin="G7" symbolicname=""/>
+        <function comments="CMD of eMMC" group="" id="SD0_CMD" pin="G8" symbolicname=""/>
+        <function comments="Data of DSMIF" group="B" id="MDAT32" pin="G9" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="B" id="MCLK41" pin="G11" symbolicname=""/>
+        <function comments="CLK of SD1" group="" id="SD1_CLK" pin="G12" symbolicname=""/>
+        <function comments="CD of SD1" group="A" id="SD1_CD" pin="G13" symbolicname=""/>
+        <function comments="Address A13 of external bus" group="" id="A13" pin="G15" symbolicname=""/>
+        <function comments="MDIO of Ethernet port 0 or port 1" group="" id="GMAC0_MDIO" pin="G16" symbolicname=""/>
+        <function comments="RXD2 of Ethernet port 0" group="" id="ETH0_RXD2" pin="G17" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK61" pin="G19" symbolicname=""/>
+        <function comments="LINKACT1 control of LED7" group="A" id="ESC_LINKACT1" pin="G20" symbolicname=""/>
+        <function comments="LINKACT0 control of LED6" group="A" id="ESC_LINKACT0" pin="G21" symbolicname=""/>
+        <function comments="TX of CAN interface" group="C" id="CANTX0" pin="G22" symbolicname=""/>
+        <function comments="CRS of Ethernet port 1" group="A" id="ETH1_CRS" pin="G23" symbolicname=""/>
+        <function comments="COL of Ethernet port 1" group="A" id="ETH1_COL" pin="G24" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_1B" pin="G25" symbolicname=""/>
+        <function comments="MDINT of Ethernet port 3" group="F" id="IRQ3" pin="G26" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC08_4B" pin="G27" symbolicname=""/>
+        <function comments="Data DQ_A[9] of LPDDR4" group="" id="DDR_DQA6" pin="H1" symbolicname=""/>
+        <function comments="Data DQ_A[15] of LPDDR4" group="" id="DDR_DQA5" pin="H2" symbolicname=""/>
+        <function comments="RXER of Ethernet port 1" group="A" id="ETH1_RXER" pin="H22" symbolicname=""/>
+        <function comments="Data output from ENCIF" group="" id="ENCIFDO08" pin="H23" symbolicname=""/>
+        <function comments="Data input to ENCIF" group="" id="ENCIFDI08" pin="H25" symbolicname=""/>
+        <function comments="RXD0 of USB-to-serial conversion" group="C" id="RXD_SCL_MISO0" pin="H26" symbolicname=""/>
+        <function comments="TXD1 of Ethernet port 2" group="" id="ETH2_TXD1" pin="H27" symbolicname=""/>
+        <function comments="Data DQ_A[14] of LPDDR4" group="" id="DDR_DQA4" pin="J1" symbolicname=""/>
+        <function comments="DMI_A[1] of LPDDR4" group="" id="DDR_DMIA0" pin="J3" symbolicname=""/>
+        <function comments="Data DQ_A[8] of LPDDR4" group="" id="DDR_DQA7" pin="J4" symbolicname=""/>
+        <function comments="DQS1_A_C of LPDDR4" group="" id="DDR_DQSA_C0" pin="J5" symbolicname=""/>
+        <function comments="MDC of Ethernet port 2" group="" id="GMAC2_MDC" pin="J22" symbolicname=""/>
+        <function comments="TXEN of Ethernet port 2" group="" id="ETH2_TXEN" pin="J23" symbolicname=""/>
+        <function comments="LINK of Ethernet port 2" group="" id="ETHSW_PHYLINK2" pin="J24" symbolicname=""/>
+        <function comments="TXCLK of Ethernet port 2" group="" id="ETH2_TXCLK" pin="J25" symbolicname=""/>
+        <function comments="MDINT of Ethernet port 2" group="G" id="IRQ13" pin="J26" symbolicname=""/>
+        <function comments="RXD3 of Ethernet port 2" group="" id="ETH2_RXD3" pin="J27" symbolicname=""/>
+        <function comments="Data DQ_A[10] of LPDDR4" group="" id="DDR_DQA2" pin="K1" symbolicname=""/>
+        <function comments="Data DQ_A[11] of LPDDR4" group="" id="DDR_DQA0" pin="K2" symbolicname=""/>
+        <function comments="Data DQ_A[12] of LPDDR4" group="" id="DDR_DQA1" pin="K3" symbolicname=""/>
+        <function comments="Data DQ_A[13] of LPDDR4" group="" id="DDR_DQA3" pin="K4" symbolicname=""/>
+        <function comments="DQS1_A_T of LPDDR4" group="" id="DDR_DQSA_T0" pin="K5" symbolicname=""/>
+        <function comments="MDIO of Ethernet port 2" group="" id="GMAC2_MDIO" pin="K21" symbolicname=""/>
+        <function comments="TXD0 of Ethernet port 2" group="" id="ETH2_TXD0" pin="K23" symbolicname=""/>
+        <function comments="RXDV of Ethernet port 2" group="" id="ETH2_RXDV" pin="K24" symbolicname=""/>
+        <function comments="RXD1 of Ethernet port 2" group="" id="ETH2_RXD1" pin="K25" symbolicname=""/>
+        <function comments="RXD0 of Ethernet port 2" group="" id="ETH2_RXD0" pin="K27" symbolicname=""/>
+        <function comments="CA_A[0] of LPDDR4" group="" id="DDR_CAA1" pin="L2" symbolicname=""/>
+        <function comments="CKE_A[1] of LPDDR4" group="" id="DDR_CKEA1" pin="L6" symbolicname=""/>
+        <function comments="TXD2 of Ethernet port 2" group="" id="ETH2_TXD2" pin="L22" symbolicname=""/>
+        <function comments="TXD3 of Ethernet port 2" group="" id="ETH2_TXD3" pin="L23" symbolicname=""/>
+        <function comments="REFCLK of Ethernet port 2" group="" id="ETH2_REFCLK" pin="L24" symbolicname=""/>
+        <function comments="RXCLK of Ethernet port 2" group="" id="ETH2_RXCLK" pin="L25" symbolicname=""/>
+        <function comments="RXD2 of Ethernet port 2" group="" id="ETH2_RXD2" pin="L26" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC01_2A" pin="L27" symbolicname=""/>
+        <function comments="CK_A_C of LPDDR4" group="" id="DDR_CKA_C" pin="M1" symbolicname=""/>
+        <function comments="CA_A[1] of LPDDR4" group="" id="DDR_CAA3" pin="M2" symbolicname=""/>
+        <function comments="CA_A[3] of LPDDR4" group="" id="DDR_CAA4" pin="M3" symbolicname=""/>
+        <function comments="CS_A[0] of LPDDR4" group="" id="DDR_CSA0" pin="M4" symbolicname=""/>
+        <function comments="CS_A[1] of LPDDR4" group="" id="DDR_CSA1" pin="M5" symbolicname=""/>
+        <function comments="CKE_A[0] of LPDDR4" group="" id="DDR_CKEA0" pin="M6" symbolicname=""/>
+        <function comments="Control of user LED1" group="" id="P32_2" pin="M22" symbolicname=""/>
+        <function comments="Data input to ENCIF" group="" id="ENCIFDI15" pin="M23" symbolicname=""/>
+        <function comments="Data output from ENCIF" group="" id="ENCIFDO15" pin="M25" symbolicname=""/>
+        <function comments="PTPTRG1 of GMAC2" group="A" id="GMAC2_PTPTRG1" pin="M26" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC01_1B" pin="M27" symbolicname=""/>
+        <function comments="CK_A_T of LPDDR4" group="" id="DDR_CKA_T" pin="N1" symbolicname=""/>
+        <function comments="CA_A[2] of LPDDR4" group="" id="DDR_CAA2" pin="N3" symbolicname=""/>
+        <function comments="CA_A[5] of LPDDR4" group="" id="DDR_CAA5" pin="N5" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC01_1A" pin="N22" symbolicname=""/>
+        <function comments="GMAC_RESETOUT3# of Ethernet port 3" group="" id="P32_3" pin="N23" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="B" id="GTIOC01_2B" pin="N24" symbolicname=""/>
+        <function comments="CRS of Ethernet port 2" group="" id="ETH2_CRS" pin="N25" symbolicname=""/>
+        <function comments="RXER of Ethernet port 2" group="A" id="ETH2_RXER" pin="N26" symbolicname=""/>
+        <function comments="TXER of Ethernet port 2" group="" id="ETH2_TXER" pin="N27" symbolicname=""/>
+        <function comments="CKE_B[1] of LPDDR4" group="" id="DDR_CKEB1" pin="P2" symbolicname=""/>
+        <function comments="CA_B[2] of LPDDR4" group="" id="DDR_CAB0" pin="P3" symbolicname=""/>
+        <function comments="CA_A[4] of LPDDR4" group="" id="DDR_CAA0" pin="P4" symbolicname=""/>
+        <function comments="RESET_N of LPDDR4" group="" id="DDR_RESET_N" pin="P7" symbolicname=""/>
+        <function comments="" group="" id="DDR_ATEST" pin="P8" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT82" pin="P23" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK82" pin="P24" symbolicname=""/>
+        <function comments="PTPTRG0 of GMAC2" group="" id="GMAC2_PTPTRG0" pin="P25" symbolicname=""/>
+        <function comments="COL of Ethernet port 2" group="" id="ETH2_COL" pin="P26" symbolicname=""/>
+        <function comments="RXD3 of Ethernet port 3" group="" id="ETH3_RXD3" pin="P27" symbolicname=""/>
+        <function comments="CK_B_T of LPDDR4" group="" id="DDR_CKB_T" pin="R1" symbolicname=""/>
+        <function comments="CKE_B[0] of LPDDR4" group="" id="DDR_CKEB0" pin="R2" symbolicname=""/>
+        <function comments="" group="" id="DDR_DTEST" pin="R7" symbolicname=""/>
+        <function comments="" group="" id="DDR_ZN" pin="R8" symbolicname=""/>
+        <function comments="RXD0 of Ethernet port 3" group="" id="ETH3_RXD0" pin="R22" symbolicname=""/>
+        <function comments="REFCLK of Ethernet port 3" group="" id="ETH3_REFCLK" pin="R23" symbolicname=""/>
+        <function comments="TXCLK of Ethernet port 3" group="" id="ETH3_TXCLK" pin="R24" symbolicname=""/>
+        <function comments="TXD3 of Ethernet port 3" group="" id="ETH3_TXD3" pin="R25" symbolicname=""/>
+        <function comments="TXEN of Ethernet port 3" group="" id="ETH3_TXEN" pin="R26" symbolicname=""/>
+        <function comments="RXDV of Ethernet port 3" group="" id="ETH3_RXDV" pin="R27" symbolicname=""/>
+        <function comments="CK_B_C of LPDDR4" group="" id="DDR_CKB_C" pin="T1" symbolicname=""/>
+        <function comments="CA_B[0] of LPDDR4" group="" id="DDR_CAB1" pin="T2" symbolicname=""/>
+        <function comments="CA_B[3] of LPDDR4" group="" id="DDR_CAB2" pin="T4" symbolicname=""/>
+        <function comments="CA_B[1] of LPDDR4" group="" id="DDR_CAB5" pin="T5" symbolicname=""/>
+        <function comments="CS_B[0] of LPDDR4" group="" id="DDR_CSB0" pin="T6" symbolicname=""/>
+        <function comments="RXD1 of Ethernet port 3" group="" id="ETH3_RXD1" pin="T23" symbolicname=""/>
+        <function comments="TXD2 of Ethernet port 3" group="" id="ETH3_TXD2" pin="T25" symbolicname=""/>
+        <function comments="CRS of Ethernet port 3" group="A" id="ETH3_CRS" pin="T26" symbolicname=""/>
+        <function comments="Selection of EXTCLKIN or XTAL and EXTAL" group="" id="XTALSEL" pin="T27" symbolicname=""/>
+        <function comments="CA_B[4] of LPDDR4" group="" id="DDR_CAB3" pin="U1" symbolicname=""/>
+        <function comments="CA_B[5] of LPDDR4" group="" id="DDR_CAB4" pin="U3" symbolicname=""/>
+        <function comments="DQ_B[12] of LPDDR4" group="" id="DDR_DQB0" pin="U4" symbolicname=""/>
+        <function comments="CS_B[1] of LPDDR4" group="" id="DDR_CSB1" pin="U6" symbolicname=""/>
+        <function comments="User DIP switch SW3" group="" id="P35_6" pin="U22" symbolicname=""/>
+        <function comments="RXD2 of Ethernet port 3" group="" id="ETH3_RXD2" pin="U23" symbolicname=""/>
+        <function comments="TXD1 of Ethernet port 3" group="" id="ETH3_TXD1" pin="U24" symbolicname=""/>
+        <function comments="TXD0 of Ethernet port 3" group="" id="ETH3_TXD0" pin="U25" symbolicname=""/>
+        <function comments="Connection of crystal oscillator" group="" id="EXTCLKIN" pin="U27" symbolicname=""/>
+        <function comments="DQ_B[11] of LPDDR4" group="" id="DDR_DQB2" pin="V1" symbolicname=""/>
+        <function comments="DQ_B[13] of LPDDR4" group="" id="DDR_DQB1" pin="V2" symbolicname=""/>
+        <function comments="DQ_B[14] of LPDDR4" group="" id="DDR_DQB3" pin="V4" symbolicname=""/>
+        <function comments="DQS1_B_T of LPDDR4" group="" id="DDR_DQSB_T0" pin="V5" symbolicname=""/>
+        <function comments="User DIP switch SW0" group="" id="P35_3" pin="V22" symbolicname=""/>
+        <function comments="RXCLK of Ethernet port 3" group="" id="ETH3_RXCLK" pin="V23" symbolicname=""/>
+        <function comments="User DIP switch SW2" group="" id="P35_5" pin="V24" symbolicname=""/>
+        <function comments="RXER of Ethernet port 3" group="A" id="ETH3_RXER" pin="V25" symbolicname=""/>
+        <function comments="Connection of crystal resonator" group="" id="XTAL" pin="V27" symbolicname=""/>
+        <function comments="DQ_B[10] of LPDDR4" group="" id="DDR_DQB4" pin="W2" symbolicname=""/>
+        <function comments="DQ_B[9] of LPDDR4" group="" id="DDR_DQB7" pin="W3" symbolicname=""/>
+        <function comments="DMI_B[1] of LPDDR4" group="" id="DDR_DMIB0" pin="W4" symbolicname=""/>
+        <function comments="DQS1_B_C of LPDDR4" group="" id="DDR_DQSB_C0" pin="W5" symbolicname=""/>
+        <function comments="TXER of Ethernet port 3" group="A" id="ETH3_TXER" pin="W23" symbolicname=""/>
+        <function comments="User DIP switch SW1" group="" id="P35_4" pin="W24" symbolicname=""/>
+        <function comments="COL of Ethernet port 3" group="A" id="ETH3_COL" pin="W25" symbolicname=""/>
+        <function comments="Connection of crystal resonator" group="" id="EXTAL" pin="W27" symbolicname=""/>
+        <function comments="DQ_B[15] of LPDDR4" group="" id="DDR_DQB6" pin="Y1" symbolicname=""/>
+        <function comments="DQ_B[8] of LPDDR4" group="" id="DDR_DQB5" pin="Y3" symbolicname=""/>
+        <function comments="DQ_B[5] of LPDDR4" group="" id="DDR_DQB8" pin="AA1" symbolicname=""/>
+        <function comments="DQ_B[4] of LPDDR4" group="" id="DDR_DQB15" pin="AA3" symbolicname=""/>
+        <function comments="DQS0_B_T of LPDDR4" group="" id="DDR_DQSB_T1" pin="AA5" symbolicname=""/>
+        <function comments="Data IO7 of XSPI0" group="" id="XSPI0_IO7" pin="AA7" symbolicname=""/>
+        <function comments="Clock CKP of XSPI0" group="" id="XSPI0_CKP" pin="AA8" symbolicname=""/>
+        <function comments="PRSNT of PCIe x1 connector" group="C" id="IRQ4" pin="AA9" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC03_4B" pin="AA10" symbolicname=""/>
+        <function comments="PWM for use with mikroBUS?" group="B" id="MTIOC7C" pin="AA12" symbolicname=""/>
+        <function comments="IO6 of SPI expansion connector" group="" id="XSPI1_IO6" pin="AA13" symbolicname=""/>
+        <function comments="Input to A/D converter (AN002)" group="" id="AN002" pin="AA26" symbolicname=""/>
+        <function comments="Input to potentiometer" group="" id="AN000" pin="AA27" symbolicname=""/>
+        <function comments="DQ_B[6] of LPDDR4" group="" id="DDR_DQB14" pin="AB1" symbolicname=""/>
+        <function comments="DQ_B[1] of LPDDR4" group="" id="DDR_DQB9" pin="AB2" symbolicname=""/>
+        <function comments="DMI_B[0] of LPDDR4" group="" id="DDR_DMIB1" pin="AB3" symbolicname=""/>
+        <function comments="DQ_B[0] of LPDDR4" group="" id="DDR_DQB10" pin="AB4" symbolicname=""/>
+        <function comments="DQS0_B_C of LPDDR4" group="" id="DDR_DQSB_C1" pin="AB5" symbolicname=""/>
+        <function comments="Boundary scan enable" group="" id="BSCANP" pin="AB6" symbolicname=""/>
+        <function comments="Data IO5 of XSPI0" group="" id="XSPI0_IO5" pin="AB7" symbolicname=""/>
+        <function comments="Data IO6 of XSPI0" group="" id="XSPI0_IO6" pin="AB8" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK10" pin="AB9" symbolicname=""/>
+        <function comments="Data D12 of external bus" group="" id="D12" pin="AB10" symbolicname=""/>
+        <function comments="Data D11 of external bus" group="" id="D11" pin="AB11" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC03_0A" pin="AB12" symbolicname=""/>
+        <function comments="IO5 of SPI expansion connector" group="" id="XSPI1_IO5" pin="AB13" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC01_0B" pin="AB14" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC00_2B" pin="AB15" symbolicname=""/>
+        <function comments="Input to A/D converter (AN001)" group="" id="AN001" pin="AB26" symbolicname=""/>
+        <function comments="Input to A/D converter (AN003)" group="" id="AN003" pin="AB27" symbolicname=""/>
+        <function comments="DQ_B[3] of LPDDR4" group="" id="DDR_DQB12" pin="AC1" symbolicname=""/>
+        <function comments="DQ_B[2] of LPDDR4" group="" id="DDR_DQB13" pin="AC3" symbolicname=""/>
+        <function comments="DQ_B[7] of LPDDR4" group="" id="DDR_DQB11" pin="AC4" symbolicname=""/>
+        <function comments="Data IO3 of XSPI0" group="" id="XSPI0_IO3" pin="AC6" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT02" pin="AC7" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT01" pin="AC8" symbolicname=""/>
+        <function comments="Data D10 of external bus" group="" id="D10" pin="AC9" symbolicname=""/>
+        <function comments="Data D9 of external bus" group="" id="D9" pin="AC10" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC03_4A" pin="AC11" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC02_4A" pin="AC12" symbolicname=""/>
+        <function comments="IO3 of QSPI and SPI expansion connector" group="" id="XSPI1_IO3" pin="AC13" symbolicname=""/>
+        <function comments="IO4 of SPI expansion connector" group="" id="XSPI1_IO4" pin="AC14" symbolicname=""/>
+        <function comments="Data D2 of external bus" group="" id="D2" pin="AC15" symbolicname=""/>
+        <function comments="200-? pull-down" group="" id="USB_TXRTUNE" pin="AC17" symbolicname=""/>
+        <function comments="Reference clock of PCIe ch1" group="" id="PCIE_REFCLK_N1" pin="AC19" symbolicname=""/>
+        <function comments="Reference clock of PCIe ch0" group="" id="PCIE_REFCLK_P0" pin="AC20" symbolicname=""/>
+        <function comments="Input to A/D converter (AN103)" group="" id="AN103" pin="AC26" symbolicname=""/>
+        <function comments="Input to A/D converter (AN100)" group="" id="AN100" pin="AC27" symbolicname=""/>
+        <function comments="MDX setting input" group="" id="MDX" pin="AD1" symbolicname=""/>
+        <function comments="SD1 power selection" group="D" id="SD1_IOVS" pin="AD2" symbolicname=""/>
+        <function comments="TCK of debugging interface" group="" id="TCK" pin="AD3" symbolicname=""/>
+        <function comments="Reset input" group="" id="RES#" pin="AD4" symbolicname=""/>
+        <function comments="TDI of debugging interface" group="" id="TDI" pin="AD5" symbolicname=""/>
+        <function comments="Data IO0 of XSPI0" group="" id="XSPI0_IO0" pin="AD6" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT10" pin="AD7" symbolicname=""/>
+        <function comments="Data D6 of external bus" group="" id="D6" pin="AD9" symbolicname=""/>
+        <function comments="ENCIF output enable" group="A" id="ENCIFOE03" pin="AD10" symbolicname=""/>
+        <function comments="Data D5 of external bus" group="" id="D5" pin="AD11" symbolicname=""/>
+        <function comments="IO2 of QSPI and SPI expansion connector" group="" id="XSPI1_IO2" pin="AD13" symbolicname=""/>
+        <function comments="CS1# of SPI expansion connector" group="" id="XSPI1_CS1#" pin="AD14" symbolicname=""/>
+        <function comments="OVRCUR input for USB host interface" group="A" id="USB_OVRCUR" pin="AD15" symbolicname=""/>
+        <function comments="VBUSIN of USB function interface" group="" id="USB_VUBUSIN" pin="AD16" symbolicname=""/>
+        <function comments="ID of USB_OTG" group="" id="USB_OTG_ID" pin="AD17" symbolicname=""/>
+        <function comments="Reference clock of PCIe ch1" group="" id="PCIE_REFCLK_P1" pin="AD19" symbolicname=""/>
+        <function comments="Reference clock of PCIe ch0" group="" id="PCIE_REFCLK_N0" pin="AD20" symbolicname=""/>
+        <function comments="Input to A/D converter (AN102)" group="" id="AN102" pin="AD26" symbolicname=""/>
+        <function comments="Input to A/D converter (AN101)" group="" id="AN101" pin="AD27" symbolicname=""/>
+        <function comments="GPIO for use with PMOD2" group="" id="P09_0" pin="AE1" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK20" pin="AE2" symbolicname=""/>
+        <function comments="SD1 power enable" group="D" id="SD1_PWEN" pin="AE3" symbolicname=""/>
+        <function comments="TDO of debugging interface" group="" id="TDO" pin="AE4" symbolicname=""/>
+        <function comments="Data IO2 of XSPI0" group="" id="XSPI0_IO2" pin="AE5" symbolicname=""/>
+        <function comments="Data IO4 of XSPI0" group="" id="XSPI0_IO4" pin="AE6" symbolicname=""/>
+        <function comments="Data IO1 of XSPI0" group="" id="XSPI0_IO1" pin="AE7" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK01" pin="AE8" symbolicname=""/>
+        <function comments="Data D7 of external bus" group="" id="D7" pin="AE9" symbolicname=""/>
+        <function comments="Data D8 of external bus" group="" id="D8" pin="AE10" symbolicname=""/>
+        <function comments="IRQOUT# of external bus" group="" id="P04_0" pin="AE11" symbolicname=""/>
+        <function comments="HINT# of SHOSTIF" group="A" id="MBX_HINT#" pin="AE12" symbolicname=""/>
+        <function comments="IO1 of QSPI and SPI expansion connector" group="" id="XSPI1_IO1" pin="AE13" symbolicname=""/>
+        <function comments="INT for use with PMOD1" group="A" id="IRQ5" pin="AE14" symbolicname=""/>
+        <function comments="VBUS control for USB host interface" group="A" id="USB_VBUSEN" pin="AE15" symbolicname=""/>
+        <function comments="Input to A/D converter (AN202)" group="" id="AN202" pin="AE26" symbolicname=""/>
+        <function comments="Input to A/D converter (AN201)" group="" id="AN201" pin="AE27" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT20" pin="AF1" symbolicname=""/>
+        <function comments="RESET for use with PMOD2" group="" id="P08_7" pin="AF2" symbolicname=""/>
+        <function comments="TRST of debugging interface" group="" id="TRST#" pin="AF3" symbolicname=""/>
+        <function comments="Clock of DSMIF" group="A" id="MCLK00" pin="AF4" symbolicname=""/>
+        <function comments="DS of XSPI0" group="" id="XSPI0_DS" pin="AF5" symbolicname=""/>
+        <function comments="Control of user LED2" group="" id="P06_7" pin="AF7" symbolicname=""/>
+        <function comments="RESET1# of XSPI0" group="" id="XSPI0_RESET1#" pin="AF8" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC03_3A" pin="AF9" symbolicname=""/>
+        <function comments="RST for use with mikroBUS?" group="" id="P04_1" pin="AF11" symbolicname=""/>
+        <function comments="IO7 of SPI expansion connector" group="" id="XSPI1_IO7" pin="AF12" symbolicname=""/>
+        <function comments="CKP of QSPI and SPI expansion connector" group="" id="XSPI1_CKP" pin="AF13" symbolicname=""/>
+        <function comments="Data D4 of external bus" group="" id="D4" pin="AF15" symbolicname=""/>
+        <function comments="Input/output of USB DP" group="" id="USB_QDP" pin="AF17" symbolicname=""/>
+        <function comments="Receive data of PCIe ch1 (x1)" group="" id="PCIE_RXDN_L1" pin="AF19" symbolicname=""/>
+        <function comments="Receive data of PCIe ch0 (x4)" group="" id="PCIE_RXDN_L0" pin="AF20" symbolicname=""/>
+        <function comments="Transmit data of PCIe ch1 (x1)" group="" id="PCIE_TXDN_L1" pin="AF22" symbolicname=""/>
+        <function comments="Transmit data of PCIe ch0 (x4)" group="" id="PCIE_TXDN_L0" pin="AF23" symbolicname=""/>
+        <function comments="Input to A/D converter (AN204)" group="" id="AN204" pin="AF26" symbolicname=""/>
+        <function comments="Input to A/D converter (AN200)" group="" id="AN200" pin="AF27" symbolicname=""/>
+        <function comments="GPIO for use with PMOD2" group="" id="P09_1" pin="AG2" symbolicname=""/>
+        <function comments="TMS of debugging interface" group="" id="TMS" pin="AG3" symbolicname=""/>
+        <function comments="CS# of OctaFlash" group="" id="XSPI0_CS0#" pin="AG4" symbolicname=""/>
+        <function comments="Data of DSMIF" group="A" id="MDAT00" pin="AG5" symbolicname=""/>
+        <function comments="ECS# of OctaFlash" group="" id="XSPI0_ECS0#" pin="AG6" symbolicname=""/>
+        <function comments="CS# to HyperRAM" group="" id="XSPI0_CS1#" pin="AG7" symbolicname=""/>
+        <function comments="MDD setting" group="" id="MDD" pin="AG8" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC02_4B" pin="AG9" symbolicname=""/>
+        <function comments="RESET for use with PMOD1" group="" id="P04_3" pin="AG10" symbolicname=""/>
+        <function comments="GPIO for use with PMOD1" group="" id="P04_4" pin="AG11" symbolicname=""/>
+        <function comments="CS# of QSPI" group="" id="XSPI1_CS0#" pin="AG12" symbolicname=""/>
+        <function comments="IO0 of QSPI and SPI expansion connector" group="" id="XSPI1_IO0" pin="AG13" symbolicname=""/>
+        <function comments="Input capture/output compare/PWM output pin" group="A" id="GTIOC00_3A" pin="AG14" symbolicname=""/>
+        <function comments="Data D3 of external bus" group="" id="D3" pin="AG15" symbolicname=""/>
+        <function comments="Input/output of USB DM" group="" id="USB_QDM" pin="AG17" symbolicname=""/>
+        <function comments="Receive data of PCIe ch1 (x1)" group="" id="PCIE_RXDP_L1" pin="AG19" symbolicname=""/>
+        <function comments="Receive data of PCIe ch0 (x4)" group="" id="PCIE_RXDP_L0" pin="AG20" symbolicname=""/>
+        <function comments="Transmit data of PCIe ch1 (x1)" group="" id="PCIE_TXDP_L1" pin="AG22" symbolicname=""/>
+        <function comments="Transmit data of PCIe ch0 (x4)" group="" id="PCIE_TXDP_L0" pin="AG23" symbolicname=""/>
+        <function comments="Input to A/D converter (AN205)" group="" id="AN205" pin="AG25" symbolicname=""/>
+        <function comments="Input to A/D converter (AN203)" group="" id="AN203" pin="AG26" symbolicname=""/>
+    </pin>
+    <board display="EvaluationBoardRZT2H" html="" id="EvaluationBoardRZT2H" partNumber="R9A09G077M"/>
+    <info version="V1.00"/>
+</boardInfo>
