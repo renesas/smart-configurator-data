@@ -69,7 +69,7 @@
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/37e78c7569d4f4314ddf9c922043b936536ae1dd/Boards/EK-RX261_V1.00.bcdf"/>
   </board>
   <board id="EK-RX671" version="1.01" description="Evaluation Kit for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/b83dba2d1c7c288eb90feeaa297b2cde552cf1ea/Boards/EK-RX671_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/37e78c7569d4f4314ddf9c922043b936536ae1dd/Boards/EK-RX671_V1.01.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/37e78c7569d4f4314ddf9c922043b936536ae1dd/Boards/EK-RX671_V1.00.bcdf"/>
   </board>
   <board id="EnvisionKitRX65N" version="1.15" description="Envision Kit for RX65N Board Description File" keys="RX">
