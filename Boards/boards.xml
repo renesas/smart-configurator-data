@@ -80,10 +80,10 @@
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX72N_V1.14.bdf"/>
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX72N_V1.02.bcdf"/>
   </board>
-  <board id="EvaluationBoardRZN2H" version="1.00" description="Evaluation Board for RZ/N2H Board Description File" keys="RX">
+  <board id="EvaluationBoardRZN2H" version="1.00" description="Evaluation Board for RZ/N2H Board Description File" keys="RZ">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EvaluationBoardRZN2H_V1.00.bdf"/>
   </board>
-  <board id="EvaluationBoardRZT2H" version="1.00" description="Evaluation Board for RZ/T2H Board Description File" keys="RX">
+  <board id="EvaluationBoardRZT2H" version="1.00" description="Evaluation Board for RZ/T2H Board Description File" keys="RZ">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EvaluationBoardRZT2H_V1.00.bdf"/>
   </board>
   <board id="FPB-R9A02G021" version="1.02" description="Fast Prototyping Board for RISC-V MCU G021 Board Description File" keys="ASSP_RISCV">
