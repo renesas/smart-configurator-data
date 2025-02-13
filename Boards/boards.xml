@@ -127,7 +127,7 @@
   <board id="RL78G23-64p_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G23-64p Board Description File" keys="RL78">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G23-64p_FastPrototypingBoard_V1.01.bdf"/>
   </board>
-  <board id="RL78G24_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G24 Board Description File1234" keys="RL78">
+  <board id="RL78G24_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G24 Board Description File" keys="RL78">
     <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G24_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RSKRX111" version="1.02" description="Renesas Starter Kit for RX111 Board Description File" keys="RX">
