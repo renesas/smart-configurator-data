@@ -340,4 +340,18 @@
         <date>2024-12-03</date>
         <renesaslink>https://www.renesas.com/video/how-use-flexible-application-accelerator-faa-e-studio</renesaslink>
     </info>
+    <info id="_Toc87439398" name="videoInfo" device="RX || RL78 || RH850 || ASSP_RISCV" category="features">
+        <title>How to Fix Smart Configurator Warning: Functions in Same Channel are Set in Different Groups</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6370711030112</iframe>
+        <description>This video shows how to resolve the pin warning "Functions in same channel are set in different group" in Smart Configurator by reassigning the pins to the same group. Watch this video for a quick guide.</description>
+        <date>2025-03-29</date>
+        <renesaslink>https://www.renesas.com/video/how-fix-smart-configurator-warning-functions-same-channel-are-set-different-groups</renesaslink>
+    </info>
+    <info id="_Toc87439399" name="videoInfo" device="RL78" category="solutions">
+        <title>Introduction to ELCL Feature Using RL78 Smart Configurator</title>
+        <iframe>https://players.brightcove.net/5260471205001/RyxO3haSE_default/index.html?videoId=6370331859112</iframe>
+        <description>This video introduces the ELCL feature built into the RL78 device. Learn how the Smart Configurator, an e2 studio plugin, can make it easier to use the ELCL feature.</description>
+        <date>2025-03-22/date>
+        <renesaslink>https://www.renesas.com/video/introduction-elcl-feature-using-rl78-smart-configurator</renesaslink>
+    </info>
 </videos>
