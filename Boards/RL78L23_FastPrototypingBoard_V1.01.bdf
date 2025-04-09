@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="emulator" value="renesas.serial"/>
+        <item id="pseudo" value="used"/>
+        <item id="startstopfunction" value="unused"/>
+        <item id="monitor" value="unused"/>
+        <item id="trace" value="used"/>
+        <item id="enableSecurityId" value="unchecked"/>
+        <item id="securityId" value="0"/>
+        <item id="authentication" value="erase"/>
+    </system>
+    <pin>
+        <function comments="J2-7[Arduino-SCK/13]" group="" id="P140" pin="1" symbolicname=""/>
+        <function comments="J1-1[LCD-28]" group="" id="SEG28" pin="2" symbolicname=""/>
+        <function comments="J1-2[Arduino-MOSI/11]" group="" id="P47" pin="3" symbolicname=""/>
+        <function comments="J1-3[Arduino-MISO/12]" group="" id="P46" pin="4" symbolicname=""/>
+        <function comments="J2-8[PMOD2-GPIO10]" group="" id="P45" pin="5" symbolicname=""/>
+        <function comments="J2-9[PMOD2-GPIO9]" group="" id="P44" pin="6" symbolicname=""/>
+        <function comments="J2-10[PMOD2-RESET]" group="" id="P43" pin="7" symbolicname=""/>
+        <function comments="J2-11[PMOD1-MOSI/TXD]" group="" id="P42" pin="8" symbolicname=""/>
+        <function comments="J2-12[PMOD1-MISO/RXD]" group="" id="P41" pin="9" symbolicname=""/>
+        <function comments="J2-13[PMOD1-SCK/RTS]" group="" id="P66" pin="10" symbolicname=""/>
+        <function comments="J2-14[PMOD1-CS/CTS]" group="" id="P67" pin="11" symbolicname=""/>
+        <function comments="J2-15[TOOL0]" group="" id="TOOL0" pin="12" symbolicname=""/>
+        <function comments="J2-16[RESET][Arduino-RESET]" group="" id="_RESET" pin="13" symbolicname=""/>
+        <function comments="[XT2]" group="" id="XT2" pin="14" symbolicname=""/>
+        <function comments="[XT1]" group="" id="XT1" pin="15" symbolicname=""/>
+        <function comments="J2-19[SW]" group="" id="INTP0" pin="16" symbolicname="SW"/>
+        <function comments="J2-20[PMOD1-GPIO10]" group="" id="P122" pin="17" symbolicname=""/>
+        <function comments="J2-21[PMOD1-GPIO9]" group="" id="P121" pin="18" symbolicname=""/>
+        <function comments="J2-22[Arduino-SCL]" group="" id="P60" pin="22" symbolicname=""/>
+        <function comments="J2-23[Arduino-SDA]" group="" id="P61" pin="23" symbolicname=""/>
+        <function comments="J2-24[LED1]" group="" id="P64" pin="24" symbolicname="LED1"/>
+        <function comments="J2-25[LED2]" group="" id="P65" pin="25" symbolicname="LED2"/>
+        <function comments="J2-26[Arduino-8]" group="" id="P62" pin="26" symbolicname=""/>
+        <function comments="J2-27[PMOD2-INT]" group="" id="P63" pin="27" symbolicname=""/>
+        <function comments="J2-1[TP1]" group="" id="CAPH" pin="28" symbolicname=""/>
+        <function comments="J2-2[TP2]" group="" id="CAPL" pin="29" symbolicname=""/>
+        <function comments="J2-3[TP9/TP10]" group="" id="VL1" pin="30" symbolicname=""/>
+        <function comments="J2-4[TP7/TP8]" group="" id="VL2" pin="31" symbolicname=""/>
+        <function comments="J2-5[TP3/TP4]" group="" id="VL4" pin="32" symbolicname=""/>
+        <function comments="J2-6[TP5/TP6]" group="" id="VL3" pin="33" symbolicname=""/>
+        <function comments="J1-4[PMOD2-GPIO7]" group="" id="P35" pin="34" symbolicname=""/>
+        <function comments="J1-5[PMOD2-GPIO8]" group="" id="P34" pin="35" symbolicname=""/>
+        <function comments="J1-6[PMOD1-RESET]" group="" id="P33" pin="36" symbolicname=""/>
+        <function comments="J1-7[PMOD1-INT]" group="" id="P32" pin="37" symbolicname=""/>
+        <function comments="J1-8[LCD-29]" group="" id="SEG21" pin="39" symbolicname=""/>
+        <function comments="J1-9[LCD-30]" group="" id="SEG20" pin="40" symbolicname=""/>
+        <function comments="J1-10[Arduino-~9]" group="" id="P77" pin="41" symbolicname=""/>
+        <function comments="J1-11[Arduino-~10]" group="" id="P76" pin="42" symbolicname=""/>
+        <function comments="J1-12[LCD-31]" group="" id="SEG17" pin="43" symbolicname=""/>
+        <function comments="J1-13[LCD-32]" group="" id="SEG16" pin="44" symbolicname=""/>
+        <function comments="J1-14[LCD-33]" group="" id="SEG15" pin="45" symbolicname=""/>
+        <function comments="J1-15[LCD-34]" group="" id="SEG14" pin="46" symbolicname=""/>
+        <function comments="J1-16[LCD-35]" group="" id="SEG13" pin="47" symbolicname=""/>
+        <function comments="J1-17[LCD-36]" group="" id="SEG12" pin="48" symbolicname=""/>
+        <function comments="J2-28[PMOD2-SCL]" group="" id="P84" pin="49" symbolicname=""/>
+        <function comments="J2-29[PMOD2-SDA]" group="" id="P83" pin="50" symbolicname=""/>
+        <function comments="[TSCAP]" group="" id="TSCAP" pin="51" symbolicname=""/>
+        <function comments="[Touch Button1]" group="" id="TS17" pin="52" symbolicname=""/>
+        <function comments="[Touch Button2]" group="" id="TS18" pin="53" symbolicname=""/>
+        <function comments="J1-21[LCD-1]" group="" id="SEG8" pin="54" symbolicname=""/>
+        <function comments="J1-22[LCD-2]" group="" id="SEG7" pin="55" symbolicname=""/>
+        <function comments="J1-23[LCD-3]" group="" id="SEG6" pin="56" symbolicname=""/>
+        <function comments="J1-24[LCD-4]" group="" id="SEG5" pin="57" symbolicname=""/>
+        <function comments="J1-25[LCD-5]" group="" id="SEG4" pin="58" symbolicname=""/>
+        <function comments="J1-26[LCD-6]" group="" id="SEG3" pin="59" symbolicname=""/>
+        <function comments="J1-27[LCD-7]" group="" id="SEG2" pin="60" symbolicname=""/>
+        <function comments="J1-28[LCD-8]" group="" id="SEG1" pin="61" symbolicname=""/>
+        <function comments="J1-29[LCD-9]" group="" id="SEG0" pin="62" symbolicname=""/>
+        <function comments="J1-30[LCD-20]" group="" id="COM3" pin="63" symbolicname=""/>
+        <function comments="J1-31[LCD-19]" group="" id="COM2" pin="64" symbolicname=""/>
+        <function comments="J1-32[LCD-18]" group="" id="COM1" pin="65" symbolicname=""/>
+        <function comments="J1-33[LCD-17]" group="" id="COM0" pin="66" symbolicname=""/>
+        <function comments="J2-30[GROVE-SCL]" group="" id="P82" pin="67" symbolicname=""/>
+        <function comments="J2-31[GROVE-SDA]" group="" id="P81" pin="68" symbolicname=""/>
+        <function comments="J1-34[LCD-10]" group="" id="SEG50" pin="69" symbolicname=""/>
+        <function comments="J1-35[LCD-11]" group="" id="SEG49" pin="70" symbolicname=""/>
+        <function comments="J1-36[LCD-12]" group="" id="SEG48" pin="71" symbolicname=""/>
+        <function comments="J1-37[LCD-13]" group="" id="SEG47" pin="72" symbolicname=""/>
+        <function comments="J2-32[Arduino-7]" group="" id="P80" pin="73" symbolicname=""/>
+        <function comments="J2-33[Arduino-6]" group="" id="P147" pin="74" symbolicname=""/>
+        <function comments="J2-34[Arduino-RX/0]" group="" id="P146" pin="75" symbolicname=""/>
+        <function comments="J1-38[Arduino-TX/1]" group="" id="P03" pin="76" symbolicname=""/>
+        <function comments="J1-39[Arduino-2]" group="" id="P02" pin="77" symbolicname=""/>
+        <function comments="J1-40[Arduino-~3]" group="" id="P01" pin="78" symbolicname=""/>
+        <function comments="J1-41[TOOLTxD/TxD0]" group="" id="TOOLTxD" pin="79" symbolicname="COM_TxD0"/>
+        <function comments="J1-42[TOOLRxD/RxD0]" group="" id="TOOLRxD" pin="80" symbolicname="COM_RxD0"/>
+        <function comments="J1-43[Arduino-4]" group="" id="P16" pin="81" symbolicname=""/>
+        <function comments="J1-44[Arduino-~5]" group="" id="P15" pin="82" symbolicname=""/>
+        <function comments="J1-45[LCD-14]" group="" id="SEG39" pin="83" symbolicname=""/>
+        <function comments="J1-46[LCD-15]" group="" id="SEG38" pin="84" symbolicname=""/>
+        <function comments="J1-47[LCD-16]" group="" id="SEG37" pin="85" symbolicname=""/>
+        <function comments="J1-48[LCD-21]" group="" id="SEG36" pin="86" symbolicname=""/>
+        <function comments="J1-49[LCD-22]" group="" id="SEG35" pin="87" symbolicname=""/>
+        <function comments="J1-50[LCD-23]" group="" id="SEG55" pin="88" symbolicname=""/>
+        <function comments="J1-51[LCD-24]" group="" id="SEG54" pin="89" symbolicname=""/>
+        <function comments="J1-52[Arduino-A0]" group="" id="P27" pin="90" symbolicname=""/>
+        <function comments="J1-53[Arduino-A1]" group="" id="P26" pin="91" symbolicname=""/>
+        <function comments="J1-54[Arduino-A2]" group="" id="P25" pin="92" symbolicname=""/>
+        <function comments="J1-55[Arduino-A3]" group="" id="P24" pin="93" symbolicname=""/>
+        <function comments="J1-56[LCD-25]" group="" id="SEG53" pin="94" symbolicname=""/>
+        <function comments="J1-57[LCD-26]" group="" id="SEG52" pin="95" symbolicname=""/>
+        <function comments="J1-58[LCD-27]" group="" id="SEG51" pin="96" symbolicname=""/>
+        <function comments="J1-59[Arduino-A4]" group="" id="P23" pin="97" symbolicname=""/>
+        <function comments="J1-60[Arduino-A5]" group="" id="P22" pin="98" symbolicname=""/>
+        <function comments="J2-35[AVREFP]" group="" id="AVREFP" pin="99" symbolicname=""/>
+        <function comments="J2-36[AVREFM]" group="" id="AVREFM" pin="100" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="operationModeComb" value="hsmainmode4"/>
+        <item id="highSpeedOCOenable" value="hococlock_fihp"/>
+        <item id="hsocofrequency" value="frq32"/>
+        <item id="fhocostartsetting" value="Normal"/>
+        <item id="fHOCOdivider" value="fHOCO1"/>
+        <item id="msocoenable" value="uncheck"/>
+        <item id="msocofrequency" value="frq4"/>
+        <item id="hssclockenable" value="uncheck"/>
+        <item id="cmbhssoperation" value="x1oscillation"/>
+        <item id="cmbhsstabletime" value="18"/>
+        <item id="hssfrequency" value="5"/>
+        <item id="fmxdivider" value="comboBox1-1"/>
+        <item id="focoswitcher" value="hococlock_focoswitcher"/>
+        <item id="fpllswitcher" value="focoswitcher_fpllswitcher"/>
+        <item id="fclkswitcher" value="fmainswitcher_fclkswitcher"/>
+        <item id="ftimerswitcher" value="fclkswitcher_ftimerswitcher"/>
+        <item id="fsxlswitcher" value="subclock_fsxlswitcher"/>
+        <item id="enablesubClock" value="check"/>
+        <item id="cmbsuboperation" value="xt1oscillation"/>
+        <item id="lblsubmode" value="low"/>
+        <item id="subclockmode" value="enable"/>
+        <item id="cmbOscMarginCheck" value="normalState"/>
+    </clock>
+    <board display="RL78L23_FastPrototypingBoard" html="" id="RL78L23_FastPrototypingBoard" partNumber="R7F100LPLxFB"/>
+    <info version="V1.01"/>
+</boardInfo>
