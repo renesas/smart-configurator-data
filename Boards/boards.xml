@@ -38,260 +38,260 @@
   </board>
   <!-- Information for BDF download -->
   <board id="CK-RX65N-V2" version="1.01" description="New Cloud Kit V2 for RX65N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CK-RX65N-V2_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CK-RX65N-V2_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CK-RX65N-V2_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CK-RX65N-V2_V1.01.bcdf"/>
   </board>
   <board id="CK-RX65N" version="1.03" description="New Cloud Kit for RX65N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CK-RX65N_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CK-RX65N_V1.06.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CK-RX65N_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CK-RX65N_V1.06.bcdf"/>
   </board>
   <board id="CloudKitRX65N" version="1.13" description="Cloud Kit for RX65N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CloudKitRX65N_V1.13.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CloudKitRX65N_V1.03.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CloudKitRX65N_V1.13.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CloudKitRX65N_V1.03.bcdf"/>
   </board>
   <board id="CPUCardforMCUEvaluationRX66T" version="1.03" description="CPU Card for MCU Evaluation RX66T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardforMCUEvaluationRX66T_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardforMCUEvaluationRX66T.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardforMCUEvaluationRX66T_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardforMCUEvaluationRX66T.bcdf"/>
   </board>
   <board id="CPUCardforRSSKMotorRX66T" version="1.03" description="CPU Card for RSSK Motor RX66T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardforRSSKMotorRX66T_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardforRSSKMotorRX66T_V1.03.bdf"/>
   </board>
   <board id="CPUCardRX13T" version="1.02" description="CPU Card for RX13T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardRX13T_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardRX13T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardRX13T_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardRX13T_V1.00.bcdf"/>
   </board>
   <board id="CPUCardRX24T" version="1.02" description="CPU Card for RX24T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardRX24T_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/CPUCardRX24T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardRX24T_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/CPUCardRX24T_V1.00.bcdf"/>
   </board>
   <board id="EK-RX261" version="1.00" description="Evaluation Kit for RX261 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EK-RX261_V1.00.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EK-RX261_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EK-RX261_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EK-RX261_V1.01.bcdf"/>
   </board>
   <board id="EK-RX671" version="1.02" description="Evaluation Kit for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EK-RX671_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EK-RX671_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EK-RX671_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EK-RX671_V1.01.bcdf"/>
   </board>
   <board id="EnvisionKitRX65N" version="1.15" description="Envision Kit for RX65N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX65N_V1.15.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX65N_V1.04.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EnvisionKitRX65N_V1.15.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EnvisionKitRX65N_V1.04.bcdf"/>
   </board>
   <board id="EnvisionKitRX72N" version="1.14" description="Envision Kit for RX72N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX72N_V1.14.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EnvisionKitRX72N_V1.02.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EnvisionKitRX72N_V1.14.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EnvisionKitRX72N_V1.02.bcdf"/>
   </board>
   <board id="EvaluationBoardRZN2H" version="1.00" description="Evaluation Board for RZ/N2H Board Description File" keys="RZ">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EvaluationBoardRZN2H_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EvaluationBoardRZN2H_V1.00.bdf"/>
   </board>
   <board id="EvaluationBoardRZT2H" version="1.00" description="Evaluation Board for RZ/T2H Board Description File" keys="RZ">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/EvaluationBoardRZT2H_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/EvaluationBoardRZT2H_V1.00.bdf"/>
   </board>
   <board id="FPB-R9A02G021" version="1.02" description="Fast Prototyping Board for RISC-V MCU G021 Board Description File" keys="ASSP_RISCV">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-R9A02G021_V1.02.bdf"/>
-  </board>
-  <board id="FPB-RL78L23" version="1.00" description="Fast Prototyping Board for RL78/L23 Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-RL78L23_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/FPB-R9A02G021_V1.02.bdf"/>
   </board>
   <board id="FPB-RX140" version="1.00" description="Fast Prototyping Board for RX140 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-RX140_V1.00.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-RX140_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/FPB-RX140_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/FPB-RX140_V1.01.bcdf"/>
   </board>
   <board id="FPB-RX261" version="1.00" description="Fast Prototyping Board for RX261 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-RX261_V1.00.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/FPB-RX261_V1.01.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/FPB-RX261_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/FPB-RX261_V1.01.bcdf"/>
   </board>
   <board id="GR-ROSE-RX65N" version="1.03" description="GR-ROSE Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/GR-ROSE-RX65N_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/GR-ROSE-RX65N_V1.03.bdf"/>
   </board>
   <board id="MCB-RX26T Type A" version="1.00" description="MCB-RX26T Type A Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/MCB-RX26T%20Type%20A_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/MCB-RX26T%20Type%20A_V1.00.bdf"/>
   </board>
   <board id="MCB-RX26T Type B" version="1.00" description="MCB-RX26T Type B Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/MCB-RX26T%20Type%20B_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/MCB-RX26T%20Type%20B_V1.00.bdf"/>
   </board>
   <board id="MCB-RX26T_Type_C" version="1.00" description="MCB-RX26T Type C Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/MCB-RX26T_Type_C_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/MCB-RX26T_Type_C_V1.00.bdf"/>
   </board>
   <board id="RL78G15_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G15 Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G15_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G15_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RL78G16_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G16 Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G16_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G16_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RL78G22_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G22 Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G22_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G22_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RL78G23-128p_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G23-128p Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G23-128p_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G23-128p_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RL78G23-64p_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G23-64p Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G23-64p_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G23-64p_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RL78G24_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/G24 Board Description File" keys="RL78">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RL78G24_FastPrototypingBoard_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78G24_FastPrototypingBoard_V1.01.bdf"/>
+  </board>
+  <board id="RL78L23_FastPrototypingBoard" version="1.01" description="Fast Prototyping Board for RL78/L23 Board Description File" keys="RL78">
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RL78L23_FastPrototypingBoard_V1.01.bdf"/>
   </board>
   <board id="RSKRX111" version="1.02" description="Renesas Starter Kit for RX111 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX111_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX111_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX111_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX111_V1.00.bcdf"/>
   </board>
   <board id="RSKRX113" version="1.02" description="Renesas Starter Kit for RX113 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX113_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX113_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX113_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX113_V1.00.bcdf"/>
   </board>
   <board id="RSKRX130-512KB" version="1.03" description="Renesas Starter Kit for RX130-512KB Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX130-512KB_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX130-512KB_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX130-512KB_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX130-512KB_V1.00.bcdf"/>
   </board>
   <board id="RSKRX130" version="1.02" description="Renesas Starter Kit for RX130-128KB Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX130_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX130_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX130_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX130_V1.00.bcdf"/>
   </board>
   <board id="RSKRX140" version="1.01" description="Renesas Starter Kit for RX140 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX140_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX140_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX140_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX140_V1.00.bcdf"/>
   </board>
   <board id="RSKRX231B" version="1.01" description="Renesas Starter Kit for RX231B Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX231B_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX231B_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX231B_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX231B_V1.00.bcdf"/>
   </board>
   <board id="RSKRX231" version="1.02" description="Renesas Starter Kit for RX231 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX231_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX231_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX231_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX231_V1.00.bcdf"/>
   </board>
   <board id="RSKRX23T" version="1.02" description="Renesas Starter Kit for RX23T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX23T_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX23T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX23T_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX23T_V1.00.bcdf"/>
   </board>
   <board id="RSKRX24T" version="1.03" description="Renesas Starter Kit for RX24T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX24T_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX24T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX24T_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX24T_V1.00.bcdf"/>
   </board>
   <board id="RSKRX24U" version="1.03" description="Renesas Starter Kit for RX24U Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX24U_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX24U_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX24U_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX24U_V1.00.bcdf"/>
   </board>
   <board id="RSKRX64M" version="1.02" description="Renesas Starter Kit+ for RX64M Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX64M_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX64M_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX64M_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX64M_V1.00.bcdf"/>
   </board>
   <board id="RSKRX65N-2MB(TSIP)" version="1.03" description="Renesas Starter Kit+ for RX65N-2MB(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N-2MB(TSIP)_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N-2MB(TSIP)_V1.04.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N-2MB(TSIP)_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N-2MB(TSIP)_V1.04.bcdf"/>
   </board>
   <board id="RSKRX65N-2MB" version="1.06" description="Renesas Starter Kit+ for RX65N-2MB Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N-2MB_V1.06.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N-2MB_V1.04.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N-2MB_V1.06.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N-2MB_V1.04.bcdf"/>
   </board>
   <board id="RSKRX65N" version="1.02" description="Renesas Starter Kit+ for RX65N-1MB Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX65N_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX65N_V1.00.bcdf"/>
   </board>
   <board id="RSKRX660" version="1.01" description="Renesas Starter Kit for RX660 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX660_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX660_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX660_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX660_V1.00.bcdf"/>
   </board>
   <board id="RSKRX66T(TSIP)" version="1.01" description="Renesas Starter Kit for RX66T(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX66T(TSIP)_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX66T(TSIP)_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX66T(TSIP)_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX66T(TSIP)_V1.00.bcdf"/>
   </board>
   <board id="RSKRX66T" version="1.04" description="Renesas Starter Kit for RX66T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX66T_V1.04.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX66T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX66T_V1.04.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX66T_V1.00.bcdf"/>
   </board>
   <board id="RSKRX671" version="1.03" description="Renesas Starter Kit+ for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX671_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX671_V1.02.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX671_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX671_V1.02.bcdf"/>
   </board>
   <board id="RSKRX71M" version="1.02" description="Renesas Starter Kit+ for RX71M Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX71M_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX71M_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX71M_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX71M_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72M(TSIP)" version="1.01" description="Renesas Starter Kit+ for RX72M(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72M(TSIP)_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72M(TSIP)_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72M(TSIP)_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72M(TSIP)_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72M" version="1.02" description="Renesas Starter Kit+ for RX72M Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72M_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72M_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72M_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72M_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72N(TSIP)" version="1.01" description="Renesas Starter Kit+ for RX72N(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72N(TSIP)_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72N(TSIP)_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72N(TSIP)_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72N(TSIP)_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72N" version="1.03" description="Renesas Starter Kit+ for RX72N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72N_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72N_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72N_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72N_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72T(TSIP)" version="1.01" description="Renesas Starter Kit for RX72T(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72T(TSIP)_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72T(TSIP)_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72T(TSIP)_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72T(TSIP)_V1.00.bcdf"/>
   </board>
   <board id="RSKRX72T" version="1.02" description="Renesas Starter Kit for RX72T Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72T_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSKRX72T_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72T_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSKRX72T_V1.00.bcdf"/>
   </board>
   <board id="RSSKRX130" version="1.00" description="Renesas Solution Starter Kit for RX130 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX130_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX130_V1.00.bdf"/>
   </board>
   <board id="RSSKRX140" version="1.00" description="Renesas Solution Starter Kit for RX140 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX140_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX140_V1.00.bdf"/>
   </board>
   <board id="RSSKRX23EA" version="1.02" description="Renesas Solution Starter Kit for RX23E-A Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23EA_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23EA_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23EA_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23EA_V1.00.bcdf"/>
   </board>
   <board id="RSSKRX23EB" version="1.01" description="Renesas Solution Starter Kit for RX23E-B Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23EB_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23EB_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23EB_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23EB_V1.00.bcdf"/>
   </board>
   <board id="RSSKRX23W(TSIP)" version="1.01" description="Renesas Solution Starter Kit for RX23W(TSIP) Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23W(TSIP)_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23W(TSIP)_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23W(TSIP)_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23W(TSIP)_V1.00.bcdf"/>
   </board>
   <board id="RSSKRX23W" version="1.02" description="Renesas Solution Starter Kit for RX23W Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23W_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX23W_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23W_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX23W_V1.00.bcdf"/>
   </board>
   <board id="RSSKRX261" version="1.00" description="Renesas Solution Starter Kit for RX261 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX261_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX261_V1.00.bdf"/>
   </board>
   <board id="RSSKRX671" version="1.00" description="Renesas Solution Starter Kit for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/RSSKRX671_V1.00.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/RSSKRX671_V1.00.bdf"/>
   </board>
   <board id="TargetBoardRX130" version="1.12" description="Target Board for RX130 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX130_V1.12.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX130_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX130_V1.12.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX130_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX140" version="1.03" description="Target Board for RX140 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX140_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX140_V1.02.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX140_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX140_V1.02.bcdf"/>
   </board>
   <board id="TargetBoardRX231" version="1.12" description="Target board for RX231 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX231_V1.12.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX231_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX231_V1.12.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX231_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX23Wmodule" version="1.02" description="Target Board for RX23W module Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX23Wmodule_V1.02.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX23Wmodule_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX23Wmodule_V1.02.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX23Wmodule_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX23W" version="1.12" description="Target board for RX23W Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX23W_V1.12.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetboardRX23W_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX23W_V1.12.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetboardRX23W_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX65N" version="1.12" description="Target Board for RX65N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX65N_V1.12.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX65N_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX65N_V1.12.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX65N_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX660" version="1.01" description="Target Board for RX660 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX660_V1.01.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX660_V1.00.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX660_V1.01.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX660_V1.00.bcdf"/>
   </board>
   <board id="TargetBoardRX66N" version="1.03" description="Target Board for RX66N Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX66N_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX66N_V1.03.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX66N_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX66N_V1.03.bcdf"/>
   </board>
   <board id="TargetBoardRX671" version="1.03" description="Target Board for RX671 Board Description File" keys="RX">
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX671_V1.03.bdf"/>
-    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/8bb522e6f360bac938256b9c012317ee80a2da79/Boards/TargetBoardRX671_V1.03.bcdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX671_V1.03.bdf"/>
+    <download uri="https://raw.githubusercontent.com/renesas/smart-configurator-data/513ba54a9b34236487abbe73bfc56eb36e867263/Boards/TargetBoardRX671_V1.03.bcdf"/>
   </board>
 </boards>
