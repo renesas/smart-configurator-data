@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="EnvisionKitRX72N" version="1.02">
+<boardDescription id="EnvisionKitRX72N" version="1.03">
     <supportedBoard>
         <!-- Board id and version refer to bdf -->
         <board id="EnvisionKitRX72N" version="V1.12"/>
@@ -13,17 +13,23 @@
                 <configuration name="Config_PORT"/>
             </components> 
         </feature>
-        <feature name="Pmod 1 (2A: SPI)" jName="Pmod 1 (2A: SPI)">
+        <feature name="Pmod 1 (2A: SPI, 6A: IIC)" jName="Pmod 1 (2A: SPI, 6A: IIC)">
             <components>
                 <configuration name="r_sci_rx#spi1" pins="SMISO2/SMOSI2">
                     <dependency name="r_byteq"/>
                 </configuration>
+                <configuration name="r_sci_iic_rx#iic1">
+                    <dependency name="r_irq_rx#iic1"/>
+                </configuration>
             </components> 
         </feature>
-        <feature name="Pmod 2 (2A: SPI)" jName="Pmod 2 (2A: SPI)">
+        <feature name="Pmod 2 (2A: SPI, 6A: IIC)" jName="Pmod 2 (2A: SPI, 6A: IIC)">
             <components>
                 <configuration name="r_sci_rx#spi2" pins="SMISO7/SMOSI7">
                     <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_sci_iic_rx#iic2">
+                    <dependency name="r_irq_rx#iic2"/>
                 </configuration>
             </components> 
         </feature>
@@ -1078,6 +1084,40 @@
                 <gridItem id="BYTEQ_CFG_MAX_CTRL_BLKS" selectedIndex="32"/>
                 <gridItem id="BYTEQ_CFG_PROTECT_QUEUE" selectedIndex="0"/>
                 <gridItem id="BYTEQ_CFG_CRITICAL_SECTION" selectedIndex="0"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_iic_rx#iic1" inuse="true" name="r_sci_iic_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.41&#10; The SCI simple I2C mode fit module provides a method to transmit and receive data between the master and slave devices using the serial communications interface (SCI). The SCI simple I2C mode is in compliance with single master mode of the NXP I2C-bus (Inter-IC-Bus) interface.  " detailDescription="SCI Driver with interposer board (IIC)" display="r_sci_iic_rx" id="r_sci_iic_rx2.71" version="2.71">
+                <gridItem id="SSCL2" selectedIndex="1"/>
+                <gridItem id="SSDA2" selectedIndex="1"/>
+                <gridItem id="SCI2" selectedIndex="1"/>
+                <gridItem id="SCI_IIC_CFG_CH2_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_iic_rx#iic2" inuse="true" name="r_sci_iic_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.41&#10; The SCI simple I2C mode fit module provides a method to transmit and receive data between the master and slave devices using the serial communications interface (SCI). The SCI simple I2C mode is in compliance with single master mode of the NXP I2C-bus (Inter-IC-Bus) interface.  " detailDescription="SCI Driver with interposer board (IIC)" display="r_sci_iic_rx" id="r_sci_iic_rx2.71" version="2.71">
+                <gridItem id="SSCL7" selectedIndex="1"/>
+                <gridItem id="SSDA7" selectedIndex="1"/>
+                <gridItem id="SCI7" selectedIndex="1"/>
+                <gridItem id="SCI_IIC_CFG_CH7_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_irq_rx#iic1" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.40&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.40" version="4.40">
+                <gridItem id="IRQ10" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_irq_rx#iic2" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.40&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.40" version="4.40">
+                <gridItem id="IRQ0" selectedIndex="1"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>

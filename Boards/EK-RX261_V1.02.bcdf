@@ -1,80 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="EK-RX261" version="1.01">
-	<supportedBoard>
-		<!-- Board id and version refer to bdf -->
-		<board id="EK-RX261" version="V1.00"/>
-	</supportedBoard>
-	<boardFeature>
-		<!-- Board features to be placed here -->
-		<feature name="Application Header" type="Header"/>
-		<feature name="LEDs" jName="LEDs">
-			<components> 
-				<configuration name="Config_PORT"/>
-			</components> 
-		</feature>
+<boardDescription id="EK-RX261" version="1.02">
+    <supportedBoard>
+        <!-- Board id and version refer to bdf -->
+        <board id="EK-RX261" version="V1.00"/>
+        <board id="EK-RX261" version="V1.01"/>
+    </supportedBoard>
+    <boardFeature>
+        <!-- Board features to be placed here -->
+        <feature name="Application Header" type="Header"/>
+        <feature name="LEDs" jName="LEDs">
+            <components> 
+                <configuration name="Config_PORT"/>
+            </components> 
+        </feature>
         <feature name="User Switches" jName="User Switches">
-			<components> 
-				<configuration name="r_irq_rx#switches"/>
-			</components> 
-		</feature>
-		<feature name="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)">
-			<components>
-				<configuration name="r_sci_rx#spi1">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="r_sci_rx#uart1" pins="RXD5/TXD5">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="r_riic_rx#pmod1"/>
-			</components>
-		</feature>
-		<feature name="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)">
-			<components>
-				<configuration name="r_rsci_rx#spi2">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="r_rsci_rx#uart2" pins="RXD009/TXD009">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="Config_RSCI9"/>
-			</components>
-		</feature>
-		<feature name="USB to Serial" jName="USB to Serial">
-			<components>
-				<configuration name="Config_SCI6"/>
-			</components>
-		</feature>
-		<feature name="USB Full Speed (USB)" jName="USB Full Speed (USB)">
-			<components> 
-				<configuration name="r_usb_hcdc_mini">
-					<dependency name="r_usb_basic_mini#1"/>
-				</configuration>
-				<configuration name="r_usb_hhid_mini">
-					<dependency name="r_usb_basic_mini#2"/>
-				</configuration>
-				<configuration name="r_usb_hmsc_mini">
-					<dependency name="r_usb_basic_mini#3"/>
-				</configuration>
-				<configuration name="r_usb_pcdc_mini">
-					<dependency name="r_usb_basic_mini#4"/>
-				</configuration>
-				<configuration name="r_usb_phid_mini">
-					<dependency name="r_usb_basic_mini#5"/>
-				</configuration>
-				<configuration name="r_usb_pmsc_mini">
-					<dependency name="r_usb_basic_mini#6"/>
-				</configuration>
-			</components>
-		</feature>
-		<feature name="Controller Area Network with Flexible Data Rate (CANFD)" jName="Controller Area Network with Flexible Data Rate (CANFD)">
-			<components>
-				<configuration name="r_canfd_rx"/>
-			</components>
-		</feature>
-	</boardFeature>
-	<tool id="SWComponent" version="1.0.0.0">
-		<!-- Exported configurations to be placed here -->
-		<configuration inuse="true" name="r_bsp" serializeCondFulfilled="true">
+            <components> 
+                <configuration name="r_irq_rx#switches"/>
+            </components> 
+        </feature>
+        <feature name="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)">
+            <components>
+                <configuration name="r_sci_rx#spi1">
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_sci_rx#uart1" pins="RXD5/TXD5">
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_riic_rx#pmod1">
+                    <dependency name="r_irq_rx#iic1"/>
+                </configuration>
+                <configuration name="r_wifi_da16xxx#pmod1" pins="RXD5/TXD5">
+                    <dependency name="r_sci_rx#pmod1"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_ble_da1453x_rx#pmod1" pins="RXD5/TXD5">
+                    <dependency name="r_sci_rx#pmod1"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+            </components>
+        </feature>
+        <feature name="Pmod 2 (2A: SPI, 3A: UART)" jName="Pmod 2 (2A: SPI, 3A: UART)">
+            <components>
+                <configuration name="r_rsci_rx#spi2">
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_rsci_rx#uart2" pins="RXD009/TXD009">
+                    <dependency name="r_byteq"/>
+                </configuration>
+            </components>
+        </feature>
+        <feature name="USB to Serial" jName="USB to Serial">
+            <components>
+                <configuration name="Config_SCI6"/>
+            </components>
+        </feature>
+        <feature name="USB Full Speed (USB)" jName="USB Full Speed (USB)">
+            <components> 
+                <configuration name="r_usb_hcdc_mini">
+                    <dependency name="r_usb_basic_mini#1"/>
+                </configuration>
+                <configuration name="r_usb_hhid_mini">
+                    <dependency name="r_usb_basic_mini#2"/>
+                </configuration>
+                <configuration name="r_usb_hmsc_mini">
+                    <dependency name="r_usb_basic_mini#3"/>
+                </configuration>
+                <configuration name="r_usb_pcdc_mini">
+                    <dependency name="r_usb_basic_mini#4"/>
+                </configuration>
+                <configuration name="r_usb_phid_mini">
+                    <dependency name="r_usb_basic_mini#5"/>
+                </configuration>
+                <configuration name="r_usb_pmsc_mini">
+                    <dependency name="r_usb_basic_mini#6"/>
+                </configuration>
+            </components>
+        </feature>
+        <feature name="Controller Area Network with Flexible Data Rate (CANFD)" jName="Controller Area Network with Flexible Data Rate (CANFD)">
+            <components>
+                <configuration name="r_canfd_rx"/>
+            </components>
+        </feature>
+    </boardFeature>
+    <tool id="SWComponent" version="1.0.0.0">
+        <!-- Exported configurations to be placed here -->
+        <configuration inuse="true" name="r_bsp" serializeCondFulfilled="true">
             <component description="Dependencies : None&#10;This fit module is alpha version for RX261. The r_bsp package provides a foundation for code to be built on top of. It provides startup code, iodefines, and MCU information for different boards. There are 2 folders that make up the r_bsp package. The 'mcu' folder contains files that are common to a MCU group. These files provide functionality such as easy register access, CPU functions, and a file named 'mcu_info.h' for each MCU group. The 'mcu_info.h' file has information about the MCU on the board and is configured based on the information given in r_bsp_config.h. The information in 'mcu_info.h' is used to help configure Renesas middleware that uses the r_bsp package. The 'board' folder has a folder with startup code for each supported board.  Which MCU and board is chosen is decided by the settings in 'platform.h'. The user can choose which board they are using by uncommenting the include path that applies to their board. For example, if you are using the RSK+RX64M then you would uncomment the #include &quot;./board/generic_rx64m/r_bsp.h&quot; include path. Users are encouraged to add their own boards to the 'board' directory. BSPs are configured by using the r_bsp_config.h file. Each board will have a reference configuration file named r_bsp_config_reference.h. The user should copy this file to their project, rename it to r_bsp_config.h, and use the options inside the file to configure the BSP for their project." detailDescription="Board Support Packages." display="r_bsp" id="r_bsp7.50" version="7.50">
                 <gridItem id="BSP_CFG_USER_STACK_ENABLE" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_USTACK_BYTES" selectedIndex="0x400"/>
@@ -122,7 +132,7 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-		<configuration apiMode="FULL_API" fullSerialize="true" id="33db3c79-42a8-4aa6-8cfa-fba87eeda5a5" inuse="true" name="Config_PORT">
+        <configuration apiMode="FULL_API" fullSerialize="true" id="33db3c79-42a8-4aa6-8cfa-fba87eeda5a5" inuse="true" name="Config_PORT">
             <allocatable functionId="Port" id="Port" name="Port">
                 <allocatable functionId="PORT0_Check" id="PORT0_Check" name="PORT0">
                     <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port0 Enable" selection="Disable">
@@ -667,7 +677,7 @@
             </allocator>
             <source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
         </configuration>
-		<configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
+        <configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
             <component description="Dependency : r_bsp version(s) 7.20&#10;This module allocates a queue control block in an Open() call to handle indexing for buffers provided by the user application. Additional functions are provided to put and get data from the buffer queue, inspect the number of bytes available or in use, and to flush the queue. There is no limit to the number of queues supported, and queue control blocks can be allocated statically at build time or dynamically at run time." detailDescription="Byte-based circular buffer library." display="r_byteq" id="r_byteq2.10" version="2.10">
                 <gridItem id="BYTEQ_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
                 <gridItem id="BYTEQ_CFG_USE_HEAP_FOR_CTRL_BLKS" selectedIndex="0"/>
@@ -686,6 +696,13 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
+        <configuration mapId="r_irq_rx#iic1" inuse="true" name="r_irq_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.51&#10;This software provides a unified, abstracted interface for low-level handling of interrupt events from external pin interrupts. These events are mapped to the IRQ vectors." detailDescription="IRQ Driver" display="r_irq_rx" id="r_irq_rx4.50" version="4.50">
+                <gridItem id="IRQ3" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
         <configuration mapId="r_sci_rx#uart1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
             <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver (UART)" display="r_sci_rx" id="r_sci_rx5.30" version="5.30">
                 <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="0"/>
@@ -695,6 +712,8 @@
                 <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="1"/>
                 <gridItem id="SCI5" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH5_RX_BUFSIZ" selectedIndex="8192"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
@@ -708,6 +727,10 @@
                 <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="0"/>
                 <gridItem id="SCI5" selectedIndex="1"/>
                 <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCI_CFG_SSPI_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH5_RX_BUFSIZ" selectedIndex="8192"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
@@ -731,7 +754,10 @@
                 <gridItem id="CTS009#" selectedIndex="1"/>
                 <gridItem id="RTS009#" selectedIndex="0"/>
                 <gridItem id="RSCI9" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH8_INCLUDED" selectedIndex="0"/>
                 <gridItem id="RSCI_CFG_CH9_INCLUDED" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH9_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="RSCI_CFG_CH9_RX_BUFSIZ" selectedIndex="8192"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
@@ -745,176 +771,16 @@
                 <gridItem id="CTS009#" selectedIndex="0"/>
                 <gridItem id="RTS009#" selectedIndex="0"/>
                 <gridItem id="RSCI9" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH8_INCLUDED" selectedIndex="0"/>
                 <gridItem id="RSCI_CFG_CH9_INCLUDED" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_ASYNC_INCLUDED" selectedIndex="0"/>
+                <gridItem id="RSCI_CFG_SSPI_INCLUDED" selectedIndex="1"/>
+                <gridItem id="RSCI_CFG_CH9_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="RSCI_CFG_CH9_RX_BUFSIZ" selectedIndex="8192"/>
             </component>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-        <configuration apiMode="FULL_API" fullSerialize="true" id="719d68f8-4c5f-4cfd-80c5-026bada32ed0" inuse="true" name="Config_RSCI9">
-            <allocatable functionId="SCI9" id="SCI9" name="SCI9">
-                <isocket functionKey="CountingClockB" id="CountingClockB" value="6.0E7"/>
-                <isocket functionKey="CountingClockA" id="CountingClockA" selection="Clock.tool_clock_pclkb" value="3.2E7"/>
-                <option enabled="true" functionId="TransferClock" id="TransferClock" name="Transfer clock" selection="Internal">
-                    <item functionId="Internal" id="Internal" input="" name="Internal clock" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="Bitrate" id="Bitrate" name="Baudrate" selection="FreeValue">
-                    <item functionId="FreeValue" id="FreeValue" input="100" name="Free Value" type="dynamic" vlaue="1"/>
-                    <item functionId="10" id="10" input="10" name="10kbps" type="static" vlaue="0"/>
-                    <item functionId="25" id="25" input="25" name="25kbps" type="static" vlaue="0"/>
-                    <item functionId="50" id="50" input="50" name="50kbps" type="static" vlaue="0"/>
-                    <item functionId="100" id="100" input="100" name="100kbps" type="static" vlaue="0"/>
-                    <item functionId="250" id="250" input="250" name="250kbps" type="static" vlaue="0"/>
-                    <item functionId="350" id="350" input="350" name="350kbps" type="static" vlaue="0"/>
-                    <item functionId="400" id="400" input="400" name="400kbps" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="DutyCorrection" id="DutyCorrection" name="Enable modulation duty correction" selection="Disable">
-                    <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
-                    <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="NFEnable" id="NFEnable" name="Enable noise filter" selection="Disable">
-                    <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
-                    <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
-                </option>
-                <option enabled="false" functionId="NFClock" id="NFClock" name="Noise filter clock" selection="Divide1">
-                    <item functionId="Divide1" id="Divide1" input="" name="Clock signal divided by 1" type="static" vlaue="0"/>
-                    <item functionId="Divide2" id="Divide2" input="" name="Clock signal divided by 2" type="static" vlaue="0"/>
-                    <item functionId="Divide4" id="Divide4" input="" name="Clock signal divided by 4" type="static" vlaue="0"/>
-                    <item functionId="Divide8" id="Divide8" input="" name="Clock signal divided by 8" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="SDAOutDelay" id="SDAOutDelay" name="SSDA009 output delay" selection="NoDelay">
-                    <item functionId="NoDelay" id="NoDelay" input="" name="No output delay" type="static" vlaue="0"/>
-                    <item functionId="DSSDA1" id="DSSDA1" input="" name="0 to 1 cycle" type="static" vlaue="0"/>
-                    <item functionId="DSSDA2" id="DSSDA2" input="" name="1 to 2 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA3" id="DSSDA3" input="" name="2 to 3 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA4" id="DSSDA4" input="" name="3 to 4 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA5" id="DSSDA5" input="" name="4 to 5 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA6" id="DSSDA6" input="" name="5 to 6 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA7" id="DSSDA7" input="" name="6 to 7 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA8" id="DSSDA8" input="" name="7 to 8 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA9" id="DSSDA9" input="" name="8 to 9 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA10" id="DSSDA10" input="" name="9 to 10 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA11" id="DSSDA11" input="" name="10 to 11 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA12" id="DSSDA12" input="" name="11 to 12 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA13" id="DSSDA13" input="" name="12 to 13 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA14" id="DSSDA14" input="" name="13 to 14 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA15" id="DSSDA15" input="" name="14 to 15 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA16" id="DSSDA16" input="" name="15 to 16 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA17" id="DSSDA17" input="" name="16 to 17 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA18" id="DSSDA18" input="" name="17 to 18 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA19" id="DSSDA19" input="" name="18 to 19 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA20" id="DSSDA20" input="" name="19 to 20 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA21" id="DSSDA21" input="" name="20 to 21 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA22" id="DSSDA22" input="" name="21 to 22 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA23" id="DSSDA23" input="" name="22 to 23 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA24" id="DSSDA24" input="" name="23 to 24 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA25" id="DSSDA25" input="" name="24 to 25 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA26" id="DSSDA26" input="" name="25 to 26 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA27" id="DSSDA27" input="" name="26 to 27 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA28" id="DSSDA28" input="" name="27 to 28 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA29" id="DSSDA29" input="" name="28 to 29 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA30" id="DSSDA30" input="" name="29 to 30 cycles" type="static" vlaue="0"/>
-                    <item functionId="DSSDA31" id="DSSDA31" input="" name="30 to 31 cycles" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="TransHandler" id="TransHandler" name="Transmit data handling" selection="ISR">
-                    <item functionId="ISR" id="ISR" input="" name="Data handled in interrupt service routine" type="static" vlaue="0"/>
-                    <item functionId="DMAC" id="DMAC" input="" name="Data handled by DMAC" type="static" vlaue="0"/>
-                    <item functionId="DTC" id="DTC" input="" name="Data handled by DTC" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="RecvHandler" id="RecvHandler" name="Receive data handling" selection="ISR">
-                    <item functionId="ISR" id="ISR" input="" name="Data handled in interrupt service routine" type="static" vlaue="0"/>
-                    <item functionId="DMAC" id="DMAC" input="" name="Data handled by DMAC" type="static" vlaue="0"/>
-                    <item functionId="DTC" id="DTC" input="" name="Data handled by DTC" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="ISRMode" id="ISRMode" name="IIC interrupt mode select" selection="ACKNACK">
-                    <item functionId="RXITXI" id="RXITXI" input="" name="Use reception and transmission interrupts" type="static" vlaue="0"/>
-                    <item functionId="ACKNACK" id="ACKNACK" input="" name="Use ACK/NACK interrupts" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="IntTXIPriority" id="IntTXIPriority" name="TXI, RXI, TEI priority" selection="Level15">
-                    <item functionId="Level0" id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
-                    <item functionId="Level1" id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
-                    <item functionId="Level2" id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
-                    <item functionId="Level3" id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
-                    <item functionId="Level4" id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
-                    <item functionId="Level5" id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
-                    <item functionId="Level6" id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
-                    <item functionId="Level7" id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
-                    <item functionId="Level8" id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
-                    <item functionId="Level9" id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
-                    <item functionId="Level10" id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
-                    <item functionId="Level11" id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
-                    <item functionId="Level12" id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
-                    <item functionId="Level13" id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
-                    <item functionId="Level14" id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
-                    <item functionId="Level15" id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="IntRXIPriority" id="IntRXIPriority" name="RXI9 priority" relocateHiden="true" selection="Level15">
-                    <item functionId="Level0" id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
-                    <item functionId="Level1" id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
-                    <item functionId="Level2" id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
-                    <item functionId="Level3" id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
-                    <item functionId="Level4" id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
-                    <item functionId="Level5" id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
-                    <item functionId="Level6" id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
-                    <item functionId="Level7" id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
-                    <item functionId="Level8" id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
-                    <item functionId="Level9" id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
-                    <item functionId="Level10" id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
-                    <item functionId="Level11" id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
-                    <item functionId="Level12" id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
-                    <item functionId="Level13" id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
-                    <item functionId="Level14" id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
-                    <item functionId="Level15" id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="IntTEIPriority" id="IntTEIPriority" name="TEI9 priority (Group BL0)" relocateHiden="true" selection="Level15">
-                    <item functionId="Level0" id="Level0" input="" name="Level 0 (disabled)" type="static" vlaue="0"/>
-                    <item functionId="Level1" id="Level1" input="" name="Level 1" type="static" vlaue="0"/>
-                    <item functionId="Level2" id="Level2" input="" name="Level 2" type="static" vlaue="0"/>
-                    <item functionId="Level3" id="Level3" input="" name="Level 3" type="static" vlaue="0"/>
-                    <item functionId="Level4" id="Level4" input="" name="Level 4" type="static" vlaue="0"/>
-                    <item functionId="Level5" id="Level5" input="" name="Level 5" type="static" vlaue="0"/>
-                    <item functionId="Level6" id="Level6" input="" name="Level 6" type="static" vlaue="0"/>
-                    <item functionId="Level7" id="Level7" input="" name="Level 7" type="static" vlaue="0"/>
-                    <item functionId="Level8" id="Level8" input="" name="Level 8" type="static" vlaue="0"/>
-                    <item functionId="Level9" id="Level9" input="" name="Level 9" type="static" vlaue="0"/>
-                    <item functionId="Level10" id="Level10" input="" name="Level 10" type="static" vlaue="0"/>
-                    <item functionId="Level11" id="Level11" input="" name="Level 11" type="static" vlaue="0"/>
-                    <item functionId="Level12" id="Level12" input="" name="Level 12" type="static" vlaue="0"/>
-                    <item functionId="Level13" id="Level13" input="" name="Level 13" type="static" vlaue="0"/>
-                    <item functionId="Level14" id="Level14" input="" name="Level 14" type="static" vlaue="0"/>
-                    <item functionId="Level15" id="Level15" input="" name="Level 15 (highest)" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="MultiIntTXIEnable" id="MultiIntTXIEnable" name="Enable multiple interrupts for transmission interrupt (TXI)" selection="UnCheck">
-                    <item functionId="Check" id="Check" input="" name="Check" type="static" vlaue="0"/>
-                    <item functionId="UnCheck" id="UnCheck" input="" name="Uncheck" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="MultiIntRXIEnable" id="MultiIntRXIEnable" name="Enable multiple interrupts for reception interrupt (RXI)" selection="UnCheck">
-                    <item functionId="Check" id="Check" input="" name="Check" type="static" vlaue="0"/>
-                    <item functionId="UnCheck" id="UnCheck" input="" name="Uncheck" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="MultiIntTEIEnable" id="MultiIntTEIEnable" name="Enable multiple interrupts for transmission end interrupt (TEI)" selection="UnCheck">
-                    <item functionId="Check" id="Check" input="" name="Check" type="static" vlaue="0"/>
-                    <item functionId="UnCheck" id="UnCheck" input="" name="Uncheck" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="TransEnd" id="TransEnd" name="Transfer end" selection="Enable">
-                    <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
-                    <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
-                </option>
-                <option enabled="true" functionId="RecvEnd" id="RecvEnd" name="Receive end" selection="Enable">
-                    <item functionId="Enable" id="Enable" input="" name="Enable" type="static" vlaue="0"/>
-                    <item functionId="Disable" id="Disable" input="" name="Disable" type="static" vlaue="0"/>
-                </option>
-            </allocatable>
-            <component description="This software component provides configurations of I2C Master Mode for RIIC and SCI (RSCI)." detailDescription="" display="I2C Master Mode" id="com.renesas.smc.tools.swcomponent.codegenerator.i2cmastermode" version="1.12.0"/>
-            <allocator channelLevel0="9" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="RSCI channel 9" display="RSCI9" id="com.renesas.smc.swc.cg.rx.i2cmastermode.rx261.rsci9" type="RSCI">
-                <context>
-                    <option enabled="true" id="Mode" selection="I2C">
-                        <item enabled="true" id="I2C"/>
-                        <item enabled="true" id="SMBS"/>
-                    </option>
-                </context>
-            </allocator>
-            <source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
-        </configuration>        
         <configuration apiMode="FULL_API" fullSerialize="true" id="d676e067-48f0-46ba-8f02-a38eea99f261" inuse="true" name="Config_SCI6">
             <allocatable functionId="SCI6" id="SCI6" name="SCI6">
                 <isocket functionKey="CountingClockB" id="CountingClockB" selection="Clock.tool_clock_pclkb" value="3.2E7"/>
@@ -1391,5 +1257,48 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-	</tool>
+        <configuration mapId="r_wifi_da16xxx#pmod1" inuse="true" name="r_wifi_da16xxx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 5.64&#10;Dependency : r_byteq version(s) 1.80&#10;Dependency : r_sci_rx version(s) 3.20&#10;Use UART to control DA16XXX and connect to the Internet." detailDescription="Wi-Fi Module (DA16*00)" display="r_wifi_da16xxx" id="r_wifi_da16xxx1.33" version="1.33">
+                <gridItem id="WIFI_CFG_DA16600_SUPPORT" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_SCI_CHANNEL" selectedIndex="5"/>
+                <gridItem id="WIFI_CFG_SCI_PCLK_HZ" selectedIndex="32000000"/>
+                <gridItem id="WIFI_CFG_CTS_PORT" selectedIndex="12"/>
+                <gridItem id="WIFI_CFG_CTS_PIN" selectedIndex="0"/>
+                <gridItem id="WIFI_CFG_RTS_PORT" selectedIndex="12"/>
+                <gridItem id="WIFI_CFG_RTS_PIN" selectedIndex="0"/>
+                <gridItem id="WIFI_CFG_RESET_PORT" selectedIndex="13"/>
+                <gridItem id="WIFI_CFG_RESET_PIN" selectedIndex="7"/>
+                <gridItem id="WIFI_CFG_PFS_SET_VALUE" selectedIndex="0x0BU"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_ble_da1453x_rx#pmod1" inuse="true" name="r_ble_da1453x_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.51&#10;Dependency : r_byteq version(s) 2.10&#10;Dependency : r_sci_rx version(s) 5.30&#10;Control Renesas DA1453x using Bluetooth Low Energy GTL Layer." detailDescription="BLE Module (DA1453x)" display="r_ble_da1453x_rx" id="r_ble_da1453x_rx1.41" version="1.41">
+                <gridItem id="BLE_CFG_SCI_CHANNEL" selectedIndex="5"/>
+                <gridItem id="BLE_CFG_RESET_PORT" selectedIndex="13"/>
+                <gridItem id="BLE_CFG_RESET_PIN" selectedIndex="7"/>
+                <gridItem id="BLE_CFG_SCK_PORT" selectedIndex="12"/>
+                <gridItem id="BLE_CFG_SCK_PIN" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_rx#pmod1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.50&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx5.30" version="5.30">
+                <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCK5" selectedIndex="0"/>
+                <gridItem id="RXD5/SMISO5/SSCL5" selectedIndex="1"/>
+                <gridItem id="TXD5/SMOSI5/SSDA5" selectedIndex="1"/>
+                <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="1"/>
+                <gridItem id="SCI5" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH5_RX_BUFSIZ" selectedIndex="8192"/>
+                <gridItem id="SCI_CFG_TEI_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+    </tool>
 </boardDescription>

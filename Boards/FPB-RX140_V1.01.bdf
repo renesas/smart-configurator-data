@@ -100,7 +100,7 @@
         <item id="subfrequency" value="32.768"/>
         <item id="subdrivecap" value="standardCL"/>
         <item id="hococlockenable" value="check"/>
-        <item id="hocofrequency" value="frq48"/>
+        <item id="hocofrequency" value="frq32"/>
         <item id="hocooscenable" value="uncheck"/>
         <item id="lococlockenable" value="uncheck"/>
         <item id="locofrequency" value="4"/>
@@ -113,12 +113,12 @@
         <item id="lptswitcher" value="lptsub"/>
         <item id="fclkdivider" value="comboBox1-1"/>
         <item id="iclkdivider" value="comboBox1-1"/>
-        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-1"/>
         <item id="pclkddivider" value="comboBox1-1"/>
         <item id="ckodivider" value="comboBox1-8"/>
         <item id="clkoutenable" value="uncheck"/>
         <item id="rtcsclkenable" value="uncheck"/>
     </clock>
     <board display="FPB-RX140" html="" id="FPB-RX140" partNumber="R5F51406BxFN"/>
-    <info version="V1.00"/>
+    <info version="V1.01"/>
 </boardInfo>
