@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="CK-RX65N-V2" version="1.01">
+<boardDescription id="CK-RX65N-V2" version="1.02">
     <supportedBoard>
         <!-- Board id and version refer to bdf -->
         <board id="CK-RX65N-V2" version="V1.00"/>
@@ -1866,8 +1866,9 @@
         </configuration>
         <configuration mapId="r_wifi_da16xxx#pmod1" inuse="true" name="r_wifi_da16xxx" serializeCondFulfilled="true">
             <component description="Dependency : r_bsp version(s) 5.64&#10;Dependency : r_byteq version(s) 1.80&#10;Dependency : r_sci_rx version(s) 3.20&#10;Use UART to control DA16XXX and connect to the Internet." detailDescription="Wi-Fi Module (DA16*00)" display="r_wifi_da16xxx" id="r_wifi_da16xxx1.10" version="1.10">
+                <gridItem id="WIFI_CFG_DA16600_SUPPORT" selectedIndex="1"/>
                 <gridItem id="WIFI_CFG_SCI_CHANNEL" selectedIndex="6"/>
-                <gridItem id="WIFI_CFG_CTS_SW_CTRL" selectedIndex="0"/>
+                <gridItem id="WIFI_CFG_CTS_SW_CTRL" selectedIndex="1"/>
                 <gridItem id="WIFI_CFG_CTS_PORT" selectedIndex="18"/>
                 <gridItem id="WIFI_CFG_CTS_PIN" selectedIndex="3"/>
                 <gridItem id="WIFI_CFG_RTS_PORT" selectedIndex="11"/>
@@ -1880,12 +1881,14 @@
         </configuration>
         <configuration mapId="r_wifi_da16xxx#pmod2" inuse="true" name="r_wifi_da16xxx" serializeCondFulfilled="true">
             <component description="Dependency : r_bsp version(s) 5.64&#10;Dependency : r_byteq version(s) 1.80&#10;Dependency : r_sci_rx version(s) 3.20&#10;Use UART to control DA16XXX and connect to the Internet." detailDescription="Wi-Fi Module (DA16*00)" display="r_wifi_da16xxx" id="r_wifi_da16xxx1.10" version="1.10">
+                <gridItem id="WIFI_CFG_DA16600_SUPPORT" selectedIndex="1"/>
                 <gridItem id="WIFI_CFG_SCI_CHANNEL" selectedIndex="2"/>
-                <gridItem id="WIFI_CFG_CTS_SW_CTRL" selectedIndex="0"/>
+                <gridItem id="WIFI_CFG_CTS_SW_CTRL" selectedIndex="1"/>
                 <gridItem id="WIFI_CFG_CTS_PORT" selectedIndex="18"/>
                 <gridItem id="WIFI_CFG_CTS_PIN" selectedIndex="5"/>
                 <gridItem id="WIFI_CFG_RTS_PORT" selectedIndex="5"/>
                 <gridItem id="WIFI_CFG_RTS_PIN" selectedIndex="4"/>
+                <gridItem id="WIFI_CFG_PFS_SET_VALUE" selectedIndex="0x0BU"/>
                 <gridItem id="WIFI_CFG_RESET_PORT" selectedIndex="10"/>
                 <gridItem id="WIFI_CFG_RESET_PIN" selectedIndex="1"/>
             </component>

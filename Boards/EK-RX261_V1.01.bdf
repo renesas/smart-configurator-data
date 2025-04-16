@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <altPin>
+        <pin id="4">
+            <function id="PJ3"/>
+        </pin>
+        <pin id="25">
+            <function id="P23"/>
+        </pin>
+        <pin id="29">
+            <function id="P17"/>
+        </pin>
+        <pin id="49">
+            <function id="TXD5"/>
+            <function id="PC3"/>
+            <function id="SSDA5"/>
+        </pin>
+        <pin id="50">
+            <function id="RXD5"/>
+            <function id="SSCL5"/>
+        </pin>
+        <pin id="52">
+            <function id="CTS5#"/>
+            <function id="RTS5#"/>
+        </pin>
+        <pin id="53">
+            <function id="TXD009"/>
+            <function id="SSDA009"/>
+        </pin>
+        <pin id="54">
+            <function id="RXD009"/>
+            <function id="SSCL009"/>
+        </pin>
+        <pin id="56">
+            <function id="CTS009#"/>
+            <function id="RTS009#"/>
+        </pin>
+        <pin id="57">
+            <function id="GTIOC3A"/>
+        </pin>
+        <pin id="58">
+            <function id="CTS6#"/>
+        </pin>
+        <pin id="63">
+            <function id="PA7"/>
+        </pin>
+        <pin id="64">
+            <function id="GTIOC5A"/>
+            <function id="PA6"/>
+        </pin>
+        <pin id="65">
+            <function id="PA5"/>
+        </pin>
+        <pin id="66">
+            <function id="GTIOC4A"/>
+            <function id="PA4"/>
+        </pin>
+        <pin id="69">
+            <function id="GTIOC0A"/>
+        </pin>
+        <pin id="70">
+            <function id="GTIOC1A"/>
+        </pin>
+        <pin id="76">
+            <function id="PE2"/>
+        </pin>
+        <pin id="77">
+            <function id="PE1"/>
+        </pin>
+        <pin id="80">
+            <function id="IRQ6"/>
+        </pin>
+        <pin id="81">
+            <function id="IRQ5"/>
+        </pin>
+        <pin id="83">
+            <function id="IRQ3"/>
+        </pin>
+        <pin id="85">
+            <function id="GTIOC2A"/>
+            <function id="IRQ1"/>
+        </pin>
+        <pin id="86">
+            <function id="PD0"/>
+        </pin>
+    </altPin>
+    <system>
+        <item id="powerTarget" value="no"/>
+        <item id="emulator" value="renesas.e2lite"/>
+        <item id="debugIF" value="fine"/>
+    </system>
+    <pin>
+        <function comments="ARDUINO-D8" group="" id="P06" pin="1" symbolicname=""/>
+        <function comments="ARDUINO-D7" group="" id="P03" pin="2" symbolicname=""/>
+        <function comments="ARDUINO-D4" group="" id="P04" pin="3" symbolicname=""/>
+        <function comments="USBtoSERIAL-RTS" group="" id="RTS6#" pin="4" symbolicname=""/>
+        <function comments="LED1" group="" id="PJ1" pin="6" symbolicname="LED1"/>
+        <function comments="FINED" group="" id="FINED" pin="7" symbolicname=""/>
+        <function comments="" group="" id="XCIN" pin="8" symbolicname=""/>
+        <function comments="" group="" id="XCOUT" pin="9" symbolicname=""/>
+        <function comments="ResetSW-S3_ARDUINO-RESET_E2OB-RESET" group="" id="RES#" pin="10" symbolicname=""/>
+        <function comments="" group="" id="XTAL" pin="11" symbolicname=""/>
+        <function comments="" group="" id="EXTAL" pin="13" symbolicname=""/>
+        <function comments="UPSEL" group="" id="UPSEL" pin="15" symbolicname=""/>
+        <function comments="UserSW-S2" group="" id="IRQ2" pin="18" symbolicname="S2"/>
+        <function comments="TS1" group="" id="TS1" pin="19" symbolicname=""/>
+        <function comments="ExtDbg-RXD_USBtoSERIAL-RXD" group="" id="RXD1" pin="20" symbolicname=""/>
+        <function comments="TS3" group="" id="TS3" pin="21" symbolicname=""/>
+        <function comments="ExtDbg-TXD_USBtoSERIAL-TXD" group="" id="TXD1" pin="22" symbolicname=""/>
+        <function comments="mikroBUS-PWM" group="" id="GTIOC1B" pin="23" symbolicname=""/>
+        <function comments="USBFS-VBUSEN" group="" id="USB0_VBUSEN" pin="24" symbolicname=""/>
+        <function comments="mikroBUS-CS" group="" id="SS000#" pin="25" symbolicname=""/>
+        <function comments="mikroBUS-SCK" group="" id="SCK000" pin="26" symbolicname=""/>
+        <function comments="mikroBUS-MISO" group="" id="SMISO000" pin="27" symbolicname=""/>
+        <function comments="mikroBUS-MOSI" group="" id="SMOSI000" pin="28" symbolicname=""/>
+        <function comments="ARDUINO-RESET_mikroBUS-INT" group="" id="IRQ7" pin="29" symbolicname=""/>
+        <function comments="USBFS-VBUS" group="" id="USB0_VBUS" pin="30" symbolicname=""/>
+        <function comments="USBFS-OVRCURA" group="" id="USB0_OVRCURA" pin="32" symbolicname=""/>
+        <function comments="ARDUINO-SDA_mikroBUS-SDA_PMOD1-SDA" group="" id="SDA0" pin="33" symbolicname=""/>
+        <function comments="ARDUINO-SCL_mikroBUS-SCL_PMOD1-SCL" group="" id="SCL0" pin="34" symbolicname=""/>
+        <function comments="USBFS-DM" group="" id="USB0_DM" pin="36" symbolicname=""/>
+        <function comments="USBFS-DP" group="" id="USB0_DP" pin="37" symbolicname=""/>
+        <function comments="CANFD-RX" group="" id="CRX0" pin="39" symbolicname=""/>
+        <function comments="CANFD-TX" group="" id="CTX0" pin="40" symbolicname=""/>
+        <function comments="PMOD2-IO3" group="" id="P53" pin="41" symbolicname=""/>
+        <function comments="PMOD2-IO2" group="" id="P52" pin="42" symbolicname=""/>
+        <function comments="PMOD2-IO1/RESET" group="" id="P51" pin="43" symbolicname=""/>
+        <function comments="mikroBUS-RST" group="" id="P50" pin="44" symbolicname=""/>
+        <function comments="UB_mikroBUS-TX" group="" id="TXD008" pin="45" symbolicname=""/>
+        <function comments="mikroBUS-RX" group="" id="RXD008" pin="46" symbolicname=""/>
+        <function comments="LED2" group="" id="PC5" pin="47" symbolicname="LED2"/>
+        <function comments="TSCAP" group="" id="TSCAP" pin="48" symbolicname=""/>
+        <function comments="PMOD1-MOSI/TXD/RESET" group="" id="SMOSI5" pin="49" symbolicname=""/>
+        <function comments="PMOD1-MISO/RXD" group="" id="SMISO5" pin="50" symbolicname=""/>
+        <function comments="PMOD1-SCK" group="" id="SCK5" pin="51" symbolicname=""/>
+        <function comments="PMOD1-CS/CTS/RTS/GPIO" group="" id="PC0" pin="52" symbolicname=""/>
+        <function comments="PMOD2-MOSI/TXD/SDA" group="" id="SMOSI009" pin="53" symbolicname=""/>
+        <function comments="PMOD2-MISO/RXD/SCL" group="" id="SMISO009" pin="54" symbolicname=""/>
+        <function comments="PMOD2-SCK" group="" id="SCK009" pin="55" symbolicname=""/>
+        <function comments="PMOD2-CS/CTS/RTS/GPIO" group="" id="PB4" pin="56" symbolicname=""/>
+        <function comments="ARDUINO-D9/PWM" group="" id="PB3" pin="57" symbolicname=""/>
+        <function comments="USBtoSERIAL-CTS" group="" id="PB2" pin="58" symbolicname=""/>
+        <function comments="USBtoSERIAL-TXD" group="" id="TXD6" pin="59" symbolicname="COM_TXD6"/>
+        <function comments="USBtoSERIAL-RXD" group="" id="RXD6" pin="61" symbolicname="COM_RXD6"/>
+        <function comments="ARDUINO-MISO/D12" group="" id="MISOA" pin="63" symbolicname=""/>
+        <function comments="ARDUINO-MOSI/D11/PWM" group="" id="MOSIA" pin="64" symbolicname=""/>
+        <function comments="ARDUINO-SCK/D13" group="" id="RSPCKA" pin="65" symbolicname=""/>
+        <function comments="ARDUINO-SS/D10/PWM" group="" id="SSLA0" pin="66" symbolicname=""/>
+        <function comments="LED3" group="" id="PA3" pin="67" symbolicname="LED3"/>
+        <function comments="ARDUINO-D6/PWM" group="" id="PA1" pin="69" symbolicname=""/>
+        <function comments="ARDUINO-D5/PWM" group="" id="PA0" pin="70" symbolicname=""/>
+        <function comments="PMOD1-IO3" group="" id="PE7" pin="71" symbolicname=""/>
+        <function comments="PMOD1-IO2" group="" id="PE6" pin="72" symbolicname=""/>
+        <function comments="ARDUINO-RX/D0" group="" id="RXD12" pin="76" symbolicname=""/>
+        <function comments="ARDUINO-TX/D1" group="" id="TXD12" pin="77" symbolicname=""/>
+        <function comments="PMOD1-IO1/RESET" group="" id="PD7" pin="79" symbolicname=""/>
+        <function comments="PMOD2-IO0/INT" group="" id="PD6" pin="80" symbolicname=""/>
+        <function comments="PMOD1-IO0/INT" group="" id="PD5" pin="81" symbolicname=""/>
+        <function comments="PMOD1-INT" group="" id="PD3" pin="83" symbolicname=""/>
+        <function comments="mikroBUS-AN" group="" id="AN026" pin="84" symbolicname=""/>
+        <function comments="ARDUINO-D3/INT/PWM" group="" id="PD1" pin="85" symbolicname=""/>
+        <function comments="UserSW-S1_ARDUINO-D2/INT" group="" id="IRQ0" pin="86" symbolicname="S1"/>
+        <function comments="ARDUINO-A5" group="" id="AN005" pin="89" symbolicname=""/>
+        <function comments="ARDUINO-A4" group="" id="AN004" pin="90" symbolicname=""/>
+        <function comments="ARDUINO-A3" group="" id="AN003" pin="91" symbolicname=""/>
+        <function comments="ARDUINO-A2" group="" id="AN002" pin="92" symbolicname=""/>
+        <function comments="ARDUINO-A1" group="" id="AN001" pin="93" symbolicname=""/>
+        <function comments="VREFL0" group="" id="VREFL0" pin="94" symbolicname=""/>
+        <function comments="ARDUINO-A0" group="" id="AN000" pin="95" symbolicname=""/>
+        <function comments="VREFH0" group="" id="VREFH0" pin="96" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="3.3"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="8"/>
+        <item id="mainwaitcycle" value="sBox8192"/>
+        <item id="subclockenable" value="check"/>
+        <item id="subsourcebox" value="srcR"/>
+        <item id="subfrequency" value="32.768"/>
+        <item id="subdrivecap" value="standardCL"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq64"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="4"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="15"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul8-1"/>
+        <item id="pll2divider" value="div1-1"/>
+        <item id="pll2mul" value="mul6-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="canswitcher" value="canpll1"/>
+        <item id="ckoswitcher" value="ckopll"/>
+        <item id="usbswitcher" value="usbpll2"/>
+        <item id="lptswitcher" value="lptsub"/>
+        <item id="fclkdivider" value="comboBox1-1"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-1"/>
+        <item id="pclkbdivider" value="comboBox1-2"/>
+        <item id="pclkddivider" value="comboBox1-1"/>
+        <item id="cfdckdivider" value="comboBox1-2"/>
+        <item id="ckodivider" value="comboBox1-8"/>
+        <item id="canfdclkenable" value="check"/>
+        <item id="clkoutenable" value="uncheck"/>
+        <item id="uclkenable" value="check"/>
+        <item id="rtcsclkenable" value="check"/>
+    </clock>
+    <board display="EK-RX261" html="" id="EK-RX261" partNumber="R5F52618BxFP"/>
+    <info version="V1.01"/>
+</boardInfo>

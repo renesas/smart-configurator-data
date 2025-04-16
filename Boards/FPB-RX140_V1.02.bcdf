@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<boardDescription id="FPB-RX140" version="1.01">
-	<supportedBoard>
-		<!-- Board id and version refer to bdf -->
-		<board id="FPB-RX140" version="V1.00"/>
-	</supportedBoard>
-	<boardFeature>
-		<!-- Board features to be placed here -->
-		<feature name="Application Header" type="Header"/>
-		<feature name="LEDs" jName="LEDs">
-			<components> 
-				<configuration name="Config_PORT"/>
-			</components> 
-		</feature>
+<boardDescription id="FPB-RX140" version="1.02">
+    <supportedBoard>
+        <!-- Board id and version refer to bdf -->
+        <board id="FPB-RX140" version="V1.00"/>
+    </supportedBoard>
+    <boardFeature>
+        <!-- Board features to be placed here -->
+        <feature name="Application Header" type="Header"/>
+        <feature name="LEDs" jName="LEDs">
+            <components> 
+                <configuration name="Config_PORT"/>
+            </components> 
+        </feature>
         <feature name="User Switches" jName="User Switches">
-			<components> 
-				<configuration name="r_irq_rx#switches"/>
-			</components> 
-		</feature>
-		<feature name="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)">
-			<components>
-				<configuration name="r_sci_rx#spi1">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="r_sci_rx#uart1" pins="RXD5/TXD5">
-					<dependency name="r_byteq"/>
-				</configuration>
+            <components> 
+                <configuration name="r_irq_rx#switches"/>
+            </components> 
+        </feature>
+        <feature name="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 1 (2A: SPI, 3A: UART, 6A: IIC)">
+            <components>
+                <configuration name="r_sci_rx#spi1">
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_sci_rx#uart1" pins="RXD5/TXD5">
+                    <dependency name="r_byteq"/>
+                </configuration>
                 <configuration name="r_sci_iic_rx#pmod1">
                     <dependency name="r_irq_rx#iic1"/>
                 </configuration>
-			</components>
-		</feature>
-		<feature name="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)">
-			<components>
-				<configuration name="r_sci_rx#uart2" pins="RXD1/TXD1">
-					<dependency name="r_byteq"/>
-				</configuration>
-				<configuration name="r_sci_rx#spi2">
-					<dependency name="r_byteq"/>
-				</configuration>
+                <configuration name="r_wifi_da16xxx#pmod1" pins="RXD5/TXD5">
+                    <dependency name="r_sci_rx#pmod1"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_ble_da1453x_rx#pmod1" pins="RXD5/TXD5">
+                    <dependency name="r_sci_rx#pmod1"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+            </components>
+        </feature>
+        <feature name="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)" jName="Pmod 2 (2A: SPI, 3A: UART, 6A: IIC)">
+            <components>
+                <configuration name="r_sci_rx#uart2" pins="RXD1/TXD1">
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_sci_rx#spi2">
+                    <dependency name="r_byteq"/>
+                </configuration>
                 <configuration name="r_sci_iic_rx#pmod2">
                     <dependency name="r_irq_rx#iic2"/>
                 </configuration>
-			</components>
-		</feature>
-	</boardFeature>
-	<tool id="SWComponent" version="1.0.0.0">
-		<!-- Exported configurations to be placed here -->
-		<configuration inuse="true" name="r_bsp" serializeCondFulfilled="true">
+                <configuration name="r_wifi_da16xxx#pmod2" pins="RXD1/TXD1">
+                    <dependency name="r_sci_rx#pmod2"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+                <configuration name="r_ble_da1453x_rx#pmod2" pins="RXD1/TXD1">
+                    <dependency name="r_sci_rx#pmod2"/>
+                    <dependency name="r_byteq"/>
+                </configuration>
+            </components>
+        </feature>
+    </boardFeature>
+    <tool id="SWComponent" version="1.0.0.0">
+        <!-- Exported configurations to be placed here -->
+        <configuration inuse="true" name="r_bsp" serializeCondFulfilled="true">
             <component description="Dependencies : None&#10;This fit module is alpha version for RX261. The r_bsp package provides a foundation for code to be built on top of. It provides startup code, iodefines, and MCU information for different boards. There are 2 folders that make up the r_bsp package. The 'mcu' folder contains files that are common to a MCU group. These files provide functionality such as easy register access, CPU functions, and a file named 'mcu_info.h' for each MCU group. The 'mcu_info.h' file has information about the MCU on the board and is configured based on the information given in r_bsp_config.h. The information in 'mcu_info.h' is used to help configure Renesas middleware that uses the r_bsp package. The 'board' folder has a folder with startup code for each supported board.  Which MCU and board is chosen is decided by the settings in 'platform.h'. The user can choose which board they are using by uncommenting the include path that applies to their board. For example, if you are using the RSK+RX64M then you would uncomment the #include &quot;./board/generic_rx64m/r_bsp.h&quot; include path. Users are encouraged to add their own boards to the 'board' directory. BSPs are configured by using the r_bsp_config.h file. Each board will have a reference configuration file named r_bsp_config_reference.h. The user should copy this file to their project, rename it to r_bsp_config.h, and use the options inside the file to configure the BSP for their project." detailDescription="Board Support Packages." display="r_bsp" id="r_bsp7.50" version="7.50">
                 <gridItem id="BSP_CFG_USER_STACK_ENABLE" selectedIndex="1"/>
                 <gridItem id="BSP_CFG_USTACK_BYTES" selectedIndex="0x400"/>
@@ -94,7 +110,7 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-		<configuration apiMode="FULL_API" fullSerialize="true" id="dfc6dfb9-7f91-4263-9db7-8c60a270877e" inuse="true" name="Config_PORT">
+        <configuration apiMode="FULL_API" fullSerialize="true" id="dfc6dfb9-7f91-4263-9db7-8c60a270877e" inuse="true" name="Config_PORT">
             <allocatable functionId="Port" id="Port" name="Port">
                 <allocatable functionId="PORT0_Check" id="PORT0_Check" name="PORT0">
                     <option enabled="true" functionId="PortnEnable" id="PortnEnable" name="Port0 Enable" selection="Disable">
@@ -431,7 +447,7 @@
             </allocator>
             <source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
         </configuration>
-		<configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
+        <configuration inuse="true" name="r_byteq" serializeCondFulfilled="true">
             <component description="Dependency : r_bsp version(s) 7.20&#10;This module allocates a queue control block in an Open() call to handle indexing for buffers provided by the user application. Additional functions are provided to put and get data from the buffer queue, inspect the number of bytes available or in use, and to flush the queue. There is no limit to the number of queues supported, and queue control blocks can be allocated statically at build time or dynamically at run time." detailDescription="Byte-based circular buffer library." display="r_byteq" id="r_byteq2.10" version="2.10">
                 <gridItem id="BYTEQ_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
                 <gridItem id="BYTEQ_CFG_USE_HEAP_FOR_CTRL_BLKS" selectedIndex="0"/>
@@ -547,5 +563,92 @@
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
             <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
         </configuration>
-	</tool>
+        <configuration mapId="r_wifi_da16xxx#pmod1" inuse="true" name="r_wifi_da16xxx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 5.64&#10;Dependency : r_byteq version(s) 1.80&#10;Dependency : r_sci_rx version(s) 3.20&#10;Use UART to control DA16XXX and connect to the Internet." detailDescription="Wi-Fi Module (DA16*00)" display="r_wifi_da16xxx" id="r_wifi_da16xxx1.33" version="1.33">
+                <gridItem id="WIFI_CFG_DA16600_SUPPORT" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_SCI_CHANNEL" selectedIndex="5"/>
+                <gridItem id="WIFI_CFG_SCI_PCLK_HZ" selectedIndex="32000000"/>
+                <gridItem id="WIFI_CFG_CTS_PORT" selectedIndex="10"/>
+                <gridItem id="WIFI_CFG_CTS_PIN" selectedIndex="6"/>
+                <gridItem id="WIFI_CFG_RTS_PORT" selectedIndex="10"/>
+                <gridItem id="WIFI_CFG_RTS_PIN" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_RESET_PORT" selectedIndex="11"/>
+                <gridItem id="WIFI_CFG_RESET_PIN" selectedIndex="3"/>
+                <gridItem id="WIFI_CFG_PFS_SET_VALUE" selectedIndex="0x0BU"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_wifi_da16xxx#pmod2" inuse="true" name="r_wifi_da16xxx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 5.64&#10;Dependency : r_byteq version(s) 1.80&#10;Dependency : r_sci_rx version(s) 3.20&#10;Use UART to control DA16XXX and connect to the Internet." detailDescription="Wi-Fi Module (DA16*00)" display="r_wifi_da16xxx" id="r_wifi_da16xxx1.33" version="1.33">
+                <gridItem id="WIFI_CFG_DA16600_SUPPORT" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_SCI_CHANNEL" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_SCI_PCLK_HZ" selectedIndex="32000000"/>
+                <gridItem id="WIFI_CFG_CTS_PORT" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_CTS_PIN" selectedIndex="4"/>
+                <gridItem id="WIFI_CFG_RTS_PORT" selectedIndex="3"/>
+                <gridItem id="WIFI_CFG_RTS_PIN" selectedIndex="1"/>
+                <gridItem id="WIFI_CFG_RESET_PORT" selectedIndex="11"/>
+                <gridItem id="WIFI_CFG_RESET_PIN" selectedIndex="2"/>
+                <gridItem id="WIFI_CFG_PFS_SET_VALUE" selectedIndex="0x0BU"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_ble_da1453x_rx#pmod1" inuse="true" name="r_ble_da1453x_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.51&#10;Dependency : r_byteq version(s) 2.10&#10;Dependency : r_sci_rx version(s) 5.30&#10;Control Renesas DA1453x using Bluetooth Low Energy GTL Layer." detailDescription="BLE Module (DA1453x)" display="r_ble_da1453x_rx" id="r_ble_da1453x_rx1.41" version="1.41">
+                <gridItem id="BLE_CFG_SCI_CHANNEL" selectedIndex="5"/>
+                <gridItem id="BLE_CFG_RESET_PORT" selectedIndex="11"/>
+                <gridItem id="BLE_CFG_RESET_PIN" selectedIndex="3"/>
+                <gridItem id="BLE_CFG_SCK_PORT" selectedIndex="10"/>
+                <gridItem id="BLE_CFG_SCK_PIN" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_ble_da1453x_rx#pmod2" inuse="true" name="r_ble_da1453x_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.51&#10;Dependency : r_byteq version(s) 2.10&#10;Dependency : r_sci_rx version(s) 5.30&#10;Control Renesas DA1453x using Bluetooth Low Energy GTL Layer." detailDescription="BLE Module (DA1453x)" display="r_ble_da1453x_rx" id="r_ble_da1453x_rx1.41" version="1.41">
+                <gridItem id="BLE_CFG_SCI_CHANNEL" selectedIndex="1"/>
+                <gridItem id="BLE_CFG_RESET_PORT" selectedIndex="11"/>
+                <gridItem id="BLE_CFG_RESET_PIN" selectedIndex="2"/>
+                <gridItem id="BLE_CFG_SCK_PORT" selectedIndex="2"/>
+                <gridItem id="BLE_CFG_SCK_PIN" selectedIndex="7"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_rx#pmod1" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.40&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx5.00" version="5.00">
+                <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="0"/>
+                <gridItem id="SCK5" selectedIndex="0"/>
+                <gridItem id="RXD5/SMISO5/SSCL5" selectedIndex="1"/>
+                <gridItem id="TXD5/SMOSI5/SSDA5" selectedIndex="1"/>
+                <gridItem id="CTS5#/RTS5#/SS5#" selectedIndex="1"/>
+                <gridItem id="SCI5" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH5_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH5_RX_BUFSIZ" selectedIndex="8192"/>
+                <gridItem id="SCI_CFG_TEI_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+        <configuration mapId="r_sci_rx#pmod2" inuse="true" name="r_sci_rx" serializeCondFulfilled="true">
+            <component description="Dependency : r_bsp version(s) 7.40&#10;Dependency : r_byteq version(s) 1.40, 1.50, 1.60, 1.70, 1.71, 1.80, 1.81, 1.82, 1.90, 2.00, 2.10&#10;This module allows any number of SCI channels on the MCU to run in full duplex Asynchronous mode, single master Simple SPI mode, or master Synchronous mode simultaneously. The driver is interrupt driven and non-blocking. Transmit and receive buffer queues are used in Asynchronous mode and their sizes may be configured independently for each channel. Resources for unused channels or modes may be removed via settings in the driver's config.h file." detailDescription="SCI Driver" display="r_sci_rx" id="r_sci_rx5.00" version="5.00">
+                <gridItem id="SCK1" selectedIndex="0"/>
+                <gridItem id="RXD1/SMISO1/SSCL1" selectedIndex="1"/>
+                <gridItem id="TXD1/SMOSI1/SSDA1" selectedIndex="1"/>
+                <gridItem id="CTS1#/RTS1#/SS1#" selectedIndex="1"/>
+                <gridItem id="SCI1" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_ASYNC_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH1_INCLUDED" selectedIndex="1"/>
+                <gridItem id="SCI_CFG_CH1_TX_BUFSIZ" selectedIndex="2180"/>
+                <gridItem id="SCI_CFG_CH1_RX_BUFSIZ" selectedIndex="8192"/>
+                <gridItem id="SCI_CFG_TEI_INCLUDED" selectedIndex="1"/>
+            </component>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+            <source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+        </configuration>
+    </tool>
 </boardDescription>
