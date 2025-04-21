@@ -4,11 +4,9 @@
         <pin id="49">
             <function id="TXD5"/>
             <function id="PC3"/>
-            <function id="SSDA5"/>
         </pin>
         <pin id="50">
             <function id="RXD5"/>
-            <function id="SSCL5"/>
         </pin>
         <pin id="52">
             <function id="CTS5#"/>
