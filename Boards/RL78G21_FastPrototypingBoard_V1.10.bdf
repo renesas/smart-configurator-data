@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="emulator" value="renesas.serial"/>
+        <item id="pseudo" value="used"/>
+        <item id="startstopfunction" value="unused"/>
+        <item id="monitor" value="unused"/>
+        <item id="trace" value="used"/>
+        <item id="enableSecurityId" value="unchecked"/>
+        <item id="authentication" value="erase"/>
+        <item id="resetPin" value="used"/>
+    </system>
+    <pin>
+        <function comments="J1-1" group="" id="UNASSIGNED_1" pin="1" symbolicname=""/>
+        <function comments="J1-2[PMOD1-CS3/GPIO10]" group="" id="UNASSIGNED_2" pin="2" symbolicname=""/>
+        <function comments="J1-3[Arduino-~5]" group="" id="UNASSIGNED_3" pin="3" symbolicname=""/>
+        <function comments="J1-4[Arduino-~6]" group="" id="UNASSIGNED_4" pin="4" symbolicname=""/>
+        <function comments="J1-5[TOOL0]" group="" id="TOOL0" pin="5" symbolicname=""/>
+        <function comments="J1-6[RESET][Arduino-RESET]" group="" id="_RESET" pin="6" symbolicname=""/>
+        <function comments="J1-7[PMOD1-RESET/GPIO8]" group="" id="UNASSIGNED_7" pin="7" symbolicname=""/>
+        <function comments="J1-8[PMOD1-CS2/GPIO9]" group="" id="UNASSIGNED_8" pin="8" symbolicname=""/>
+        <function comments="J1-9[SW]" group="" id="INTP0" pin="9" symbolicname="SW"/>
+        <function comments="J1-10" group="" id="UNASSIGNED_10" pin="10" symbolicname=""/>
+        <function comments="J1-11" group="" id="UNASSIGNED_11" pin="11" symbolicname=""/>
+        <function comments="J1-17[Arduino-SCL]" group="" id="UNASSIGNED_17" pin="17" symbolicname=""/>
+        <function comments="J1-18[Arduino-SDA]" group="" id="UNASSIGNED_18" pin="18" symbolicname=""/>
+        <function comments="J1-19[LED2]" group="" id="P34" pin="19" symbolicname="LED2"/>
+        <function comments="J1-20[LED1]" group="" id="P33" pin="20" symbolicname="LED1"/>
+        <function comments="J1-21[PMOD2-INT]" group="" id="UNASSIGNED_21" pin="21" symbolicname=""/>
+        <function comments="J1-22[PMOD1-CS/CTS]" group="" id="UNASSIGNED_22" pin="22" symbolicname=""/>
+        <function comments="J1-23[PMOD2-GPIO7]" group="" id="UNASSIGNED_23" pin="23" symbolicname=""/>
+        <function comments="J1-24[GROVE-SCL]" group="" id="UNASSIGNED_24" pin="24" symbolicname=""/>
+        <function comments="J1-25[GROVE-SDA]" group="" id="UNASSIGNED_25" pin="25" symbolicname=""/>
+        <function comments="J1-26[Arduino-8]" group="" id="UNASSIGNED_26" pin="26" symbolicname=""/>
+        <function comments="J1-27[Arduino-TX/1]" group="" id="UNASSIGNED_27" pin="27" symbolicname=""/>
+        <function comments="J1-28[Arduino-RX/0]" group="" id="UNASSIGNED_28" pin="28" symbolicname=""/>
+        <function comments="J1-29" group="" id="UNASSIGNED_29" pin="29" symbolicname=""/>
+        <function comments="J1-30[Arduino-~9]" group="" id="UNASSIGNED_30" pin="30" symbolicname=""/>
+        <function comments="J1-31[Arduino-~10]" group="" id="UNASSIGNED_31" pin="31" symbolicname=""/>
+        <function comments="J1-32[Arduino-2]" group="" id="UNASSIGNED_32" pin="32" symbolicname=""/>
+        <function comments="J2-1[Arduino-4]" group="" id="UNASSIGNED_33" pin="33" symbolicname=""/>
+        <function comments="J2-2[Arduino-7]" group="" id="UNASSIGNED_34" pin="34" symbolicname=""/>
+        <function comments="J2-3[PMOD2-GPIO10]" group="" id="UNASSIGNED_35" pin="35" symbolicname=""/>
+        <function comments="J2-4[PMOD2-GPIO8]" group="" id="UNASSIGNED_36" pin="36" symbolicname=""/>
+        <function comments="J2-5[PMOD2-GPIO9]" group="" id="UNASSIGNED_37" pin="37" symbolicname=""/>
+        <function comments="J2-6[Arduino-SCK/13]" group="" id="UNASSIGNED_38" pin="38" symbolicname=""/>
+        <function comments="J2-7[Arduino-MOSI/~11]" group="" id="UNASSIGNED_39" pin="39" symbolicname=""/>
+        <function comments="J2-8[Arduino-MISO/12]" group="" id="UNASSIGNED_40" pin="40" symbolicname=""/>
+        <function comments="J2-9[PMOD2-RESET]" group="" id="UNASSIGNED_41" pin="41" symbolicname=""/>
+        <function comments="J2-10[PMOD2-SCL]" group="" id="UNASSIGNED_42" pin="42" symbolicname=""/>
+        <function comments="J2-11[PMOD2-SDA]" group="" id="UNASSIGNED_43" pin="43" symbolicname=""/>
+        <function comments="J2-12[TOOLTxD/TxD0]" group="" id="TOOLTxD" pin="44" symbolicname="COM_TxD0"/>
+        <function comments="J2-13[TOOLRxD/RxD0]" group="" id="TOOLRxD" pin="45" symbolicname="COM_RxD0"/>
+        <function comments="J2-14[Arduino-~3]" group="" id="UNASSIGNED_46" pin="46" symbolicname=""/>
+        <function comments="J2-15" group="" id="UNASSIGNED_47" pin="47" symbolicname=""/>
+        <function comments="J2-16" group="" id="UNASSIGNED_48" pin="48" symbolicname=""/>
+        <function comments="J2-17[Arduino-A5]" group="" id="UNASSIGNED_49" pin="49" symbolicname=""/>
+        <function comments="J2-18[Arduino-A4]" group="" id="UNASSIGNED_50" pin="50" symbolicname=""/>
+        <function comments="J2-19[Arduino-A3]" group="" id="UNASSIGNED_51" pin="51" symbolicname=""/>
+        <function comments="J2-20[Arduino-A2]" group="" id="UNASSIGNED_52" pin="52" symbolicname=""/>
+        <function comments="J2-21[Arduino-A1]" group="" id="UNASSIGNED_53" pin="53" symbolicname=""/>
+        <function comments="J2-22[Arduino-A0]" group="" id="UNASSIGNED_54" pin="54" symbolicname=""/>
+        <function comments="J2-23[AVREFM]" group="" id="AVREFM" pin="55" symbolicname=""/>
+        <function comments="J2-24[AVREFP]" group="" id="AVREFP" pin="56" symbolicname=""/>
+        <function comments="J2-25" group="" id="UNASSIGNED_57" pin="57" symbolicname=""/>
+        <function comments="J2-26[PMOD1-SCK/RTS]" group="" id="UNASSIGNED_58" pin="58" symbolicname=""/>
+        <function comments="J2-27[PMOD1-MISO/RXD]" group="" id="UNASSIGNED_59" pin="59" symbolicname=""/>
+        <function comments="J2-28[PMOD1-MOSI/TXD]" group="" id="UNASSIGNED_60" pin="60" symbolicname=""/>
+        <function comments="J2-29" group="" id="UNASSIGNED_61" pin="61" symbolicname=""/>
+        <function comments="J2-30" group="" id="UNASSIGNED_62" pin="62" symbolicname=""/>
+        <function comments="J2-31[PMOD1-INT/GPIO7]" group="" id="UNASSIGNED_63" pin="63" symbolicname=""/>
+        <function comments="J2-32" group="" id="UNASSIGNED_64" pin="64" symbolicname=""/>
+    </pin>
+    <clock>
+        <item id="operationModeComb" value="hsmainmode3"/>
+        <item id="evddValueRange" value="range1"/>
+        <item id="highSpeedOCOenable" value="hococlock_fihp"/>
+        <item id="hsocofrequency" value="frq32"/>
+        <item id="hssclockenable" value="uncheck"/>
+        <item id="cmbhssoperation" value="x1oscillation"/>
+        <item id="cmbhsstabletime" value="18"/>
+        <item id="hssfrequency" value="5"/>
+        <item id="fmxdivider" value="comboBox1-1"/>
+        <item id="lowSpeedOCOForFSXP" value="uncheck"/>
+        <item id="fmainswitcher" value="hococlock_fmainswitcher"/>
+        <item id="fclkswitcher" value="fmainswitcher_fclkswitcher"/>
+        <item id="chkReset" value="uncheck"/>
+    </clock>
+    <board display="RL78G21_FastPrototypingBoard" html="" id="RL78G21_FastPrototypingBoard" partNumber="R7F103GLJxFB"/>
+    <info version="V1.10"/>
+</boardInfo>
