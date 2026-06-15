@@ -2,7 +2,7 @@
 <whatsnew>
         <page family="ASSP_RISCV" html="https://www.renesas.com/document/rln/smart-configurator-risc-v-mcu-plug-e-studio-2025-12-smart-configurator-risc-v-mcu-v160-release-note"/>
         <page family="RH850" html="https://www.renesas.com/document/rln/smart-configurator-rh850-v1150-release-note"/>
-        <page family="RL78" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v1160-release-note"/>
-        <page family="RX" html="https://www.renesas.com/document/rln/smart-configurator-rx-v2280-release-note"/>
+        <page family="RL78" html="https://www.renesas.com/document/rln/smart-configurator-rl78-v1170-release-note"/>
+        <page family="RX" html="https://www.renesas.com/document/rln/smart-configurator-rx-v2290-release-note"/>
 </whatsnew>
 
